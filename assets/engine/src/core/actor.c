@@ -31,13 +31,6 @@
 #define ACTOR_BOUNDS_TILE16        6u
 #define ACTOR_BOUNDS_TILE16_HALF   3u
 
-
-#ifdef CGB
-#define NO_OVERLAY_PRIORITY ((!_is_CGB) && ((overlay_priority & S_PRIORITY) == 0))
-#else
-#define NO_OVERLAY_PRIORITY (TRUE)
-#endif
-
 BANKREF(ACTOR)
 
 const BYTE emote_offsets[] = {2, 1, 0, -1, -2, -3, -4, -5, -6, -5, -4, -3, -2, -1, 0};
@@ -51,7 +44,7 @@ actor_t * actors_active_head;
 actor_t * actors_active_tail;
 actor_t * actors_inactive_head;
 
-UINT8 screen_x, screen_y;
+UBYTE screen_x, screen_y;
 actor_t * invalid;
 UBYTE player_moving;
 UBYTE player_iframes;
@@ -110,12 +103,18 @@ void actors_update(void) NONBANKED {
         );
     }
 
+    static bool window_hide_actors;
+#ifdef CGB
+    window_hide_actors = (!_is_CGB) && ((overlay_priority & S_PRIORITY) == 0) && (!show_actors_on_overlay) && (WX_REG > DEVICE_WINDOW_PX_OFFSET_X);
+#else
+    window_hide_actors = (!show_actors_on_overlay) && (WX_REG > DEVICE_WINDOW_PX_OFFSET_X);
+#endif
+
     actor = actors_active_tail;
     while (actor) {
         if (actor->pinned) {
             screen_x = (actor->pos.x >> 4) + 8, screen_y = (actor->pos.y >> 4) + 8;
         } else {
-            screen_x = (actor->pos.x >> 4) - draw_scroll_x + 8, screen_y = (actor->pos.y >> 4) - draw_scroll_y + 8;
             // Bottom right coordinate of actor in 16px tile coordinates
             // Subtract bounding box estimate width/height
             // and offset by 64 to allow signed comparisons with screen tiles
@@ -126,11 +125,11 @@ void actors_update(void) NONBANKED {
                 // Actor right edge < screen left edge
                 (actor_tile16_x < screen_tile16_x) ||
                 // Actor left edge > screen right edge
-                (actor_tile16_x - ACTOR_BOUNDS_TILE16 - SCREEN_TILE16_W > screen_tile16_x) ||
+                ((actor_tile16_x - (ACTOR_BOUNDS_TILE16 + SCREEN_TILE16_W)) > screen_tile16_x) ||
                 // Actor bottom edge < screen top edge
                 (actor_tile16_y < screen_tile16_y) ||
                 // Actor top edge > screen bottom edge
-                (actor_tile16_y - ACTOR_BOUNDS_TILE16 - SCREEN_TILE16_H > screen_tile16_y)
+                ((actor_tile16_y - (ACTOR_BOUNDS_TILE16 + SCREEN_TILE16_H)) > screen_tile16_y)
             ) {
                 if (actor->persistent) {
                     actor = actor->prev;
@@ -142,12 +141,14 @@ void actors_update(void) NONBANKED {
                 actor = prev;
                 continue;
             }
+            // calculate screen coordinates
+            screen_x = ((actor->pos.x >> 4) + 8) - draw_scroll_x, screen_y = ((actor->pos.y >> 4) + 8) - draw_scroll_y;
         }
-        if (NO_OVERLAY_PRIORITY && (!show_actors_on_overlay) && (WX_REG != MINWNDPOSX) && (WX_REG < (UINT8)screen_x + 8) && (WY_REG < (UINT8)(screen_y) - 8)) {
-            // Hide if under window (don't deactivate)
+        if (actor->hidden) {
             actor = actor->prev;
             continue;
-        } else if (actor->hidden) {
+        } else if ((window_hide_actors) && (((screen_x + 8) > WX_REG) && ((screen_y - 8) > WY_REG))) {
+            // Hide if under window (don't deactivate)
             actor = actor->prev;
             continue;
         }
