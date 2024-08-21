@@ -29,7 +29,7 @@ any demos or mods that can be shown of the mechanic?
 why should I add this?
 
 **if this is race based**
-this is to add a race/character to the story
+this is to add a race/character to the story.
 if adding a character they cannot be one with story elements attached. and replace race with character below.
 is this race copyrighted? if so, who might I contact to potentially add? (similar story with story-based features to add)
 what are the physical features available?
@@ -38,9 +38,9 @@ what are the general height and weight of the race?
 any general racial hostilities or stereotypes of the race?
 what is the general naming pattern/s? ex: canine and feline races generally are natural objects to do with the ground/nature.
 are there multiple forms of the race available?
-what is the general (biological) sexual dimorphism if any that differs from humans? ex: males have a stronger tail
+what is the general (biological) sexual dimorphism if any that differs from humans? ex: males have a stronger tail.
 what is the culture and religion of the race? 
-what is the average age limit for the race? would the solar council need to adjust the adult age for this race (which is 21 years)? ex: humans are 18 years
+what is the average age limit for the race? would the solar council need to adjust the adult age for this race (which is 21 years)? ex: humans are 18 years.
 what are the special abilities of the race that are not magical? ex: flight
 what is the race's diet composed of?
 what is the average intelligence of the race?
