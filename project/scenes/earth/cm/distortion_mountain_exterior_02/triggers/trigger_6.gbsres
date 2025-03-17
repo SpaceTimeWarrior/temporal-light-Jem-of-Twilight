@@ -1,0 +1,75 @@
+{
+  "_resourceType": "trigger",
+  "id": "aaa50473-8692-4165-b67d-a20c09a4eb36",
+  "_index": 5,
+  "symbol": "trigger_371",
+  "prefabId": "",
+  "name": "",
+  "x": 56,
+  "y": 27,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 7,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: gotta make \nsure I got all\nmonster remains",
+                      "out and not\nsticking to my\nfur."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "f2065c0c-1121-448d-bc64-c29a77b592b2"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833"
+                  },
+                  "id": "5ded31f3-afc4-421a-a3d9-18d0356207d8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: all clean"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "34201cfe-b4a5-4053-af76-ff3e65cb2723"
+                }
+              ],
+              "false": []
+            },
+            "id": "66db471e-b83c-4de0-a6db-d50e15b284b1"
+          }
+        ],
+        "false": []
+      },
+      "id": "1d5b22e2-a3db-4157-9b49-c256cb32c264"
+    }
+  ],
+  "leaveScript": []
+}

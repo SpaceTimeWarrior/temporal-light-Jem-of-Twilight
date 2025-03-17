@@ -1,0 +1,178 @@
+{
+  "_resourceType": "trigger",
+  "id": "24cea61a-9436-40b3-925c-7b73d61f4009",
+  "_index": 1,
+  "symbol": "trigger_156",
+  "prefabId": "",
+  "name": "",
+  "x": 25,
+  "y": 15,
+  "width": 1,
+  "height": 14,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 7,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": -1
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "365405bd-790b-40b1-9695-d33021649b80"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_ACTOR_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "a1455f0b-9dc1-41d4-9012-3eac96e4e303"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                        "args": {
+                          "actorId": "$self$",
+                          "direction": {
+                            "type": "direction",
+                            "value": "up"
+                          },
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                              "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "f473a6ed-c5df-4187-8516-f07058264c4e"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_ACTOR_DIRECTION",
+                              "args": {
+                                "actorId": "$self$",
+                                "direction": {
+                                  "type": "direction",
+                                  "value": "down"
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 0
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": -1
+                                      }
+                                    },
+                                    "id": "9bcc4ee9-0625-42cf-91e2-1c29b47ea57a"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "55da3a84-6926-40ea-903a-443c6d89d3a4"
+                            }
+                          ]
+                        },
+                        "id": "15ad432d-c197-4e21-a0a0-01e3e63b15f6"
+                      }
+                    ]
+                  },
+                  "id": "9aa5427e-b2c2-4537-8b23-d80ae0cbb1ea"
+                }
+              ]
+            },
+            "id": "ff9dcbff-dc69-4d08-8e36-73075f9149b4"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "32e29e7f-4ebe-404c-bd5b-645a1d4331b1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem:I have a \nstrange felling \nI may need them"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "6e667710-abd5-4908-9f25-89431fa86c5f"
+          }
+        ]
+      },
+      "id": "2085f282-f203-4b87-9c81-cccd474e47c9"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,50 @@
+{
+  "_resourceType": "scene",
+  "id": "181211ab-d1a9-40bb-8020-3e8389dd267c",
+  "_index": 28,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/school of magic classroom-technology",
+  "symbol": "scene_29",
+  "x": 3797.285301975904,
+  "y": 60.74237575001545,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "f5d68dca-ff35-40a9-ad38-a0d0b7e0e464",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "277cb477-cfe7-4191-9a18-139c3aa9c3bb",
+    "",
+    "",
+    "",
+    "default-sprite",
+    "default-bg-4",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0",
+    "default-sprite"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "063a2493-6533-4e73-9007-07e9427f0cd7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 25
+        }
+      },
+      "id": "c30082cf-41f2-4e5f-ad38-5d06e24e7ab7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1a2+006+0f16+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+007+012+006+012+006+012+003+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0f6+00d+012+006+012+006+012+003+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0ff6+"
+}

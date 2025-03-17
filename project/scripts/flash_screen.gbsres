@@ -1,0 +1,89 @@
+{
+  "_resourceType": "script",
+  "id": "37dfa877-2cd9-400a-bc33-73eb38153833",
+  "name": "flash screen",
+  "symbol": "script_14",
+  "description": "flashes the overlay on screen for 5 seconds",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "fill color",
+      "passByReference": false
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "V0",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "black",
+              "x": 0,
+              "y": 0,
+              "__collapse": false
+            },
+            "id": "fbf41434-85bd-43df-a09e-91a46b3cd7cb"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 30
+            },
+            "id": "90b935db-1e44-47df-82e4-d3ce8bac2fc8"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "321e1565-db98-422c-81a6-6f9208b1c25f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 0
+            },
+            "id": "4351f476-cf04-4ff1-b009-1c63ed3326dd"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 30
+            },
+            "id": "585b7522-36bc-4ff1-84ed-efe2676c6124"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "866d8357-e906-4de3-9495-c08a54b82515"
+          }
+        ]
+      },
+      "id": "94a208d9-783d-436c-81e4-a87dc51df3f9"
+    }
+  ]
+}

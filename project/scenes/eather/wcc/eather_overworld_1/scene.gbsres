@@ -1,0 +1,111 @@
+{
+  "_resourceType": "scene",
+  "id": "69a62bbc-69a6-49c6-84f9-87d99d094156",
+  "_index": 37,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/eather overworld 1",
+  "symbol": "scene_38",
+  "x": 1897.7523484002961,
+  "y": 245.94282459077417,
+  "width": 88,
+  "height": 108,
+  "backgroundId": "1e59368b-4594-4288-89b9-e2290b9d5222",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "",
+    "4a5a6f2e-10f5-4342-8e30-eac8cb0fa350",
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 17
+        }
+      },
+      "id": "1d774175-0135-4038-8ac5-e88b0572f4ab"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "2f0efb34-62aa-42c3-a552-83e1b803c017"
+          }
+        ],
+        "false": []
+      },
+      "id": "e5f057a7-4dc8-4853-9d9f-7099d3443946"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "be9c261a-5f44-4a32-8d04-eb81ddbed745"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "180c83b9-19e4-4ab3-9dc6-5aa505f42fd0"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "7e0ecc94-596b-4096-aa38-2ad9a1685466"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "fb1e67bf-f6fd-4eea-baeb-80da876ad047"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "f090640a-c9d8-4592-8c7c-6555e9472c40"
+    }
+  ],
+  "collisions": "0f5b0+006+0f23+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0019+0f4+00a+0f4+00a+0f4+0019+0f6+0018+0f5+009+0f5+009+0f5+0019+0f6+0016+0f7+007+0f7+007+0f7+0019+0f6+0015+0f8+006+0f8+006+0f8+0019+0f6+0015+0f8+006+0f8+006+0f8+0019+0f6+0015+0f8+006+0f8+006+0f8+0019+0f6+0016+0f6+008+0f6+008+0f6+001a+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0035+0f4+0019+0f6+0034+0f5+0019+0f6+0032+0f7+0019+0f6+0031+0f8+0019+0f6+0031+0f8+0019+0f6+0031+0f8+0019+0f6+0032+0f6+001a+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0052+0f6+0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!0057+0f!003a+0f1e+003a+0f1e+003a+0f1e+003a+0f1e+003a+0f1e+003a+0f1e+003a+0f1e+003a+0f1d+"
+}

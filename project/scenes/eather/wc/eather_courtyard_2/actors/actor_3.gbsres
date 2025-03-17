@@ -1,0 +1,63 @@
+{
+  "_resourceType": "actor",
+  "id": "f810eb46-68b0-4f1a-accb-bb805a082dbf",
+  "_index": 4,
+  "symbol": "actor_190",
+  "prefabId": "",
+  "name": "",
+  "x": 36,
+  "y": 33,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "b9302c80-9aa1-4ed5-baa9-d44713f6c82e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This is the \nheating system for\nall the buildings.",
+          "DO not touch"
+        ],
+        "avatarId": ""
+      },
+      "id": "75870613-3b1f-42ec-bdf3-add035b689b0"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "2f498096-bf97-45b9-91b0-e22dfbdfc6fe"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a9fb7320-4a91-4f64-b513-457b7f0a5327"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

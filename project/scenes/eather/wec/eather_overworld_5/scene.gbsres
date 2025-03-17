@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "6d5a0159-ca00-4442-8579-8d5cce7eed65",
+  "_index": 131,
+  "type": "TOPDOWN",
+  "name": "eather/wec/Eather overworld 5",
+  "symbol": "scene_132",
+  "x": 7856,
+  "y": 712,
+  "width": 48,
+  "height": 80,
+  "backgroundId": "c067a5a6-2026-429f-989a-9e7a930e9071",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "a3407397-f5e0-4036-973a-bd116037ff3c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "8e8715a8-41bf-4d18-8751-3a75656eff8b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f182+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0fc+0024+0fc+0024+0f7+0029+0f7+0029+0f7+0029+0f7+0029+0f7+0029+0f7+0029+0fc+0024+0fc+0024+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f8+0028+0f6+"
+}

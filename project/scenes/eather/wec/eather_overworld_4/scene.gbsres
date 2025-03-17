@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "861355b5-ffcc-4f1c-aa18-4f0d9b8c0ae7",
+  "_index": 130,
+  "type": "TOPDOWN",
+  "name": "eather/wec/Eather overworld 4",
+  "symbol": "scene_131",
+  "x": 7664,
+  "y": 1384,
+  "width": 80,
+  "height": 40,
+  "backgroundId": "ff80b15b-990a-48ed-88d6-43e9fdede5e4",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 29
+        }
+      },
+      "id": "5a42ce13-f156-4801-89cb-fdb886ffb78e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "35439247-3b5a-4952-af4c-306353612050"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1a+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0fe+0042+0fe+0042+0fe+0044+0fc+0044+0fc+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0046+0fa+0044+0fc+0044+0fc+0042+0fe+0042+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0f28+0028+0fe+"
+}

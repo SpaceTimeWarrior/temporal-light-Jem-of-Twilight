@@ -1,0 +1,115 @@
+{
+  "_resourceType": "actor",
+  "id": "85e1cb1d-9844-4180-a791-4d91832cfc29",
+  "_index": 0,
+  "symbol": "actor_399",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: Ember's egg\n....it is\nstarting to cool"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "30c92ba0-a2e4-418e-b0c4-d76f23fc9326"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "make a meal of it",
+        "falseText": "raise it"
+      },
+      "id": "6b0f057f-873f-41f7-b732-9e8f28214a05"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:Hopefully\nFlare loves my\ncooking"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7ae6ef42-4332-49fe-8bd9-c800e38b2cc2"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "2601004a-4211-40d0-9de8-658e77b716e8",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "390216b2-eae1-4b7f-9a13-395417e3a6c1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "016dca28-7baa-4b77-a00c-b6ad4e803edc",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "03b671e9-c0f4-4712-a3fc-a8e655605cde"
+          }
+        ]
+      },
+      "id": "c0e9367e-cbe1-4de0-b5b1-2465ff60e463"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,177 @@
+{
+  "_resourceType": "trigger",
+  "id": "51d2f87c-558a-4e30-9485-ad4ff883be1f",
+  "_index": 2,
+  "symbol": "trigger_198",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 6,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 15,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "7496441c-2cb3-4909-af7f-469313e99fb2"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:my ship that\na$%#^#$. he must\nof stole it"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "4691f875-63bb-40d6-a2d1-59caf4abdb73"
+          },
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 20
+              },
+              "speed": 1
+            },
+            "id": "608f34b7-af8e-4250-a239-bc2e77cac037"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "2e768450-0564-4240-a037-21eaabce0cff"
+          },
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 27
+              },
+              "y": {
+                "type": "number",
+                "value": 22
+              },
+              "speed": 1
+            },
+            "id": "5beb6a95-aa2c-4f44-8642-ccb28bf4c02c"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "c3158d42-0179-44a5-a98a-46a1c4e37294"
+          },
+          {
+            "command": "EVENT_CAMERA_LOCK",
+            "args": {
+              "speed": 1,
+              "axis": [
+                "x",
+                "y"
+              ]
+            },
+            "id": "293532bf-5a30-45cd-b126-743eecb31788"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "b70c5951-f235-4bb3-bc3a-4f73ad9f5840"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427",
+              "__collapse": false
+            },
+            "id": "456aa471-d58e-4218-a524-a814c39dd4c4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: Well you \ndo have good\ntaste in ships",
+                "I actually like\nold style ships.",
+                "they had \npersonality."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "0300e716-fcd9-4be0-863b-e5428c04c42c"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "200ad4e7-9163-4ca1-b2c2-cb6accdba81b",
+              "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2"
+            },
+            "id": "23226c7f-35c0-446e-8ca5-8c1d57f03391"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "1deab5b2-5895-4b89-8c22-81959bf237a4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:Not like\nnow in which\nthey are so",
+                "generic. I \nupgraded this \nship with modern",
+                "components. it\nis just I am not",
+                "good at piloting\nit."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "48130d76-8acf-4359-b011-558dd62dcaf8"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "af5a72eb-e0a3-4250-8779-6a79e66785f8"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: I can \npilot the ship.I\nam not half bad"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "cab03d2e-4721-4ae4-837d-98bfedf52806"
+          }
+        ]
+      },
+      "id": "a4093c3d-8b4f-456f-8697-e0c106a432da"
+    }
+  ],
+  "leaveScript": []
+}

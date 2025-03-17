@@ -1,0 +1,25 @@
+{
+  "_resourceType": "engineFieldValues",
+  "engineFieldValues": [
+    {
+      "id": "fade_style",
+      "value": 0
+    },
+    {
+      "id": "shooter_scroll_speed",
+      "value": 16
+    },
+    {
+      "id": "INPUT_PLATFORM_JUMP",
+      "value": "INPUT_A"
+    },
+    {
+      "id": "INPUT_PLATFORM_RUN",
+      "value": "INPUT_B"
+    },
+    {
+      "id": "INPUT_PLATFORM_INTERACT",
+      "value": "INPUT_A"
+    }
+  ]
+}

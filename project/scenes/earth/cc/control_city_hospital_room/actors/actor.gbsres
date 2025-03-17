@@ -1,0 +1,105 @@
+{
+  "_resourceType": "actor",
+  "id": "18c1a7a5-3d04-453b-bd00-83f07f2464bb",
+  "_index": 0,
+  "symbol": "actor_685",
+  "prefabId": "",
+  "name": "",
+  "x": 5,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7eee9535-4e23-4c00-ba98-b24ca0c793dc",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem decided to put\non her dress"
+        ],
+        "avatarId": ""
+      },
+      "id": "d7daf192-b890-44bb-b30a-765b33af3261"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833"
+      },
+      "id": "4464fbfa-32e7-4cb1-8039-fdadeb24770a"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "daa7fc4e-2389-4cfc-b776-381314bd657e",
+        "persist": false
+      },
+      "id": "77059031-515e-4dee-a1d6-64b23dd17772"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "51",
+        "flag1": false,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": true,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "524ccf1e-2ad0-4f4a-a904-183fef23f430"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "9c1e2d86-99b5-4310-aece-162ee0119006"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 5,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6a84c07f-1f2e-4f94-aec1-344bee994dd4"
+          }
+        ],
+        "false": []
+      },
+      "id": "a7217557-fb38-4ddb-9232-0204733374f9"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

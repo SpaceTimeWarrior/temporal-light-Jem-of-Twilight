@@ -1,0 +1,85 @@
+{
+  "_resourceType": "actor",
+  "id": "2894d1bc-5d60-4afc-9c23-c29ff5a0db09",
+  "_index": 4,
+  "symbol": "actor_222",
+  "prefabId": "",
+  "name": "",
+  "x": 59,
+  "y": 105,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "93859ebf-a3dd-4f7b-ad58-5ad4d793a856"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The door is \nlocked"
+        ],
+        "avatarId": ""
+      },
+      "id": "ac5ce243-5194-40c8-8d29-9cdb1557ef96"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "e160fea0-a7e3-4a03-b13e-464640bf0400"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "63",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f35fd977-7179-4f21-9d74-989efb84e0d7",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "4940672a-7ae9-498d-a7de-364010a0e8fa"
+          }
+        ],
+        "false": []
+      },
+      "id": "9e97dfb0-403d-455c-9677-44aabf76b3b9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

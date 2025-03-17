@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "99687dec-5d3f-44f6-8398-53127135cceb",
+  "_index": 4,
+  "symbol": "actor_292",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 18,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A school desk\ncould be worse"
+        ],
+        "avatarId": ""
+      },
+      "id": "94eeee8a-4148-4764-868d-453e91bae1d8"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

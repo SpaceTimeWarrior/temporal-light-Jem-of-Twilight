@@ -1,0 +1,48 @@
+{
+  "_resourceType": "scene",
+  "id": "1addb6c9-7a03-4a34-a5d1-e5592c73f6e8",
+  "_index": 58,
+  "type": "TOPDOWN",
+  "name": "luna/Luna palace Throne room access aplha",
+  "symbol": "scene_59",
+  "x": 4117.448674391631,
+  "y": 5304.73929063813,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "24e81a87-209d-4a9a-8c5d-b75f0e45804d",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "441424b7-df6d-42fa-8378-efa1ca89f2dc"
+      },
+      "id": "6a45ff55-f598-40c1-815c-69cee4c09688"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 110
+        }
+      },
+      "id": "d0e9801a-0fca-4f9a-b992-3264db45e545"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "7e0b8206-c5ad-403e-b43e-60cbea5f1e7e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f10+006+0f6+006+0f16+006+0f6+006+0f16+006+0f6+006+0f16+006+0f6+006+0f16+006+0f6+006+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0f16+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f12+00118+0f10+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f12+"
+}

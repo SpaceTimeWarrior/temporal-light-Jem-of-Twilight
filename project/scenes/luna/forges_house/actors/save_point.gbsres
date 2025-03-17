@@ -1,0 +1,138 @@
+{
+  "_resourceType": "actor",
+  "id": "14858dd1-8390-4803-aac3-5dea76363a2f",
+  "_index": 0,
+  "symbol": "actor_510",
+  "prefabId": "",
+  "name": "Save point",
+  "x": 4,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "1d6bf0be-4a30-4357-bc12-f1c10fe74f44"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:this smells\nof smoke and \nalcahol.",
+          "the floor and \nwalls are made\nof a fireproof",
+          "steel this must \nbe for a fire \nelemental.",
+          "as flare sleeps \nin the castle",
+          "there is a note\n\"out on a peace\nsummit - Forge",
+          "Doublefire\""
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "0ea23ccf-272a-45d9-b804-170be3cfeb16"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "its a bed\ndo you want to\nsleep and save"
+        ],
+        "avatarId": ""
+      },
+      "id": "0d799caf-7b60-4010-8827-eada1e52b5bc"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "0",
+        "trueText": "sleep and save",
+        "falseText": "don't sleep"
+      },
+      "id": "0edc38ef-c834-42fd-9275-cb8792e7f087"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "87df03a5-110f-4843-8e53-48c843b7f4a5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "6c4856de-599c-4270-a510-d7dd2d4613c5"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "30884789-1b49-4c54-b1ec-32ec43d5c553",
+                    "$variable[V0]$": {
+                      "type": "variable",
+                      "value": "33"
+                    }
+                  },
+                  "id": "79b5bab5-c921-4e6e-a133-82de858b37fa"
+                }
+              ],
+              "false": []
+            },
+            "id": "6564a254-08bf-437a-a892-579e5f841969"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "0f86c7d5-dd4c-4dae-9a01-a984c776f373"
+            },
+            "id": "8e177c10-6771-45e4-801e-f085f36116ec"
+          }
+        ],
+        "false": []
+      },
+      "id": "1ec027f3-e6d2-4af2-ab08-bf69487d4bea"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

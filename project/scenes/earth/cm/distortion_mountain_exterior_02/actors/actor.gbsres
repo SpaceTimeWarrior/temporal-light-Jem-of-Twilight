@@ -1,0 +1,106 @@
+{
+  "_resourceType": "actor",
+  "id": "b4ee530f-28ca-4977-aacd-180d5ad4ad98",
+  "_index": 0,
+  "symbol": "actor_811",
+  "prefabId": "",
+  "name": "",
+  "x": 58,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8dfee9ec-66dd-4897-9017-295443e3e080",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "there is a button \nthere"
+        ],
+        "avatarId": ""
+      },
+      "id": "762d07bf-fdae-4808-84b0-37b6b74cd9a9"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "push the button",
+        "option2": "don't",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "bd44a59a-d216-4bcf-ad9a-900a34dd2472"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": true,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "7834a161-440b-42a3-a5e3-371633499333"
+          }
+        ],
+        "false": []
+      },
+      "id": "aeb3d18f-3fdf-46fe-a68c-183714be9420"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

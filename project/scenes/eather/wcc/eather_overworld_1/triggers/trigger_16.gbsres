@@ -1,0 +1,198 @@
+{
+  "_resourceType": "trigger",
+  "id": "fcc53b5e-247c-433a-a17a-5f70f0d786c4",
+  "_index": 15,
+  "symbol": "trigger_121",
+  "prefabId": "",
+  "name": "",
+  "x": 83,
+  "y": 73,
+  "width": 5,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "27",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "27"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "267a5aeb-c890-40b1-8c48-2f9b94200578",
+              "priority": "high",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "c104f530-78c8-44e3-9f62-aea6b5fe2c80"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+            },
+            "id": "8d106725-dd50-4f3f-8f8d-bae741442644"
+          },
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": -1
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "3d2e9e2d-e6ad-4af6-b004-93b0a84e1292"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_ACTOR_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 0
+                          },
+                          "__collapse": true
+                        },
+                        "id": "f9e24e69-1c53-450e-91e2-ad40a708d281"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                        "args": {
+                          "actorId": "$self$",
+                          "direction": {
+                            "type": "direction",
+                            "value": "up"
+                          },
+                          "__collapseElse": true,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                              "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                  "type": "number",
+                                  "value": 0
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "c500da76-6743-49fb-92c8-79b85c4081e3"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF_ACTOR_DIRECTION",
+                              "args": {
+                                "actorId": "$self$",
+                                "direction": {
+                                  "type": "direction",
+                                  "value": "down"
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_ACTOR_SET_POSITION_RELATIVE",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 0
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": -1
+                                      }
+                                    },
+                                    "id": "6a60a61e-bfb7-460b-af4a-2bef65b6ab7e"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "4da69694-bdda-47e5-b2c7-08eb7359fe01"
+                            }
+                          ]
+                        },
+                        "id": "c5bf99c6-c562-41c5-84b7-c17b85a55539"
+                      }
+                    ]
+                  },
+                  "id": "f42068e7-682b-4bf4-afdc-e674c0872b48"
+                }
+              ]
+            },
+            "id": "4f672779-5ee4-428c-98e0-42dd7e75f856"
+          }
+        ],
+        "false": []
+      },
+      "id": "7703e133-e016-4e5c-acea-f05293bbbff7"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "30280aeb-87e2-4fa5-b539-30583237edbe",
+  "_index": 1,
+  "symbol": "actor_283",
+  "prefabId": "",
+  "name": "",
+  "x": 46,
+  "y": 35,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "a784bf3b-5256-4bc2-af18-3d5d3ca41e45"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Rug store^\nMagic school^\nspaceport*"
+        ],
+        "avatarId": ""
+      },
+      "id": "59791d93-b442-40c5-94a9-f78bf1f2ec8e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "ba2541c3-e389-442c-8dc1-2d5288c2f17d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

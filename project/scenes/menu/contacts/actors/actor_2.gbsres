@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "6efd7524-9cfd-4ab6-a7d3-fc4c8bd927f2",
+  "_index": 1,
+  "symbol": "actor_404",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "fd8cb6fd-2e05-4805-b10c-ffbd981b2746",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: Ember an old\nfriend and is the\nschool librarian"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "0f12a839-fa76-443d-ba16-1dc3673d4f8f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

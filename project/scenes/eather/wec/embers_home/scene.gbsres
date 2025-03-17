@@ -1,0 +1,62 @@
+{
+  "_resourceType": "scene",
+  "id": "fdacd9cb-99d1-4fd1-b85b-b738d9b8abfb",
+  "_index": 102,
+  "type": "TOPDOWN",
+  "name": "eather/wec/ember's home",
+  "symbol": "scene_103",
+  "x": 3215.615732230392,
+  "y": 820.2274624693628,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "f906a798-d74f-4d30-86b0-65ac924fa151",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "1d4e8c91-7f0c-48a9-976a-7919e471fb85"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 7
+              }
+            },
+            "id": "b020e9e3-b701-409b-9dfa-18d2e39d6412"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "d0739f30-5dfa-4828-8f32-aa7b918543fc"
+          }
+        ]
+      },
+      "id": "dfbe5d80-5913-4eb8-8d83-35238b515432"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0051+0f12+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f5+008+0f5+006+0f!008+0f!005+"
+}

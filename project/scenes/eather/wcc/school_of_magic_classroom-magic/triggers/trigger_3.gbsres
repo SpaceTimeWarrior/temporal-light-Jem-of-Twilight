@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "e57f3d65-e156-4ab5-a005-819e60bff230",
+  "_index": 2,
+  "symbol": "trigger_147",
+  "prefabId": "",
+  "name": "",
+  "x": 24,
+  "y": 11,
+  "width": 10,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: A Bookshelf\nof magic books."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "2fca071b-e62d-40ac-be49-36079a7a43e8"
+    }
+  ],
+  "leaveScript": []
+}

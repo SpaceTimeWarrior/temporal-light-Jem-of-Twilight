@@ -1,0 +1,234 @@
+{
+  "_resourceType": "scene",
+  "id": "68bd036b-88e9-4495-90d4-4343effb9ca2",
+  "_index": 24,
+  "type": "TOPDOWN",
+  "name": "luna/lunar dungeon",
+  "symbol": "scene_25",
+  "x": 4128.300653594773,
+  "y": 5768.772175536878,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "698145c8-18f9-48c2-b466-9972ae19409a",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 100
+        }
+      },
+      "id": "b7a45284-13cc-43ee-8845-d4de5821b2f9"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "653b86c9-ad1f-4fc1-bedd-328bcec3d515"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 12
+              }
+            },
+            "id": "267d815e-eef4-4d5c-8b6b-d0e8f7c245a8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "b0ea8725-c838-4369-af7a-e3356db39baf"
+          }
+        ]
+      },
+      "id": "6e1a9bc2-aab7-4cbb-b041-f3dac2a272a7"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 7,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "22a3b2d5-631c-4a35-8a6d-a4fff4c81844",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "0a73ad6b-547a-4795-801a-ea1823eb3950"
+          }
+        ],
+        "false": []
+      },
+      "id": "35146e7c-a245-4d6c-91fa-fab887753b6b"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 5,
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "e2f28994-ade7-448a-ac8b-34d99999f381"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "23",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": true,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "e1635a69-1f03-4997-9fda-36d3edde873a"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: Ow my head\nhurts. And I\nfeel odly light"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "fb01883a-0cf6-435a-8333-05625024375a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "78970c82-ee63-494f-9b5f-c9f82558772b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "0ff1ac4c-4058-411c-9f3c-d5187a06d478"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "7e631bcd-c09b-4eb6-b8fe-616e50809869"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "55f61753-1808-48b1-9d4f-e0abc79edb5f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "5cfbd2d0-b5e4-42f2-b024-9723ff389987"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I think I\nmay have been\nkidnapped.",
+                "Time to breakout"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "72954aa9-e510-4ddb-a1d0-ac50937cb73d"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "31",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "064f979d-2d41-464e-ab0b-84f8085e4fb7"
+          }
+        ]
+      },
+      "id": "4356f40f-1d8f-4cbc-b0c5-2b4dd300c8cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fde+0010+0f18+0010+0f18+0010+0f18+0010+0f18+0010+0f1c+006+0f22+006+0f22+006+0f22+006+0f22+006+0fa+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0018+0f4+006+0f6+0016+0f6+006+0f6+0013+0f3+00!0f5+006+0f6+0011+0f2+004+0f5+006+0f6+00f+0f2+006+0f5+006+0f6+0017+0f3+00a+0f4+0017+0f3+00a+0f4+0017+0f3+00a+0f4+0017+0f3+00a+0f4+00f+0fb+00a+0f52+"
+}

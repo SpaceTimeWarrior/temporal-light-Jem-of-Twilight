@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "f1b5061f-c55f-4433-a8ab-9a870458b938",
+  "_index": 6,
+  "symbol": "trigger_254",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 8,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: A restroom\nsink."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "48984bf3-f0f2-413f-b0f0-80282bef0498"
+    }
+  ],
+  "leaveScript": []
+}

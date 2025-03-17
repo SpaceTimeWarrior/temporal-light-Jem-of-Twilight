@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "cfed5213-86bf-4010-8ae5-5937f7c5b9f6",
+  "_index": 113,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace throne room",
+  "symbol": "scene_114",
+  "x": 3912,
+  "y": 4640,
+  "width": 40,
+  "height": 60,
+  "backgroundId": "e4013571-011b-4b67-a52f-f9be3ae294de",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "3b464860-6f09-49a3-b22e-aa768596302f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 115
+        }
+      },
+      "id": "19914f2d-c22e-4806-935b-2b1f617c0d37"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0ffa+002+0f6+002+0f6+002+0f16+002+0f6+002+0f6+002+0f16+002+0f2+002+0f2+002+0f2+002+0f2+002+0f16+002+0f2+002+0f2+002+0f2+002+0f2+002+0f16+002+0f2+002+0f2+002+0f2+002+0f2+002+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0fe+0022+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0fe+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f16+0012+0f1c+006+0f22+006+0f22+006+0f22+006+0f12+"
+}

@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "73029a80-f5a1-4bb4-a7f2-2a53b0b90ffd",
+  "_index": 1,
+  "symbol": "actor_812",
+  "prefabId": "",
+  "name": "",
+  "x": 58,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8dfee9ec-66dd-4897-9017-295443e3e080",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "this shrine is \ndedicated to the\nFoxend family for",
+          "their service to\nmonsters and \nhumans on Earth",
+          "-king of mons/...",
+          "the rest is \ndamaged beyond\nrepair. but the",
+          "rest looks like it\nmay of been names.\nbut nothing can be",
+          "made out other \nthan the letters A\nand D at the start",
+          "of a name"
+        ],
+        "avatarId": ""
+      },
+      "id": "0661a388-b2ce-49ac-a090-a25760bb272c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

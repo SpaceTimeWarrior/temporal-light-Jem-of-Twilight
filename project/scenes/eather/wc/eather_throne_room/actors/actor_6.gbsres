@@ -1,0 +1,62 @@
+{
+  "_resourceType": "actor",
+  "id": "db13594b-ee4c-4b74-9c83-0c05ace09ef7",
+  "_index": 8,
+  "symbol": "actor_247",
+  "prefabId": "",
+  "name": "",
+  "x": 4,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "174ed48e-307c-4081-82ec-9642a24080b7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nMom's throne"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "b05fb1b5-5b4b-4f14-b908-dbb8f880d1a1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "c0bbc742-4bc0-40b4-af6d-cc19dd9576d0"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7b3c8597-aae5-4a59-82d5-d2ff9d4e3dd1"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

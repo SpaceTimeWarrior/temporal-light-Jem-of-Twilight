@@ -1,0 +1,145 @@
+{
+  "_resourceType": "scene",
+  "id": "ea2a337e-e3a4-4ffa-8cf5-e2761055c06b",
+  "_index": 72,
+  "type": "TOPDOWN",
+  "name": "luna/luna overworld 0C2",
+  "symbol": "scene_73",
+  "x": 5583.6573660714275,
+  "y": 2348.457170758927,
+  "width": 94,
+  "height": 72,
+  "backgroundId": "86b9a1ac-4852-4f57-bafa-be2f2e6b5e65",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 103
+        }
+      },
+      "id": "683b88a6-7b3b-4914-934c-76604e04e907"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "28",
+        "operator": "!=",
+        "comparator": "0",
+        "__collapseElse": false,
+        "__comment": false,
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "28"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "28"
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "units": "tiles",
+              "__comment": false
+            },
+            "id": "7f01dc6c-0f86-4c75-a4b7-29889b46fd98"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": 1
+            },
+            "id": "8684d0af-052b-4b14-af9b-1c08ebf3fac4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "testing for l"
+              ],
+              "avatarId": "",
+              "__comment": true
+            },
+            "id": "84f3161e-e501-44ae-aa43-dc47eadcad2b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": "2"
+            },
+            "id": "71be5fd2-5e55-468c-be6d-9787a1abc57c"
+          }
+        ]
+      },
+      "id": "78cbac46-4678-4f00-baee-06a44fa35cb2"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "85177c49-7cfe-47ed-90e2-9c3c31732dd5"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 10
+              }
+            },
+            "id": "2ee0e8aa-bb67-4e5a-8c88-b3937a97a662"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "fa6f57bb-3ead-4c80-ad52-e57452ea84d4"
+          }
+        ]
+      },
+      "id": "139e7abe-10fb-4075-8d1b-fde7229d8276"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+0042+0f16+004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f!0014+0f!004+0f2+0042+0f7+00a+0f5+004+0f2+0048+0f!00a+0f!008+0f2+0048+0f!00a+0f!008+0f2+0048+0f!002+0f4+004+0f!008+0f2+0048+0f3+004+0f5+008+0f2+005c+0f2+005c+0f2+005c+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f20+00c+0f33+"
+}

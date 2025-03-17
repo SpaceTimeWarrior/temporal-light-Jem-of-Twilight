@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "0dc8e387-cdce-47c9-8147-d2d82085fadc",
+  "_index": 5,
+  "symbol": "actor_290",
+  "prefabId": "",
+  "name": "",
+  "x": 30,
+  "y": 33,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "9df809e4-a1a5-4153-be41-8a86f78cd760"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This orb is \ncovered in dust...\nhopefully this",
+          "isn't a student...\nor teacher"
+        ],
+        "avatarId": ""
+      },
+      "id": "f4d5fa8d-6d4b-4ede-8959-468035bfeca9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "1d8122ab-f3a2-40cc-8d08-22f6ce56a360"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,65 @@
+{
+  "_resourceType": "actor",
+  "id": "30b4c7e8-4637-41ed-aa01-0579734a3ab8",
+  "_index": 1,
+  "symbol": "actor_199",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "d3bfcce9-050c-41cc-8ed8-a9c5d3567818"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Brier's sink.\n"
+        ],
+        "avatarId": ""
+      },
+      "id": "582e49da-b574-4454-b321-31a77ded6cb0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: maybe I \nshould put food\ncoloring in",
+          "specifically a \ndark red."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "6dcb7224-e424-4d00-8682-1da5aed49dae"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "cd4807eb-f8ad-41f9-bc82-3a3c0eaffd3b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,85 @@
+{
+  "_resourceType": "scene",
+  "id": "05a1edcc-b113-477d-9e4a-421976d90882",
+  "_index": 105,
+  "type": "TOPDOWN",
+  "name": "cut/ending chapter 2",
+  "symbol": "scene_106",
+  "x": 4149.314174107143,
+  "y": 2336.3429129464284,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c4d3f2b3-9d15-4790-827a-d66c9ee04398"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The wedding went\nwithout any \nproblems and Flare",
+          "was officially \ngifted Luna from\nhis father...",
+          "5 years pass and\nJem had one child\nChrystal Light",
+          "Lightbringer. Her\nonly problem is \nshe has way too",
+          "much magic power\nto safely teach\nmagic... At least",
+          "not without\nrisking getting\nnuked."
+        ],
+        "avatarId": ""
+      },
+      "id": "ee649e54-3323-41be-bf4b-2b8bf693cda6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Demo End...now \nstarting a first \nlook of chapter 3",
+          "saving from here \non is not \nreccomended as",
+          "everything past \nthis point is \nsubject to change."
+        ],
+        "avatarId": ""
+      },
+      "id": "602163f4-cd9c-411d-9374-dcf151505d21"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "30",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "69d6890a-ceda-4449-894b-02a5a32a76b0"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1d6c25b1-5195-40d7-a7b4-7f4f5d06f436",
+        "x": {
+          "type": "number",
+          "value": 11
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "82dcae64-fe65-40d1-a015-854c7cf168d6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

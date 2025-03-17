@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "f36e1f2c-d960-4d75-addb-5020ff594adc",
+  "_index": 2,
+  "symbol": "trigger_250",
+  "prefabId": "",
+  "name": "",
+  "x": 1,
+  "y": 16,
+  "width": 5,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:a restroom\nstall.don't",
+          "feel like using \nit"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "63076e62-7c47-4ca4-9b5d-cff6ee069406"
+    }
+  ],
+  "leaveScript": []
+}

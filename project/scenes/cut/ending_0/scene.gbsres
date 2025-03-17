@@ -1,0 +1,78 @@
+{
+  "_resourceType": "scene",
+  "id": "46349309-4f40-4445-bac9-e883c5e40d5d",
+  "_index": 95,
+  "type": "TOPDOWN",
+  "name": "cut/ending 0",
+  "symbol": "scene_96",
+  "x": 64,
+  "y": 1776,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare left the\nplanet. Jem sent \na video message",
+          "stating she never\nloved him...\n"
+        ],
+        "avatarId": ""
+      },
+      "id": "f9e0e51f-bf61-4468-843f-41f69e1db153"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A Few weeks later\nPerilite made a \nclone of flare.",
+          "Jem used this\nclone to drain\nFlare of all his",
+          "worth. then this\nclone killed him\nand took his",
+          "identity. Jem\nmarried the clone\nthe next day.",
+          "A few years pass\nand Jem has 3\nchildren. Kyte,",
+          "Byte,and Syte.Jem\npast away \npeacefully in her",
+          "sleep at age 450"
+        ],
+        "avatarId": ""
+      },
+      "id": "37b99cf2-5f5f-4cc8-b200-495ebc2ab125"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Game END"
+        ],
+        "avatarId": ""
+      },
+      "id": "f2f60b8c-c061-48bc-b294-7d89a0ea0c48"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "5c846ab2-6d19-449c-a433-db6adaec5688"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

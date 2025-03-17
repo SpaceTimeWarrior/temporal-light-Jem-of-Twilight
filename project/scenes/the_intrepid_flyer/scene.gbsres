@@ -1,0 +1,72 @@
+{
+  "_resourceType": "scene",
+  "id": "374fbca9-85cf-485b-9f23-1fd654839a04",
+  "_index": 25,
+  "type": "TOPDOWN",
+  "name": "the intrepid flyer",
+  "symbol": "scene_26",
+  "x": 3341.5238095238087,
+  "y": 2008.4761904761908,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "bc9d50dd-02a4-4947-8f00-5769bb8130d7",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "default-bg-2",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "0c13fa73-6763-425e-9393-26bbab8f0feb"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "8b94720e-ac03-498e-b4af-e2460535e100"
+          }
+        ]
+      },
+      "id": "3ddbbd27-e11d-4471-94ef-d6db7a640111"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "d2f4ff15-a435-4f18-a318-a6988208257e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00e0+0f6+0029+0f8+0028+0f!006+0f!0023+0f6+006+0f5+001e+0f!0010+0f!001d+0f2+0010+0f!001c+0f!00f+0f2+00!0f!001b+0f2+00e+0f5+001a+0f!0010+0f5+0019+0f2+0011+0f2+00!0f3+0016+0f!0018+0f!0015+0f2+0018+0f3+0015+0fa+0010+0f!0015+0fa+0010+0f!0011+0f4+001a+0f!0011+0f!0018+0f6+0011+0f!0018+0f!0016+0f!0018+0f!0016+0f!0018+0f!0016+0f!0018+0f!0016+0f!0018+0f6+0011+0f4+001a+0f!0015+0fa+0010+0f!0015+0fa+0010+0f!0013+0f2+0018+0f3+0014+0f!0018+0f!0017+0f2+0011+0f2+00!0f3+0018+0f!0010+0f5+001b+0f2+00e+0f5+001c+0f!00f+0f2+00!0f!001d+0f2+0010+0f!001e+0f!0010+0f!001f+0f6+006+0f5+0024+0f!006+0f!0028+0f8+0028+0f8+00189+"
+}

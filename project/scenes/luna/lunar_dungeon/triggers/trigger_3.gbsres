@@ -1,0 +1,78 @@
+{
+  "_resourceType": "trigger",
+  "id": "1641ea38-e56e-4564-8825-8367e33dbbdd",
+  "_index": 2,
+  "symbol": "trigger_159",
+  "prefabId": "",
+  "name": "",
+  "x": 30,
+  "y": 28,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 6,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "f7888df9-959c-4809-93fa-2c5858c88045"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "???:I am trapped\nhere too can you\nfree me.",
+                "I am behind the \nwalls infront of\nyou."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "21260985-0102-4ad7-8791-b5d6779e6766"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "23",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": true,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "681bc56d-e50e-40c6-9ed4-ba496895629c"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "ab31a873-2308-476c-9762-fcb53930fc57"
+          }
+        ]
+      },
+      "id": "e4cab286-6513-4351-ba83-30c967144d41"
+    }
+  ],
+  "leaveScript": []
+}

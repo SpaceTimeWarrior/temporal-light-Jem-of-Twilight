@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actor",
+  "id": "276626a5-19c3-4d01-a23f-7e367fc7b7c0",
+  "_index": 6,
+  "symbol": "actor_602",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6ccbb461-2b3f-41d6-9570-00d07e7132af",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "90220ad2-00b7-4f0d-9f34-32061349437f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "area locked"
+        ],
+        "avatarId": ""
+      },
+      "id": "95b98f8b-50c7-497c-92c0-9ec64cfd5611"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "37b1cfe2-e9e5-415d-9b9b-c767f380ef5b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "2cd1a22b-79a7-4da1-9aa6-d7b23c1e1b62"
+          }
+        ],
+        "false": []
+      },
+      "id": "6b103290-3f40-4643-af9a-ed3508c98cae"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "41e97118-8906-4fa9-9999-637f996e6ef6"
+    }
+  ],
+  "hit3Script": []
+}

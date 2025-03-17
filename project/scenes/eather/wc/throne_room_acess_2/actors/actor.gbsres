@@ -1,0 +1,63 @@
+{
+  "_resourceType": "actor",
+  "id": "1750b330-2a8d-4859-8963-1e301f47f17a",
+  "_index": 0,
+  "symbol": "actor_110",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 36,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "ff4fd29d-1ae5-4c0d-a58c-fc386d042519"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dark:\nHopefully this \nmeeting is just ",
+          "a \nmisunderstanding"
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "d3e6b7f7-c9b3-49df-adeb-a7c3ef757efd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "8fe20f8d-44eb-49e7-8ece-2beb5f6dc393"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3136781a-c8c1-498d-87ab-10e96d24306f"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "cb8d6350-b9d9-4a4d-8846-d8877563aec6",
+  "_index": 87,
+  "type": "TOPDOWN",
+  "name": "luna/vacent house",
+  "symbol": "scene_88",
+  "x": 5430.818824404762,
+  "y": 3189.0284598214294,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "be8d94f1-e6af-4940-8824-098cba39e8be",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "fe2b7986-15b5-4adc-89ac-cbbb773a7329"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 109
+        }
+      },
+      "id": "d3773f92-c327-47fb-9ae7-39da370a8c1f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f65+00b+0f9+00b+0f9+00b+0f9+00b+0f9+00b+0f9+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f9+004+0f8+"
+}

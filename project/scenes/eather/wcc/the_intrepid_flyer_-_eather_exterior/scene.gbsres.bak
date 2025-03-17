@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "13740fd3-3c85-4523-87d1-fc6e690f075e",
+  "_index": 49,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/the intrepid flyer - Eather exterior",
+  "symbol": "scene_50",
+  "x": 2529.561872209821,
+  "y": 1890.4570777529752,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "c21c6f48-d16f-43d7-869d-8d7eb433e03e",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "05c13590-0c93-4472-b312-761295d48a33"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 28
+        }
+      },
+      "id": "52297205-13d3-4253-a498-bac0d806f0d6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0064d+0f8+0028+0f!006+0f!00b+0f1e+006+0f!002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!00b+0f25+00fb+"
+}

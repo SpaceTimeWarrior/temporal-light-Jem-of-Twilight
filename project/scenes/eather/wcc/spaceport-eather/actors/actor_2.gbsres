@@ -1,0 +1,52 @@
+{
+  "_resourceType": "actor",
+  "id": "69172ebc-a556-48cb-a8c6-36ea4b81dd5a",
+  "_index": 1,
+  "symbol": "actor_459",
+  "prefabId": "",
+  "name": "",
+  "x": 52,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Docking bay 2>\nThe Intrepid Flyer\nrestrooms*>",
+          "Office*. \nnote don't visit\nthe office at night",
+          "the security guard\nis trigger happy\nwith tazers",
+          "they are scared\nthat a robot will\njumpscare them."
+        ],
+        "avatarId": ""
+      },
+      "id": "19bd0936-2b53-4ff2-9ef1-acff09414471"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: wasn't \ngoing to. the\nintrepid flyer",
+          "is my ship. so \ndocking bay 2 it\nis."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "e026c669-939e-4f08-9a75-a48d56f02521"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

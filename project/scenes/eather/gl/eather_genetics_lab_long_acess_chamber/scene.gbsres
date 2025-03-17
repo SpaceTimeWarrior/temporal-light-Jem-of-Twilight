@@ -1,0 +1,42 @@
+{
+  "_resourceType": "scene",
+  "id": "a26b64c9-e832-46a6-8664-82f89a5a363e",
+  "_index": 127,
+  "type": "TOPDOWN",
+  "name": "eather/gl/eather genetics lab long acess chamber",
+  "symbol": "scene_128",
+  "x": 979.5,
+  "y": 6414.93359375,
+  "width": 80,
+  "height": 60,
+  "backgroundId": "24b572ef-b073-4e92-b826-7523a63c28a5",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "4d1d016c-bd07-4528-88be-dc03888a370c",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be",
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "c4963196-0462-41ac-82e6-c7418a5657a3",
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "b77855b5-13a8-426f-b48e-9c38f5707ed6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f5e6+00a+0f46+00a+0f46+00a+0f46+00a+0f46+00a+0f46+00a+0f46+006+0f4a+006+0f4a+006+0f4a+006+0f4+00a+0f3c+006+0f4+00a+0f3c+006+0f4+00a+0f3c+006+0f4+00a+0f3c+006+0f4+00a+0f3c+006+0f4+00a+0f3c+006+0f8+006+0f3c+006+0f8+006+0f3c+006+0f8+006+0f2c+0016+0f8+006+0f2c+0016+0f8+006+0f2c+0016+0f8+006+0f2c+0016+0f8+0014+0f1e+004+0f1a+0014+0f1e+004+0f1a+0014+0f1e+004+0f1a+0014+0f1e+004+0f2a+004+0f1e+004+0f2a+004+0f1e+004+0f2a+004+0f1e+004+0f2a+004+0f1e+004+0f2a+004+0f1e+004+0f2a+004+0f1e+004+0f2a+0026+0f2a+0026+0f2a+0026+0f2a+0026+0f1f6+"
+}

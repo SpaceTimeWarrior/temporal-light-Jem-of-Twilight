@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "64c683d1-102a-429f-9c29-2e17c7c23168",
+  "_index": 4,
+  "symbol": "actor_70",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "83d95589-bdf1-439d-b1f8-f029919d3275"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nmy sink.\n"
+        ],
+        "avatarId": ""
+      },
+      "id": "7965091c-12bf-4942-b555-3aaffd1b89c9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "441fe21c-434c-4d0a-915f-1e415efaf130"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

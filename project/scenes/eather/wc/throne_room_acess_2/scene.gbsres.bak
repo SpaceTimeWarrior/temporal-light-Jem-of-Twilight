@@ -1,0 +1,51 @@
+{
+  "_resourceType": "scene",
+  "id": "ee5e262a-9294-4440-b9e4-261b49f24287",
+  "_index": 40,
+  "type": "TOPDOWN",
+  "name": "eather/wc/throne room acess 2",
+  "symbol": "scene_41",
+  "x": 72,
+  "y": 1264,
+  "width": 24,
+  "height": 48,
+  "backgroundId": "cdc33b02-bea8-4a4f-9eeb-8706f004e460",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "69e6a4d3-deb1-4d34-b24d-6eed65008550"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "2394fae4-7b2c-4c12-9084-774fc5c3a277"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "009+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!00c+0f5+006+0f5+008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f5+006+0f5+00c+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!0010+0f!006+0f!00c+0f5+006+0f5+008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f!008+0f!00e+0f4+005+0f!0017+0f!0017+0f!0017+0f!0017+0f!0017+0f!0017+0f!0017+0f13+0018+"
+}

@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "1c6f0177-a5bc-47ab-8245-47f82d9bdbd1",
+  "_index": 9,
+  "symbol": "actor_770",
+  "prefabId": "",
+  "name": "",
+  "x": 10,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "From here on the\nability to use\nmagic will be",
+          "blocked. undamaged\nblocks can be \nmoved.",
+          "(pausing,running,\nattacking are all\nmagic)"
+        ],
+        "avatarId": ""
+      },
+      "id": "87e6a787-07a8-4fae-a240-c196b76b6b86"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

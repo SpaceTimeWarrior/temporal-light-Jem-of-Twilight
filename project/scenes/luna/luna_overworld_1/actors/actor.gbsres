@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "43ad1ffd-0993-4d7e-a453-ff9149c673bc",
+  "_index": 0,
+  "symbol": "actor_451",
+  "prefabId": "",
+  "name": "",
+  "x": 64,
+  "y": 37,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem's garden<\nsea of serenity^"
+        ],
+        "avatarId": ""
+      },
+      "id": "a948950a-ceee-4b5b-8a9b-eba137439a28"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,595 @@
+{
+  "_resourceType": "trigger",
+  "id": "8dc617eb-35e0-46f3-b70e-8d8e917b6d57",
+  "_index": 2,
+  "symbol": "trigger_272",
+  "prefabId": "",
+  "name": "",
+  "x": 13,
+  "y": 16,
+  "width": 1,
+  "height": 7,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 1,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "44",
+                    "operator": ">",
+                    "comparator": "0",
+                    "__collapseElse": false,
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "44"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_FLAGS_COMPARE",
+                        "args": {
+                          "variable": "37",
+                          "flag": 0,
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GROUP",
+                              "args": {
+                                "__collapse": false,
+                                "__label": "music event group"
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "66",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 6
+                                      }
+                                    },
+                                    "id": "96b02899-ca26-413c-874f-2078b9a6366b"
+                                  },
+                                  {
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                    "args": {
+                                      "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+                                      "$variable[V0]$": {
+                                        "type": "variable",
+                                        "value": "66"
+                                      }
+                                    },
+                                    "id": "19d8afd9-bd17-4368-ba09-a461fa803e72"
+                                  }
+                                ]
+                              },
+                              "id": "c7b5bd35-556d-466d-a33b-ab6d6123e7ed"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_ACTIVATE",
+                              "args": {
+                                "actorId": "0a3fbf26-d71c-4c24-9082-a4485a39a625"
+                              },
+                              "id": "cab79990-43e1-44f1-805a-34b26846b839"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_ACTIVATE",
+                              "args": {
+                                "actorId": "f5756359-4122-459e-b470-085644376455"
+                              },
+                              "id": "ac1a5886-f13f-4673-9d14-e5af547d1c92"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_ACTIVATE",
+                              "args": {
+                                "actorId": "eb47595b-db7e-4dca-8b2f-2100c2f0a8ef"
+                              },
+                              "id": "01bba80d-794d-4cac-812a-acaa7e9d096d"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "There is a male \nphoenix up ahead"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "01b43c93-a8a4-47fc-8f6a-b4b0dc212735"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "45",
+                                "value": {
+                                  "type": "number",
+                                  "value": 0
+                                }
+                              },
+                              "id": "c6f9022b-1d27-4f53-aea0-38a9c302b65c"
+                            },
+                            {
+                              "command": "EVENT_CHOICE",
+                              "args": {
+                                "variable": "L0",
+                                "trueText": "confront him",
+                                "falseText": "talk to him"
+                              },
+                              "id": "2f11a389-d721-4ae1-a650-3b09f6c9b5cc"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "L0",
+                                "__collapseElse": false,
+                                "__collapse": false,
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "false"
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: Who are you\nyou are not a \nLightbringer"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "72bae696-7d9c-4dbb-b066-16b2267c4de5"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "you are under\na petrification\nspell so you",
+                                        "can't move other\nthan talk"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "bd4fde5b-a1d4-4561-a476-2287e7fd6c88"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "???:I am Cedric\nBurnfeather. The\n6th solar",
+                                        "council member.I\nam cleared to\ncome here",
+                                        "so who are you?"
+                                      ],
+                                      "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                                    },
+                                    "id": "cf8b7111-a3eb-4241-af12-1e8dd426122b"
+                                  },
+                                  {
+                                    "command": "EVENT_MENU",
+                                    "args": {
+                                      "variable": "L0",
+                                      "items": 3,
+                                      "option1": "confront",
+                                      "option2": "use real name",
+                                      "option3": "use fake name",
+                                      "option4": "",
+                                      "option5": "",
+                                      "option6": "",
+                                      "option7": "",
+                                      "option8": "",
+                                      "cancelOnB": false,
+                                      "layout": "dialogue"
+                                    },
+                                    "id": "00e35ab7-6f86-4a92-92b8-63a6964b611d"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "variable": "L0",
+                                      "operator": "==",
+                                      "comparator": 1,
+                                      "__collapseElse": false,
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "L0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 1
+                                        }
+                                      }
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_ACTOR_EMOTE",
+                                          "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                                          },
+                                          "id": "d10dc922-13cb-49c2-89bd-f6e840bfc47d"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Jem:So you are \nthe corrupt\ncouncil member",
+                                              "I will kill you \nnow"
+                                            ],
+                                            "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                          },
+                                          "id": "2a34b94e-a210-4e77-a3f6-fccfa6a53d20"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "your anger broke \nthe spell holding\nyou in place",
+                                              "and jem changed\nelement of her\nmagic to water"
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "2ab0d147-250d-4f52-b748-9d3fde45234b"
+                                        },
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "45",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 1
+                                            }
+                                          },
+                                          "id": "8fb1c37e-6d4d-4cdd-9b29-e9e8415c2852"
+                                        },
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "44",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 1
+                                            }
+                                          },
+                                          "id": "b7e8c269-7aa7-4c2d-a18f-56cac2ca565f"
+                                        },
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "41",
+                                            "value": {
+                                              "type": "true"
+                                            }
+                                          },
+                                          "id": "3e60643d-7d04-4468-b77d-d3901a968af3"
+                                        },
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "34",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 32
+                                            }
+                                          },
+                                          "id": "75a252cf-ca49-44ee-ae85-a6c3df40d6b3"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_IF",
+                                          "args": {
+                                            "variable": "L0",
+                                            "operator": "==",
+                                            "comparator": 2,
+                                            "__collapseElse": false,
+                                            "condition": {
+                                              "type": "eq",
+                                              "valueA": {
+                                                "type": "variable",
+                                                "value": "L0"
+                                              },
+                                              "valueB": {
+                                                "type": "number",
+                                                "value": 2
+                                              }
+                                            }
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Jem: I am Jem \nWolfsbane and I\nwant a council",
+                                                    "with the king\nof earth."
+                                                  ],
+                                                  "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                                },
+                                                "id": "42bb9b8f-a824-4465-b846-1d2781c97304"
+                                              },
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Cedric: what is\nthe purpose can\nI do the task",
+                                                    "needed"
+                                                  ],
+                                                  "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                                                },
+                                                "id": "9deed2e4-bb50-4f78-943c-16df323cd936"
+                                              },
+                                              {
+                                                "command": "EVENT_MENU",
+                                                "args": {
+                                                  "variable": "L0",
+                                                  "items": 3,
+                                                  "option1": "love with flare",
+                                                  "option2": "love with you",
+                                                  "option3": "assasination",
+                                                  "option4": "",
+                                                  "option5": "",
+                                                  "option6": "",
+                                                  "option7": "",
+                                                  "option8": "",
+                                                  "cancelOnB": true,
+                                                  "layout": "dialogue",
+                                                  "cancelOnLastOption": true
+                                                },
+                                                "id": "4dd30159-9308-44ad-b2fb-d838bc5368b1"
+                                              },
+                                              {
+                                                "command": "EVENT_IF",
+                                                "args": {
+                                                  "variable": "L0",
+                                                  "operator": "==",
+                                                  "comparator": "0",
+                                                  "__collapseElse": false,
+                                                  "condition": {
+                                                    "type": "eq",
+                                                    "valueA": {
+                                                      "type": "variable",
+                                                      "value": "L0"
+                                                    },
+                                                    "valueB": {
+                                                      "type": "number",
+                                                      "value": 0
+                                                    }
+                                                  }
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_ACTOR_EMOTE",
+                                                      "args": {
+                                                        "actorId": "6f200228-43d5-44f0-ada5-df77f097be48",
+                                                        "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                                                      },
+                                                      "id": "e9c44c24-0fad-42b9-a962-191bedb2ba0c"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": [
+                                                          "Cedric: I acnnot\nallow you to\nexecute the king"
+                                                        ],
+                                                        "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                                                      },
+                                                      "id": "6153ea81-7904-4075-a353-bee6dd3864b0"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "44",
+                                                        "value": {
+                                                          "type": "number",
+                                                          "value": 1
+                                                        }
+                                                      },
+                                                      "id": "17204ff3-d2ae-4640-b158-fc43536245b3"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "34",
+                                                        "value": {
+                                                          "type": "number",
+                                                          "value": 45
+                                                        }
+                                                      },
+                                                      "id": "1a9d4b55-bdec-419b-b10e-6e269a4e8f24"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "41",
+                                                        "value": {
+                                                          "type": "true"
+                                                        }
+                                                      },
+                                                      "id": "fd3c2bde-af47-4c70-813b-b994638f38f5"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_SET_VALUE",
+                                                      "args": {
+                                                        "variable": "45",
+                                                        "value": {
+                                                          "type": "variable",
+                                                          "value": "L0"
+                                                        }
+                                                      },
+                                                      "id": "b3c320e8-2724-43ec-b41d-45db21498025"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": [
+                                                          "???:Stop Cedric \nleave the castle.\nJem enter the",
+                                                          "throne room"
+                                                        ],
+                                                        "avatarId": ""
+                                                      },
+                                                      "id": "635b8dc5-2942-41fb-a604-53d88bcb1ca0"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_ADD_FLAGS",
+                                                      "args": {
+                                                        "variable": "37",
+                                                        "flag1": false,
+                                                        "flag2": true,
+                                                        "flag3": false,
+                                                        "flag4": false,
+                                                        "flag5": false,
+                                                        "flag6": false,
+                                                        "flag7": false,
+                                                        "flag8": false,
+                                                        "flag9": false,
+                                                        "flag10": false,
+                                                        "flag11": false,
+                                                        "flag12": false,
+                                                        "flag13": false,
+                                                        "flag14": false,
+                                                        "flag15": false,
+                                                        "flag16": false
+                                                      },
+                                                      "id": "8dd96dc4-8bf1-4571-91df-779f7e5c76d3"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "fbebf564-719e-46e9-b32b-528cb06b59ef"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Jem:I am Kitty\nClawface. and I\nwant a council",
+                                                    "with the king\nof earth."
+                                                  ],
+                                                  "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                                },
+                                                "id": "87ceb986-45b3-480f-aa37-89a65ddc4584"
+                                              },
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Cedric:I can\ntell that is a\nfake name and I",
+                                                    "don't respect\nfake names so I\nwill execute you"
+                                                  ],
+                                                  "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                                                },
+                                                "id": "4934cd9e-12e6-4f42-9737-67b7bf93338e"
+                                              },
+                                              {
+                                                "command": "EVENT_SWITCH_SCENE",
+                                                "args": {
+                                                  "sceneId": "7afa113c-50ed-486b-b87d-1f16151d199c",
+                                                  "x": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "y": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "direction": "",
+                                                  "fadeSpeed": "2"
+                                                },
+                                                "id": "0bc67592-97f6-4486-b7fc-f12a88de9c12"
+                                              }
+                                            ]
+                                          },
+                                          "id": "a20d6d6e-69d6-41a9-b2cb-14e34a3e6dab"
+                                        }
+                                      ]
+                                    },
+                                    "id": "84c9b824-250a-4146-9d45-b36be68463ed"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "44",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 1
+                                      }
+                                    },
+                                    "id": "9624498b-4f7c-413a-b2d8-009d7d0d1b8f"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "41",
+                                      "value": {
+                                        "type": "true"
+                                      }
+                                    },
+                                    "id": "8281bbc5-e485-4fba-98ce-8db6f5c9a803"
+                                  }
+                                ]
+                              },
+                              "id": "ef7497dc-e7be-4cc7-8a6d-f7e408ce06c3"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "99ee0d30-2ac5-4c22-844a-672b069fb86a"
+                      }
+                    ]
+                  },
+                  "id": "4917b771-2493-4dc0-a636-8a45a805493b"
+                }
+              ]
+            },
+            "id": "c7ebf5ee-4cab-4715-91a1-8711822a0775"
+          }
+        ]
+      },
+      "id": "b70a4724-2451-4f01-acd2-e55322d8575c"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "45037305-b510-4ab7-8ac4-6107f83199b4",
+  "_index": 4,
+  "symbol": "actor_177",
+  "prefabId": "",
+  "name": "",
+  "x": 54,
+  "y": 37,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "c6583375-41ac-4b0b-adc0-b0d80b49db40"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Rug store >"
+        ],
+        "avatarId": ""
+      },
+      "id": "2ea14f89-dbdd-4630-949a-bd2a49a8dc0f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "14",
+        "operator": "!=",
+        "comparator": 1,
+        "__collapseElse": true,
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: hopefully \nthe floors can\nbe covered up",
+                "with these"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "738dfcec-0031-4a6a-ab03-4c3a8ca41aca"
+          }
+        ],
+        "false": []
+      },
+      "id": "c76f5c22-8b83-4833-b45d-294c7da131e7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "c51d59de-94fc-4301-b9cf-778bc07627b2"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,204 @@
+{
+  "_resourceType": "scene",
+  "id": "d7e65734-f476-4ec7-8dcb-1da3fbcee4bd",
+  "_index": 103,
+  "type": "TOPDOWN",
+  "name": "cut/ending 4",
+  "symbol": "scene_104",
+  "x": 2609.035386029412,
+  "y": 1340.047104779412,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem turned herself\nand confessed for\nher crimes. She got",
+          "a lighter sentence\nbut she felt it\nwasn't long enough",
+          "10 years later",
+          "She was forcibly\nescorted out of \nthe prison. She",
+          "did her time and \nintentionally\nharassed a guard",
+          "to extend her \nsentence.\nUltimately Ember's",
+          "child Peryil was\nthe one to get\nJem released.",
+          "no one understood\nwhy she did that.\neven Jem at first."
+        ],
+        "avatarId": ""
+      },
+      "id": "8f6c2400-fa4f-400a-9e03-192fc8b6d046"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: Why did you\nlet me go free.\nyou do know what",
+          "I have done \nright?"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "9eae872e-aca9-4f7b-ac2c-e8adf74350d5"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "277cb477-cfe7-4191-9a18-139c3aa9c3bb"
+      },
+      "id": "455f4853-742a-44a0-b76f-0cb5ec2a2887"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Peryil: I\ncompletely\nunderstand what",
+          "you have done\nbut you have\npaid the price",
+          "I want someone\nwho knows how\nto use my",
+          "parent's magic.\nand how they \nwhere like."
+        ],
+        "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+      },
+      "id": "ecf465b1-281e-41bf-b27a-d382408fea76"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "43e505e4-76db-413e-b123-a97e516d22e8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: fine but \nfirst take these\n they will help",
+          "you more than\nthey did to me."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "9a721942-3a50-4f47-bf51-14fb57eba6c1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem then hands \nover both Cedric's\nand Ember's",
+          "soul feathers."
+        ],
+        "avatarId": ""
+      },
+      "id": "5bc4a8db-660d-4dcb-a86f-735325ae502f"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "277cb477-cfe7-4191-9a18-139c3aa9c3bb"
+      },
+      "id": "6e3b0ea8-a285-4775-b884-b6bf62e88e5f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Peryil: that \nwould help a lot.\nall phoenixes ",
+          "can communicate \nwith the feather\nI understand",
+          "that isn't a \ncommon with most\nmonsters."
+        ],
+        "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+      },
+      "id": "c3ca753f-1d9d-40b9-a4a6-5f0ae7e21499"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "ce2ffbf3-32fc-4ae5-9d4d-21e39c2907aa"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: or humans. I\nactually dated \none before they",
+          "went extinct."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "08bd2bca-e149-43fb-b608-d5829377f2c4"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "277cb477-cfe7-4191-9a18-139c3aa9c3bb"
+      },
+      "id": "1b31a5cd-2b6c-49ab-b1dc-a0bb1aff8036"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Peryil:wow that\nis interesting."
+        ],
+        "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+      },
+      "id": "9d4a1072-e299-4c46-92dd-66c30756f510"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "a9419890-9adf-4f8b-9186-285cbdd12553"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:sadly that \nis also why your\nfather is dead",
+          "he picked a \nfight with me\nand I killed him",
+          "in self defence.\nwhen I was \ngetting",
+          "preperations to \nmarry the human."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "1e6a8d3c-b2f1-4a7d-8720-9daa9dd73480"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "and so the two \nwent their \nsepreate ways.",
+          "many thorise that\njem is secretly\nwatching peryil.",
+          "but it could just\nbe a coincidence.\n;)",
+          "The End."
+        ],
+        "avatarId": ""
+      },
+      "id": "ff8d1f06-c606-49eb-9c6c-03a18b8f9244"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "515732c3-4b5d-4366-9dc4-b308c4328af7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

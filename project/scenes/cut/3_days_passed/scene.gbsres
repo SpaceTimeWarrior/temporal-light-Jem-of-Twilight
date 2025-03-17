@@ -1,0 +1,80 @@
+{
+  "_resourceType": "scene",
+  "id": "92366026-b176-46eb-a871-0c8e7f2f39ff",
+  "_index": 80,
+  "type": "TOPDOWN",
+  "name": "cut/3 days passed",
+  "symbol": "scene_81",
+  "x": 2943.408514968487,
+  "y": 1902.010028230042,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c454e7-556c-412a-be69-68ae4fe7db55",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0fea8d4e-6a18-4d1e-bb90-35bb6bb31b50"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "e1271351-12c7-46c0-a6cc-37d270b41f0b"
+      },
+      "id": "91217eb5-6765-4157-8a08-d9c223b1cfaf"
+    },
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "none",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "670abcd1-0846-4b26-a261-70988ab988e5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem made it back\nhome and her \nfather constantly",
+          "asked questions...\nthe only question\nshe did answer was",
+          "that she had found\nsomeone.",
+          "Flare did upgrade\nthe ship and \nreturned it 3 days",
+          "after Jem returned\nhome. Jem then \nstarted researching",
+          "who Flare was...\n\n"
+        ],
+        "avatarId": ""
+      },
+      "id": "09ad6af9-4e18-4a73-b4a0-81cff6a49f57"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "b8044b62-8a5c-4c0b-8a7d-d7c64d204e79",
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 23
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "b2316bb7-6d54-4704-b50a-665bd9914739"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

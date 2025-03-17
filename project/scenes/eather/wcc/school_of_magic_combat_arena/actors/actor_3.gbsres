@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "4d73908f-6dd8-4917-941a-73a8438d3467",
+  "_index": 4,
+  "symbol": "actor_501",
+  "prefabId": "",
+  "name": "",
+  "x": 19,
+  "y": 23,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: This has a \nshrinking field \nwhen active",
+          "thankfully it is\nnot. I hate\nbeing shrunk to",
+          "1 foot tall"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "e7ecbdb3-7cae-4d53-af07-20bbcc19664f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

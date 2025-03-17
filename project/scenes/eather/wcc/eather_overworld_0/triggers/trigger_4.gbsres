@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "c3834337-fe2b-4cb7-9752-9808ca5695c0",
+  "_index": 3,
+  "symbol": "trigger_60",
+  "prefabId": "",
+  "name": "",
+  "x": 59,
+  "y": 7,
+  "width": 1,
+  "height": 10,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f22f543d-9009-4d5b-a6fa-44d7310dc2ec",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "31885aed-93e7-4a77-9b10-b907a4c9b1df"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I got to\nget to school."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "79e97ea5-23ff-4248-93e2-e10a96f0dba6"
+          }
+        ]
+      },
+      "id": "e9615fb6-bcbf-47c5-9f02-6086a4fdfc4c"
+    }
+  ],
+  "leaveScript": []
+}

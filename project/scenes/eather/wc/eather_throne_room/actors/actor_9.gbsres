@@ -1,0 +1,88 @@
+{
+  "_resourceType": "actor",
+  "id": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+  "_index": 11,
+  "symbol": "actor_439",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9ced86d5-36df-40dd-a65b-998a829e8b32",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+      },
+      "id": "9fd5bc5f-a69b-408e-bc32-0b3f399939c8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare: I will \nkeep them busy\nuntil you finish"
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "ba80c3b0-8e92-450c-b90a-0f39f06b7182"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "c6a9b535-b911-4a6f-9356-2280acc4fa8e"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 15,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 12,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "7d4e2ba5-a917-4244-8252-155c533f9856"
+                }
+              ]
+            },
+            "id": "fe3d9c0f-5525-4709-aa9f-9c5c06226c8e"
+          }
+        ]
+      },
+      "id": "57b41e1c-6ac5-4dfb-9fcb-2730e5a58418"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "dfe755de-acff-4664-9f48-d6b9d15114a7",
+  "_index": 0,
+  "symbol": "actor_229",
+  "prefabId": "",
+  "name": "",
+  "x": 4,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "4da790d0-ac4f-47da-8a50-59e4285d2ad2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Step on the\npedistal in the \ncenter to unlock"
+        ],
+        "avatarId": ""
+      },
+      "id": "f4cd89ca-ff52-49dd-9198-c8422e628646"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "64d67c62-6ceb-4b0c-85e4-45ab4d79e8e9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

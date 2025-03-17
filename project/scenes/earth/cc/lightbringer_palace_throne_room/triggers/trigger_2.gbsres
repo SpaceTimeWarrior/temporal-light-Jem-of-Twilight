@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "1ec5e333-b97b-49c0-8018-2aecec1804e7",
+  "_index": 1,
+  "symbol": "trigger_267",
+  "prefabId": "",
+  "name": "",
+  "x": 20,
+  "y": 7,
+  "width": 5,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: A throne...\nis this what was\nFlare's..."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "f819fc0c-c523-4d9e-b652-6ffb22515c8d"
+    }
+  ],
+  "leaveScript": []
+}

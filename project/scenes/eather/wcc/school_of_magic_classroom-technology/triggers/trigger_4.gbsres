@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "0e1f3b4a-3847-449f-942f-f72cf694c981",
+  "_index": 3,
+  "symbol": "trigger_153",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 11,
+  "width": 12,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A classrooom set\nof books on \nrobotics"
+        ],
+        "avatarId": ""
+      },
+      "id": "764797f8-3f05-4b7c-b131-e1c5a22b0cb7"
+    }
+  ],
+  "leaveScript": []
+}

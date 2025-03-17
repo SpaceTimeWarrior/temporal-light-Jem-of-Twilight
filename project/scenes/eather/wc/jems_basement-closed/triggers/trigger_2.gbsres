@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "36681a0f-7b42-49ee-9682-1e1a36347937",
+  "_index": 1,
+  "symbol": "trigger_17",
+  "prefabId": "",
+  "name": "",
+  "x": 19,
+  "y": 24,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nIts a shower. \nmaybe later I ",
+          "will use it but\nnot now"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "b073b8b3-2ac2-4908-b642-812d50a08b9a"
+    }
+  ],
+  "leaveScript": []
+}

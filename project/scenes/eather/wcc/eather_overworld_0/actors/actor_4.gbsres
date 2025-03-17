@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "80f26cf6-6ff2-4910-a683-711601202c2a",
+  "_index": 5,
+  "symbol": "actor_178",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 53,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "8c7b8d0f-46e3-4b33-bab9-b8606b133c9f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Magic school ^\nWolfsbane Palace <\nSpaceport *"
+        ],
+        "avatarId": ""
+      },
+      "id": "41db92c7-75d5-483f-9ef9-18a2d4f34fe5"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "86bd6999-733f-4dc6-b3e0-ada501a93c31"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

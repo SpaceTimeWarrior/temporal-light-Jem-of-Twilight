@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "fa1f5f4a-2cc3-4778-a667-4aaf6fc73a90",
+  "_index": 4,
+  "symbol": "actor_511",
+  "prefabId": "",
+  "name": "",
+  "x": 22,
+  "y": 22,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Palace enterance >\nCommunications *\nBathrooms <",
+          "Throne Room ^"
+        ],
+        "avatarId": ""
+      },
+      "id": "ef910898-6a63-40fb-9f00-82b515811c33"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

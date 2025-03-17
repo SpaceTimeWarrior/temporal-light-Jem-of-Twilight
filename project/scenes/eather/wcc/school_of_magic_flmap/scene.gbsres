@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "82a3feb4-cb7a-4d96-816a-3149d352f805",
+  "_index": 137,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/school of magic flmap",
+  "symbol": "scene_141",
+  "x": 1062.5333658854165,
+  "y": 203.59999593098954,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "28d02008-8cc0-4de1-abd3-853c2f034cbb",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start",
+                "left",
+                "up",
+                "down",
+                "select",
+                "a"
+              ]
+            },
+            "id": "c2e4ef09-5ccf-433f-b6e5-ddbb7acf8387"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "d2388eeb-7e45-4309-a300-5640f98cd425"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "643393ac-09f3-4b65-8968-b1d1041d2c08"
+          }
+        ]
+      },
+      "id": "5a26626b-2504-4ba9-b8ac-1e21a15df3b5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

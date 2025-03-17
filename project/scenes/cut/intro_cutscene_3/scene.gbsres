@@ -1,0 +1,63 @@
+{
+  "_resourceType": "scene",
+  "id": "963a2193-e60d-4208-aeea-4273149a35ce",
+  "_index": 45,
+  "type": "TOPDOWN",
+  "name": "cut/intro cutscene 3",
+  "symbol": "scene_46",
+  "x": 3232,
+  "y": 984,
+  "width": 58,
+  "height": 84,
+  "backgroundId": "7130de00-cba2-49db-b7ea-c32de5aa3be7",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false,
+        "__comment": true
+      },
+      "id": "2f0aa28b-4fb1-49f3-b401-c87185a91aeb"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 21
+        },
+        "y": {
+          "type": "number",
+          "value": 65
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "de0638a6-62ce-4424-b91d-bf054f92c356"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001308+"
+}

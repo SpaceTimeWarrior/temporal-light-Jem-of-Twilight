@@ -1,0 +1,122 @@
+{
+  "_resourceType": "scene",
+  "id": "9bf502f3-9832-48d7-972a-7fa00dc63ae6",
+  "_index": 16,
+  "type": "TOPDOWN",
+  "name": "menu/jem page 2",
+  "symbol": "scene_17",
+  "x": 1219.9326068040602,
+  "y": 30,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "067032c0-9a01-4b53-9a50-3c70cea4bcd2",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "578c97cb-4aa8-4778-8d35-0b8e31345387"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start"
+              ]
+            },
+            "id": "f44c936a-a985-4edb-ba84-1551824343bf"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ba6f39ca-bc6d-4931-bc14-70aee3d202fa"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "634ca508-a02d-4d8e-8ae3-c019f0032892"
+          }
+        ]
+      },
+      "id": "ca9fa05d-a565-42a6-9473-5c69e8e4d51d"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "right",
+                "b",
+                "start"
+              ]
+            },
+            "id": "7cbca871-9c2b-427a-a689-706352f59de5"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "68aee827-d15c-4110-9994-bed9843563f2",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "8617e2f2-12bb-4d7b-835e-fb1e6460057a"
+          }
+        ]
+      },
+      "id": "da5bb679-a670-45f5-8041-c8cc0c8734a2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

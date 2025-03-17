@@ -1,0 +1,71 @@
+{
+  "_resourceType": "actor",
+  "id": "6a2b5dc0-9160-4274-b5d2-6f4e5fb91c04",
+  "_index": 9,
+  "symbol": "actor_437",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "c9a21619-c6e0-4e79-b5d8-44f21d986a2a",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "99b62dd5-a77f-4646-bf46-b13d14103b9e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet: you \nheard what I\nsaid do your",
+          "task or\n(he takes a \nfinger across",
+          "his throat)\nsince you may of\nforgotten.",
+          "the task is to \nbeat the boss in\na simulator in ",
+          "your room"
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "0625633f-07db-4c27-9d0b-dc661df7dd95"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 12,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1456c3d5-069c-41c1-b700-a1d9262e7ec7"
+          }
+        ]
+      },
+      "id": "5e3dff21-1762-4093-a990-69f70f0be707"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

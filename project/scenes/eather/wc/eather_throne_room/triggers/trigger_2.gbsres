@@ -1,0 +1,1632 @@
+{
+  "_resourceType": "trigger",
+  "id": "94da7946-64bd-4dcd-8e5a-0a2b53e5a988",
+  "_index": 1,
+  "symbol": "trigger_229",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 24,
+  "width": 14,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "30",
+        "operator": ">=",
+        "comparator": 2,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "30"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        }
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 15,
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "46349309-4f40-4445-bac9-e883c5e40d5d",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "b8edf427-821e-42e5-8f2e-5bd6a935c7e1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "23",
+                    "flag": 14,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_MUSIC_PLAY",
+                        "args": {
+                          "musicId": "31a64200-061c-44e8-b062-ddedb7c76a95"
+                        },
+                        "id": "5a38f6c5-9561-42fb-b8b5-1caac14ebda8"
+                      },
+                      {
+                        "command": "EVENT_IF_FLAGS_COMPARE",
+                        "args": {
+                          "variable": "23",
+                          "flag": 13,
+                          "__collapseElse": false,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                  "type": "number",
+                                  "value": 14
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 17
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "4bf552a8-24d3-4a17-a3cf-49792a3ce9e0"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_MOVE_TO",
+                              "args": {
+                                "x": {
+                                  "type": "number",
+                                  "value": 3
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 3
+                                },
+                                "speed": 0
+                              },
+                              "id": "9e99327a-4cb8-4111-ac81-c27b06dd04f5"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "58bf9fea-428e-48fa-998e-b4d4f79fa0f9"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Jem:done\nIf that is what\nis used to train",
+                                  "our fighter \npilots... we may\nhave a problem",
+                                  "as someone who is\nbad at piloting\nwas able to pass",
+                                  "the test."
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "1fa90669-d4f3-47d5-a871-bc3242ab5f4b"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_EMOTE",
+                              "args": {
+                                "actorId": "6a2b5dc0-9160-4274-b5d2-6f4e5fb91c04",
+                                "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                              },
+                              "id": "e28dd1ed-9751-4029-a504-19661c8f6748"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "38",
+                                "operator": ">",
+                                "comparator": 99,
+                                "__collapseElse": false,
+                                "condition": {
+                                  "type": "gt",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "38"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 99
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "1aaa7825-5443-46a6-82b8-c15070fe0838"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: no you\ncouldn't of...\n$38$ points",
+                                        "... ... ... ...\n... ... ... ...\nyou must of ",
+                                        "cheated."
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "62115abc-3f45-4d65-9cd1-915afdddb671"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "b807c7e3-2a0d-416d-a0f1-7aa8c6513a49"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: you can\nfeel free to look\nat the code but",
+                                        "I don't think\nthere is a way\nto cheat"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "203cf453-6b9f-4fdf-9643-209b54b88fff"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "09700b11-46f9-4e9b-92b9-d11f982f83f8"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet:I guess I\nwill look for a\nbetter simulator"
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "532c36b2-462d-49dd-9fa4-f75caac6d4f3"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "1d02004e-08f7-4c03-890f-824648c95c59"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: no you\ncouldn't of...\n$38$ points",
+                                        "GaH I don't know\nhow you did it."
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "e1f985a1-6772-4d58-b238-440bf722be03"
+                                  }
+                                ]
+                              },
+                              "id": "9dbf2f40-7ff1-4484-8715-f31fecdcfbf0"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "8f5671f8-6e1c-414c-8bfa-af40303be659"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare: I wouldn't\nmind making it. I\ndon't think you",
+                                  "know but Luna \nhas the best\nSpace Navy."
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "1b4fdfb3-383b-4c10-877b-af01e1e64045"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "97b73793-024a-4fd2-98f9-8fc14195a16f"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet:funny you\nshould mentsion\nthat as I don't",
+                                  "think your world\nhas any ships. \nregistered for it"
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "8513023f-b596-4d2d-abd1-2d4baab1c9f8"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "b6dca2fc-f368-4e19-aaea-ea981e8bfdef"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare:that is\nbecause they are\nall registered ",
+                                  "as Earth ships.I\nplan on changing\nthat but so you",
+                                  "know about 85%\nof Earth's ships\nare owned by ",
+                                  "Luna.All have \nhyperion\ncannons and if",
+                                  "either of us dies\nI have a \nfailsafe to have",
+                                  "them all fire on\nEather destroying\nit instantly"
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "2032c3f1-a002-43fa-807d-84f59875abec"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "38fe6c42-1486-42dd-a2c4-949a007c85b5"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet: You are \nbluffing..."
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "3468b1f1-7d1d-46b7-87ad-5d1111afe5e2"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                              },
+                              "id": "c66384a6-a810-45e0-83cb-57ca23c24cd3"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Bright through \ninercom overhead:we\nhave your planet",
+                                  "sorounded let \nFlare and jem \nleave unharmed in ",
+                                  "10 minutes or the \nwhole fleet will\nfire hyperion",
+                                  "beams at your \nplanet"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "112b1123-c344-40d1-9d98-6ae31f88ba94"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "a2f44dad-ddd3-45ac-aef4-e94071f476d5"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet:both of \nyou are crazy.\nyou ..."
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "8f361499-20dd-42d4-89e7-96c6984ba628"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "c62bec13-97d2-4b33-84be-c701670cfeaf"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare: you should\nblame your solar\ncouncil member,",
+                                  "cedric \nburnfeather. he \nkilled the fox ",
+                                  "blamed me for it\nI am only as \ncrazy as he made",
+                                  "me be."
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "4a7dc364-8ef8-4055-9594-4c3ebd902248"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_DIRECTION",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "direction": {
+                                  "type": "direction",
+                                  "value": "right"
+                                }
+                              },
+                              "id": "132c670f-87b5-40ef-a00a-5f80962d7f3c"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare: which is\nwhy I ask. Jem\nwill you mary me?"
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "769fad9a-725b-4a0f-a0ae-f30d24c0283f"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "b98c73ab-bfa1-477f-958d-c0f52886559c"
+                            },
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 2,
+                                "option1": "yes",
+                                "option2": "Do I have a choice",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "cancelOnLastOption": true
+                              },
+                              "id": "9d124691-9df0-47f5-a0f3-6e23e09ffe80"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": "0",
+                                "__collapseElse": false,
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "7c9051c5-d831-49e4-b81b-2867a042400b"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: no you \ndon't ... as much\nas I hate his ",
+                                        "guts I am forcing \nyout to accept."
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "bc02fdd3-3c1f-4399-9a36-8973b94cc2ca"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "05efdfd4-160e-4cf3-843b-4dd2de3e06ef"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem's thaughts:\nalthough I don't\nknow about",
+                                        "marage yet he is\npreaty good....\nmaybe bright was",
+                                        "right after all"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "578c5ee2-93f1-415f-9bb3-9141947b605b"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "7ece85fa-f959-479c-af21-7acefc763f05"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: I don't\nlike him but you\nhave my blessing"
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "489a8e67-036e-400d-a5cb-adf8d441d60c"
+                                  }
+                                ]
+                              },
+                              "id": "663f7216-8ffe-4de1-aba1-b3e6ca4ad13c"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "e05510b3-3381-462d-9397-77c597a33be8"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare:I plan on\nit taking place\non luna as both",
+                                  "of are safest \nthere"
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "13f071a0-6972-4db5-b726-9d5ec7b27dd3"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare:lets go"
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "4ab1ad46-f088-483c-b63e-6a7ed90f346c"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "x": {
+                                  "type": "number",
+                                  "value": 12
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 52
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": true
+                              },
+                              "id": "93eddf44-ede0-4d99-ab23-62fb799047bb"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "9fcd68e1-88a2-46da-b3c7-132989305722"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Jem: goodbye"
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "77456776-888f-4697-bddf-e7cd99344dd4"
+                            },
+                            {
+                              "command": "EVENT_ADD_FLAGS",
+                              "args": {
+                                "variable": "23",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": false,
+                                "flag16": true
+                              },
+                              "id": "d86c7c01-e42e-48a9-a852-bb94ec7d7990"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Note From here \nuntil the marage\nis complete",
+                                  "entering the \nthrone room again\nwill cancel the",
+                                  "marrage"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "cac79eca-04d8-4afd-a5db-30f66f116153"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_LOCK",
+                              "args": {
+                                "speed": 1,
+                                "axis": [
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              "id": "7111a53e-ca29-4e55-a37c-9b3ae7b686f2"
+                            },
+                            {
+                              "command": "EVENT_WAIT",
+                              "args": {
+                                "time": 0.1,
+                                "frames": 30
+                              },
+                              "id": "d78c7afa-9bf7-4cd8-84ef-1b599eba8611"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_LOCK",
+                              "args": {
+                                "speed": 0,
+                                "axis": [
+                                  "x",
+                                  "y"
+                                ]
+                              },
+                              "id": "f04544cb-eb78-4885-94f5-37cee02616d3"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                  "type": "number",
+                                  "value": 14
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 52
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "c67939eb-886e-4bb6-86c2-d753641a7df6"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "74de436f-05ae-4dc1-b08b-6bf2f9a301d9"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_FLAGS_COMPARE",
+                        "args": {
+                          "variable": "23",
+                          "flag": 12,
+                          "__collapseElse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "$self$",
+                                "x": {
+                                  "type": "number",
+                                  "value": 14
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 17
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "ba3332e8-9944-4bbd-96f0-1981fc05a868"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "c472dc2b-9439-4604-af77-52614acf8aa7"
+                              },
+                              "id": "d9b4f917-0abf-4ab2-b6eb-efbb3f699959"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "38ecd969-c2db-4ec1-864e-4365a5f32637"
+                              },
+                              "id": "e3b7b75e-599a-4919-a55a-91c00dad364f"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "baf018a6-26ca-4077-b824-8530c9999e12"
+                              },
+                              "id": "2a72c4e6-9a01-416e-a047-e962a634b241"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_DEACTIVATE",
+                              "args": {
+                                "actorId": "46e1b4c4-1349-40a3-914e-f92212fde1f4"
+                              },
+                              "id": "93bdf43b-83f3-4977-9910-38a17121c054"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_MOVE_TO",
+                              "args": {
+                                "x": {
+                                  "type": "number",
+                                  "value": 4
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 4
+                                },
+                                "speed": 1
+                              },
+                              "id": "a4a069b7-998d-41cb-8e2e-cc5e9804fbd8"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "bd49ddf3-4f49-43dc-8999-f389752e94df"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet: now that\neveryone is here\nI will start",
+                                  "this I have come\nto an agreement\nwith perilite I",
+                                  "will let both of\nyou live if you\npass a set of",
+                                  "trials the first\nis..."
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "39bf144a-e740-48b4-98bc-12ccc4023f15"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "dmg"
+                              },
+                              "id": "173ad874-9a78-4a02-be4f-2625a37595fb"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "perilite: Flare \nallow me to take\na few strands of",
+                                  "your hair. this\nis to test \nbiological",
+                                  "compatability.\nbetween you and\nJem."
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "c71db19b-893b-4898-9956-030cd1b81752"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "x": {
+                                  "type": "number",
+                                  "value": 6
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 9
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "5a558a66-0b73-4955-8145-a57476c1d93d"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_DIRECTION",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "direction": {
+                                  "type": "direction",
+                                  "value": "up"
+                                }
+                              },
+                              "id": "faf68399-52a1-4f25-927d-94fe3d70ba37"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "7b733eae-33b0-473f-8360-a94935665314"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare: take \nwichever ones \nyou want...I",
+                                  "understand \nkilling me but \nwhy her."
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+                                "__collapse": false
+                              },
+                              "id": "ddd90b15-07ae-48e6-ba02-610ed4f1205c"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "76b01ad7-b547-4c35-a6b1-804735d0a66e"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet: this is\nto test her and\n... if her love",
+                                  "is not up to \nsnuff I still\nhave another",
+                                  "daughter to take\nthe throne."
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "650a0d13-8e43-4d46-84da-1bd481a0dd7a"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_EMOTE",
+                              "args": {
+                                "actorId": "$self$",
+                                "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                              },
+                              "id": "233f5547-e834-4569-9e8e-7500918e9b3e"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "dfcaf67b-7187-4726-bf22-ab61ebcbd2e2"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "32",
+                                "operator": "==",
+                                "comparator": "0",
+                                "__collapseElse": false,
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "32"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare: you make \nme sick. you \nshould love your",
+                                        "family and not \ntreat them like\ntools. SO I WILL",
+                                        "PASS ALL YOUR \nTESTS. JUST TO\nSPITE YOU. right",
+                                        "Jem?"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "8da8f068-aae1-4496-a639-70450a16bd7a"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare: you make \nme sick. you \nshould love your",
+                                        "family and not \ntreat them like\ntools. SO I WILL",
+                                        "PASS ALL YOUR \nTESTS. JUST TO\nSPITE YOU. right",
+                                        "Jem?"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "9dac9ba6-ffb3-469b-b6cb-34bd1f24389d"
+                                  }
+                                ]
+                              },
+                              "id": "2edc69eb-2ba9-4ca0-85f6-556eaa509454"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_MOVE_TO",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "x": {
+                                  "type": "number",
+                                  "value": 6
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 17
+                                },
+                                "moveType": "horizontal",
+                                "useCollisions": false
+                              },
+                              "id": "5e16383c-9a46-41f6-9e26-6d35022a5cc2"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_SET_DIRECTION",
+                              "args": {
+                                "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                "direction": {
+                                  "type": "direction",
+                                  "value": "up"
+                                }
+                              },
+                              "id": "27aa1618-6c62-4a95-8cf2-1901f993b18b"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "e9f1c42d-c066-4369-9ce7-6ae2808f5fef"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem's thoughts:\nhe scares me but\nI probibly would",
+                                  "of done the same"
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "d9e8e71d-34f0-485f-ac21-d1821fec6f5f"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "default-sprite"
+                              },
+                              "id": "85cf6e1b-8dfb-49e0-b62c-f3217e5530c8"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Garnet:Jem and \nflare your \nsecond test is ",
+                                  "to pass our\nflight simulator\none is installed",
+                                  "on the computer \nat your house. \nbeating the ",
+                                  "boss should do \nthe trick."
+                                ],
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                              },
+                              "id": "1a7be8b2-e00c-428d-82b2-67b63c6ffda5"
+                            },
+                            {
+                              "command": "EVENT_ADD_FLAGS",
+                              "args": {
+                                "variable": "23",
+                                "flag1": false,
+                                "flag2": false,
+                                "flag3": false,
+                                "flag4": false,
+                                "flag5": false,
+                                "flag6": false,
+                                "flag7": false,
+                                "flag8": false,
+                                "flag9": false,
+                                "flag10": false,
+                                "flag11": false,
+                                "flag12": false,
+                                "flag13": false,
+                                "flag14": false,
+                                "flag15": true,
+                                "flag16": false
+                              },
+                              "id": "b8cfd6d7-f664-4ea7-b632-8a1a3e8313be"
+                            },
+                            {
+                              "command": "EVENT_IF_FLAGS_COMPARE",
+                              "args": {
+                                "variable": "23",
+                                "flag": 13,
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "46741fa3-886e-4fdc-ba09-c86c0aa97773"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem:already done\nIf that is what\nis used to train",
+                                        "our fighter \npilots... we may\nhave a problem",
+                                        "as someone who is\nbad at piloting\nwas able to pass",
+                                        "the test."
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "0b82e9cc-bdc0-4ef6-a7de-163254667425"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_EMOTE",
+                                    "args": {
+                                      "actorId": "6a2b5dc0-9160-4274-b5d2-6f4e5fb91c04",
+                                      "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                                    },
+                                    "id": "f0c1a414-34a2-40d6-ac08-fd9f68da6217"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "variable": "38",
+                                      "operator": ">",
+                                      "comparator": 99,
+                                      "__collapseElse": false,
+                                      "condition": {
+                                        "type": "gt",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "38"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 99
+                                        }
+                                      }
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "default-sprite"
+                                          },
+                                          "id": "b31a57f1-6e99-490c-92ea-f77d8810e864"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Garnet: no you\ncouldn't of...\n$38$ points",
+                                              "... ... ... ...\n... ... ... ...\nyou must of ",
+                                              "cheated."
+                                            ],
+                                            "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                          },
+                                          "id": "75d91bb9-fb6c-43c4-ac4e-44e4d3e218e7"
+                                        },
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": ""
+                                          },
+                                          "id": "48fc235b-6c01-422a-806d-69a58b4d1987"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Jem: you can\nfeel free to look\nat the code but",
+                                              "I don't think\nthere is a way\nto cheat"
+                                            ],
+                                            "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                          },
+                                          "id": "1b23c380-f9cb-41e4-8089-b879740cba6e"
+                                        },
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "default-sprite"
+                                          },
+                                          "id": "33d10083-31d4-4730-9a90-414cf88dfe49"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Garnet:I guess I\nwill look for a\nbetter simulator"
+                                            ],
+                                            "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                          },
+                                          "id": "8291e8f9-4dff-4323-90e9-fbb8525af93e"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "default-sprite"
+                                          },
+                                          "id": "b82438f9-3097-4c70-8d11-095db89be52f"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Garnet: no you\ncouldn't of...\n$38$ points",
+                                              "GaH I don't know\nhow you did it."
+                                            ],
+                                            "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                          },
+                                          "id": "68a32fc7-3179-4d6c-9f01-30dfee6da387"
+                                        },
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": ""
+                                          },
+                                          "id": "e9cf8803-ce9c-48e6-a5a5-900ff92d3256"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Jem:I will look\ninto this after."
+                                            ],
+                                            "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                          },
+                                          "id": "3e4303f5-dbfb-4abf-8ee2-bda6e91c1717"
+                                        }
+                                      ]
+                                    },
+                                    "id": "d1e2ad8c-f691-4919-a325-a3f43f2460d4"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                                    },
+                                    "id": "823822fe-4431-495c-9ca2-38d14b712761"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare: I wouldn't\nmind making it. I\ndon't think you",
+                                        "know but Luna \nhas the best\nSpace Navy."
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "0c0c17ed-ab1f-4d7e-b41a-9538a6b823c4"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "578d8b7d-0c2e-46ad-846c-47b22d66d279"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet:funny you\nshould mentsion\nthat as I don't",
+                                        "think your world\nhas any ships. \nregistered for it"
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "c1896b22-1712-47d9-83c3-8b068b1d6bbc"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                                    },
+                                    "id": "40a6ae20-8ef0-4427-a99e-e97e1f01ddc7"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare:that is\nbecause they are\nall registered ",
+                                        "as Earth ships.I\nplan on changing\nthat but so you",
+                                        "know about 85%of\nEarth's ships are\nowned by Luna",
+                                        "All have \nhyperion\ncannons and if",
+                                        "either of us \ndies I have a \nfailsafe to have",
+                                        "them all fire on\nEather destroying\nit instantly"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "45d5fabb-aab8-4b68-8db1-40fa50ff8735"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "952add30-afb9-4ddb-ad69-160a9577f6ac"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: You are \nbluffing..."
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "4ff7b9d6-ef21-442b-9e8b-bfc47eb179c4"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                                    },
+                                    "id": "ec560159-a3a1-4d1b-8233-311be39e48ff"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Bright through \ninercom overhead:we\nhave your planet",
+                                        "sorounded let \nFlare and jem \nleave unharmed in ",
+                                        "10 minutes or the \nwhole fleet will\nfire hyperion",
+                                        "beams at your \nplanet"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "459a1526-90f4-45d6-8671-9d980003aa97"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "c25296bf-42e6-438f-9c64-9a284727d111"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet:both of \nyou are crazy.\nyou ..."
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "7599f4b8-66eb-48e1-809a-7467bfbd9693"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                                    },
+                                    "id": "e7fcff75-0a3f-4d17-b2fa-05dfbfcc6e77"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare: you should\nblame your solar\ncouncil member,",
+                                        "cedric \nburnfeather. he \nkilled the fox ",
+                                        "blamed me for it\nI am only as \ncrazy as he made",
+                                        "me be."
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "e8bc5012-e7b7-4990-9b83-834bc7834404"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                    "args": {
+                                      "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                      "direction": {
+                                        "type": "direction",
+                                        "value": "right"
+                                      }
+                                    },
+                                    "id": "49a000e8-79b2-4e4b-9246-2815ebddccd8"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare: which is\nwhy I ask.",
+                                        "Jem will you \nmary me?"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "588208c8-1442-4df8-80b7-510ced930803"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "fa1aa887-657d-47fd-ab56-938a815cab88"
+                                  },
+                                  {
+                                    "command": "EVENT_MENU",
+                                    "args": {
+                                      "variable": "L0",
+                                      "items": 2,
+                                      "option1": "yes",
+                                      "option2": "Do I have a choice",
+                                      "option3": "",
+                                      "option4": "",
+                                      "option5": "",
+                                      "option6": "",
+                                      "option7": "",
+                                      "option8": "",
+                                      "cancelOnB": true,
+                                      "layout": "dialogue",
+                                      "cancelOnLastOption": true
+                                    },
+                                    "id": "9d640f49-93b0-4b6e-9d5c-b6748e4fed7f"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "variable": "L0",
+                                      "operator": "==",
+                                      "comparator": "0",
+                                      "__collapseElse": false,
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "L0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 0
+                                        }
+                                      }
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "default-sprite"
+                                          },
+                                          "id": "d95a3f81-2a92-4310-b24c-78a3e8383d92"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Garnet: no you \ndon't ...as much\nas I hate his ",
+                                              "guts I am \nforcing you to \naccept."
+                                            ],
+                                            "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                          },
+                                          "id": "fb42d8d2-d35b-4e55-bbf3-99160e821474"
+                                        },
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": ""
+                                          },
+                                          "id": "6729e27d-2d05-4980-9472-cfb8b2a9e697"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "jem's thaughts:\nalthough I don't\nknow about",
+                                              "marage yet he is\npreaty good....\nmaybe bright was",
+                                              "right after all"
+                                            ],
+                                            "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                          },
+                                          "id": "c38e9ed1-705a-43f8-9625-4cb32913389c"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "default-sprite"
+                                          },
+                                          "id": "bf8336ca-aa2c-46f6-88d8-34dbf1e8b558"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Garnet: I don;t\nlike him but you\nhave my blessing"
+                                            ],
+                                            "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                          },
+                                          "id": "2ae1cb0e-9035-4f18-9651-d8644cb812c5"
+                                        }
+                                      ]
+                                    },
+                                    "id": "087ae1c4-a9fc-4a84-ab23-c26519971fe6"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                                    },
+                                    "id": "a184e0ee-3a34-4521-973a-533e9646d381"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Flare:I plan on\nit taking place\non luna as both",
+                                        "of us are safest\nthere"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "4d27f67e-64f3-4f23-be0d-49b495f5bef9"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "lets go"
+                                      ],
+                                      "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                                    },
+                                    "id": "bb212e8a-d5ef-4867-b04d-4c816c862c74"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                    "args": {
+                                      "actorId": "a4f11c80-a9ae-44cd-9a54-39440152644c",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 12
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 52
+                                      },
+                                      "moveType": "horizontal",
+                                      "useCollisions": true
+                                    },
+                                    "id": "ddc6eb24-ecf8-4621-85cf-c20fed025d63"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "c0955ed3-7497-4989-8104-643182aa87e5"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: goodbye"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "f6f89fda-fa83-4014-a47f-f8dd106d7e5e"
+                                  },
+                                  {
+                                    "command": "EVENT_ADD_FLAGS",
+                                    "args": {
+                                      "variable": "23",
+                                      "flag1": false,
+                                      "flag2": false,
+                                      "flag3": false,
+                                      "flag4": false,
+                                      "flag5": false,
+                                      "flag6": false,
+                                      "flag7": false,
+                                      "flag8": false,
+                                      "flag9": false,
+                                      "flag10": false,
+                                      "flag11": false,
+                                      "flag12": false,
+                                      "flag13": false,
+                                      "flag14": false,
+                                      "flag15": false,
+                                      "flag16": true
+                                    },
+                                    "id": "1f5e8dc2-19e4-4ff2-a84e-2f8f8dbb4c34"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Note From here \nuntil the marrage\nis complete",
+                                        "entering the \nthrone room again\nwill cancel the",
+                                        "marrage"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "e1c53a51-50ca-4911-b70a-c63ffad79bff"
+                                  },
+                                  {
+                                    "command": "EVENT_CAMERA_LOCK",
+                                    "args": {
+                                      "speed": 1,
+                                      "axis": [
+                                        "x",
+                                        "y"
+                                      ]
+                                    },
+                                    "id": "ed43adfe-6eb8-4661-a288-7caea97647d6"
+                                  },
+                                  {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.1,
+                                      "frames": 30
+                                    },
+                                    "id": "b49db519-05f5-4a7d-9b91-80466dcbd847"
+                                  },
+                                  {
+                                    "command": "EVENT_CAMERA_LOCK",
+                                    "args": {
+                                      "speed": 0,
+                                      "axis": [
+                                        "x",
+                                        "y"
+                                      ]
+                                    },
+                                    "id": "97ea640b-c73f-41b0-a4d2-14ac5d314ac0"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "x": {
+                                        "type": "number",
+                                        "value": 14
+                                      },
+                                      "y": {
+                                        "type": "number",
+                                        "value": 52
+                                      },
+                                      "moveType": "horizontal",
+                                      "useCollisions": false
+                                    },
+                                    "id": "09182008-d870-402c-8343-e5f9fc0bfeb6"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "default-sprite"
+                                    },
+                                    "id": "33932638-a2f9-4438-8ebd-77b8200ecccb"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Garnet: I will\nbe waiting...if\nyou ever return",
+                                        "I also have\nsecurity systems\nput in place to",
+                                        "prevent you from\nleaving"
+                                      ],
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+                                    },
+                                    "id": "02932312-15c1-4011-a79b-c501c860439d"
+                                  },
+                                  {
+                                    "command": "EVENT_CAMERA_LOCK",
+                                    "args": {
+                                      "speed": 1,
+                                      "axis": [
+                                        "x",
+                                        "y"
+                                      ]
+                                    },
+                                    "id": "9bf95171-794a-44c4-8b1f-dbd48c5bc64d"
+                                  },
+                                  {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.2,
+                                      "frames": 30
+                                    },
+                                    "id": "301a1c37-77b9-4de4-a8bb-c09bec41af1f"
+                                  },
+                                  {
+                                    "command": "EVENT_CAMERA_LOCK",
+                                    "args": {
+                                      "speed": 0,
+                                      "axis": [
+                                        "x",
+                                        "y"
+                                      ]
+                                    },
+                                    "id": "554bfe6e-ba92-4469-9be0-dfd935d7b0da"
+                                  }
+                                ]
+                              },
+                              "id": "e8d8553e-dd1d-4673-bd03-be943bc941e2"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "4a4e7d59-4c7f-4c90-b469-3a8b06aa66f0"
+                      }
+                    ]
+                  },
+                  "id": "9b33a766-b0a0-4ec0-a7fa-d38d08010ab2"
+                }
+              ]
+            },
+            "id": "cd9c4161-1f16-43dd-925c-d4d3cf5abcb5"
+          }
+        ]
+      },
+      "id": "df15f739-e995-4c42-89bd-32f4fd05fca7"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "3d4a4064-afce-4a9b-9b60-62b6a8f3636f",
+        "__collapse": false
+      },
+      "id": "d91bbb6a-96b4-4fc0-a67b-bb93c70e542f"
+    }
+  ],
+  "leaveScript": []
+}

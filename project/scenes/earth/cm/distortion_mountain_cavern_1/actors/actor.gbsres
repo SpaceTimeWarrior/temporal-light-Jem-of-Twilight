@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "366550b2-6e01-41ad-9139-0e31a4fde348",
+  "_index": 0,
+  "symbol": "actor_810",
+  "prefabId": "",
+  "name": "",
+  "x": 116,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Trial 2: test of\n   Reverence",
+          "push the button at\nthe back of the \nshrine outside"
+        ],
+        "avatarId": ""
+      },
+      "id": "f0ccdf30-8f80-4e2b-ae3a-ccf50c3f4970"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

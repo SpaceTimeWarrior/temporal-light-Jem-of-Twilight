@@ -1,0 +1,53 @@
+{
+  "_resourceType": "scene",
+  "id": "86519a5a-6d9c-442b-8520-2bd8f8fc7e25",
+  "_index": 30,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/school of magic administration-unlocked",
+  "symbol": "scene_31",
+  "x": 3634.514229910713,
+  "y": 630.0762183779749,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "2b28a2c9-44aa-4abb-b147-5d4fa936655e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "5e98accb-e7f7-4a7f-9d5a-4f74bf73ffa7"
+      },
+      "id": "cf61423b-e475-4095-9995-84a9f4729de3"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "0e49c2da-f750-4e8c-a62f-737438c30473"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 22
+        }
+      },
+      "id": "f7275dc7-816c-4f1c-900e-bcb68ef77ba3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0043+0f8+006+0f7+006+0f5+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f7+006+0f5+008+0f!006+0f!005+"
+}

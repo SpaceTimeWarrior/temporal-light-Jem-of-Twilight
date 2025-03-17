@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "9a6577c2-1902-40b9-afe5-1f62e7b4f836",
+  "_index": 119,
+  "type": "TOPDOWN",
+  "name": "eather/gl/Eather genetics lab palace access",
+  "symbol": "scene_120",
+  "x": 569.4000040690105,
+  "y": 6930.800130208335,
+  "width": 40,
+  "height": 60,
+  "backgroundId": "08e06489-4936-4249-95fc-b9f4d3fd7ca9",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "b4a3e6d7-41bf-424c-8333-c1ae979f7fde"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f10+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f20+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f1e+00a+0f1c+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1c+00a+0f1e+00a+0f20+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f12+0016+0f12+0016+0f12+0016+0f12+0016+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f12+"
+}

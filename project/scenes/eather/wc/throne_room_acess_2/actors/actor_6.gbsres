@@ -1,0 +1,93 @@
+{
+  "_resourceType": "actor",
+  "id": "4ad86931-d3c4-440d-83ab-a75ef1a012ef",
+  "_index": 5,
+  "symbol": "actor_115",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 16,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "e7b1bde8-219f-4909-a12e-354cd7feb120"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "They are using \nsign language."
+        ],
+        "avatarId": ""
+      },
+      "id": "630c74db-c3a3-43c2-8f7e-7f7438d54f2c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: how do you \ndo"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "f0a81d8b-378a-4eaf-a143-03124c0ccb64"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "she does some \ninappropriate sign\nlanguage."
+        ],
+        "avatarId": ""
+      },
+      "id": "0dc32e88-6055-4054-b6b0-aaef2f3242dd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: I have half\na mind to banish\nyou for saying",
+          "that. Sadly I \ncan't. but I \nknow who can"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "9455c9b4-962d-461f-bdd0-cfd8790dec58"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "ca7d9279-4d24-4392-93b3-aad21b27e702"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d754982a-89fe-4f73-8f63-871e15fecce4"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

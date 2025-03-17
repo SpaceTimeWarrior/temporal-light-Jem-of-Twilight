@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "e52f134b-4b11-43c8-b3a3-f6d610b446a2",
+  "_index": 10,
+  "symbol": "actor_457",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:An industrial\nrefrigerator"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "4609a5ba-0bb7-48a5-94c7-2d16e62f5e5a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actor",
+  "id": "278fc9a5-f645-45fa-b351-8289d067c271",
+  "_index": 5,
+  "symbol": "actor_560",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6ccbb461-2b3f-41d6-9570-00d07e7132af",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "d3e1cac7-7bba-445c-b4a3-b175f7fde50f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "area locked"
+        ],
+        "avatarId": ""
+      },
+      "id": "f253d835-8912-4bb2-953e-fc199dd70f90"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "c922c2cc-24d6-4876-895c-13b4a1eaff2d"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 7
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "e20deb93-602f-415c-9584-87643530333d"
+          }
+        ],
+        "false": []
+      },
+      "id": "baff96f1-a6aa-4055-85f5-a7b6f83a21bd"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7c6a06ca-3ba0-4da7-bd9c-21618e84d366"
+    }
+  ],
+  "hit3Script": []
+}

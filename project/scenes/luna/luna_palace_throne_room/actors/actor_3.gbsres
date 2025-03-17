@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "e8fcdf16-269d-4467-9b19-f3118e840eea",
+  "_index": 2,
+  "symbol": "actor_535",
+  "prefabId": "",
+  "name": "",
+  "x": 20,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "my throne"
+        ],
+        "avatarId": ""
+      },
+      "id": "bf8c7112-233b-4400-af68-93e532c718e0"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

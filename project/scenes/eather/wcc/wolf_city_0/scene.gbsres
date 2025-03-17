@@ -1,0 +1,108 @@
+{
+  "_resourceType": "scene",
+  "id": "9b6c6bf3-1382-4894-9a0b-13a2a5278315",
+  "_index": 136,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/wolf_city_0",
+  "symbol": "scene_140",
+  "x": 890.8840106355035,
+  "y": 205.23249299719882,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a494f22b-887e-4539-b200-fb105814832f",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "6385d9e0-ea44-4c1f-8dd1-6df10de7ceab"
+          }
+        ],
+        "false": []
+      },
+      "id": "d23480de-7f5e-4a21-b98d-1a81a724b8d8"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start",
+                "left",
+                "up",
+                "down",
+                "a",
+                "select"
+              ]
+            },
+            "id": "e6728278-4fd1-486d-9a2a-7909f779e446"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a9002a46-07d3-438b-b318-b2343b601080"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "04bef0b1-6fe8-4408-be07-2683acbd4dfa"
+          }
+        ]
+      },
+      "id": "a0bbdc17-a6fa-4fff-81cf-8f7846870ffc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

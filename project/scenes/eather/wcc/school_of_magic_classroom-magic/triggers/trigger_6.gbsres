@@ -1,0 +1,119 @@
+{
+  "_resourceType": "trigger",
+  "id": "9b4419fd-84e7-4865-9414-b55803e25387",
+  "_index": 5,
+  "symbol": "trigger_150",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 20,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 2,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "I don't need to \nknow more today"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7504ff65-0819-4bd6-9a4b-158bd3b344f1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapse": false
+            },
+            "id": "d78008d9-7335-48aa-9a46-fd51aa6640e5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Today's video \nlecture is on",
+                "electricity \nmagic ..."
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "b31dbfbd-94cd-4dfa-a8a7-98a66fb8e4cf"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "a0a0dfa0-e09c-4a57-a698-4c029c5da33c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "And that concludes\ntoday's lecture"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "3237847e-c509-42ad-8bdd-8dbda0f472a9"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "23",
+              "flag1": false,
+              "flag2": false,
+              "flag3": true,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false,
+              "__collapse": false
+            },
+            "id": "487b3780-29b0-45a6-86fe-b269a20ab82e"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "07fcacf6-ef06-40dd-a785-b4e6ead4e8d1",
+              "__collapse": false
+            },
+            "id": "92bb81ab-76ce-44aa-85e0-0c26e9a0bd79"
+          }
+        ]
+      },
+      "id": "894c1dd7-2a62-4da1-829c-32e0f6c0e013"
+    }
+  ],
+  "leaveScript": []
+}

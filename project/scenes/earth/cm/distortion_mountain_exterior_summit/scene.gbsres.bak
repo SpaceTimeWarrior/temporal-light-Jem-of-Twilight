@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "59b72bd8-d0aa-4b29-95ab-f832c62857d7",
+  "_index": 158,
+  "type": "TOPDOWN",
+  "name": "earth/cm/Distortion mountain exterior summit",
+  "symbol": "scene_162",
+  "x": 2226.5999755859375,
+  "y": 4237.300048828125,
+  "width": 80,
+  "height": 80,
+  "backgroundId": "777e1ede-481a-4110-8de6-2e82af88611b",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "4575843d-553f-491d-b8fa-b75d8c717a29"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f22+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f34+006+0fa+00c+0f29+0027+0f29+0027+0f28+0028+0f28+0028+0f28+0028+0f29+0027+0f29+0027+0f29+0027+0f28+0028+0f28+0028+0f2a+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f42+0018+0f4+00c+0f29+0017+0f4+00c+0f29+0017+0f4+00c+0f29+0017+0f4+00c+0f8+006+0f1a+0018+0f4+0027+0fd+0018+0f4+0027+0ff+00c+0fe+0028+0fe+00c+0fe+0028+0fe+00c+0fe+00c+0f2a+00c+0fe+00c+0f29+0019+0f2+0028+0fd+0019+0f2+0027+0fd+001a+0f2+0027+0fd+001a+0f2+0027+0fd+001a+0f2+0028+0fd+0019+0f2+0024+0f11+0019+0f2+0024+0f11+0019+0f2+0023+0f11+001a+0f2+0023+0f11+001a+0f2+0023+0f2d+0024+0f2c+0024+0f1a8+006+0f47+0017+0f39+0017+0f38+0018+0f38+0018+0f34+001c+0f35+001b+0f35+001a+0f36+0019+0f36+001a+0f3a+0016+0f3a+0016+0f4+00c+0f2b+0015+0f3+00e+0f9+006+0f1b+0015+0f2+0025+0f14+003c+0f13+003e+0f12+003e+0fe+0044+0fd+0042+0fe+0042+0fe+0042+0fd+0044+0fc+0044+0f28+00c+0f44+00c+0f42+0010+0f40+0010+0f40+0010+0f40+0010+0f20+"
+}

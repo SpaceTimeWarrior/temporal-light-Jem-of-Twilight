@@ -1,0 +1,49 @@
+{
+  "_resourceType": "scene",
+  "id": "0321244d-108a-4171-abd0-cbfc35048717",
+  "_index": 26,
+  "type": "TOPDOWN",
+  "name": "eather/wc/Eather throne room",
+  "symbol": "scene_27",
+  "x": 61.142857142857146,
+  "y": 814.7394957983192,
+  "width": 27,
+  "height": 53,
+  "backgroundId": "78b79b94-01f8-44d3-ac62-5f440c948ae0",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "3daa2050-a982-4b11-a5ea-30c1d3d83fec"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "910c37ec-a0cf-4f53-aa1c-7b8da48a7f1e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "008c+0f4+004+0f4+00f+0f!002+0f6+002+0f9+007+0f!002+0f2+002+0f2+002+0f2+006+0f!005+0f3+002+0f2+002+0f2+002+0f2+006+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0014+0f!005+0f!0012+0f3+005+0f5+00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f!00e+0f!00b+0f5+006+0f5+00f+0f!006+0f!0013+0f!006+0f!0013+0f!006+0f!0013+0f!006+0f!008+"
+}

@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "c9989fac-1720-4e20-b4dc-18d3f603942c",
+  "_index": 3,
+  "symbol": "actor_13",
+  "prefabId": "",
+  "name": "",
+  "x": 29,
+  "y": 31,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "bde7514b-3cdf-464c-84de-0b05f9e9a3b0"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "14",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: my home...\nthe floor still\nneeds work."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "6c9783f7-a9ed-4dc9-9766-17379a77d28b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: my home ...\nnot the best but\nwill work."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "a8ac0318-ea5a-49b4-b71e-797b4d8d916d"
+          }
+        ]
+      },
+      "id": "16058087-2370-40ba-a7af-194abe3edf2d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "68b7a047-1b28-466a-8af2-fa529b98c73d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

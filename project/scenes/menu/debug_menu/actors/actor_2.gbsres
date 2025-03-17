@@ -1,0 +1,97 @@
+{
+  "_resourceType": "actor",
+  "id": "a1de6a89-d5ec-4365-8f19-2d542a8f8ae9",
+  "_index": 1,
+  "symbol": "actor_565",
+  "prefabId": "",
+  "name": "",
+  "x": 3,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "21",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "21"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c2aaac0b-17b4-4142-bb68-f7c3605541d4",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "06b8cba2-39b6-45b9-845a-e5ba5a8d189b"
+          }
+        ],
+        "false": []
+      },
+      "id": "a2e82302-beff-4816-b817-991d46eb1789"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "21",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "21"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "7497ec66-b72e-454d-a6e5-fac5e5e1a619"
+            },
+            "id": "54d5cdf5-cf67-4922-93d8-e679498c0223"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77"
+            },
+            "id": "deb4a34c-64ff-458b-9062-eba440cd7538"
+          }
+        ]
+      },
+      "id": "f07449db-372c-42ca-ba16-737b5b7a9f85"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

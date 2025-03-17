@@ -1,0 +1,61 @@
+{
+  "_resourceType": "scene",
+  "id": "c60fdb7d-70a4-489e-9520-87596a8d3ea9",
+  "_index": 156,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Control city hospital room",
+  "symbol": "scene_160",
+  "x": 140,
+  "y": 3759.699951171875,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "00d94fe1-c758-45d7-82f8-b6c446237fae",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 5,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "daa7fc4e-2389-4cfc-b776-381314bd657e",
+              "persist": false
+            },
+            "id": "67e4f092-2d15-4516-90dd-ce5a297cba3b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "7bf0fd68-ab07-4a1a-8cdf-cb7235dacea9",
+              "persist": false
+            },
+            "id": "5f695a55-ea3f-48bf-a0b1-db80be8c217c"
+          }
+        ]
+      },
+      "id": "c3f823ed-08c2-4901-9f8f-14e36f4e89d6"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "0bfffd38-793e-40bd-bc9c-b12be2cb5acf"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0079+0f12+002+0f!003+0f2+006+0f2+003+0f!002+0f!003+0f2+00!0f4+00!0f2+003+0f!002+0f!006+0f!002+0f!006+0f!002+0f!006+0f!002+0f!006+0f!002+0f!006+0f4+006+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f7+004+0f7+00!"
+}

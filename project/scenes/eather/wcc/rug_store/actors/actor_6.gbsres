@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "082d9c8a-3fa0-4516-a490-b421dfa6888f",
+  "_index": 7,
+  "symbol": "actor_201",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "183b4e9b-972b-4f64-a903-f3c0327bacad"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A segment of rug \nis placed on a \nramp"
+        ],
+        "avatarId": ""
+      },
+      "id": "ca9a337e-cdd1-44e3-8764-d137917938b9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "9d63ca69-53ef-4db8-9f76-f9989f4b8de7"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

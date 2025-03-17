@@ -1,0 +1,40 @@
+{
+  "_resourceType": "script",
+  "id": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f",
+  "name": "damage player",
+  "symbol": "script_10",
+  "description": "this is self explanitory\nthe check for game over is in the HP icon in the screen ui",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "6946620a-3e93-4527-9cd2-6d4bcf195549"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_RUMBLE 1"
+      },
+      "id": "49a4c64c-0e06-4fdf-8a91-fedd3e840fea"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30
+      },
+      "id": "36947969-7c7a-464b-9177-924e73979664"
+    },
+    {
+      "command": "EVENT_GBVM_SCRIPT",
+      "args": {
+        "script": "VM_RUMBLE 0"
+      },
+      "id": "344ea7c7-f098-4e2d-9fa8-f97e7d11e8c5"
+    }
+  ]
+}

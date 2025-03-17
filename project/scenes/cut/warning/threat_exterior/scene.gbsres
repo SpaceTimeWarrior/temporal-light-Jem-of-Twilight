@@ -1,0 +1,64 @@
+{
+  "_resourceType": "scene",
+  "id": "18fdacd2-1365-47d7-b234-3156fcdac652",
+  "_index": 83,
+  "type": "TOPDOWN",
+  "name": "cut/warning/threat exterior",
+  "symbol": "scene_84",
+  "x": 2704.5982635241585,
+  "y": 3064.52387020149,
+  "width": 58,
+  "height": 84,
+  "backgroundId": "7130de00-cba2-49db-b7ea-c32de5aa3be7",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "33",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "348c1bbf-d1da-449e-84a4-5b2acbe70b66"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+        "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+        "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+        "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+        "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+        "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+        "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+        "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+      },
+      "id": "2048ac64-71f1-49c7-8280-ee2c487a867e"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 21
+        },
+        "y": {
+          "type": "number",
+          "value": 65
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "2310cb58-30a4-44a5-8fef-f7406d8078ad"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001308+"
+}

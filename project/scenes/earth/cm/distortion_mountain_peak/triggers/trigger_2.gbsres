@@ -1,0 +1,327 @@
+{
+  "_resourceType": "trigger",
+  "id": "c29a9fb6-13ec-4c23-a3fd-5202b92491a7",
+  "_index": 1,
+  "symbol": "trigger_372",
+  "prefabId": "",
+  "name": "",
+  "x": 2,
+  "y": 17,
+  "width": 16,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 8,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "0c74e62b-adc2-4de5-b3ee-745a5828d1c2",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "c6b2076b-e0a3-4a8b-b06b-8064bcf69286"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "c792e62f-ec6a-495f-9615-ba94a90e70ae",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "30070a0c-a60b-45f1-9eb5-fd486a7fa5da"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0c74e62b-adc2-4de5-b3ee-745a5828d1c2",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "48134138-c2c3-45ca-91f0-aaca8914866f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "a677b8d3-c027-4df5-8fbc-80ae341660c4"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "7cb72e91-01b3-48d7-9084-ea0b6a29d85c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: why me why\ndid you choose \nme to make the",
+                "ship. aren't\nthere better \npeople at this",
+                "that you could \nof chosen."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "4504a4e5-c87d-4e37-bb8a-405ba069556b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0c74e62b-adc2-4de5-b3ee-745a5828d1c2",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "735d439b-7a76-496c-a4d0-b0be5cf5112f"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "c792e62f-ec6a-495f-9615-ba94a90e70ae",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            },
+            "id": "e604614f-72af-4a19-86e8-004447000000"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "you could hear \nfaint wispering \nbut you can't",
+                "tell what is being\nsaid"
+              ],
+              "avatarId": ""
+            },
+            "id": "377a71e6-07cd-4266-8645-78c03a18ccf3"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "0c74e62b-adc2-4de5-b3ee-745a5828d1c2",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "c678024a-9f09-450d-994a-48bd6e4d20e8"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "c792e62f-ec6a-495f-9615-ba94a90e70ae",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "53f33894-6f4b-47fd-a5d7-cbc908fead11"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair: this is \ndue to a \nprophecy in",
+                "which \nmultiversial \ntravel is ",
+                "required."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "940213dc-1571-4e63-b819-5043805ea419"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: isn't there\nother ways like\na spell?"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "6f5b2c2d-6a35-4e0a-9093-cbdd32bc2ed5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "sune: while \nthere are ways\nto get to other",
+                "universes via \nspells but not\nall universes",
+                "support heavy\namounts of magic"
+              ],
+              "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+            },
+            "id": "a56be3e8-96c8-49ff-a862-408c0e774655"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "c792e62f-ec6a-495f-9615-ba94a90e70ae",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "622792f2-b88f-429c-9d18-8f844607581d"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "c792e62f-ec6a-495f-9615-ba94a90e70ae",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "97f18956-28c7-4f32-9cb4-ddf6fe559885"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "sune: could you \nanalyze this \nmaterial and",
+                "possibly mass\nproduce it."
+              ],
+              "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+            },
+            "id": "97c4b261-155c-4960-8c09-6fec235ee0fd"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "a white rock with\ncolorful specs \nappear in jem's",
+                "right hand."
+              ],
+              "avatarId": ""
+            },
+            "id": "4ea2d6f0-a94f-4a2e-92d7-47cbc55a2a87"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: what is\nthis...I feel\nlike my magic",
+                "has increased"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "1cb347e1-5259-4f00-89ce-6f7d95354b31"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair: if I am\nnot mistaken\nsune gave you a",
+                "time crystal\nessence. having\none",
+                "theoretically\nmitigates the \nnegitive effects",
+                "of other \nuniverses.",
+                "you asked why \nyou this \nuniverse's time",
+                "crystal stated \nyou are part of\nthe prophecy.",
+                "you are to setup\nthe resitance \nagainst a dark",
+                "being that has \nreawakened. a \nbeing that if it",
+                "isn't stoped \nwill destroy the\nmultiverse which",
+                "includes this \none. I am not \ncertain but ",
+                "cedric \nburnfeather may\nbe foolishly",
+                "trying to stop\nthe prophecy"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "ae4b4997-d632-49d7-8d2c-86892daadcc8"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: what would \nhappen if the \nprophecy was",
+                "stopped. and \nwhat was \nlanguage you",
+                "spoke earlier."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7cff033b-b9a8-4be4-8d5f-343d9e7a7041"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "sune: for the \nprophecy what \nwould happen if",
+                "the main \nprotagnist where\nto dissapear",
+                "before the \nclimax of a\nvideo game.and",
+                "as for the \nlanguage it is a\nlong dead",
+                "language of \njapanese. if you\ncould get a",
+                "digital storage \ndevice or a \nempty book I can",
+                "create a primer\nfor you."
+              ],
+              "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+            },
+            "id": "2599536f-1e71-414f-920d-3fce3cae6c3b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: is there \nany way to help\ncontrol my",
+                "daughter's power\nI know monsters\nused to be much",
+                "more powerful in\nthe past and \nmight know ",
+                "better ways of \nteaching magic\ncontol",
+                "jem wispering:\nI prefer not to \ndie doing it"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "0d843428-456b-4adb-9580-17845362b06c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair: I know of\nways to help\ncontrol magic.",
+                "but the book of\nspells I had has\ndissapeared.",
+                "the last place I\nseen it was in\ncontrol city",
+                "deep inside the \nmountain west of\nhere. once you",
+                "find it bring \nyour child as\nwell as your",
+                "husband. this is\nto give him.some\naccess to the",
+                "spell"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "07ab979c-8568-4da4-aeca-aec8f19b0d08"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": true,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "d16ab5a6-680c-499d-9f04-34f6e7867f44"
+          }
+        ]
+      },
+      "id": "90258522-ec01-4d7c-ac86-d92fb9bc9ec8"
+    }
+  ],
+  "leaveScript": []
+}

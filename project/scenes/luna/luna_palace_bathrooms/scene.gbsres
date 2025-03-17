@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "dafdd38f-bd74-4ec3-961c-709343de9ec3",
+  "_index": 110,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace Bathrooms",
+  "symbol": "scene_111",
+  "x": 3600,
+  "y": 5440,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "37f0a52e-1378-4cb3-a40a-f4cd5e7c57fd",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "f1cd8f8f-c673-4c13-aef6-2cbcc4e5fed6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 112
+        }
+      },
+      "id": "83fdb742-639b-4aa2-be1c-448bc61c7eca"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f237+0021+0f1b+0021+0f1b+0021+0f1b+0021+0f1b+0021+0f1b+0021+0f1b+0021+0f1b+008+0f34+008+0f34+008+0f34+008+0f34+008+0f34+008+0f34+008+0f34+008+0f1e+00!0fc+002+0f7+008+0f1e+001e+0f1e+001e+0f1e+001e+0f1e+001e+0f1e+001e+0f1e+0015+0f!008+0f1e+0015+0f!008+0f31+002+0f!008+0f1e+0012+0f!002+0f!008+0f1e+0012+0f!002+0f!008+0f1e+0012+0f!002+0f!008+0f1e+0012+0f!002+0f!008+0f1e+0012+0f!002+0f!008+0f1e+0012+0f!002+0f!008+0f31+002+0f!008+0f34+008+0f34+008+0f34+008+0f34+008+0f26+005+0f4+00!0f2+00!0f!008+0f26+00d+0f!008+0f26+0016+0f26+0016+0f26+0016+0f26+0016+0f26+005+0f6+00b+0f26+005+0f6+00b+0f26+005+0f6+002+0f!008+0f26+005+0f6+002+0f!008+0f26+005+0f6+002+0f!008+0f26+005+0f6+002+0f!008+0f109+"
+}

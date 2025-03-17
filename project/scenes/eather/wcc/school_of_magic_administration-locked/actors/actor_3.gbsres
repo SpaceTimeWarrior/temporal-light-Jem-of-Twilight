@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "be2859c8-efb0-47aa-b46d-72e153d7f1f9",
+  "_index": 4,
+  "symbol": "actor_231",
+  "prefabId": "",
+  "name": "",
+  "x": 4,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "8bd96088-6409-43ca-a2d8-5d2d4a8c2e5e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "step on the\npedistal in the \ncenter to unlock"
+        ],
+        "avatarId": ""
+      },
+      "id": "8a080c03-3060-4413-a678-fe33c9c65c08"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "e0f32079-96f6-4be1-a14d-8dc603a5d021"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

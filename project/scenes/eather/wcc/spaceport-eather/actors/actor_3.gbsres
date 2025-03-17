@@ -1,0 +1,163 @@
+{
+  "_resourceType": "actor",
+  "id": "fbaac3bb-55b2-4157-a208-b1328dc4d831",
+  "_index": 2,
+  "symbol": "actor_460",
+  "prefabId": "",
+  "name": "",
+  "x": 42,
+  "y": 41,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6d747263-d326-4e5f-afde-cec03f72d3e8",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "a823a34e-36d4-4538-8051-f4cff7526d37"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Take this peace\noffering and leave\nyou crazy wolf",
+          "robot."
+        ],
+        "avatarId": ""
+      },
+      "id": "c5144b35-75ab-425b-b25e-8add69de4c83"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: he must be\ndilusional "
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "a01a2a46-d227-4c15-8388-a6d774728123"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "91915fc8-9be7-4fcf-b578-0affa739ddfb",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 2
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "345f273b-d527-4a97-9ea1-404c2ec5c2ea"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "ca05e2d4-cb41-4287-ae7c-3b8722b1d1d9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "511",
+        "operator": "!=",
+        "comparator": 1,
+        "__collapseElse": true,
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "511"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ef6fe8a0-dbaa-4098-ba2f-86c8f30715ab"
+          }
+        ],
+        "false": []
+      },
+      "id": "d1bb9098-1e77-479d-bbcd-4d9991a20158"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "25",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "21",
+              "operator": "==",
+              "comparator": 0,
+              "__collapseElse": true,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "21"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "__collapse": false
+                  },
+                  "id": "f848722a-df47-44a1-8a57-ca306ad2c73e"
+                }
+              ],
+              "false": []
+            },
+            "id": "2700b6ca-e716-4c4e-9986-299cc564ec72"
+          }
+        ],
+        "false": []
+      },
+      "id": "40fcf89b-2c58-497b-86e7-a91125218a5e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,89 @@
+{
+  "_resourceType": "actor",
+  "id": "bba9416c-0265-4f2f-8752-fe7e33b236a5",
+  "_index": 3,
+  "symbol": "actor_816",
+  "prefabId": "",
+  "name": "",
+  "x": 32,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8dfee9ec-66dd-4897-9017-295443e3e080",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "62",
+        "operator": "<",
+        "comparator": 30,
+        "__collapseElse": false,
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "62"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 30
+          }
+        }
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "e0df9648-963b-4a74-aa3e-b10b0a0e6d05",
+              "spriteStateId": "",
+              "actorId": "$self$",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "up",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 255,
+              "lifeTime": 1,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1",
+                "player"
+              ]
+            },
+            "id": "d05998a7-1ecb-4ff1-8edc-15d83e6c8e95"
+          }
+        ]
+      },
+      "id": "d0a2f677-eb15-45e0-961a-d26b9b283a22"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "76e7be64-ee34-400a-9ab3-5d5dbd73459c"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

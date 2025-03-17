@@ -1,0 +1,131 @@
+{
+  "_resourceType": "actor",
+  "id": "b12553a1-46f6-4224-bfee-4789e3390b4a",
+  "_index": 1,
+  "symbol": "actor_520",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "589a4060-7210-4f3a-8f39-a078f10475d3",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "f0e24f05-acb8-4d73-bf08-d3a206c3988d"
+      },
+      "id": "5de0ec84-f5d4-4948-89be-597146b4d607"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "2c7c3070-5dc5-4435-b64e-5a6443ee246f"
+      },
+      "id": "d428fb51-7c6b-4022-bc71-88b6a2c51303"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "48",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "48"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "48",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "63f0ea7b-9e8f-4f73-9a0c-6ca39cc716f7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "48",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "7c55676e-5ea7-4ea4-b74a-aa52db33a5e0"
+          }
+        ]
+      },
+      "id": "84a99499-96db-4cd4-8312-bc29bb447e73"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "ID CONFIRMED\nJEM\nDISARMING WEAPONS",
+          "NEUTRALIZING \nNEUROTOXIN\nOPENING DOOR"
+        ],
+        "avatarId": ""
+      },
+      "id": "3dfa0db7-6797-477b-ac17-a014aaa0bee8"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "d4d8994a-1508-4bc5-b7ed-fa2bc67e2d3f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "48",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "48"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "f0e24f05-acb8-4d73-bf08-d3a206c3988d"
+            },
+            "id": "d9110add-fa23-4006-b769-2dd6b369c102"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "2c7c3070-5dc5-4435-b64e-5a6443ee246f"
+            },
+            "id": "84ceecf0-80cf-4693-a389-2c5f5d292ebf"
+          }
+        ]
+      },
+      "id": "3047d926-0739-4cef-8243-a6fe809888e6"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

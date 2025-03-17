@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "642b9d44-db22-4853-be3b-11968339f0c9",
+  "_index": 0,
+  "symbol": "trigger_322",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 17,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 5,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "5b94a8f7-6d3d-410b-9541-2c78dd2c0411",
+              "x": {
+                "type": "number",
+                "value": 19
+              },
+              "y": {
+                "type": "number",
+                "value": 2
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "38f15d22-041e-4ecb-904b-7aadebe6c56b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I can't go \nout looking like\nthis"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "123a1db5-2163-40d0-a870-1d32fa1562c9"
+          }
+        ]
+      },
+      "id": "1f49276f-a454-4bf0-9474-182110c1c06f"
+    }
+  ],
+  "leaveScript": []
+}

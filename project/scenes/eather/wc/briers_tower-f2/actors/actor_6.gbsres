@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "99d4b9b6-cd11-4204-9e52-28bbc751de2d",
+  "_index": 7,
+  "symbol": "actor_228",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "630ccfb3-8cf7-48a5-af71-a650474bb15e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: A toilet...\nbut no privacy"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "63e1e120-1aa5-438b-bf80-d25e164750dd"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "52ef691c-8fe2-4892-9730-eab71a0b4283"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

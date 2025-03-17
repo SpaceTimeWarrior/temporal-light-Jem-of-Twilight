@@ -1,0 +1,326 @@
+{
+  "_resourceType": "scene",
+  "id": "c87801b2-a256-45a4-b1ff-95177cb605b5",
+  "_index": 78,
+  "type": "TOPDOWN",
+  "name": "cut/battle aboard the intrepid flyer",
+  "symbol": "scene_79",
+  "x": 3338.0382254464303,
+  "y": 2406.6094912574413,
+  "width": 58,
+  "height": 58,
+  "backgroundId": "a7ef2c87-bfc6-4048-86dc-53b31809a4c9",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "default-bg-3"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535",
+    "default-bg-4",
+    "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "ed68ab87-28a9-4ca1-b93e-7f94f466e0c3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "35",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "35"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "c21d7094-9a5c-44f6-ba67-f01224e35c81"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare:Is it ok\nif I pilot this"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "2060c0c2-0cef-46ff-9b72-b8ab0abc3fbb"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "20096336-50db-44f1-bba0-26baf9c8cbee"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem:yes"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "14e4e31c-eef3-4aa5-8d83-ff9aecd72f45"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "number",
+                "value": 21
+              },
+              "moveType": "vertical",
+              "useCollisions": true
+            },
+            "id": "9045ae5c-b5a9-425a-b805-b647cdc714ba"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
+              "x": {
+                "type": "number",
+                "value": 32
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "d840bbbf-b30a-46c7-a23b-18fdfb3310b8"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c",
+              "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6"
+            },
+            "id": "a8eaa127-9178-4b31-b64d-01756313b211"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "cb6351d7-c805-4ceb-9b6e-d63c5a400ad9"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            },
+            "id": "89f1609a-0269-4260-abca-91d13903088a"
+          },
+          {
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c"
+            },
+            "id": "4f0cc30c-6ec9-4b74-b985-569268e0370b"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c"
+            },
+            "id": "704b145a-b22c-4f64-9e05-6886d16f1ecb"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+            },
+            "id": "7d7de29f-d0a1-45bf-bb6f-5f099e2d6ed6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "???:now that \nyour friend\ncannot ",
+                "help I will kill\nyou. and use a\ndisguise cloak",
+                "to drain you of\nall your worth."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "93d8aeb2-1591-4cd1-9f58-49754f60acf5"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "f046b5f1-7df0-4ab4-a650-e74210767e5e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: Dang it!\nthat sounds like",
+                "Bright. be \ncareful."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "2d73a295-ab8f-43a6-b74c-487fd2a980da"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "35",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "5b990f2b-a8ba-4d5e-acaf-5549ecc02d1a"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
+              "__collapse": false
+            },
+            "id": "fdf7de50-ade5-4606-a3d3-c5acdd32e4d1"
+          },
+          {
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c"
+            },
+            "id": "6f29b627-7669-405f-9f53-b9de75ad9740"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c"
+            },
+            "id": "846d94fc-7090-447e-81c2-f4e5c1d18562"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+            },
+            "id": "002709b4-7193-4fce-b2dc-d4f11ad0a72f"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+            },
+            "id": "99af3737-34ef-4a5f-aa9b-6139f7392d3b"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "9b66a19e-7043-43d2-831f-deb1765d1bb9"
+            },
+            "id": "219695ef-b63b-4873-8746-dc54360f3b2f"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "86ee617c-62a6-4fe9-b9b2-77a8b52d56d6"
+            },
+            "id": "26b27398-a5d1-4501-9d6b-5503223ff8cb"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "28578314-1b27-4b6d-a2c0-bd48ca3f2377"
+            },
+            "id": "e9882648-f9ce-4ac0-b0a1-0aafac1dd098"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+            },
+            "id": "118007e9-1c13-4c92-9b4d-aa61a919ecb3"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "3ee7a4de-8c3e-49b3-bb06-d76b0c658c62"
+            },
+            "id": "a456026b-59b1-46e9-a604-362a49bd07d2"
+          }
+        ]
+      },
+      "id": "9f7bdb37-72fc-48f8-ae4e-975d6065301e"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "0d4c234a-bce0-4b16-8b14-f0a8c1326839"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "83f13772-0d0c-41ae-be21-cbec7a4eed58"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "3e5059cc-9809-4432-9a0a-e49d80246cb7"
+    }
+  ],
+  "collisions": "00141+0f8+0032+0f!006+0f!0030+0f3+006+0f5+002c+0f!00c+0f!002c+0f!00c+0f!002c+0f!009+0f2+00!0f!002c+0f!008+0f!002+0f2+002c+0f!008+0f!002+0f2+002c+0f!009+0f2+00!0f3+002a+0f!00e+0f!002a+0f!00e+0f3+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00b+0f6+0028+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f6+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00e+0f2+0029+0f!00e+0f!002a+0f!009+0f2+00!0f3+002a+0f!008+0f5+002c+0f!008+0f5+002c+0f!009+0f2+00!0f!002c+0f!00c+0f!002c+0f!00c+0f!002c+0f3+006+0f4+002f+0f!006+0f!0032+0f8+00461+"
+}

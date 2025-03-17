@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "24cd815a-2dfa-432e-9740-8134dd03a4e3",
+  "_index": 116,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace flare's room",
+  "symbol": "scene_117",
+  "x": 4429.743315508024,
+  "y": 4964.931499872674,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "00d94fe1-c758-45d7-82f8-b6c446237fae",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "a7b9166b-4a91-41c8-b6f8-4a4382ef1d5d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 119
+        }
+      },
+      "id": "e7a10bbb-5467-4721-888b-1cf3e385497a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f8e+003+0f2+006+0f2+003+0f4+003+0f2+00!0f4+00!0f2+003+0f4+006+0f!002+0f!006+0f4+006+0f!002+0f!006+0f4+006+0f4+006+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+004+0f8+"
+}

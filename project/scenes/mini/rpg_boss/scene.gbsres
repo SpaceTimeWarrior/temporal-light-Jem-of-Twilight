@@ -1,0 +1,99 @@
+{
+  "_resourceType": "scene",
+  "id": "0fa410d7-1d3c-4884-9a32-2ca004d2f0a5",
+  "_index": 93,
+  "type": "SHMUP",
+  "name": "mini/RPG Boss",
+  "symbol": "scene_94",
+  "x": 3755.6570870535716,
+  "y": 2102.857142857143,
+  "width": 135,
+  "height": 18,
+  "backgroundId": "0d8579ca-5f94-4ac8-ab79-e3492223731a",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "aa2379be-b18d-4964-b202-b8316dd758cc"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0c8c47d5-2e08-455b-bf51-b1caae42846d"
+      },
+      "id": "f663fa67-ca5c-409f-9d98-df1006acd1f6"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "58a04b4a-86dd-44c2-8980-07e817fd70d4"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "291f006f-f82d-4091-8d3d-1d90aaa4488f"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "28286129-7db5-4bd8-ad72-9ed1b8c763ed"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "f2b05bea-3165-4069-a151-e68539d03385"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "d9199a4e-ef52-4ca9-be47-743c2ab8e122"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "c9efa54b-d2fb-4a51-aac4-2b36837407ab"
+    }
+  ],
+  "collisions": "0097e+"
+}

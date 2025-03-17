@@ -1,0 +1,136 @@
+{
+  "_resourceType": "trigger",
+  "id": "4e7dea1f-b915-4cbd-b36e-5b7aef3de452",
+  "_index": 1,
+  "symbol": "trigger_1",
+  "prefabId": "",
+  "name": "",
+  "x": 4,
+  "y": 11,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "4",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "4"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "override": false,
+              "__scriptTabs": "press",
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a",
+                      "left",
+                      "up",
+                      "down",
+                      "right",
+                      "select",
+                      "start"
+                    ]
+                  },
+                  "id": "bc0351ee-94b7-4912-969f-65e851a1df6a"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_AT_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "item 3"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "7f0e91c4-87dd-4b6c-8029-07d75468b6fa"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_AT_POSITION",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 4
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "item 3"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "f1cddcc2-b297-4f65-b4b6-b4c42a1f3942"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "d136feb7-38f3-4073-b0cf-3eb31fbfc43d"
+                      }
+                    ]
+                  },
+                  "id": "be35fa19-0b8b-47aa-ba48-ffa94e98fff2"
+                }
+              ]
+            },
+            "id": "66b484e3-4c15-4b85-bb53-364b8ecf9dcd"
+          }
+        ],
+        "false": []
+      },
+      "id": "9a5f67cf-ccd6-4fdd-89b7-c01d5289feb8"
+    }
+  ],
+  "leaveScript": []
+}

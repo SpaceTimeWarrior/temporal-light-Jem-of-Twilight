@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "85ae1acc-3831-46bf-a18e-e43f19e13cd6",
+  "_index": 4,
+  "symbol": "trigger_149",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 10,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A screen that \nlikely the lesson\nwill play on"
+        ],
+        "avatarId": ""
+      },
+      "id": "66f9e497-ffdc-43de-b433-a3f72879d12b"
+    }
+  ],
+  "leaveScript": []
+}

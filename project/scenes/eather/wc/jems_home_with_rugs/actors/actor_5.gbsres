@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "e513c15e-4f42-489e-986c-4802053e0958",
+  "_index": 6,
+  "symbol": "actor_68",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "733c94be-f16c-4d07-b0d2-cb70e9def1e8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nMy fridge. I may\nhave leftovers.",
+          "as I will have \nroom"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "a5e4aa96-da0b-4c35-869b-ae355b028f42"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "e12b3f13-d179-4f40-b792-6c91dbec4b15"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,387 @@
+{
+  "_resourceType": "scene",
+  "id": "bffe77b0-c024-4a31-b2f8-c9282a8bf820",
+  "_index": 99,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Lightbringer palace throne room",
+  "symbol": "scene_100",
+  "x": 60,
+  "y": 2730.3929158311057,
+  "width": 27,
+  "height": 53,
+  "backgroundId": "c6715f83-5a03-44c5-bf63-a18e31b8e062",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-bg-2",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "9b0c6669-fdc4-496b-be23-cde79c22dab9"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 6,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "51",
+              "flag": 5,
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_FLAGS",
+                  "args": {
+                    "variable": "51",
+                    "flag1": false,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": true,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "50f978a2-fd3f-4ba9-86e4-3ce7632ad5a8"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486"
+                  },
+                  "id": "f33e8f91-5782-41c4-80dd-97fa3b5d87b6"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 50
+                    },
+                    "moveType": "vertical",
+                    "useCollisions": false
+                  },
+                  "id": "08db9a53-ff2f-41c0-bfa1-5fe83f10599e"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "left"
+                    }
+                  },
+                  "id": "f28e0455-73f8-413a-8838-6016273bc4ec"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    }
+                  },
+                  "id": "54320aed-adb9-4917-84a8-dfb1a9e91081"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "abad8b4a-f1cc-45ee-b73e-cfb30ef9996d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Thunder: sorry \nabout rain. she \ncould be a ",
+                      "nightmare around\nmonsters. you do\nlook good for",
+                      "someone that got\nhurt like that.",
+                      "the reason I \ncalled you here \nis I saw the",
+                      "same vision you \nhad. those \nghosts are on",
+                      "top of a \nmountain \nsoutheast of",
+                      "this palace"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+                    "__collapse": false
+                  },
+                  "id": "69d70adb-a031-43fe-a233-2d4d4168f45e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "57fe557d-55d0-4c1a-a30e-6c022a92d462"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: is this all\nyou could of \njust said this",
+                      "in the phone\ncall."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "0efdb7d5-e5e0-45e3-bbf5-6eee07aa3516"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "434db642-0b1f-49f9-abd3-b29fa912e777"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Thunder: I \nwanted to make\nsure you are ok ",
+                      "and I wanted to \nmake sure rain \ndidn't try to",
+                      "harm you."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "645ae307-9042-47ce-b816-bdd4186f1f9d"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "37",
+                    "flag": 1,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "999bbd6f-c1cc-4ea9-8238-b4e7868c1cca"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_ACTIVATE",
+                        "args": {
+                          "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486"
+                        },
+                        "id": "e2265865-b664-4368-bf2c-62df190fa68a"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486",
+                          "x": {
+                            "type": "number",
+                            "value": 12
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 50
+                          },
+                          "moveType": "vertical",
+                          "useCollisions": false
+                        },
+                        "id": "b97facdf-12ba-4989-ad5a-fb8782c20d71"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "$self$",
+                          "direction": {
+                            "type": "direction",
+                            "value": "left"
+                          }
+                        },
+                        "id": "dee1218e-5be2-4bc5-82d5-50b65fd474a0"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                        "args": {
+                          "actorId": "e0a08631-3906-4112-8fcc-dded7c0ab486",
+                          "direction": {
+                            "type": "direction",
+                            "value": "right"
+                          }
+                        },
+                        "id": "3fdf3999-d39d-4a33-b244-09a427b8c80f"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "2fa64a1c-ac06-4d6f-8098-438287706b09"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "???:thank you \nfor not fighting\ncedric. to be",
+                            "honest I hate\nthe guy. what\ndid you want to",
+                            "have an audience\nwith me"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "ff683938-7804-4337-8e58-7444c3e5a31c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "86992942-d4cf-4de6-845a-52ff741ce5e1"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem:I am in love\nwith your son\nand can you",
+                            "unbanish him."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "5243a124-b7c0-457e-88b9-17a88f8ad575"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "237908cc-4568-4e7b-b859-dc9644ae0b26"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "???:sadly I \ncannot as that\nright is with",
+                            "the solar \ncouncil. but I\ncan weaken its",
+                            "usefulness. I\nwill call them \nfor a task each",
+                            "day they want.\nthen if your\nstory checks",
+                            "out I may make\nthem the ruler.\nthey can't",
+                            "banish the ruler\nto the world\neven if they",
+                            "want to."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "cde8ce54-285c-4dd2-b11a-31d5012b2d73"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "c174f2e7-f5f9-41f6-a23a-3154ead59dd3"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:as a\nquestion what is\nyour name."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "307193f7-3cd6-4c7d-804e-1b13f605a46c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "eb0e4bb9-31f6-4956-9709-989ac8dda75b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "???:my name is \nthunder and \nwhile not",
+                            "here at the \nmoment my wife's\nname is rain",
+                            "I am glad to\nsee that he \nfound someone",
+                            "even though it\nwasn't what I\nwas expecting.",
+                            "to be honest I\nnever believed\nwhat was said",
+                            "he did. I will\ncall him after\nyou leave"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "292dd91f-a7ab-43f1-88a6-d1110113e2f2"
+                      },
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "c8944a13-b7b3-420b-b788-7321477d65fd",
+                          "x": {
+                            "type": "number",
+                            "value": 32
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 12
+                          },
+                          "direction": "",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "58fadaac-b039-4427-ba22-ad4f8d531e88"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "089b3cfa-f93c-43cc-8f28-e3a74efe9de0"
+                }
+              ]
+            },
+            "id": "0defdfb3-17c1-4053-81e0-223858adda40"
+          }
+        ]
+      },
+      "id": "a05611ab-904a-4c79-a71d-e38ff71bcddf"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "3544c109-5e7c-4cd5-bca3-e76a555afbc1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "007a+0fd+002+0f19+002+0f19+002+0f2+0015+0f2+002+0f2+0015+0f2+002+0f2+0014+0f2+003+0f2+0014+0f2+003+0f2+0014+0f2+003+0f2+0014+0f2+003+0f2+0014+0f2+003+0f2+0014+0f2+003+0f2+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0014+0f2+002+0f3+0012+0f4+002+0f7+00e+0f4+002+0f7+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f2+00e+0f2+009+0f6+006+0f6+009+0f6+006+0f6+00d+0f2+006+0f2+0011+0f2+006+0f2+0011+0f2+006+0f2+007+"
+}

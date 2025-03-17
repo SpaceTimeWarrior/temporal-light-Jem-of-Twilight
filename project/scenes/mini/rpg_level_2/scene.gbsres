@@ -1,0 +1,107 @@
+{
+  "_resourceType": "scene",
+  "id": "867b709d-bd48-426d-af10-181fa6cda775",
+  "_index": 90,
+  "type": "SHMUP",
+  "name": "mini/RPG Level 2",
+  "symbol": "scene_91",
+  "x": 3755.4044406114717,
+  "y": 1729.5670995670991,
+  "width": 135,
+  "height": 18,
+  "backgroundId": "074aab26-d7b4-4867-9ed1-2d5ea3b50226",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "parallax": [
+    {
+      "height": 6,
+      "speed": 1
+    },
+    {
+      "height": 6,
+      "speed": 1
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0c8c47d5-2e08-455b-bf51-b1caae42846d"
+      },
+      "id": "c43a6d30-e637-45c8-948c-e9a8229e4a5e"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "f141c6e3-e61c-42a6-a9f5-1e4e82f6c5a1"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "dc0b84d0-95ce-4f43-ba3d-27280a5adec5"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "52c7d86d-8fbf-4f44-a834-78ce506215e2"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "2de7659d-c3b0-4c74-954d-5ea1d33e56c4"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "bbc91778-a18f-4241-b250-c4ee3d010eb5"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "596ac62e-930e-4b3f-ad70-cdb0e5c05f9a",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "545b06ca-906b-471b-a562-9bdd74892591"
+    }
+  ],
+  "collisions": ""
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "f7c7e275-b6a0-43dc-a25e-7f924269a681",
+  "_index": 0,
+  "symbol": "trigger_104",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 65,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 21
+        },
+        "y": {
+          "type": "number",
+          "value": 55
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "c6523171-def7-4462-8efe-949e1561842a"
+    }
+  ],
+  "leaveScript": []
+}

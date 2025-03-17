@@ -1,0 +1,59 @@
+{
+  "_resourceType": "trigger",
+  "id": "c564ba22-f811-4362-99ce-738d1a2827d0",
+  "_index": 2,
+  "symbol": "trigger_178",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 0,
+  "width": 94,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "29"
+      },
+      "id": "59d556e9-08a6-43b8-a014-d1c96df1c694"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "5bb97b65-3dbe-4c2b-906a-35ff28eaacb9",
+        "x": {
+          "type": "number",
+          "value": 37
+        },
+        "y": {
+          "type": "number",
+          "value": 35
+        },
+        "direction": "up",
+        "fadeSpeed": 1,
+        "__collapse": false
+      },
+      "id": "714a6a63-7293-4361-ad5d-415fb76d8bf9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "variable",
+          "value": "28"
+        },
+        "y": {
+          "type": "number",
+          "value": 35
+        },
+        "units": "tiles"
+      },
+      "id": "50fb7366-44af-431c-b46f-586e76c8d267"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,51 @@
+{
+  "_resourceType": "script",
+  "id": "cc1ca802-f8d0-4644-8683-f552eb0f6e91",
+  "name": "heal player",
+  "symbol": "script_7",
+  "description": "heals the player and incriments it checking if the value does not go above maximum",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "0bdeac72-6600-4266-9d51-c1608c7665aa"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": ">",
+        "comparator": 20,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 20
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "6"
+            },
+            "id": "49e36b4b-f33a-45a9-928d-5733ccc85551"
+          }
+        ],
+        "false": []
+      },
+      "id": "875e064f-7de7-487a-bcf9-870d5f66380b"
+    }
+  ]
+}

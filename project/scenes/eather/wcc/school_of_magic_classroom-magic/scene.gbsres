@@ -1,0 +1,84 @@
+{
+  "_resourceType": "scene",
+  "id": "705a989d-9337-4284-a728-ef57c0b1d88b",
+  "_index": 20,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/school of magic classroom-magic",
+  "symbol": "scene_21",
+  "x": 2968,
+  "y": 48,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "97ce41cb-2a0e-4715-bcb4-bf5f01738ae1",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-bg-6",
+    "",
+    "",
+    "",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "5fb3cec3-f302-4012-a955-49104282100c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "29080ca3-5e92-490c-8374-dd4fd04e0168"
+          }
+        ]
+      },
+      "id": "ad253618-87b3-4de3-875b-241af9e21b7d"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "24e33fb8-bd3f-4be1-b212-9d3f28ab9bfc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 26
+        }
+      },
+      "id": "cfd7c750-8c4c-4204-b253-ea7e958c142d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1a2+006+0f16+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+007+012+006+012+006+012+003+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0f6+00d+012+006+012+006+012+00d1+0ff0+"
+}

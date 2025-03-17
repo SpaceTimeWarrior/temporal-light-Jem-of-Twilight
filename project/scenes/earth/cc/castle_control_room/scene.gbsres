@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "9d018d32-206f-4b03-a66a-be1667f88ee5",
+  "_index": 184,
+  "type": "TOPDOWN",
+  "name": "earth/cc/castle control room",
+  "symbol": "scene_188",
+  "x": 1200,
+  "y": 2784,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "5de2e7e7-958d-408e-86a3-7b442a755a72",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f146+00!0f1a+00!0fc+00!0f1a+00!0fc+00!0f1a+00!0fc+00!0f1a+00!0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+00!0fa+006+0fa+00!0fc+00!0fa+006+0fa+00!0fc+00!0fa+006+0fa+00!0fc+00!0fa+006+0fa+00!0fc+00!0fa+006+0fa+00!0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0f12+0010+0f18+0010+0f1c+008+0f20+008+0f10+"
+}

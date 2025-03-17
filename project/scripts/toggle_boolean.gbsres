@@ -1,0 +1,61 @@
+{
+  "_resourceType": "script",
+  "id": "30884789-1b49-4c54-b1ec-32ec43d5c553",
+  "name": "toggle boolean",
+  "symbol": "script_16",
+  "description": "",
+  "variables": {
+    "V0": {
+      "id": "V0",
+      "name": "Variable A",
+      "passByReference": true
+    }
+  },
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "V0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "V0"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "27092e0f-9905-48b1-bae5-dc73feef75b1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "V0",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "9b5bc2b6-c29f-4bb4-b90d-65104a6c45ed"
+          }
+        ]
+      },
+      "id": "bfa68ea4-0876-4a25-bd76-25fb5f669f34"
+    }
+  ]
+}

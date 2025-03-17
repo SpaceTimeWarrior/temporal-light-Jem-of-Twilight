@@ -1,0 +1,54 @@
+{
+  "_resourceType": "scene",
+  "id": "1a8f3125-2847-409b-a32f-333be591d836",
+  "_index": 96,
+  "type": "SHMUP",
+  "name": "cut/credits 1",
+  "symbol": "scene_97",
+  "x": 1584,
+  "y": 3552,
+  "width": 135,
+  "height": 18,
+  "backgroundId": "616b4026-9c6b-41b0-9581-39f9576996ff",
+  "tilesetId": "",
+  "paletteIds": [
+    ""
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ENGINE_FIELD_SET",
+      "args": {
+        "engineFieldKey": "shooter_scroll_speed",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "57269a4d-4628-45b3-a982-a444416bf3cd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "39",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "9c2ea0d3-80b3-4828-9327-5d004858623c"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0c8c47d5-2e08-455b-bf51-b1caae42846d"
+      },
+      "id": "e3422718-ceed-4be4-a826-3d04951c6f05"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0097e+"
+}

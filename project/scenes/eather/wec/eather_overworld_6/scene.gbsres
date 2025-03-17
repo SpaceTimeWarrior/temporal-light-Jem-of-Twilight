@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "26764a82-7e67-43da-8189-3077c371a30e",
+  "_index": 132,
+  "type": "TOPDOWN",
+  "name": "eather/wec/Eather Overworld 6",
+  "symbol": "scene_133",
+  "x": 7968,
+  "y": 1808,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 31
+        }
+      },
+      "id": "61f106c2-a54e-460b-8993-9c735506edc7"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "e5c411ab-7368-4ab9-b6b7-0ed4252bf131"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

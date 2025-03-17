@@ -1,0 +1,59 @@
+{
+  "_resourceType": "trigger",
+  "id": "e79ddee0-a202-45a8-ae4c-cd84a4cf1db3",
+  "_index": 0,
+  "symbol": "trigger_81",
+  "prefabId": "",
+  "name": "",
+  "x": 48,
+  "y": 59,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "86519a5a-6d9c-442b-8520-2bd8f8fc7e25",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "1ef8e65a-1283-46dc-a39d-7e4a63aad49d"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "class is still in\nsession there must\nbe a room you",
+                "haven't done the\nlesson for"
+              ],
+              "avatarId": ""
+            },
+            "id": "d7de7acf-89f1-4ad2-bcc1-fa295b0dceec"
+          }
+        ]
+      },
+      "id": "787d5a7c-c030-45f5-9e5a-f2f768fed688"
+    }
+  ],
+  "leaveScript": []
+}

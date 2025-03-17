@@ -1,0 +1,108 @@
+{
+  "_resourceType": "scene",
+  "id": "cc581070-5a9d-4c4a-9de9-ab24be0d53f0",
+  "_index": 166,
+  "type": "TOPDOWN",
+  "name": "cut/blackout",
+  "symbol": "scene_170",
+  "x": 4262.25,
+  "y": 3245.10009765625,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c454e7-556c-412a-be69-68ae4fe7db55",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "3b1b5042-cb29-4990-879d-7b900f93a3e6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "20915df2-e87b-42b5-bca5-b5b198c20405"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "crystal: mommy r\nyu alright?...\nI don kno",
+          "what todo. mybe\ndaddy knows"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "70ade385-e283-4e2b-a84e-ee2da4da9a20"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "some time passes"
+        ],
+        "avatarId": ""
+      },
+      "id": "aa1a4ff3-0f80-4b13-8342-69982d8ce9bf"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare:crys where\nis mommy?\n...",
+          "no... I got to\nstop the \nbleeding.",
+          "Bright bring \nover berry this\nis an emergency"
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "c65ea2c9-d673-4128-8a24-1791784cdb92"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "you completely \nlose consiousness."
+        ],
+        "avatarId": ""
+      },
+      "id": "38067c54-b7b4-4033-95f3-7d571edd6d63"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "ed1ea92d-258a-45da-b13e-3d2ad7499b79",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "5bc45262-9c50-49b4-af87-af7bdeaed4d8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

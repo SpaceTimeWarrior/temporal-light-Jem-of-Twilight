@@ -1,0 +1,304 @@
+{
+  "_resourceType": "actor",
+  "id": "b2ba4a3b-2726-4afc-9212-75a425dd97e8",
+  "_index": 0,
+  "symbol": "actor_198",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 28,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a77e7e0c-b47c-4d40-aef0-957b0efba683",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 0.25,
+  "animSpeed": 0,
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "f4b7d31a-5cfd-4c57-a4a2-3eeefd555aaf"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "dmg"
+            },
+            "id": "3d180317-3a3d-49d9-9ced-670c4e042de2"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brier: I \nwouldn't trust \nhim if I where",
+                "you... you will\ncall this off."
+              ],
+              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+            },
+            "id": "2b2caed3-0bb1-4c5f-87de-3a6e79ab4542"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "727ef08a-2c39-41e1-8c47-be4894fceb98"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "1e55001d-2600-4277-a25f-cc26a6aedd26"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: first off\nthat is my \ndecision to make",
+                "and stop using \nmind magic to \nforce me to make",
+                "a decision."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "fc931ca3-0970-4510-b330-94ed0eb1e971"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "4a263590-21a8-43ed-b5ef-c2df3919a2f4"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "dmg"
+            },
+            "id": "42c4cf82-7c85-4a31-8d16-e1a6405c104d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brier: fine then\nare you going to\ngive up the",
+                "crown so I may\nrule the world\nand You will",
+                "have whomever\nyou want to \nmarry"
+              ],
+              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+            },
+            "id": "dc04ac6c-7137-4d7a-954c-e313af55c333"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "e379332e-f18c-46a8-b56e-c8f7b12c2aa2"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "2d4b251d-0241-40eb-98e1-e396b236772c"
+            },
+            "id": "f2d8c01c-1109-46f6-8185-35efaa721973"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "dmg"
+            },
+            "id": "192059b1-0df5-4b05-bf7b-cecc2ed160e1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Brier:\nZZZZZZ\nZZZZZZ"
+              ],
+              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+            },
+            "id": "e0c7f65f-0843-46fc-97bb-3b2821c666d6"
+          },
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 12,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "df57b7f5-abbd-41da-8d36-cc9c89d6f0f6"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:still \nsleeping as \nusual."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "521834dd-ed59-4ec1-9a29-fb579322be72"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "dmg"
+                  },
+                  "id": "b8c80ea4-8d48-4623-85d1-9897c6595c21"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Brier:\nZZZZZZ\nZZZZZZ"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ca22d43d-f8be-4298-9a43-cb8a9c62fc45"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "55592457-ea15-4762-8b1c-8bf6583a3e06"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I will leave a\nsuprise for her \nwhen she wakes."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ab23985b-7a75-4ee2-9121-6d0fc4c34c62"
+                }
+              ]
+            },
+            "id": "0ed5a690-4fb2-418e-b813-90eaa4a47a21"
+          }
+        ]
+      },
+      "id": "826e8da1-768f-4ab5-8baa-2ea44d48fbbc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "a4b27117-4eeb-465d-9215-17bec929b4a8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              }
+            },
+            "id": "19b6f194-bfa1-4601-8d1d-6897b29ce1ce"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              }
+            },
+            "id": "640ed981-0214-4737-8447-7251127ce410"
+          }
+        ],
+        "false": []
+      },
+      "id": "1c0a1f0b-daf6-4803-acec-399ccf8b4cb8"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "4c7090a8-271a-4535-9d9a-2c49575b47e1"
+    }
+  ],
+  "hit2Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "bc732d27-4767-4bff-9ac6-a97bc892404c"
+    }
+  ],
+  "hit3Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "7bf02aec-9fb6-4689-a0e0-157422683fa0"
+    }
+  ]
+}

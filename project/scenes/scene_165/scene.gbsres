@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "305f9ba8-b4cf-4476-924c-9ddabd2edee0",
+  "_index": 161,
+  "type": "TOPDOWN",
+  "name": "Scene 165",
+  "symbol": "scene_165",
+  "x": 7160,
+  "y": 2112,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

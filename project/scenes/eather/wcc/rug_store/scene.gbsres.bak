@@ -1,0 +1,53 @@
+{
+  "_resourceType": "scene",
+  "id": "e66e8851-ca4d-4e03-927f-b6cbb7433af8",
+  "_index": 47,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/rug store",
+  "symbol": "scene_48",
+  "x": 2425.1829461713214,
+  "y": 1326.879432624113,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "37d12c89-ff73-489b-a6c5-05172547a2b2",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-bg-5",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "e68f1f5f-07a8-415d-a718-267db8b3d660"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 19
+        }
+      },
+      "id": "a36a42f4-4329-4840-87c5-0a4456c32f1a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "0d16e60d-a805-4d23-ba3d-861e88c4df17"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00190+"
+}

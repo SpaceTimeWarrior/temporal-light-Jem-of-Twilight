@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "28169f7a-7462-46f6-93bf-82bf291e29a8",
+  "_index": 2,
+  "symbol": "actor_405",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "fd8cb6fd-2e05-4805-b10c-ffbd981b2746",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:my old \nbabysitter for\nwhen my parents",
+          "where out"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "e5acbc71-5d59-46d8-85da-7fb079f9c31c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

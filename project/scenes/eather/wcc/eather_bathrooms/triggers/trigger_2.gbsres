@@ -1,0 +1,28 @@
+{
+  "_resourceType": "trigger",
+  "id": "a7a232e1-e1e6-446f-bdfc-048feba931cc",
+  "_index": 1,
+  "symbol": "trigger_249",
+  "prefabId": "",
+  "name": "",
+  "x": 23,
+  "y": 30,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:I don't \nthink that is \nappropriate",
+          "I do feel bad \nfor them though",
+          "they have a small\nroom"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "c6013fb9-08ad-4081-aeb2-8893355aaeca"
+    }
+  ],
+  "leaveScript": []
+}

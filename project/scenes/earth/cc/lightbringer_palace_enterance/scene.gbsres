@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "156d748e-5162-491c-bf60-8d328e603e6f",
+  "_index": 70,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Lightbringer palace enterance",
+  "symbol": "scene_71",
+  "x": 270.54761904761887,
+  "y": 3368.595238095237,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "7ad11be3-7558-4e13-afc5-969edd42a12c",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "4a5a6f2e-10f5-4342-8e30-eac8cb0fa350",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
+    "default-bg-1"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "e2f59f40-74d0-4d02-b5ac-d1eef9b6e2b4"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "267a5aeb-c890-40b1-8c48-2f9b94200578",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "ba19b51a-fc0b-48ba-87e2-df4b56aa7904"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "731fd6d2-93b4-4767-a452-c3d0f7c04be9"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "267a5aeb-c890-40b1-8c48-2f9b94200578",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "12f16d02-2904-44af-92bb-75a36ec2a2ff"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "df566d29-f752-4364-9ed7-7176b664a33a"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "267a5aeb-c890-40b1-8c48-2f9b94200578",
+        "priority": "high",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "33d93985-81df-4f7e-9969-ff231703c620"
+    },
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "6"
+      },
+      "id": "efb0a8a3-510d-4526-9c24-7f8ff837c299"
+    }
+  ],
+  "collisions": "002+0f!00ca+0f1f+0011+0f1f+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+004+0fe+001c+0f14+001c+0f6+0014a+0f14+001c+0f14+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+0010+0f2+001c+0f2+008+0fa+001c+0f2+008+0fa+001c+0f2+008+0f2+00e+0f4+006+0fe+008+0f2+00e+0f4+006+0fe+008+0f2+00e+0f4+006+0f2+0014+0f2+00e+0f4+006+0f2+0014+0f14+006+0f2+0014+0f14+006+0f2+0026+0f2+006+0f2+0026+0f2+006+0f2+0026+0f2+006+0f2+0026+0f2+006+0f2+0010+"
+}

@@ -1,0 +1,132 @@
+{
+  "_resourceType": "actor",
+  "id": "87ad0313-c65f-4907-ab6b-f6165d3a8d39",
+  "_index": 5,
+  "symbol": "actor_248",
+  "prefabId": "",
+  "name": "",
+  "x": 34,
+  "y": 41,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "eb02cc61-9dcf-4935-817d-c7412857f984",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "bfda1d99-ed83-40b8-b82f-c2cbb17589f3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          " Jem:\n The plant looks\n harvestable"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "f4cc3672-c0e4-444a-94b6-c9682dcd9b5a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "91915fc8-9be7-4fcf-b578-0affa739ddfb",
+        "$variable[V0]$": {
+          "type": "number",
+          "value": 1
+        },
+        "$variable[V1]$": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "934bed1e-018f-45ec-9f3b-1b994ff42ec4"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "3d4a4064-afce-4a9b-9b60-62b6a8f3636f"
+      },
+      "id": "9f453894-202f-4fba-abeb-284a245d793a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "74aa24da-6e16-48ee-a147-4f986ca1b3d2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "511",
+        "operator": "<",
+        "comparator": 1,
+        "__collapseElse": true,
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "511"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": true
+            },
+            "id": "1eebd944-05c3-46f3-8acb-05b521fb40f0"
+          }
+        ],
+        "false": []
+      },
+      "id": "d375a25c-3745-470d-9002-c77ed0194185"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "25",
+        "flag": 1,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "012a8a88-0aba-4089-87e5-7280d924c1bc"
+          }
+        ],
+        "false": []
+      },
+      "id": "32665389-4804-4fa0-a247-7c7d28231c55"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

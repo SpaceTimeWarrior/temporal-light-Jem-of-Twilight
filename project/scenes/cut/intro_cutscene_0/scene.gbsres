@@ -1,0 +1,104 @@
+{
+  "_resourceType": "scene",
+  "id": "a2a8d013-e3d5-47a1-ad09-5e14f20fb64a",
+  "_index": 42,
+  "type": "TOPDOWN",
+  "name": "cut/intro cutscene 0",
+  "symbol": "scene_43",
+  "x": 2848.5714285714284,
+  "y": 791.1071428571429,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ed778729-0963-4c0f-b911-fe84c1d262d9",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
+  "spritePaletteIds": [
+    "default-bg-5",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "b4fb7939-5077-4207-b427-05897d0ace85"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "c8499a53-7ba9-41d5-82e6-86a9f42253c6"
+          }
+        ]
+      },
+      "id": "e918619e-cc68-47fc-8049-00c70c42158b"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "aa499335-5fad-4dda-96e6-aa96661bf784"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Welcome to \nTemporal Light-Jem\nof Twilight.",
+          "In this game you \nwill play as Jem\nWolfsbane."
+        ],
+        "avatarId": ""
+      },
+      "id": "fd198798-66ba-4ba0-8ae4-88d6b1e12dd3"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "c0c9c490-95e7-48c0-82bb-08841b07bed1",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "04733ce4-ff80-4269-861d-3ced5a3ea95a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

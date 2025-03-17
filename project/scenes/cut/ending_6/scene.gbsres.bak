@@ -1,0 +1,118 @@
+{
+  "_resourceType": "scene",
+  "id": "016dca28-7baa-4b77-a00c-b6ad4e803edc",
+  "_index": 106,
+  "type": "TOPDOWN",
+  "name": "cut/ending 6",
+  "symbol": "scene_107",
+  "x": 2735.54296875,
+  "y": 517.7142857142857,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem managed to \nsneak the egg to\nluna and after",
+          "talking with Flare\nhe allowed her.\nto keep it",
+          "5 years later."
+        ],
+        "avatarId": ""
+      },
+      "id": "ed7236d5-09a8-4f1d-9cce-605bf6580bd7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare: the egg\nis moving. it\nmust be close to",
+          "hatching."
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "55896701-084d-4f29-bb74-8c541237b5a3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "the egg hatched\nand a small\nfemale ",
+          "phoenix emerged \nout of it"
+        ],
+        "avatarId": ""
+      },
+      "id": "1ec2e8e8-e50f-49e7-8aaf-223411d14213"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Aww so cute.\nbut there is a \npattern on the",
+          "body. whitch is \nodd for a female"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "c0149987-bdb2-4eb2-8ffa-a318454ac358"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare:that is \nodd but do you",
+          "have a name for\nher."
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "c0a0a1bf-e4e1-447f-9ca0-b1e894bbcbcc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: yes I will\ncall her flame\nfor the fire",
+          "pattern on her \nchest"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "cfa5657f-fdac-4c94-b8fb-90150a3b40d2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "and so Jem,Flare,\nand Flame lived\nhapily ever after",
+          "the END"
+        ],
+        "avatarId": ""
+      },
+      "id": "e2c1bafb-3590-4437-b47c-5252c3c5f232"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "e91ad5ca-dc63-4ce9-b9b2-0ec2b20205bb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

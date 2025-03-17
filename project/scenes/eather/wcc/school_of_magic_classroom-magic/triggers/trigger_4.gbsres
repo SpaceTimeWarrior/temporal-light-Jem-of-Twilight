@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "55ccd1d1-2ebc-4160-ad00-5a60dc19a2fa",
+  "_index": 3,
+  "symbol": "trigger_148",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 11,
+  "width": 12,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: Many Books \nabout magic \nenchantments"
+        ],
+        "avatarId": ""
+      },
+      "id": "d883c9a3-5d9c-4f68-aebc-374056db08b0"
+    }
+  ],
+  "leaveScript": []
+}

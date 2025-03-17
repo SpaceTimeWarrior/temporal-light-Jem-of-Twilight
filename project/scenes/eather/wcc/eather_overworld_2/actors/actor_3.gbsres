@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "23ec29de-d7ba-4c0c-a282-c808f1d99f0f",
+  "_index": 2,
+  "symbol": "actor_284",
+  "prefabId": "",
+  "name": "",
+  "x": 30,
+  "y": 35,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "d3ad4374-3180-4276-8eab-1f2219db3007"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "For directions \nlook on both sides\nof the road"
+        ],
+        "avatarId": ""
+      },
+      "id": "4f8f8e5d-850e-4a42-8b84-3fb9236225ca"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "4495834b-2af1-4a57-8591-b506216b817c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

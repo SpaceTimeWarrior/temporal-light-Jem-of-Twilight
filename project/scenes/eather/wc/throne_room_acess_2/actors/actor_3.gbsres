@@ -1,0 +1,101 @@
+{
+  "_resourceType": "actor",
+  "id": "5e6221ad-8a0c-41ed-9c0e-9cd024070ca3",
+  "_index": 2,
+  "symbol": "actor_112",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "889102ae-ff0a-4037-94aa-6aed5b2a8154"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Wolf royal guard:\n... ... ... ...is\neverything alright"
+        ],
+        "avatarId": ""
+      },
+      "id": "4cc73f4c-0a1f-4fa7-ad69-c3883356d8f2"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+      },
+      "id": "8ff7726b-63fc-4e69-9fe9-bb824469eb17"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Their internal \nvoice: Personally \nher parents are ",
+          "just royal pricks\n      ...\ncould she read my",
+          "mind. no it can't \nbe. you are\noverthinking thi.."
+        ],
+        "avatarId": ""
+      },
+      "id": "74587c40-f8c4-47fd-9f95-09782ad6d6ad"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: I don't \nneed to read \nyour mind to",
+          "tell your\nnervousness"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "88e2e608-11f8-49a0-80a0-f107b3184821"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+      },
+      "id": "8bd95580-6570-4765-8271-097cd10e850d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "4c419d63-343d-4288-9f46-1fce88ef76b8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "6eccec79-1d2e-4446-8b7e-4e1a6ad9126a"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

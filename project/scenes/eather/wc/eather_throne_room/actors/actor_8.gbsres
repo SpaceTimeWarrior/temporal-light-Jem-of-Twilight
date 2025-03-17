@@ -1,0 +1,76 @@
+{
+  "_resourceType": "actor",
+  "id": "0da4066f-34f0-4907-b02a-94f0ec7debae",
+  "_index": 10,
+  "symbol": "actor_438",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6b9c0f17-989c-442f-803e-bd00b38cf860",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "db340b81-9273-47b4-9b2d-7941874cc417"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pearlite \nwispering:I will\nnot let him kill",
+          "you... it is\nbest you try to\npacify him while",
+          "my magic takes\neffect."
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "b29b1daa-471a-481f-b828-ecd676a27edd"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "3748f778-1c74-4251-a166-d45881e8b2a2"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 12,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "5da6b5eb-e55f-4967-bd9f-f9350909d8a2"
+          }
+        ]
+      },
+      "id": "ada2d86f-0b92-42c8-b0ae-e351bd9e6877"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

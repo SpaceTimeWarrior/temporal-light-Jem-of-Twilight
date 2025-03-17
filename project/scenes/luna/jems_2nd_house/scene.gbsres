@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "a48b6e22-2d2a-4f01-97f6-333781858c06",
+  "_index": 75,
+  "type": "TOPDOWN",
+  "name": "luna/jem's 2nd house",
+  "symbol": "scene_76",
+  "x": 4995.600260416665,
+  "y": 1518.4953031994048,
+  "width": 36,
+  "height": 39,
+  "backgroundId": "4913f4a4-e4b8-48d2-8b8a-4059a0e43395",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "172f15a8-cf89-48fe-9c4c-2d40ea666b9e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 123
+        }
+      },
+      "id": "11fea26a-cfd8-4c7f-9a42-5e1fff9e71af"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00150+0f17+004+0fa+0015+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f9+0010+0f7+00c+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f8+006+0f4+00103+"
+}

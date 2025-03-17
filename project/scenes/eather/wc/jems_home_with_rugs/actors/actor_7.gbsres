@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "afe17c01-63b6-4891-a32e-bac454263485",
+  "_index": 8,
+  "symbol": "actor_66",
+  "prefabId": "",
+  "name": "",
+  "x": 20,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "0bf9fccd-098b-47b9-bd76-abd7e5a50e48"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nkeyboard and \nmouse. maybe",
+          "later I will\nplay a game",
+          "no power button.\n..oh it is next\nto the screen"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "2efeede3-7689-4c81-a0a0-3f6c0ad6f5e4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "b37dd2f6-b7e5-4f4f-9216-9054585223cf"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

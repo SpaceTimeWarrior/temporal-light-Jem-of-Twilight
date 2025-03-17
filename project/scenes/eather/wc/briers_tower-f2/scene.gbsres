@@ -1,0 +1,80 @@
+{
+  "_resourceType": "scene",
+  "id": "da13d530-33c3-44dd-b3c4-5fec43d18a83",
+  "_index": 34,
+  "type": "TOPDOWN",
+  "name": "eather/wc/Brier's tower-f2",
+  "symbol": "scene_35",
+  "x": 539.6325156325158,
+  "y": 2658.3624656864426,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "dfdad7ed-affd-453e-a89d-527a89996f8e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 12
+        }
+      },
+      "id": "7daad99b-4e4d-468f-b517-0186712ee6f6"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 14
+              }
+            },
+            "id": "da27fae8-788a-4c96-ae12-f3fda669b749"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "337c6b85-c694-40cd-8a43-30f0f50112da"
+          }
+        ]
+      },
+      "id": "598ecb52-efe0-4308-9a87-73231d7b3645"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "02f2533f-3c99-4018-b20a-e907555e436d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0037+0f8+0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0020+0f!006+0f!0018+0f9+006+0f7+0012+0f!0014+0f!0012+0f!0014+0f!0012+0f!0014+0f!0012+0f!0014+0f!0012+0f!004+0fc+004+0f!0012+0f!004+0f!00a+0f!004+0f!0012+0f!004+0f!00a+0f6+0012+0f!004+0f!0022+0f!004+0f!0022+0f!004+0f!0022+0f!004+0f!0022+0f!004+0f!0022+0f!004+0f!0022+0f!004+0fb+0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f10+0018+0f!00160+"
+}

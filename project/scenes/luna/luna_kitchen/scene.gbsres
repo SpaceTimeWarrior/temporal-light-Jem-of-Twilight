@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "d0715bb7-fad4-4a0c-ad0d-c199ba52d3e2",
+  "_index": 60,
+  "type": "TOPDOWN",
+  "name": "luna/Luna kitchen",
+  "symbol": "scene_61",
+  "x": 4462.046697443182,
+  "y": 5787.210278003246,
+  "width": 48,
+  "height": 18,
+  "backgroundId": "b36cc65f-c309-43c7-9d47-2b66703ae07e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "5fca9593-0fe3-49ab-b545-543ec7baf381"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 102
+        }
+      },
+      "id": "411645ba-b736-4214-b9d8-b28bbbf5a621"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f16+006+0f2a+006+0f2a+006+0f2a+006+0f2a+006+0f18+001a+0f16+002a+0f6+002a+0f6+002a+0f6+00e+0fe+00e+0f6+00e+0f!00c+0f!00e+0f6+00e+0fe+00e+0f6+002a+0f6+002a+0f6+002a+0f6+002a+0f62+"
+}

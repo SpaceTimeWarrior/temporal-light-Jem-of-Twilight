@@ -1,0 +1,181 @@
+{
+  "_resourceType": "actor",
+  "id": "5da45f62-31cf-4d03-892b-c7e749f118f9",
+  "_index": 0,
+  "symbol": "actor_53",
+  "prefabId": "",
+  "name": "weapon",
+  "x": 4,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e7176261-0c53-4c7f-b8f6-11fb77c8b020",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "b8e01944-497b-498a-98e8-b6f8527e01e5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "This weapon is used\nfor testing \npurposes"
+        ],
+        "avatarId": ""
+      },
+      "id": "d91cbae3-2a0b-4e67-8e61-6aea434e7567"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nA fire sword...\na small plate on",
+          "it says it's name\nis Firefight"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "__collapse": false
+      },
+      "id": "d674c738-d2c3-444c-805a-d29879f4e957"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "press select to\ntoggle between \nweapons",
+          "and press @ to\nattack"
+        ],
+        "avatarId": ""
+      },
+      "id": "b9129db0-0f58-4fb7-a747-c5da5e031e7e"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "15",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "3bc959fc-40a0-4c0a-8729-0120ca5181a1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "c8cfb819-6ca7-41ac-8d7a-c59ae31a0e86"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "04603430-85b4-4782-bd5d-110f62189984"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "5fdc53b6-8d0f-401f-a8cc-75e793a442e8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "21",
+        "operator": "==",
+        "comparator": 0,
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$",
+              "__collapse": false
+            },
+            "id": "a3cef5d7-dd1e-4495-b279-150e923b3c40"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "15",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "__collapse": false
+                  },
+                  "id": "114c876b-74e6-4ff4-8d03-772583d45e04"
+                }
+              ],
+              "false": []
+            },
+            "id": "2f3a8f59-ece5-4dec-ac80-b45ed67b6a1f"
+          }
+        ]
+      },
+      "id": "268a49c5-e65b-4d6b-bfb0-0ce706abe71e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "UI"
+      },
+      "id": "db1a60bf-8774-443a-bf33-eb9d4b3f1707"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

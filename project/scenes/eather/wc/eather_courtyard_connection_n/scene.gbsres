@@ -1,0 +1,55 @@
+{
+  "_resourceType": "scene",
+  "id": "b877406c-75a9-4c02-8a06-1ef42bc83f40",
+  "_index": 21,
+  "type": "TOPDOWN",
+  "name": "eather/wc/Eather courtyard connection N",
+  "symbol": "scene_22",
+  "x": 515.1174742683529,
+  "y": 920.0253828745039,
+  "width": 94,
+  "height": 24,
+  "backgroundId": "d12cab30-4013-47b0-a9a9-1e60151d40be",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 7
+        }
+      },
+      "id": "5cfaa5fe-aa3e-4a76-a663-2ec13ca82f30"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "82ef44e1-fc23-4431-ab17-a187531c0d4d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "002f3+0f58+006+0f!0056+0f!003+0f4+0056+0f4+00292+0f4+0056+0f4+003+0f!0056+0f!006+0f45+006+0fd+004a+0f!006+0f!0056+0f!006+0f!0056+0f8+00f+"
+}

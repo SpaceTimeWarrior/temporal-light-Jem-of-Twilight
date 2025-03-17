@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "2abc2609-b003-4e36-8290-a404e29e847a",
+  "_index": 65,
+  "type": "TOPDOWN",
+  "name": "luna/luna serenity waterfront",
+  "symbol": "scene_66",
+  "x": 6208,
+  "y": 944,
+  "width": 60,
+  "height": 40,
+  "backgroundId": "6f058699-0100-4588-912f-e6990d58e19f",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "8bd33210-21d6-4268-9b4a-cb75f9c550d9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 129
+        }
+      },
+      "id": "b49a0858-d2c3-4bb1-a83d-688e72ff6d0f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f11+00!0f3b+00!0f3b+00!0f3b+00!0f3b+00!0f3b+00!0f3b+00!0f2c+00!0fe+00!0f2c+00!0fe+00!0f2c+00!0f6+002+0f6+00!0f2c+00!0f6+002+0f6+00!0f22+002+0f8+0010+0f22+002+0f8+001e+0fe+008+0f8+001e+0fe+008+0f8+0034+0f8+0034+0f8+0034+0f8+0034+0f8+0034+0f8+0034+0f10+002c+0f10+002c+0f10+002c+0f10+002c+0f10+002c+0f10+002c+0f24+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2e+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0fe+"
+}

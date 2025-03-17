@@ -1,0 +1,28 @@
+{
+  "_resourceType": "trigger",
+  "id": "e1716cd3-624c-4d13-bc1b-77bbd66cf62a",
+  "_index": 4,
+  "symbol": "trigger_134",
+  "prefabId": "",
+  "name": "",
+  "x": 29,
+  "y": 19,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Comic books line\nthe shelves.",
+          "They are written\nin a language\nthat is long since",
+          "dead. I believe it\nis called Japanese"
+        ],
+        "avatarId": ""
+      },
+      "id": "322ca782-a8c4-49f6-bd83-944127505bde"
+    }
+  ],
+  "leaveScript": []
+}

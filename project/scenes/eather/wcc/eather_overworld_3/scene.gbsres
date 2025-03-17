@@ -1,0 +1,49 @@
+{
+  "_resourceType": "scene",
+  "id": "f22f543d-9009-4d5b-a6fa-44d7310dc2ec",
+  "_index": 39,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/eather overworld 3",
+  "symbol": "scene_40",
+  "x": 2391.0327716807215,
+  "y": 1154.9798616278124,
+  "width": 40,
+  "height": 20,
+  "backgroundId": "28c16aca-7b2c-46e0-a8cd-e2411114c227",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "aa2379be-b18d-4964-b202-b8316dd758cc",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "98d14a3b-ce62-46bd-bda8-83937efece31"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "28d14942-9570-4f15-9eda-3db4fc44978e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00f1+0f26+0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!0027+0f!002+0f26+0051+"
+}

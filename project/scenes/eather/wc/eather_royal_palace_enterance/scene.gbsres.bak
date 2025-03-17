@@ -1,0 +1,53 @@
+{
+  "_resourceType": "scene",
+  "id": "943d1d14-a3e9-4cc9-8760-0df47240544c",
+  "_index": 41,
+  "type": "TOPDOWN",
+  "name": "eather/wc/eather royal palace enterance",
+  "symbol": "scene_42",
+  "x": 1512.2285156249995,
+  "y": 1289.6000279017865,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "6ed0c31d-9f79-4937-a3c8-28728dd9927e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "d7a92b09-508b-4e91-a306-d390b8bedf02"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "5fd37816-0ace-4347-9f84-8c4fa316a386"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "3d4a4064-afce-4a9b-9b60-62b6a8f3636f"
+      },
+      "id": "90ed24c3-f6e5-4fdb-bb2f-ace6b5cf79f5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0017+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0028+0f!006+0f!0016+0f10+002+0f!006+0f!0016+0f!00e+0f!002+0f!006+0f!0016+0f!00e+0f!002+0f!006+0f!0016+0f!00e+0f!002+0f!006+0f!0016+0f!00e+0f4+006+0fd+00a+0f9+001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!005+0fe+001c+0f3+002d+0f6+00120+0f6+0024+0f6+005+0f9+001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f!001c+0f!0012+0f5+0018+0f!0012+0f4+0019+0f!0012+0f4+0019+0f!0012+0f4+0019+0f!0012+0f4+0019+0f!0012+0f1e+0095+"
+}

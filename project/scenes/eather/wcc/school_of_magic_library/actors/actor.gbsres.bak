@@ -1,0 +1,1556 @@
+{
+  "_resourceType": "actor",
+  "id": "428e219d-49c1-44e7-a71a-a4067f225f90",
+  "_index": 0,
+  "symbol": "actor_252",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 23,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "70f2ad84-d64a-421e-84aa-3d6ea26a8c5c",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "9b50777a-2ca2-4346-a134-3c59e7bf8332"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 8
+              }
+            },
+            "id": "ee32a972-e405-41e9-a8d2-d6eebc651496"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "f19dea13-ca68-4a6c-b2ab-e40f0d165003"
+          }
+        ]
+      },
+      "id": "05910198-7c83-45e3-8009-51621d79083f"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "47",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "46",
+              "flag": 0,
+              "__collapseElse": true,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "aee8adde-02ee-46e2-b7f4-e85fd498b079"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember:I have to \nmake funeral\npreperations.",
+                      "sorry I can't \ntalk more right\nnow"
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "8a7dfe67-a09a-443a-bced-b554caf20be7"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "2b963475-0854-4055-a03d-0fe50167510e"
+                }
+              ],
+              "false": []
+            },
+            "id": "af9df683-cb3d-4881-9f54-64aab4199323"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 0,
+              "__collapseElse": false,
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "46",
+                    "flag": 0,
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                        },
+                        "id": "d394c366-bcb4-48b0-af90-0a1893f35ea0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember:Please\ntell me you \ndidn't kill my",
+                            "husband. I\ndon't want to\nthink it was you"
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "00488d01-6a64-477c-9b89-5c1a966038d2"
+                      },
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "L0",
+                          "items": 3,
+                          "option1": "Lie",
+                          "option2": "Tell the truth",
+                          "option3": "lie by ommition",
+                          "option4": "",
+                          "option5": "",
+                          "option6": "",
+                          "option7": "",
+                          "option8": "",
+                          "cancelOnB": true,
+                          "layout": "dialogue",
+                          "cancelOnLastOption": true
+                        },
+                        "id": "7319bd86-5d12-4e28-98b9-c94ac825093d"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "variable": "L0",
+                          "operator": "==",
+                          "comparator": 1,
+                          "__collapseElse": false,
+                          "__collapse": false,
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "L0"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 1
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "99232dee-d6e7-4b95-8c90-00344db6ee62"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Jem: When did it\nhappen."
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "86c0059e-ec43-4621-ac07-326789dc61a1"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                              },
+                              "id": "aacf1888-e221-4ef0-a096-be321fb2c693"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Ember: Recently.\nwhen the details\nwas leaked to",
+                                  "be a female \nwolfcat with\ndark fur."
+                                ],
+                                "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                              },
+                              "id": "833dd3ca-538e-4800-bec1-db6f4aca182a"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "bf0deaca-cfda-4357-ad93-33ba537772be"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Jem:The closest\nI ever got was.\non the other",
+                                  "side of Earth.\nwith its king \ntalking about ",
+                                  "getting flare\nunbanished at\nthe time of",
+                                  "the killing. \nAlso I was told\nit was a fennec",
+                                  "kitsune male \nthat did the \ncrime. Then when",
+                                  "we got back to\nhis palace he\nwas already dust",
+                                  "the king found \nthis feather and\ngave it as a",
+                                  "gift."
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "8e4e2ece-eab4-47f4-b1b7-e473448642a7"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_EMOTE",
+                              "args": {
+                                "actorId": "$self$",
+                                "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                              },
+                              "id": "ab916df8-7eef-4261-a27d-20c74990efd9"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                              },
+                              "id": "cc96d37b-1776-4a4f-be8b-6f85de2377f2"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Ember: That is\nhis......I\nunderstand....",
+                                  "I have been \ntelling him to \nstay within the",
+                                  "protection of\nthe solar \ncouncil guard",
+                                  "too be honest \nwith his \ndemenor I am",
+                                  "supprised he \nhadn't died \nearlier.",
+                                  "Well I guess our\nchild will hatch\nfatherless. Even",
+                                  "Jem if you did I\nwill still \nprotect you just",
+                                  "I won't agree \nwith it."
+                                ],
+                                "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                              },
+                              "id": "e58bcc8c-5594-4b66-9b2b-df4491a8e86f"
+                            },
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 2,
+                                "option1": "leave",
+                                "option2": "kill",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "cancelOnLastOption": false
+                              },
+                              "id": "ebd9bf97-ca30-47b3-9edf-5cf691ca21fe"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": 2,
+                                "__collapseElse": false,
+                                "__collapse": false,
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 2
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "3b5bca5f-afa3-4c95-a5e1-2c3e390f2d6a"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember: Why I \ntrusted you and \nwas even to take",
+                                        "the full force\nof the solar\ncouncil to ",
+                                        "protec...."
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "c65a1779-cab1-4ff4-b0b8-22922f6eb912"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "21af986d-9143-4b4d-9ed6-c4e45c5eba74"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: You talk\ntoo much....."
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "f371f343-910c-42d9-8de9-3be158497453"
+                                  },
+                                  {
+                                    "command": "EVENT_ADD_FLAGS",
+                                    "args": {
+                                      "variable": "46",
+                                      "flag1": false,
+                                      "flag2": false,
+                                      "flag3": false,
+                                      "flag4": true,
+                                      "flag5": false,
+                                      "flag6": false,
+                                      "flag7": false,
+                                      "flag8": false,
+                                      "flag9": false,
+                                      "flag10": false,
+                                      "flag11": false,
+                                      "flag12": false,
+                                      "flag13": false,
+                                      "flag14": false,
+                                      "flag15": false,
+                                      "flag16": false
+                                    },
+                                    "id": "ddd80fde-01c0-448f-9c9a-9fcb8f4a8e89"
+                                  },
+                                  {
+                                    "command": "EVENT_IF_FLAGS_COMPARE",
+                                    "args": {
+                                      "variable": "46",
+                                      "flag": 1,
+                                      "__collapseElse": true
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_IF_FLAGS_COMPARE",
+                                          "args": {
+                                            "variable": "46",
+                                            "flag": 2,
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_SWITCH_SCENE",
+                                                "args": {
+                                                  "sceneId": "2148f85e-07e5-4204-9d0e-1637905fa21d",
+                                                  "x": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "y": {
+                                                    "type": "number",
+                                                    "value": 0
+                                                  },
+                                                  "direction": "",
+                                                  "fadeSpeed": "2"
+                                                },
+                                                "id": "4260d610-edfe-4a12-acdc-7a094dbc2fb6"
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "command": "EVENT_TEXT",
+                                                "args": {
+                                                  "text": [
+                                                    "Jem: What have\nI done? I should\nturn myself in",
+                                                    "before I kill \nsomeone else I\ncare about."
+                                                  ],
+                                                  "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                                },
+                                                "id": "165c47e5-8f9e-432a-adaf-24a879ff5436"
+                                              },
+                                              {
+                                                "command": "EVENT_MENU",
+                                                "args": {
+                                                  "variable": "L0",
+                                                  "items": 2,
+                                                  "option1": "turn yourself in",
+                                                  "option2": "find her child",
+                                                  "option3": "",
+                                                  "option4": "",
+                                                  "option5": "",
+                                                  "option6": "",
+                                                  "option7": "",
+                                                  "option8": "",
+                                                  "cancelOnB": true,
+                                                  "layout": "dialogue"
+                                                },
+                                                "id": "8a6f507d-7f1f-43b9-9b9b-d84835d58305"
+                                              },
+                                              {
+                                                "command": "EVENT_SWITCH_SCENE",
+                                                "args": {
+                                                  "sceneId": "fdacd9cb-99d1-4fd1-b85b-b738d9b8abfb",
+                                                  "x": {
+                                                    "type": "number",
+                                                    "value": 9
+                                                  },
+                                                  "y": {
+                                                    "type": "number",
+                                                    "value": 17
+                                                  },
+                                                  "direction": "",
+                                                  "fadeSpeed": "2"
+                                                },
+                                                "id": "e04e0692-1cda-4822-99c1-7ce3afce376f"
+                                              }
+                                            ]
+                                          },
+                                          "id": "9cd79f1d-060b-4ad4-89dc-ae1959d1ad0d"
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "ec0bd490-96bc-43a3-a32e-465b1b4eea1e"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_ADD_FLAGS",
+                                    "args": {
+                                      "variable": "47",
+                                      "flag1": true,
+                                      "flag2": false,
+                                      "flag3": false,
+                                      "flag4": false,
+                                      "flag5": false,
+                                      "flag6": false,
+                                      "flag7": false,
+                                      "flag8": false,
+                                      "flag9": false,
+                                      "flag10": false,
+                                      "flag11": false,
+                                      "flag12": false,
+                                      "flag13": false,
+                                      "flag14": false,
+                                      "flag15": false,
+                                      "flag16": false
+                                    },
+                                    "id": "2909056c-b164-4263-be32-a9bf668c9dbd"
+                                  },
+                                  {
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                    "args": {
+                                      "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                                      "$variable[V0]$": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "d1d8c8cc-cae9-4f98-8df5-be64e731e252"
+                                  }
+                                ]
+                              },
+                              "id": "0c7d57df-0943-4fa6-ba1c-a1b6f100ba71"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "variable": "L0",
+                                "operator": "==",
+                                "comparator": "0",
+                                "__collapseElse": false,
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "L0"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                }
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "51de0c29-5743-4d2f-9cdb-376311e01314"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem:When was \nthis?"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "214b8b7d-0141-43c5-bc13-8299386678f9"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "8918f7c8-7051-480a-a1dc-1d331023e5e9"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember:Not long \nago. when you \nwhere at Earth",
+                                        "did you see my\nhusband?"
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "2e74091a-9307-48f8-9685-cf397242b833"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "955edbe7-087c-4d9c-943b-3f8285573825"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem:I saw the \nking of Earth.\nand talked with",
+                                        "him about \nstopping flare' \nbanishment"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "c47b4b60-79dd-4de7-b66f-ccaf21c4c0fb"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "2746dfda-7bcc-454c-9192-4bf2f6a7265d"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember:Was he at \nthe meeting?"
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "c03453dc-0c5c-4cac-9d47-092a57240279"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "872d224a-111e-4855-a959-3598adc7d395"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem:Not to my\nknowledge. But\nhis insight",
+                                        "might of been\nhelpful.I did\nhear from ",
+                                        "Flare's father\nthat most of the\nworld leaders",
+                                        "hate him or at\nleast indiferent"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "0c837c9f-9e24-463f-bc6d-1df8830e4081"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "55224481-9386-47f9-9f24-b298fd4c3eec"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember:Is that \nso? well I will \nget your ",
+                                        "classwork you \nmissed"
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "bd0cefc1-e323-451a-96bd-26de89a13427"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "direction": {
+                                        "type": "direction",
+                                        "value": "left"
+                                      }
+                                    },
+                                    "id": "148e7edf-2dbc-44ef-ac63-dbc1179c8de7"
+                                  },
+                                  {
+                                    "command": "EVENT_MENU",
+                                    "args": {
+                                      "variable": "L0",
+                                      "items": 2,
+                                      "option1": "wait",
+                                      "option2": "KILL",
+                                      "option3": "",
+                                      "option4": "",
+                                      "option5": "",
+                                      "option6": "",
+                                      "option7": "",
+                                      "option8": "",
+                                      "cancelOnB": true,
+                                      "layout": "dialogue"
+                                    },
+                                    "id": "8e9e4d90-7973-49a9-a776-81bf808c0559"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "variable": "L0",
+                                      "operator": "==",
+                                      "comparator": 2,
+                                      "__collapseElse": false,
+                                      "__collapse": false,
+                                      "condition": {
+                                        "type": "eq",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "L0"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 2
+                                        }
+                                      }
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                          },
+                                          "id": "cabe8a9c-df4c-42ba-a484-98bfc24540f1"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Ember: Why I \ntrusted you and \nwas even to take",
+                                              "the full force\nof the solar\ncouncil to ",
+                                              "protec...."
+                                            ],
+                                            "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                          },
+                                          "id": "617122cb-870c-43a0-97d4-692a1cf3b73d"
+                                        },
+                                        {
+                                          "command": "EVENT_PALETTE_SET_UI",
+                                          "args": {
+                                            "palette": ""
+                                          },
+                                          "id": "daec3c91-3568-4a7b-82f3-4a07ca55d0b0"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "jem: You talk\ntoo much....."
+                                            ],
+                                            "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                          },
+                                          "id": "90b87c8f-096c-4d1b-a716-cdc31802d308"
+                                        },
+                                        {
+                                          "command": "EVENT_ADD_FLAGS",
+                                          "args": {
+                                            "variable": "46",
+                                            "flag1": false,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": true,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                          },
+                                          "id": "5592af0d-a630-408f-944a-6a0017525e44"
+                                        },
+                                        {
+                                          "command": "EVENT_IF_FLAGS_COMPARE",
+                                          "args": {
+                                            "variable": "46",
+                                            "flag": 1,
+                                            "__collapseElse": true
+                                          },
+                                          "children": {
+                                            "true": [
+                                              {
+                                                "command": "EVENT_IF_FLAGS_COMPARE",
+                                                "args": {
+                                                  "variable": "46",
+                                                  "flag": 2,
+                                                  "__collapseElse": false,
+                                                  "__collapse": false
+                                                },
+                                                "children": {
+                                                  "true": [
+                                                    {
+                                                      "command": "EVENT_SWITCH_SCENE",
+                                                      "args": {
+                                                        "sceneId": "2148f85e-07e5-4204-9d0e-1637905fa21d",
+                                                        "x": {
+                                                          "type": "number",
+                                                          "value": 0
+                                                        },
+                                                        "y": {
+                                                          "type": "number",
+                                                          "value": 0
+                                                        },
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                      },
+                                                      "id": "93ed959b-42ff-428a-83d5-70ef772048fe"
+                                                    }
+                                                  ],
+                                                  "false": [
+                                                    {
+                                                      "command": "EVENT_PALETTE_SET_UI",
+                                                      "args": {
+                                                        "palette": ""
+                                                      },
+                                                      "id": "df48a96e-56cc-467d-89e0-88d0fb53bc02"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_TEXT",
+                                                      "args": {
+                                                        "text": [
+                                                          "Jem: What have\nI done? I should\nturn myself in",
+                                                          "before I kill \nsomeone else I\ncare about."
+                                                        ],
+                                                        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                                      },
+                                                      "id": "4de85f2f-8590-4b8c-97c2-80443908292c"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_MENU",
+                                                      "args": {
+                                                        "variable": "L0",
+                                                        "items": 2,
+                                                        "option1": "turn yourself in",
+                                                        "option2": "find her child",
+                                                        "option3": "",
+                                                        "option4": "",
+                                                        "option5": "",
+                                                        "option6": "",
+                                                        "option7": "",
+                                                        "option8": "",
+                                                        "cancelOnB": true,
+                                                        "layout": "dialogue"
+                                                      },
+                                                      "id": "fe408294-8f0a-454a-a78e-5b508e770e01"
+                                                    },
+                                                    {
+                                                      "command": "EVENT_SWITCH_SCENE",
+                                                      "args": {
+                                                        "sceneId": "fdacd9cb-99d1-4fd1-b85b-b738d9b8abfb",
+                                                        "x": {
+                                                          "type": "number",
+                                                          "value": 9
+                                                        },
+                                                        "y": {
+                                                          "type": "number",
+                                                          "value": 17
+                                                        },
+                                                        "direction": "",
+                                                        "fadeSpeed": "2"
+                                                      },
+                                                      "id": "45b1277c-3117-4702-a910-caff459931f1"
+                                                    }
+                                                  ]
+                                                },
+                                                "id": "f068a155-25bd-4946-8685-711896301212"
+                                              }
+                                            ],
+                                            "false": []
+                                          },
+                                          "id": "0eb1b024-0e7e-4f7d-8621-bfb94aab2f2e"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_ADD_FLAGS",
+                                          "args": {
+                                            "variable": "47",
+                                            "flag1": true,
+                                            "flag2": false,
+                                            "flag3": false,
+                                            "flag4": false,
+                                            "flag5": false,
+                                            "flag6": false,
+                                            "flag7": false,
+                                            "flag8": false,
+                                            "flag9": false,
+                                            "flag10": false,
+                                            "flag11": false,
+                                            "flag12": false,
+                                            "flag13": false,
+                                            "flag14": false,
+                                            "flag15": false,
+                                            "flag16": false
+                                          },
+                                          "id": "3c166e63-6646-42bc-b3a1-2c66baad90df"
+                                        }
+                                      ]
+                                    },
+                                    "id": "ef34389c-324b-4058-b01d-9d22de8b1872"
+                                  },
+                                  {
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                    "args": {
+                                      "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                                      "$variable[V0]$": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "6af609ac-c2b0-4058-ae44-8e07604fb887"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "42ec26ef-5717-4a89-9252-b1ffe80a481e"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember: I got the\nstuff. I am \nrelieved that",
+                                        "you did not \nkill him"
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "f54698f1-839c-4382-bde6-b51284b960b0"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "5822e3a7-add1-40a5-8ff9-0ef0e3759759"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: I wish I\ncould say I \ndidn't but he ",
+                                        "trapped me and \ntried to kill\nme."
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "eb889f8e-8982-4eb8-8199-139dcfdf858f"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "4ed47456-3bd7-480f-9c76-a3668b56b9ea"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "ember: I was \nafraid of some \nsort of ",
+                                        "confrontation \nwould happen. I\ntried to stop",
+                                        "him....I \nunderstand what\nhe did is ",
+                                        "unforgivable.did\nhe use paralysis\nsight."
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "529335e2-cd0c-4d00-a577-3244efe90b40"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": ""
+                                    },
+                                    "id": "15d01cf7-afb8-4490-9aac-31545cfd65bd"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Jem: Yes,but I \nmanaged to break\nfree of it. you",
+                                        "don't have the \nsame power do \nyou"
+                                      ],
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                    },
+                                    "id": "1070ea08-8396-4979-9dd5-e622f2e946bd"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "a7eeb41a-9824-413c-a63a-73ac238bb0ce"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember: No female\nphoenixes don't\nhave this",
+                                        "ability. Unless \nyou count \nscaring bad",
+                                        "students into \nsubmission. Well\nat least you",
+                                        "where honest...I\nwill go get your\nschoolwork."
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "b93430ae-2ebd-49f7-9f88-443ec181a6c9"
+                                  },
+                                  {
+                                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                                    "args": {
+                                      "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                                      "$variable[V0]$": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "9181f934-3f5b-45a6-966d-8056e43e7290"
+                                  },
+                                  {
+                                    "command": "EVENT_PALETTE_SET_UI",
+                                    "args": {
+                                      "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                                    },
+                                    "id": "59e0bd83-b86c-43d9-8991-08a47dcc3ca8"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Ember: I have a\nstrong fealing\nyou did the",
+                                        "right thing. You\nstopped him\nbefore he",
+                                        "screwed the \nwhole solar \ncouncil's",
+                                        "integrety. After\nresearching the\ncase he was on",
+                                        "he did do \ninnapropriate\nconduct for a ",
+                                        "council member.\nI am sorry it\nhad to end like ",
+                                        "this. but flare\nis now at the\nmercy of the ",
+                                        "Earth's king"
+                                      ],
+                                      "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                                    },
+                                    "id": "0efd42ae-8481-4f2e-a44e-be4420e7ad11"
+                                  }
+                                ]
+                              },
+                              "id": "780fe298-5eaa-4763-a7bb-e200c0d39f1f"
+                            }
+                          ]
+                        },
+                        "id": "7593d888-34f2-4cf0-af34-8b7053f0729e"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                        },
+                        "id": "3ff85374-e0bf-4d9b-a79c-618ae5545cfe"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember:I will go\nget your \nclasswork",
+                            "is something \nwrong"
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "999926eb-2e20-4df6-bfb2-563be833635e"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "37963459-3c14-4243-9c2d-57561e873346"
+                      },
+                      {
+                        "command": "EVENT_GROUP",
+                        "args": {
+                          "__comment": true,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_MENU",
+                              "args": {
+                                "variable": "L0",
+                                "items": 2,
+                                "option1": "blame cedric",
+                                "option2": "nothing",
+                                "option3": "",
+                                "option4": "",
+                                "option5": "",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue",
+                                "__collapse": false
+                              },
+                              "id": "9974c1cf-48fe-42ba-9706-0b0af1a2affc"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem: your \nhusband tried to\nrape me. flare's",
+                                  "father did stop\nhim. he used \nparalysis sight",
+                                  "to stop me from\nresisting."
+                                ],
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                              },
+                              "id": "07f48f76-fe3f-4812-a756-129f112496e5"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                              },
+                              "id": "0f402f9a-e0f4-488a-83ee-d70e83b30089"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "ember:did he now\nI will make sure\nhe does not do",
+                                  "it again."
+                                ],
+                                "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                              },
+                              "id": "8a61f562-9eee-4416-b766-eb6643230d04"
+                            },
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": ""
+                              },
+                              "id": "a11304a1-a94e-4e92-ba5e-3c7e857b341c"
+                            }
+                          ]
+                        },
+                        "id": "55847e5a-0a3a-4892-8aab-24bce813cbf4"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem:Nothing"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "ce5a8983-fd91-4be3-bcca-063474fbf1cd"
+                      },
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                          "$variable[V0]$": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "01ec896e-2b4a-47f7-b8f8-80a15ee0e3a7"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                        },
+                        "id": "09f7dcc3-0c41-495d-8130-89eee7d147e0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember: All done"
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "53b10b3f-70cb-44d7-9f9b-3aa4587da1cc"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "47",
+                          "flag1": true,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": false,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "0b676218-7b25-4195-95ac-702fbe68bfbe"
+                      }
+                    ]
+                  },
+                  "id": "fd856e97-7df2-41eb-8225-b70eef1bc356"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "15",
+                    "flag": 1,
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+                          "__collapse": false
+                        },
+                        "id": "b668d5bc-401a-4b2a-a55e-d04878a09113"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember: Sorry I\ncan't leave here\nright now.",
+                            "But I hope you\nfind someone."
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "dd49efc6-07f5-470a-ac26-af6db9907508"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "5cae6023-853d-4023-a3fb-99aeea3ebb4d"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+                          "__collapse": false
+                        },
+                        "id": "f45a820c-b90c-493d-adff-de6f7668fd38"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember:\nHi Jem, how was \nthe meeting with",
+                            "your father"
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "a640bc86-772e-4a44-8074-71df3d63e710"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "8e15b5df-2c6c-42d4-86ff-d094fe3d1e04"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: Sadly not\ngood. First he \nmoveed me out of",
+                            "the tower. The\nfloor is trash\nin the new",
+                            "building. Lastly\nI have to find \nsomeone of royal",
+                            "birth that isn't\na prick. Or I am\ncut off."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "e341938e-09b8-4b18-bc03-9d2be4145086"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                        },
+                        "id": "53a0ba2f-b6d6-4b07-bd11-1f0fe8f6e449"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Ember: That\nsounds harsh. I\nfound your magic",
+                            "book of \nfireballs."
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "3a701051-d524-457a-8d33-b70f3be2bb9c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "7efe6fa9-6a88-400a-9c7e-1f200813f04b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem remembered how\nto cast fireballs.\nthese can be used",
+                            "to destroy metal\nobjects"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "806a13ac-ef96-4b1d-9303-707976e3676a"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "23",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": true,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": false,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "652b2f86-c4c9-492d-a274-ff27c80c5490"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "15",
+                          "flag1": false,
+                          "flag2": true,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": false,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "20558f6d-fe6d-461a-8625-c8fd9ab7bc28"
+                      },
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "07fcacf6-ef06-40dd-a785-b4e6ead4e8d1"
+                        },
+                        "id": "a1d89770-986c-4020-8f36-9fa61c8c3392"
+                      }
+                    ]
+                  },
+                  "id": "f81844e6-e896-40ea-87b4-90de6c35a957"
+                }
+              ]
+            },
+            "id": "1d9fd4c8-c1b5-4eba-b40e-795f0cdcd4c5"
+          }
+        ]
+      },
+      "id": "40a09953-30dc-41f7-8506-075eddeeaff0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "5e98accb-e7f7-4a7f-9d5a-4f74bf73ffa7"
+      },
+      "id": "ad81ae3a-261c-440d-ae22-f053d03272ae"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "62013e0d-0521-4975-8cde-fec15c646f91"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 12,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 11,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: do you know\nof someone named\ncumulo lightbringer"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5f0b2d45-3e13-44e2-b33f-9f7ec5b627ed"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                  },
+                  "id": "1a45d770-c1c5-4b42-952b-7de071f28997"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+                  },
+                  "id": "9bb48cb8-f9fb-4e09-86ee-a195da5d6ec0"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "a99c3dc3-50af-46ae-ba5c-51e15d3bc6fd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember: I do but \nnot here too many\nears listening"
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "6e345e60-9518-4e1d-a9f2-298aaf24ae81"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "eddb26bb-4dae-459c-93a4-9f722cffae74"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: where I \ndon't see any. "
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "2ff28bcb-ea40-454f-9e4a-0700989c1436"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "7a38c6e8-6351-462b-8828-65a73077c9a5"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember:the school\nhas eyes and ears \neverywhere."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "10096c8f-e1de-4e21-972a-da28857d5dfe"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "c976169a-d362-4220-8727-77b763a4abb0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: where to\nmeet."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "92909071-b176-45e6-8261-bb0ed299c89e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "9a6b54e0-7e15-4c21-8920-4cd6172a1a1c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember:\nafterschool on \nyour ship."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "7cc93345-1a3c-4e54-b9e0-c58e4eb6b47e"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "374fbca9-85cf-485b-9f23-1fd654839a04",
+                    "x": {
+                      "type": "number",
+                      "value": 36
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 27
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "a85ea531-8a09-444f-8cbe-8351c19a7b15"
+                }
+              ],
+              "false": []
+            },
+            "id": "f6f4bfa4-d947-4328-8ff8-f117bce52879"
+          }
+        ]
+      },
+      "id": "d0c1bc0a-bedc-4ed8-8cc6-8581e17d3d09"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

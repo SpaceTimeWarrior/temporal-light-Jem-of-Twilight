@@ -1,0 +1,58 @@
+{
+  "_resourceType": "actor",
+  "id": "395f756b-a25d-4b1d-aef1-530b0c4028f6",
+  "_index": 3,
+  "symbol": "actor_431",
+  "prefabId": "",
+  "name": "PP10",
+  "x": 0,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "variable",
+          "value": "38"
+        }
+      },
+      "id": "5181222e-ac1a-469f-bee3-c05bdbf18a37"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "L1",
+        "expression": "$38$/10"
+      },
+      "id": "fb7d91bd-2fd4-436f-b637-89b92d0180f3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "050c7d82-f981-408f-9d09-a5904950349c"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,655 @@
+{
+  "_resourceType": "scene",
+  "id": "1d6c25b1-5195-40d7-a7b4-7f4f5d06f436",
+  "_index": 117,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace jem's room",
+  "symbol": "scene_118",
+  "x": 4575.773585215335,
+  "y": 4964.313240400326,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "5684c392-9d63-4a47-8e98-bd963d4dc3e2",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "4a5a6f2e-10f5-4342-8e30-eac8cb0fa350"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "441424b7-df6d-42fa-8378-efa1ca89f2dc"
+      },
+      "id": "4326f716-ea7a-4509-8b96-62c37733e1f0"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "4e8739f9-34e7-4c24-b28c-132330cd35eb"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 120
+        }
+      },
+      "id": "c6f1f27e-4a4c-474e-a998-a5ea1e9956a0"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c"
+            },
+            "id": "cfe6bd80-12f6-4b3e-9335-406591cca0a4"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": true,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "66798af6-2ef0-4179-9520-e2d4fb04cc59"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "aa54ec96-05d5-4d26-9e4c-e493e3e3649e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: what\nshould we do\nabout crystal's",
+                "education. \nspecifically in\nmagic"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "ad963473-1e8e-4149-a91a-4fa8c225cb91"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+            },
+            "id": "b3a7bed8-13e0-4c83-b193-9ba9b0c0b232"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "d3be88e9-327b-4586-ad7d-8fab4d9f9052"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I honestly\ndo not know...\nat the very",
+                "least we should\nhave a magic\npower test done."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "eee46a04-eb6f-4669-a764-4f357b369d63"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c",
+              "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+            },
+            "id": "4cb02ee3-6343-4339-8471-e5144312942b"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "d7edbdf5-c23b-44be-9706-a2cc8191db88"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: magic\npower tests...\nisn't that for",
+                "adults. I \nthought they \ndidn't do them",
+                "on children"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "b91a0fba-5c71-4419-aef0-45cea7355115"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "5d3aca37-5130-4bbe-951b-b27bd6706aab"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: that is \nbecause most\ndon't show signs",
+                "of magic power \nuntil age 9.\nalso they do",
+                "make these tests\nfor children but\nthey generally",
+                "are inaccurate"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "bb0b4b44-58cb-457f-b48d-34397bfd8aab"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "7132fecb-c025-454e-a2ac-fff17d2e0af0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare:How do you\nknow...wait did\nyour parents",
+                "do the test on \nyou"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "c0e6c342-db40-49e4-a1ce-4976c8979cfe"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "07439482-477d-4726-9270-38606faa3461"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: yes why are\nyou so negitive\non this?"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "698024d4-840e-46fb-bea7-0de333a5ef3c"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "dc6c5869-0a96-45e1-81ec-57f598ce1956"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: these \ntests on humans\nare just shy of ",
+                "electroshock\ntorture."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "6dd1f47d-f6ae-4d54-ab96-853626d872db"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "6b9c8f56-14ee-44f8-b55e-1033c466a1e7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: was someone\ntrying to \ntorture you",
+                "beacuse most \ndon't even use\nelectricity"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "827d4d58-2601-4e72-abfd-23cfa52ecd68"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "3d89ab00-5147-436c-b0e7-224d58a6c5ae"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: that \nwould \npotentially",
+                "explain the \nshocked \nexpression they",
+                "had."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "86bfccfa-ac09-494b-ade9-8fba1ca7d048"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "fd78e085-058b-43b8-b96f-838b44422de6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: how about\nthis. I will\nscedule an ",
+                "appointment \ntomorrow with\nthe instructions",
+                "that if crystal\nis showing any \npain they are to",
+                "stop immediately\nalso mom and dad\nwouldn't mind ",
+                "watching over \nher. and maybe \nthey might know",
+                "how to preform\nit"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "c8a45b80-7384-4692-a859-061d7321c179"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "6e75ca19-b59b-42bf-818d-570153b54c60"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: Okay I \nwill have you \ntake her during",
+                "the next peace\nsummit with the\nking of Venus.I",
+                "will make sure\ncrystal gets on\nthe intrepid ",
+                "flyer. speaking\nof which I have \nto change her ",
+                "diaper."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "7a446185-dd8a-4a6c-b3dc-362edd42c877"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c",
+              "x": {
+                "type": "number",
+                "value": 8
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "id": "dc556cb8-5830-4aec-939e-a0322abada09"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c"
+            },
+            "id": "a5cc88e9-4577-40d5-8e3d-96f184fade33"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.1,
+              "frames": 30
+            },
+            "id": "272f3011-d47f-494c-a4a9-e91a51b1457d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I guess I\nwill call them.\nring...ring....",
+                "ring...ring...\nring...ring...\nring...ring..."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7cca742b-65f7-4112-8612-e921a72cddc4"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "dmg"
+            },
+            "id": "cbb3d388-21e2-46df-a7ef-fe0506a164c9"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Pearlite: Hello \nJem how has \nthings been."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "c5b5e5b0-5734-404f-846a-6b4f55d345d3"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "3f54b8e5-b474-4545-a33d-1a1daf8cafe7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: things have\nbeen somewhat \ngood,but crystal",
+                "has been showing\nsigns of magic\nand what worries",
+                "me is how \npowerful these \nsigns are"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "2400686e-b451-49ac-9f71-42f05400b6b2"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "dmg"
+            },
+            "id": "a50fd915-2dfd-4f55-999d-f56ad0b42883"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Pearlite: isn't\nthat a bit early\nshe is only 3.",
+                "fine I will do \nthe necessary \npaperwork. how",
+                "about 3 days \nfrom now."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7c1952af-4d8c-4656-b284-164d73775bca"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "85282e46-06d6-474f-913d-2e3bde85482e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: sounds good\nI am going to go\nnow. goodbye.",
+                "click."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "255bc5d2-c85a-4626-a01a-879f0ff4b928"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c"
+            },
+            "id": "892a277c-ccfd-4396-afa7-e2434745fc27"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "9040e62f-9a04-4aa3-bdb2-e2be4a43fd0a"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I called \nmom she said that\nshe will put in ",
+                "the arrangements.\ncan you prep the\nintrepid flyer."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "5111fbc9-26fa-4f75-9fbe-8d4a34066ff8"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare:\nyes but you \nshould rest up",
+                "I will get \ncrystal on the \nship."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "f18f3467-1b95-40e4-b587-1c54a48175e9"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              }
+            },
+            "id": "5ef7e3b9-2aee-4f02-968b-770c3ba70358"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833"
+            },
+            "id": "5f851376-787b-4553-8540-b80ecc531e5d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: Jem wake\nup crystal is \nmissing"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "6747c652-c6aa-4b82-90ef-c60b6c014e5b"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 12
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "56950eb4-a004-4661-9162-9e7907aae0f9"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: I lost \ntrack of her \naround the ",
+                "intrepid flyer."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "949b8ec2-beaa-4e6c-9ad6-08c6c51aef54"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "I will find her",
+              "falseText": "you can find her"
+            },
+            "id": "0adae2a6-604f-4296-8ec9-0330b3af2ee0"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: take a\nbreak and rest I\nwill look for her"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "cb226e71-cf27-4e0c-90f4-101beadd322a"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "d28479f4-336c-4494-99e6-24561cccdbd8"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "cef02a98-0080-4f7e-a221-99d1b210a52c"
+                  },
+                  "id": "f67a3877-551d-47c3-b287-036a80113e0c"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Flare: fine then\nbe that way"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "f7e48aef-dc02-4821-8778-7086325ccc6f"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833"
+                  },
+                  "id": "243a45ac-1e83-46ba-bd5f-7140bcbf69d2"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "e0b02f4c-1e94-400f-a31b-89ca3cefb049",
+                    "priority": "medium",
+                    "pitch": 1,
+                    "frequency": 200,
+                    "duration": 0.5,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "171a0275-e577-4536-8c0f-b4051249c92d"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "46",
+                    "flag1": false,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": true,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "602be965-0348-4bf5-a18d-4b81a5f14612"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: That \nsounded like a \nexplosion."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "000ba7ca-61b9-46b4-aa13-e9a64295bc92"
+                }
+              ]
+            },
+            "id": "cba497bd-596f-4630-8fdc-969b6b1bf006"
+          }
+        ]
+      },
+      "id": "190f9c4f-1523-4cb5-ba4f-484fc5b0eca7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f8e+003+0f2+006+0f2+003+0f4+003+0f2+00!0f4+00!0f2+003+0f4+006+0f!002+0f!006+0f4+006+0f!002+0f!006+0f4+006+0f4+006+0f4+0010+0f4+0010+0f4+0010+0f4+00e+0f6+0010+0fa+004+0f8+"
+}

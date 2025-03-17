@@ -1,0 +1,203 @@
+{
+  "_resourceType": "scene",
+  "id": "c8944a13-b7b3-420b-b788-7321477d65fd",
+  "_index": 50,
+  "type": "TOPDOWN",
+  "name": "luna/the intrepid flyer - luna exterior",
+  "symbol": "scene_51",
+  "x": 4882.945349884745,
+  "y": 2699.080120182838,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "e7e168dd-e77b-47d3-bdb6-037cceb73442",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 104
+        }
+      },
+      "id": "8a9c9613-0909-4f05-9b19-d43f86805fc5"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "37",
+        "flag": 0,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 2,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "ring ring.\njem: hello"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "c0e6140c-14b2-495c-ac2c-69bd5cf6ccab"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "ember:where have\nyou been you \nhave been absent",
+                      "for three days\nnow. when you\nget a chance",
+                      "can you come in\nand get your books"
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "bdee084f-ae7e-4799-8796-eb88208eeaef"
+                },
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "46",
+                    "flag": 0,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "ember:and just\nso you know many\ninstructors have",
+                            "been spreading \nnasty rumors\nthat you killed",
+                            "my husband but I\nstood up and\ntold them they ",
+                            "are lying. well \nbye"
+                          ],
+                          "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                        },
+                        "id": "064ac911-34fa-4ba0-8260-b214ee4a86f9"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "87d32a43-60c4-483c-8796-e09b265e3652"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "from here on you \ncan goto\neather. or use a",
+                      "bed to toggle \nbetween day or \nnight there."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "571983eb-4d0e-42c1-8387-98a073b1df09"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "entering the lunar\nthrone room access",
+                      "will end the \nchapter"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5b4f1361-f0de-47f6-8551-db309e5974ed"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "37",
+                    "flag1": false,
+                    "flag2": false,
+                    "flag3": true,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "bf63a8d6-a024-4324-80e7-f18b25fad6bf"
+                }
+              ]
+            },
+            "id": "997a2d33-ffd9-4c0e-8379-eb336a963d61"
+          }
+        ],
+        "false": []
+      },
+      "id": "88d6a37d-3d1c-4c79-b468-d63d7eb0ae34"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 12
+              }
+            },
+            "id": "8a141f6e-fff2-4bdd-9f37-01125cfb1ae6"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "f99e1604-b0f2-4374-83a0-f31a41bbb908"
+          }
+        ]
+      },
+      "id": "e21e61fb-7d8e-46c5-a538-94b02f31f87d"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "0bd74e21-ae07-4013-939e-d5c2b2419ae8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00f0+0f9+002+0f1a+002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!00b+0f1e+006+0f!0028+0f!006+0f!0028+0f!006+0f!0063b+"
+}

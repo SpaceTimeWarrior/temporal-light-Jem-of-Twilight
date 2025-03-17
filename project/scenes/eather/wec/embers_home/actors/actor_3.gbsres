@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "15539e09-1d64-43ee-8d4c-bb67e21054b2",
+  "_index": 2,
+  "symbol": "actor_447",
+  "prefabId": "",
+  "name": "",
+  "x": 2,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Multiple \nfeathers of \nmostly the same",
+          "color must of \nbeen Ember's\nbed.",
+          "Sadly no one \nwill occupy it\nany time soon."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "797b2a6b-9c52-47c2-abe5-566095e4d0ff"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

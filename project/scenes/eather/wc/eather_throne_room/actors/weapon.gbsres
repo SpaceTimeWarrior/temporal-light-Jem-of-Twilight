@@ -1,0 +1,172 @@
+{
+  "_resourceType": "actor",
+  "id": "ba5b4048-0ba5-4382-9910-d07bb131c9f1",
+  "_index": 0,
+  "symbol": "actor_132",
+  "prefabId": "",
+  "name": "weapon",
+  "x": 14,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e7176261-0c53-4c7f-b8f6-11fb77c8b020",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "4c81fcf8-2c24-4c2e-85a5-8c8eed658f71"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nA fire sword...\na small plate on",
+          "it says it's name\nis Firefight"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "__collapse": false
+      },
+      "id": "09056e90-6bcb-47a9-b94c-ffaafb854f06"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "press select to\ntoggle between \nweapons",
+          "and press @ to\nattack\nthis sword can ",
+          "destroy weakened\nstone or thin\nplants, or enemies"
+        ],
+        "avatarId": ""
+      },
+      "id": "fd941f6f-114b-406f-80a7-9ad6d1d82367"
+    },
+    {
+      "command": "EVENT_ADD_FLAGS",
+      "args": {
+        "variable": "15",
+        "flag1": true,
+        "flag2": false,
+        "flag3": false,
+        "flag4": false,
+        "flag5": false,
+        "flag6": false,
+        "flag7": false,
+        "flag8": false,
+        "flag9": false,
+        "flag10": false,
+        "flag11": false,
+        "flag12": false,
+        "flag13": false,
+        "flag14": false,
+        "flag15": false,
+        "flag16": false
+      },
+      "id": "35486ca8-a43a-4c05-9649-acbba4403dfd"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "5eba5369-0560-43e5-97f9-34444b344b43"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "139780af-de89-4c22-a2e2-410dba421340"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "There is also a \nnote \"Out for a \nconference. We may",
+          "be out for a while\nJem you may use the\nfamily sword.",
+          "This is due to a \nsudden spike in \ncrime.",
+          "Make sure your\nsister stays out\nof trouble",
+          "and if you find \nlove, make sure it\nis of royal birth.",
+          "I will be\nmonitoring your\nmovements.",
+          "your father\n  Garnet wolfsbane",
+          "P.S. if Brier \ntakes the sword\nshe is grounded",
+          "and gaming \nprivileges\nrevoked.\""
+        ],
+        "avatarId": ""
+      },
+      "id": "b180fc81-8c2e-4108-a2ef-4ab3e3bc0060"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+      },
+      "id": "a631a45b-b377-44ff-8e15-d36ba5fd6dda"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "F$%~ they ran\noff so I couldn't\ncomplain.",
+          "I got to\nget to school"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "66973bd0-839d-41d5-b3fc-df8d6ae4149d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "afda8398-df79-4059-9b16-0913032ca058"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "15",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "2a40d663-a6df-4612-8581-553f853d55a3"
+          }
+        ],
+        "false": []
+      },
+      "id": "baa53f97-7af6-4807-b812-9d54cafc0dfa"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "UI"
+      },
+      "id": "42587de1-280e-4d16-860a-9bbca02015b4"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

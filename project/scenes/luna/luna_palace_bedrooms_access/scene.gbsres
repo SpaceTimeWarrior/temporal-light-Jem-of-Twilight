@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "174fadf3-19e4-4f15-ad5e-e38d7c91a0f2",
+  "_index": 109,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace Bedrooms access",
+  "symbol": "scene_110",
+  "x": 4323.443072150735,
+  "y": 5141.698257108239,
+  "width": 60,
+  "height": 20,
+  "backgroundId": "adcef040-1a7c-4875-921d-ae5b4699fbd3",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "33af386f-2073-4dce-85db-e917846bbe84"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 118
+        }
+      },
+      "id": "bc0242da-c077-4643-a6f7-c92468b93394"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fcf+004+0f8+004+0f8+004+0f7+0038+0f4+0038+0f4+0038+0f4+0038+0f4+0038+0f4+0038+0f4+006+0f36+006+0f36+006+0f36+006+0f36+006+0f36+006+0f36+006+0f36+006+0f36+006+0f36+006+0f34+"
+}

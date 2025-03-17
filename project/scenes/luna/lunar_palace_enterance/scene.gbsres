@@ -1,0 +1,47 @@
+{
+  "_resourceType": "scene",
+  "id": "b7b9efc7-15f1-43f3-b56a-693ae81e9830",
+  "_index": 57,
+  "type": "TOPDOWN",
+  "name": "luna/lunar palace enterance",
+  "symbol": "scene_58",
+  "x": 4445.282474578372,
+  "y": 5370.596857948911,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "7ad11be3-7558-4e13-afc5-969edd42a12c",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "75dcca93-8ad1-42a3-905d-ff042b0732f8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 101
+        }
+      },
+      "id": "60eaec0a-4af4-4bd3-80a7-be4e04fd74b8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f12e+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f6+0014a+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0f14+001c+0fc+00e+0f4+006+0f18+00e+0f4+006+0f18+00e+0f4+006+0f18+00e+0f4+006+0f2a+006+0f2a+006+0f2a+006+0f2a+006+0f2a+006+0f2a+006+0f12+"
+}

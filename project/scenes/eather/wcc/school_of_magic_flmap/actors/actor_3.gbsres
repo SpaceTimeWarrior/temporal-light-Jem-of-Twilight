@@ -1,0 +1,85 @@
+{
+  "_resourceType": "actor",
+  "id": "cd6054d6-c8e4-4077-a247-b6fb731521ca",
+  "_index": 2,
+  "symbol": "actor_544",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 14,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d509beac-5f3b-451a-9d15-bc674f4b60a9",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "15",
+        "flag": 1,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 0,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "47",
+                    "flag": 0,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "8e5f2728-0622-45b7-8140-2dbb279b40ff"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "bf0bb1cd-5703-4674-895c-1eae5289025a"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "828e71c2-adc6-4be4-abe2-320ab35d1b6f"
+                }
+              ]
+            },
+            "id": "9712b135-30e8-4a31-9f24-5f3867474844"
+          }
+        ],
+        "false": []
+      },
+      "id": "30fdaec0-55f5-4a93-965c-9cc660e40a3b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

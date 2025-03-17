@@ -1,0 +1,55 @@
+{
+  "_resourceType": "scene",
+  "id": "7afa113c-50ed-486b-b87d-1f16151d199c",
+  "_index": 100,
+  "type": "TOPDOWN",
+  "name": "cut/ending 1",
+  "symbol": "scene_101",
+  "x": 563.5,
+  "y": 3035.0765165441176,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "and so Jem was \nexecuted for\nattempting to",
+          "bribe a solar\ncouncil member\nFlare struck with",
+          "grief attempted to\nkill Cedric. this\nfailed and Flare",
+          "died in the war\nthat followed.",
+          "the end"
+        ],
+        "avatarId": ""
+      },
+      "id": "5ac47bcf-9d54-4bc5-a81b-d418c314faa9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "566545c3-2547-4016-8e36-5b8d156038e2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

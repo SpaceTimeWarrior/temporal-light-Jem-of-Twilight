@@ -1,0 +1,130 @@
+{
+  "_resourceType": "trigger",
+  "id": "cd9d261a-6e9a-4b93-bef7-90cfc6719d52",
+  "_index": 2,
+  "symbol": "trigger_268",
+  "prefabId": "",
+  "name": "",
+  "x": 12,
+  "y": 7,
+  "width": 6,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "sit in the throne",
+        "falseText": "inspect it"
+      },
+      "id": "31779f33-f1a5-4b8d-b3d5-aca9d3d9e012"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "2accb897-ea72-48a0-8e7c-336192aa4b1a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "e44b6452-be60-4df9-84bc-7a9d3b91cf44"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Starting Bioscan\nFemale \nblack hair",
+                "blue eyes\ndetecting extra\nchromosomes.",
+                "locking unknown\nperson. engaging\ntermination gun."
+              ],
+              "avatarId": ""
+            },
+            "id": "1ae5d28f-4de6-4907-bc3e-faed2b539b11"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "09887058-e73e-4f9f-9d84-6e1f0fb169d4"
+            },
+            "id": "59fdf583-38a3-477b-a00e-83b0f0efd7c7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Cromosome \ndetection complete\n750 DNA pairs.",
+                "comparing with list\nof monsters........\nmodified kitsune",
+                "DNA DOES NOT MATCH\nANY LEGITIMATE USER\nTERMINATING ",
+                "MONSTER"
+              ],
+              "avatarId": ""
+            },
+            "id": "3fd3247a-9f1c-4204-baef-374708bfea47"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "1488211d-aebe-448c-90b9-ee47cefe0adb",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "183c26bb-399d-41aa-a4ce-1c5098254fb8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: An ornate\nthrone likely\nthe king's"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "16d9a0de-6a24-4be5-b5b3-d6e7396ef1ca"
+          }
+        ]
+      },
+      "id": "7cf3c021-f0d5-4109-9437-e422239dce00"
+    }
+  ],
+  "leaveScript": []
+}

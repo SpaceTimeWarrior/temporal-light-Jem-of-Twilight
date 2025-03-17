@@ -1,0 +1,62 @@
+{
+  "_resourceType": "actor",
+  "id": "cd232a2c-b2dd-40d3-b41a-35451dc29565",
+  "_index": 8,
+  "symbol": "actor_903",
+  "prefabId": "",
+  "name": "Save point",
+  "x": 82,
+  "y": 15,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "57924d3c-86ad-41ab-aa43-644f3fd1c430",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "a0a478ee-4c14-4bf7-a6af-655b0a4365b6"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "1e5d3161-d41e-462d-a4a9-304f464521ba"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "52c4b571-444e-4ca3-b460-0a72a8ca9247"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0f86c7d5-dd4c-4dae-9a01-a984c776f373"
+      },
+      "id": "a356e6fd-a615-4b2f-af2e-cbc2f2787d0b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

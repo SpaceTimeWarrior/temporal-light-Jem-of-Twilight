@@ -1,0 +1,149 @@
+{
+  "_resourceType": "scene",
+  "id": "5649bf5a-16db-4562-96a9-6ebe23e2bd32",
+  "_index": 36,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/Eather overworld 0",
+  "symbol": "scene_37",
+  "x": 1902.440210877272,
+  "y": 1146.9965764083397,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "945bbe26-3967-401f-a694-81fef5c51a4a",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "",
+    "aa2379be-b18d-4964-b202-b8316dd758cc",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 16
+        }
+      },
+      "id": "572e4e3e-5600-4f81-b4d3-790e106902a3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "$49$"
+        ],
+        "avatarId": "",
+        "__comment": true
+      },
+      "id": "a13b060f-c825-4b1a-a15a-62e1464cfb8d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "35e5e303-64fd-4c38-96d5-622d58fd7a26"
+          }
+        ],
+        "false": []
+      },
+      "id": "c70371c7-b20c-4d3f-8d3f-fe3ad6e26b68"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "14dd6c28-1b6d-4335-a15b-17a96fa0cee3"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 13
+              }
+            },
+            "id": "96ef5550-36de-43db-8163-7ffa9e37117b"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "b32feb0f-33f1-4a83-8733-0e7217719bbe"
+          }
+        ]
+      },
+      "id": "8de9de90-8c97-46e8-a93f-2c7af7fe57dc"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "4e9c4e04-190e-46be-935d-8b6c1ef28aa2"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "20e9568a-864f-431e-8287-a159aab1ff44"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "d08cada8-6d11-4de7-ae6c-1aaaa5dbc2a9"
+    }
+  ],
+  "collisions": "0f!0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f9+00a+0f!001a+0f!00d+0f9+00a+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f!0012+0f!001a+0f!00d+0f9+00a+0f!001a+0f!00d+0f9+00a+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00d+0f2+0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+0f!0011+0f!001a+0f!00e+"
+}

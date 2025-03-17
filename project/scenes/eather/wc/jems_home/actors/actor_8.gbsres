@@ -1,0 +1,62 @@
+{
+  "_resourceType": "actor",
+  "id": "835f31e3-079e-471d-a0ed-6f57540eded0",
+  "_index": 11,
+  "symbol": "actor_73",
+  "prefabId": "",
+  "name": "",
+  "x": 30,
+  "y": 21,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "2bffd9f0-46d7-41cd-8af7-79a9c3b2779a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nThe outdoor\nlight looks great"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "2dc7eec3-11bf-4cc8-af8d-29cb4401ab9a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "4d1d9baa-956f-4f03-8f92-bed7880491d7"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a5778159-5dc0-4f67-ac2b-8d6fc6c97e82"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

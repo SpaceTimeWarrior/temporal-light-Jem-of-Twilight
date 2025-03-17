@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "ef32da8b-5aff-4038-9588-ad645bb5ccf1",
+  "_index": 3,
+  "symbol": "actor_189",
+  "prefabId": "",
+  "name": "",
+  "x": 36,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "71a06a95-2261-471a-88f3-fa9af4984c8a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Throne room <\nStorage shed >\nPalace walls ^or*",
+          "There is a newly \npainted segment\nJem's house ^"
+        ],
+        "avatarId": ""
+      },
+      "id": "c6672594-1de9-42e2-8126-1aea0f0baf8a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "2560c4f1-7e53-4608-8847-d9643fd5ef42"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,1085 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "menu_value_0",
+      "symbol": "var_menu_value_1"
+    },
+    {
+      "id": "1",
+      "name": "save slot",
+      "symbol": "var_save_slot"
+    },
+    {
+      "id": "2",
+      "name": "Inventory[0]",
+      "symbol": "var_inventory_0_"
+    },
+    {
+      "id": "3",
+      "name": "inventory[1]",
+      "symbol": "var_inventory_1_"
+    },
+    {
+      "id": "4",
+      "name": "inventory[2]",
+      "symbol": "var_inventory_2_"
+    },
+    {
+      "id": "5",
+      "name": "inventory[3]",
+      "symbol": "var_inventory_3_"
+    },
+    {
+      "id": "6",
+      "name": "jem's health",
+      "symbol": "var_jem_s_health"
+    },
+    {
+      "id": "7",
+      "name": "can lose",
+      "symbol": "var_can_lose"
+    },
+    {
+      "id": "8",
+      "name": "running state",
+      "symbol": "var_running_state"
+    },
+    {
+      "id": "9",
+      "name": "inventory[4]",
+      "symbol": "var_inventory_4_"
+    },
+    {
+      "id": "10",
+      "name": "inventory[5]",
+      "symbol": "var_inventory_5_"
+    },
+    {
+      "id": "11",
+      "name": "inventory[6]",
+      "symbol": "var_inventory_6_"
+    },
+    {
+      "id": "12",
+      "name": "inventory[7]",
+      "symbol": "var_inventory_7_"
+    },
+    {
+      "id": "13",
+      "name": "inventory[8]",
+      "symbol": "var_inventory_8_"
+    },
+    {
+      "id": "14",
+      "name": "placed rugs in home",
+      "symbol": "var_placed_rugs_in_home"
+    },
+    {
+      "id": "15",
+      "name": "ability_unlocks",
+      "symbol": "var_ability_unlocks"
+    },
+    {
+      "id": "16",
+      "name": "is throne room empty",
+      "symbol": "var_is_throne_room_empty"
+    },
+    {
+      "id": "17",
+      "name": "attack toggeler",
+      "symbol": "var_attack_toggeler"
+    },
+    {
+      "id": "18",
+      "name": "item use index",
+      "symbol": "var_item_use_index"
+    },
+    {
+      "id": "19",
+      "name": "doors open",
+      "symbol": "var_doors_open"
+    },
+    {
+      "id": "20",
+      "name": "text speed",
+      "symbol": "var_text_speed"
+    },
+    {
+      "id": "21",
+      "name": "Debug mode",
+      "symbol": "var_debug_mode"
+    },
+    {
+      "id": "22",
+      "name": "intro complete",
+      "symbol": "var_intro_complete"
+    },
+    {
+      "id": "23",
+      "name": "story flags [0]",
+      "symbol": "var_story_flags_0_"
+    },
+    {
+      "id": "24",
+      "name": "inventory size",
+      "symbol": "var_inventory_size"
+    },
+    {
+      "id": "25",
+      "name": "item_found[0]",
+      "symbol": "var_item_found_0_"
+    },
+    {
+      "id": "26",
+      "name": "location from",
+      "symbol": "var_location_from"
+    },
+    {
+      "id": "27",
+      "name": "electric invincibility",
+      "symbol": "var_electric_invincibility"
+    },
+    {
+      "id": "28",
+      "name": "player x",
+      "symbol": "var_player_x"
+    },
+    {
+      "id": "29",
+      "name": "player y",
+      "symbol": "var_player_y"
+    },
+    {
+      "id": "30",
+      "name": "lunar build",
+      "symbol": "var_lunar_build"
+    },
+    {
+      "id": "31",
+      "name": "run_toggle_trigger",
+      "symbol": "var_run_toggle_trigger_0"
+    },
+    {
+      "id": "32",
+      "name": "used real name",
+      "symbol": "var_used_real_name"
+    },
+    {
+      "id": "33",
+      "name": "night time",
+      "symbol": "var_night_time"
+    },
+    {
+      "id": "34",
+      "name": "enemyhp",
+      "symbol": "var_enemyhp"
+    },
+    {
+      "id": "35",
+      "name": "Boss flag",
+      "symbol": "var_boss_flag"
+    },
+    {
+      "id": "36",
+      "name": "Move camera",
+      "symbol": "var_move_camera"
+    },
+    {
+      "id": "37",
+      "name": "story flags [1]",
+      "symbol": "var_story_flags_1_"
+    },
+    {
+      "id": "38",
+      "name": "score",
+      "symbol": "var_score"
+    },
+    {
+      "id": "39",
+      "name": "scroll speed",
+      "symbol": "var_scroll_speed"
+    },
+    {
+      "id": "40",
+      "name": "attack on cooldown",
+      "symbol": "var_attack_on_cooldown"
+    },
+    {
+      "id": "41",
+      "name": "reset timers",
+      "symbol": "var_reset_timers"
+    },
+    {
+      "id": "42",
+      "name": "enemy x",
+      "symbol": "var_enemy_x"
+    },
+    {
+      "id": "43",
+      "name": "enemy y",
+      "symbol": "var_enemy_y"
+    },
+    {
+      "id": "44",
+      "name": "combat code-cedric",
+      "symbol": "var_combat_code_cedric_0"
+    },
+    {
+      "id": "45",
+      "name": "cedric counter 0",
+      "symbol": "var_cedric_counter_0"
+    },
+    {
+      "id": "46",
+      "name": "killed characters",
+      "symbol": "var_killed_characters"
+    },
+    {
+      "id": "47",
+      "name": "story flags [2]",
+      "symbol": "var_story_flags_0"
+    },
+    {
+      "id": "48",
+      "name": "luna palace id airlock state",
+      "symbol": "var_luna_palace_id_airlock_"
+    },
+    {
+      "id": "49",
+      "name": "room id",
+      "symbol": "var_room_id"
+    },
+    {
+      "id": "50",
+      "name": "enablecollision",
+      "symbol": "var_enablecollision"
+    },
+    {
+      "id": "51",
+      "name": "story flags [3]",
+      "symbol": "var_story_flags_3_"
+    },
+    {
+      "id": "52",
+      "name": "cedric counter 1",
+      "symbol": "var_cedric_counter_1"
+    },
+    {
+      "id": "53",
+      "name": "enemy 1 move cooldown",
+      "symbol": "var_enemy_1_move_cooldown"
+    },
+    {
+      "id": "54",
+      "name": "enemy 2 move cooldown",
+      "symbol": "var_enemy_move_cooldown_0"
+    },
+    {
+      "id": "55",
+      "name": "enemy 3 move cooldown",
+      "symbol": "var_enemy_3_move_cooldown"
+    },
+    {
+      "id": "56",
+      "name": "enemy 4 move cooldown",
+      "symbol": "var_enemy_4_move_cooldown"
+    },
+    {
+      "id": "57",
+      "name": "enemy 1 attack cooldown",
+      "symbol": "var_enemy_1_attack_cooldown"
+    },
+    {
+      "id": "58",
+      "name": "enemy 2 attack cooldown",
+      "symbol": "var_enemy_2_attack_cooldown"
+    },
+    {
+      "id": "59",
+      "name": "enemy 3 attack cooldown",
+      "symbol": "var_enemy_3_attack_cooldown"
+    },
+    {
+      "id": "60",
+      "name": "enemy 4 attack cooldown",
+      "symbol": "var_enemy_4_attack_cooldown"
+    },
+    {
+      "id": "61",
+      "name": "enemy movement reset variable",
+      "symbol": "var_enemy_movement_reset_va"
+    },
+    {
+      "id": "62",
+      "name": "trial by fire",
+      "symbol": "var_trial_by_fire"
+    },
+    {
+      "id": "63",
+      "name": "story flags[5]",
+      "symbol": "var_story_flags_5_"
+    },
+    {
+      "id": "64",
+      "name": "story flags [5]",
+      "symbol": "var_story_flags_1"
+    },
+    {
+      "id": "65",
+      "name": "volume",
+      "symbol": "var_volume"
+    },
+    {
+      "id": "66",
+      "name": "music id",
+      "symbol": "var_music_id"
+    },
+    {
+      "id": "511",
+      "name": "error code",
+      "symbol": "var_error_code"
+    },
+    {
+      "id": "47e4e4ee-62ea-428f-b233-0da3347c9a98__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "0f81412c-3f5e-4b27-8246-e5ec9ee88286__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    },
+    {
+      "id": "3033ef31-26db-450c-b4e1-efacdb6c1ca7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "f537916a-0bcb-49f7-8721-e41e6ee53b04__L0",
+      "name": "Local 0",
+      "symbol": "var_local_3"
+    },
+    {
+      "id": "bf25cee5-26e3-48db-be35-ffea2adf551e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_4"
+    },
+    {
+      "id": "8a01634b-bfe5-48f3-972d-3bd2a79331f6__L0",
+      "name": "Local 0",
+      "symbol": "var_local_5"
+    },
+    {
+      "id": "31e92939-525e-4a0e-bd9f-122d7a85ee3e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_6"
+    },
+    {
+      "id": "f5382be5-13cd-4ee7-ab8b-abf4d5983221__L0",
+      "name": "Local 0",
+      "symbol": "var_local_7"
+    },
+    {
+      "id": "3dd78e16-9215-47a5-8c18-a04b2ecfeed8__L0",
+      "name": "Local 0",
+      "symbol": "var_local_8"
+    },
+    {
+      "id": "e6446606-e9b9-4554-82cf-dccd053301af__L0",
+      "name": "Local 0",
+      "symbol": "var_local_9"
+    },
+    {
+      "id": "d1972e22-b2c1-443e-940b-8e4485cbdfe0__L0",
+      "name": "Local 0",
+      "symbol": "var_local_10"
+    },
+    {
+      "id": "cd0cac36-86bb-410d-a503-9cf869e13f5e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_11"
+    },
+    {
+      "id": "14c0fbfe-6905-406c-9666-49a841c0b4ea__L0",
+      "name": "Local 0",
+      "symbol": "var_local_12"
+    },
+    {
+      "id": "2e49fa09-89fd-4aed-ad89-61016de85f68__L0",
+      "name": "Local 0",
+      "symbol": "var_local_13"
+    },
+    {
+      "id": "78dcd421-8f82-450b-bab8-52e115628302__L0",
+      "name": "Local 0",
+      "symbol": "var_local_14"
+    },
+    {
+      "id": "3340f5bc-76d4-41fb-aef5-90a81861a40e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_15"
+    },
+    {
+      "id": "df350c66-107b-4cef-84f1-8045c3dbaca1__L0",
+      "name": "Local 0",
+      "symbol": "var_local_16"
+    },
+    {
+      "id": "baf018a6-26ca-4077-b824-8530c9999e12__L0",
+      "name": "Local 0",
+      "symbol": "var_local_17"
+    },
+    {
+      "id": "cac6068a-e3e1-45f4-b4d3-25ac6f6b728d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_18"
+    },
+    {
+      "id": "71afc136-626b-4788-9c52-2bdfb14539b3__L0",
+      "name": "Local 0",
+      "symbol": "var_local_19"
+    },
+    {
+      "id": "ffbafe62-005e-4aea-99cc-a046dcea8a73__L0",
+      "name": "Local 0",
+      "symbol": "var_local_20"
+    },
+    {
+      "id": "b1234342-622a-475f-a455-5ce1f0b2a566__L0",
+      "name": "Local 0",
+      "symbol": "var_local_21"
+    },
+    {
+      "id": "4749a89e-7cee-4782-9f7e-29bf39443fd4__L0",
+      "name": "Local 0",
+      "symbol": "var_local_22"
+    },
+    {
+      "id": "9fed9c8b-a837-4a21-9c9a-4f8e6e3e4a5f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_23"
+    },
+    {
+      "id": "9d2b2225-64e3-4d98-8ad2-e5f603181e19__L0",
+      "name": "Local 0",
+      "symbol": "var_local_24"
+    },
+    {
+      "id": "c7ce1b53-eb69-4423-89dd-336ac47ec9df__L0",
+      "name": "Local 0",
+      "symbol": "var_local_25"
+    },
+    {
+      "id": "0289fde4-b4ec-4e29-9013-4462e4bf9d84__L0",
+      "name": "Local 0",
+      "symbol": "var_local_26"
+    },
+    {
+      "id": "57c1ab22-d6fa-4c3f-8c71-112e67675d3e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_27"
+    },
+    {
+      "id": "ecae903b-6b73-4fcc-bc53-fc1f7a9e52ed__L0",
+      "name": "Local 0",
+      "symbol": "var_local_28"
+    },
+    {
+      "id": "a38fdef0-0085-4165-8354-b0243daa2bab__L0",
+      "name": "Local 0",
+      "symbol": "var_local_29"
+    },
+    {
+      "id": "8b4d5991-ac0d-4363-9c78-e9a6406d18ff__L0",
+      "name": "Local 0",
+      "symbol": "var_local_30"
+    },
+    {
+      "id": "fee9be28-c9c5-4dbd-a554-7f80e22dc258__L0",
+      "name": "Local 0",
+      "symbol": "var_local_31"
+    },
+    {
+      "id": "7bdcf1d9-1c36-4f9e-b52f-79bb5daabea2__L0",
+      "name": "Local 0",
+      "symbol": "var_local_32"
+    },
+    {
+      "id": "aac6b0c0-d014-4e89-bb96-1f5bf0482689__L0",
+      "name": "Local 0",
+      "symbol": "var_local_33"
+    },
+    {
+      "id": "a20b41d9-967b-4d64-94eb-1cd4888c2f90__L0",
+      "name": "Local 0",
+      "symbol": "var_local_34"
+    },
+    {
+      "id": "e9c77a62-2fd7-42a5-beb0-3aa75355eba1__L0",
+      "name": "Local 0",
+      "symbol": "var_local_35"
+    },
+    {
+      "id": "a90c83dc-6795-4698-bd4f-b003d30a930e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_36"
+    },
+    {
+      "id": "52eaf6a4-660d-44f8-b3ca-9d98adc9e25e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_37"
+    },
+    {
+      "id": "013ce86e-fe40-4a22-a059-312d63f7c161__L0",
+      "name": "Local 0",
+      "symbol": "var_local_38"
+    },
+    {
+      "id": "4bf6f9c9-f1ed-46b3-9ed8-98058819596f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_39"
+    },
+    {
+      "id": "b841ca16-28c3-4ba9-9af0-a1e53c47a76f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_40"
+    },
+    {
+      "id": "68ef0c62-856f-4806-ad55-d13892b1d9e2__L0",
+      "name": "Local 0",
+      "symbol": "var_local_41"
+    },
+    {
+      "id": "7ff7fd91-b7b8-4d2b-84bb-7298adfeecc9__L0",
+      "name": "Local 0",
+      "symbol": "var_local_42"
+    },
+    {
+      "id": "1ae33b18-089a-41d6-9cce-489543c5db9c__L0",
+      "name": "Local 0",
+      "symbol": "var_local_43"
+    },
+    {
+      "id": "31b362d5-d7f2-4407-9118-d8fcc7b6d757__L0",
+      "name": "Local 0",
+      "symbol": "var_local_44"
+    },
+    {
+      "id": "1dc722a7-64d0-4632-9938-ff4cf307efe1__L0",
+      "name": "Local 0",
+      "symbol": "var_local_45"
+    },
+    {
+      "id": "64a0f7c5-b540-4794-b634-28d11be82451__L0",
+      "name": "Local 0",
+      "symbol": "var_local_46"
+    },
+    {
+      "id": "4fca5c74-1494-4902-83bc-b5dcfea00ea2__L0",
+      "name": "Local 0",
+      "symbol": "var_local_47"
+    },
+    {
+      "id": "f2921053-8237-4e03-b945-e5fe9f415899__L0",
+      "name": "Local 0",
+      "symbol": "var_local_48"
+    },
+    {
+      "id": "c64fa31f-6b6a-4455-9b97-8754b75ead39__L0",
+      "name": "Local 0",
+      "symbol": "var_local_49"
+    },
+    {
+      "id": "9fa8142f-34d9-4e69-8fd2-558158263b67__L0",
+      "name": "Local 0",
+      "symbol": "var_local_50"
+    },
+    {
+      "id": "1a4b44c8-f110-4dc4-8841-30f154bdf2ec__L0",
+      "name": "Local 0",
+      "symbol": "var_local_51"
+    },
+    {
+      "id": "c30cccbd-6420-4fe4-a840-3c05d84eb794__L0",
+      "name": "Local 0",
+      "symbol": "var_local_52"
+    },
+    {
+      "id": "9b66a19e-7043-43d2-831f-deb1765d1bb9__L0",
+      "name": "Local 0",
+      "symbol": "var_local_53"
+    },
+    {
+      "id": "5ec05d97-bece-451c-993c-bbb906a5bb4e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_54"
+    },
+    {
+      "id": "3c5d8048-a541-4697-b516-50ea67f916b1__L0",
+      "name": "Local 0",
+      "symbol": "var_local_55"
+    },
+    {
+      "id": "6db1fb84-7106-44f0-be27-05ec0975709f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_56"
+    },
+    {
+      "id": "9ba0c741-46c0-4af9-a399-144bd7ee4d2d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_57"
+    },
+    {
+      "id": "d8f1fe36-2b89-4d2d-9674-49d8ee428536__L0",
+      "name": "Local 0",
+      "symbol": "var_local_58"
+    },
+    {
+      "id": "0559bf84-45d0-443f-b096-66c9d66331b5__L0",
+      "name": "Local 0",
+      "symbol": "var_local_59"
+    },
+    {
+      "id": "d1271958-5629-4736-9f08-ae0ae6fd7279__L0",
+      "name": "Local 0",
+      "symbol": "var_local_60"
+    },
+    {
+      "id": "7166e31c-9fba-45e5-ba6f-08918798e4f4__L0",
+      "name": "Local 0",
+      "symbol": "var_local_61"
+    },
+    {
+      "id": "12492197-c269-466e-bc4e-1373e08a768c__L0",
+      "name": "Local 0",
+      "symbol": "var_local_62"
+    },
+    {
+      "id": "21d63774-dff8-421f-aaee-c7b7ee6927a5__L0",
+      "name": "Local 0",
+      "symbol": "var_local_63"
+    },
+    {
+      "id": "df23f2fa-c546-464f-b992-6cab487950f3__L0",
+      "name": "Local 0",
+      "symbol": "var_local_64"
+    },
+    {
+      "id": "e89fa5a1-04b9-4791-8867-0d0cc15e7bbc__L0",
+      "name": "Local 0",
+      "symbol": "var_local_65"
+    },
+    {
+      "id": "bb03c131-2fc1-4a40-bd75-82fe2cf9ff01__L0",
+      "name": "Local 0",
+      "symbol": "var_local_66"
+    },
+    {
+      "id": "0e69f65f-81a0-477b-b98f-21c3adf2e287__L0",
+      "name": "Local 0",
+      "symbol": "var_local_67"
+    },
+    {
+      "id": "8098f91c-2695-4e2d-a87b-b9dabf8a6034__L0",
+      "name": "Local 0",
+      "symbol": "var_local_68"
+    },
+    {
+      "id": "21d732d3-9832-4631-a6a2-8689992700ef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_69"
+    },
+    {
+      "id": "fa47168e-1aa4-4432-bad0-6671f60caaa5__L0",
+      "name": "Local 0",
+      "symbol": "var_local_70"
+    },
+    {
+      "id": "c0ee5450-ae21-4302-acea-3d749ecf3a7a__L0",
+      "name": "Local 0",
+      "symbol": "var_local_71"
+    },
+    {
+      "id": "5cea49af-dfd5-432c-af67-27b99ceb5959__L0",
+      "name": "Local 0",
+      "symbol": "var_local_72"
+    },
+    {
+      "id": "5a029df9-28b2-406f-8782-911cd750cc1e__L0",
+      "name": "Local 0",
+      "symbol": "var_local_73"
+    },
+    {
+      "id": "30e18aa0-9c53-4200-bb58-3c52828b2fef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_74"
+    },
+    {
+      "id": "411a8bd8-0147-4ead-a865-f54c703456b6__L0",
+      "name": "Local 0",
+      "symbol": "var_local_75"
+    },
+    {
+      "id": "965e92d0-c5d4-41b3-9119-5b2f181b2a6d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_76"
+    },
+    {
+      "id": "40efd4e1-3529-4533-bd3b-37d54e159e6c__L0",
+      "name": "Local 0",
+      "symbol": "var_local_77"
+    },
+    {
+      "id": "db5308bb-c4c2-4864-87a8-b3871c79a280__L0",
+      "name": "Local 0",
+      "symbol": "var_local_78"
+    },
+    {
+      "id": "cf353cad-7f3c-4138-aa60-ecec596e852c__L0",
+      "name": "Local 0",
+      "symbol": "var_local_79"
+    },
+    {
+      "id": "be329bb0-5e90-4def-9075-8edbbca29fea__L0",
+      "name": "Local 0",
+      "symbol": "var_local_80"
+    },
+    {
+      "id": "978d8e38-615e-4fe4-b6bc-0a5c1e6a0491__L0",
+      "name": "Local 0",
+      "symbol": "var_local_81"
+    },
+    {
+      "id": "b351a30f-f24a-45ac-aa77-6a023850c2ff__L0",
+      "name": "Local 0",
+      "symbol": "var_local_82"
+    },
+    {
+      "id": "a54dd825-784b-4e13-b6b2-da0f08216a29__L0",
+      "name": "Local 0",
+      "symbol": "var_local_83"
+    },
+    {
+      "id": "c34a5141-bdb1-43d0-a353-3c3db9a4d881__L0",
+      "name": "Local 0",
+      "symbol": "var_local_84"
+    },
+    {
+      "id": "21ade33d-2d4a-4aa8-8717-91c79cf1f687__L0",
+      "name": "Local 0",
+      "symbol": "var_local_85"
+    },
+    {
+      "id": "2edb2f0b-15e5-4556-84f1-e3a597473591__L0",
+      "name": "Local 0",
+      "symbol": "var_local_86"
+    },
+    {
+      "id": "c9ed3364-c08b-4dcb-9477-1f568719a1d2__L0",
+      "name": "Local 0",
+      "symbol": "var_local_87"
+    },
+    {
+      "id": "db9a2a72-5da4-4c32-9562-f3947ec4d855__L0",
+      "name": "Local 0",
+      "symbol": "var_local_88"
+    },
+    {
+      "id": "6c27aad7-4874-41ec-b39b-d98f2e26d8ac__L0",
+      "name": "Local 0",
+      "symbol": "var_local_89"
+    },
+    {
+      "id": "6087c65a-5f9c-4626-ae3c-fe472c95a886__L0",
+      "name": "Local 0",
+      "symbol": "var_local_90"
+    },
+    {
+      "id": "cfafde2a-d677-4c4a-8c03-d9563548f2a0__L0",
+      "name": "Local 0",
+      "symbol": "var_local_91"
+    },
+    {
+      "id": "74dfa981-e56d-42a3-8cca-546071aa8316__L0",
+      "name": "Local 0",
+      "symbol": "var_local_92"
+    },
+    {
+      "id": "eaf74356-8be3-42a3-9a9c-4c042b56c703__L0",
+      "name": "Local 0",
+      "symbol": "var_local_93"
+    },
+    {
+      "id": "32f4c669-26e2-4fc6-bfbd-b322de1d1e07__L0",
+      "name": "Local 0",
+      "symbol": "var_local_94"
+    },
+    {
+      "id": "3e919c7b-c2cf-4871-9ceb-9eb5b0a667b2__L0",
+      "name": "Local 0",
+      "symbol": "var_local_95"
+    },
+    {
+      "id": "0b826d9c-5f01-4faa-bc90-d0d7c726838c__L0",
+      "name": "Local 0",
+      "symbol": "var_local_96"
+    },
+    {
+      "id": "34d1f420-f4d6-45df-b5a3-ffbb68f615fb__L0",
+      "name": "Local 0",
+      "symbol": "var_local_97"
+    },
+    {
+      "id": "d4078e83-f638-4e2a-8456-9ee9db2a3cec__L0",
+      "name": "Local 0",
+      "symbol": "var_local_98"
+    },
+    {
+      "id": "3d36e56c-b0d1-475b-b2ee-f3f1d2c8e979__L0",
+      "name": "Local 0",
+      "symbol": "var_local_99"
+    },
+    {
+      "id": "4a942371-7b51-47f4-a7e4-7664f2e1b57d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_100"
+    },
+    {
+      "id": "7bcfa1e9-1643-4f35-9dc7-aad891ab9847__L0",
+      "name": "Local 0",
+      "symbol": "var_local_101"
+    },
+    {
+      "id": "77dd7445-dc69-4722-832c-bd1667e8c1ab__L0",
+      "name": "Local 0",
+      "symbol": "var_local_102"
+    },
+    {
+      "id": "84d5203d-7adc-4274-9d17-01ced6a864ef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_103"
+    },
+    {
+      "id": "e13d4e74-abd5-4f59-bb5a-be4c3185993d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_104"
+    },
+    {
+      "id": "8ac75bf2-bb59-4852-b407-8ca28e772ce6__L0",
+      "name": "Local 0",
+      "symbol": "var_local_105"
+    },
+    {
+      "id": "6188db94-b0e4-4f9a-882e-028449d69dd0__L0",
+      "name": "Local 0",
+      "symbol": "var_local_106"
+    },
+    {
+      "id": "7766f35f-d9ac-4a7d-885c-585461654eb4__L0",
+      "name": "Local 0",
+      "symbol": "var_local_107"
+    },
+    {
+      "id": "2873e0f8-cbb9-414a-9226-e0e8cc3f2b97__L0",
+      "name": "Local 0",
+      "symbol": "var_local_108"
+    },
+    {
+      "id": "15c70d51-94b4-4241-a22e-ed6167ecacd0__L0",
+      "name": "Local 0",
+      "symbol": "var_local_109"
+    },
+    {
+      "id": "f8b84a9e-0e67-4b37-a8b4-bf3780b3d818__L0",
+      "name": "Local 0",
+      "symbol": "var_local_110"
+    },
+    {
+      "id": "30b5ef37-3d7c-42e0-971f-45df14f0d5f7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_111"
+    },
+    {
+      "id": "96c32403-3c9a-42a4-a162-2321916fcffb__L0",
+      "name": "Local 0",
+      "symbol": "var_local_112"
+    },
+    {
+      "id": "71c8101a-7d36-4f1a-8b6f-4420588e2424__L0",
+      "name": "Local 0",
+      "symbol": "var_local_113"
+    },
+    {
+      "id": "005b8a2f-d410-4f05-92e1-71f2b1496da7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_114"
+    },
+    {
+      "id": "339c4101-9677-45b4-993e-f0e6df42841b__L0",
+      "name": "Local 0",
+      "symbol": "var_local_115"
+    },
+    {
+      "id": "eb47595b-db7e-4dca-8b2f-2100c2f0a8ef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_116"
+    },
+    {
+      "id": "79060f23-7d53-44f9-bcdb-abb9ab1bd1ba__L0",
+      "name": "Local 0",
+      "symbol": "var_local_117"
+    },
+    {
+      "id": "b758ba6a-94af-473d-a415-62feee0fd0c7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_118"
+    },
+    {
+      "id": "0bfd0d5a-875c-4646-89d7-dca1ebeb5bcc__L0",
+      "name": "Local 0",
+      "symbol": "var_local_119"
+    },
+    {
+      "id": "8f0c21e1-6d6f-4b0c-8078-4a0c5f789e65__L0",
+      "name": "Local 0",
+      "symbol": "var_local_120"
+    },
+    {
+      "id": "f217940f-627e-498d-99e4-3115214d93b9__L0",
+      "name": "Local 0",
+      "symbol": "var_local_121"
+    },
+    {
+      "id": "9184a43b-e6cd-494c-ad4f-8efffc6494ea__L0",
+      "name": "Local 0",
+      "symbol": "var_local_122"
+    },
+    {
+      "id": "913f7d20-639c-4be5-9907-1b3b9c92c686__L0",
+      "name": "Local 0",
+      "symbol": "var_local_123"
+    },
+    {
+      "id": "d0fe4f16-4279-48cb-9eef-efc2e5d2c0e7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_124"
+    },
+    {
+      "id": "6df1975c-9fdb-40ec-b75d-e4c8b29ff6e9__L0",
+      "name": "Local 0",
+      "symbol": "var_local_125"
+    },
+    {
+      "id": "a9c8582f-adbe-4ce2-9235-2b9fc18cf8ab__L0",
+      "name": "Local 0",
+      "symbol": "var_local_126"
+    },
+    {
+      "id": "dae33ad6-d767-4da6-909d-0f6a10c9364d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_127"
+    },
+    {
+      "id": "6e6dd0fe-155b-4825-85c5-e98f0a95ae76__L0",
+      "name": "Local 0",
+      "symbol": "var_local_128"
+    },
+    {
+      "id": "6606e5e1-9d08-49d6-bfba-5b69c1a80761__L0",
+      "name": "Local 0",
+      "symbol": "var_local_129"
+    },
+    {
+      "id": "5901384b-6a4d-4c3c-ab14-ae659694554a__L0",
+      "name": "Local 0",
+      "symbol": "var_local_130"
+    },
+    {
+      "id": "5b94a8f7-6d3d-410b-9541-2c78dd2c0411__L0",
+      "name": "Local 0",
+      "symbol": "var_local_131"
+    },
+    {
+      "id": "6f200228-43d5-44f0-ada5-df77f097be48__L0",
+      "name": "Local 0",
+      "symbol": "var_local_132"
+    },
+    {
+      "id": "732f8291-1d5e-4e51-a8ec-7171e67a9198__L0",
+      "name": "Local 0",
+      "symbol": "var_local_133"
+    },
+    {
+      "id": "b15150d4-41aa-4b69-aabd-baafdf803146__L0",
+      "name": "Local 0",
+      "symbol": "var_local_134"
+    },
+    {
+      "id": "b27882e2-a942-47b4-b373-4ba5989acb52__L0",
+      "name": "Local 0",
+      "symbol": "var_local_135"
+    },
+    {
+      "id": "334758f7-76a9-4bd6-81d2-8bc16054907d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_136"
+    },
+    {
+      "id": "0b68504a-85c1-46f1-b822-b02a302cc351__L0",
+      "name": "Local 0",
+      "symbol": "var_local_137"
+    },
+    {
+      "id": "b1a446b6-c8f4-4c2b-bd48-cde57e124aef__L0",
+      "name": "Local 0",
+      "symbol": "var_local_138"
+    },
+    {
+      "id": "6e6d8f88-d273-4696-9400-3057f5d26564__L0",
+      "name": "Local 0",
+      "symbol": "var_local_139"
+    },
+    {
+      "id": "58a2feab-65bf-4074-8df0-9f9c8031156b__L0",
+      "name": "Local 0",
+      "symbol": "var_local_140"
+    },
+    {
+      "id": "51764b8d-74f5-467f-83ae-1bac4b864d3d__L0",
+      "name": "Local 0",
+      "symbol": "var_local_141"
+    },
+    {
+      "id": "cb3ecb2b-cb87-45c9-bbd8-3087215a2aa5__L0",
+      "name": "Local 0",
+      "symbol": "var_local_142"
+    },
+    {
+      "id": "9ea718c3-9c18-402e-8acf-7a18f53c9a22__L0",
+      "name": "Local 0",
+      "symbol": "var_local_143"
+    },
+    {
+      "id": "7974de44-86c2-4574-8fc9-fe82290b01bf__L0",
+      "name": "Local 0",
+      "symbol": "var_local_144"
+    },
+    {
+      "id": "c29a9fb6-13ec-4c23-a3fd-5202b92491a7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_145"
+    },
+    {
+      "id": "67",
+      "name": "last_HP",
+      "symbol": "var_last_hp"
+    },
+    {
+      "id": "e8d8b393-47d8-4488-9590-fcabee7ee6d7__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    }
+  ]
+}

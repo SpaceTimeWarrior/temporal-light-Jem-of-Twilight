@@ -1,0 +1,117 @@
+{
+  "_resourceType": "scene",
+  "id": "68fe326c-0afe-4e0c-a674-e0235144b3d1",
+  "_index": 38,
+  "type": "TOPDOWN",
+  "name": "eather/wcc/Eather overworld 2",
+  "symbol": "scene_39",
+  "x": 1902.3461859353108,
+  "y": 1644.1949254311119,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "ca9d5578-f849-4c9f-8bad-a613f8fd6d20",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    ""
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "default-sprite",
+    "default-bg-4",
+    "aa2379be-b18d-4964-b202-b8316dd758cc",
+    "aa2379be-b18d-4964-b202-b8316dd758cc"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 21
+        }
+      },
+      "id": "f368ebdd-f938-4538-a7a0-e9ffec001923"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "ce2cc955-d185-4b5f-b645-2709feaadf71"
+          }
+        ],
+        "false": []
+      },
+      "id": "8fff44d1-a92d-4c94-a089-5ff77b9d999f"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "09bfebb4-2dd4-4068-840b-51a17b985768"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "a270e6b9-0060-465b-9f55-bd89160a80ba"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "2355fae8-5e84-4943-8410-2bae053bd95d"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "4cfc1b78-cf0a-449a-a9d2-d8996b86f4a8"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "730c95fb-fbde-4eeb-8c1c-0d5ec11f1ec4"
+    }
+  ],
+  "collisions": "0f!003b+0f!003b+0f!003b+0f!003b+0f!003b+0f!003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+003a+0f2+001a+0f!006+0f!0018+0f2+001a+0f!006+0f!0018+0f2+001a+0f!006+0f!0018+0f2+001a+0f!006+0f!0018+0f2+001a+0f!006+0f!0018+0f2+001a+0f!006+0f!0018+0f1d+006+0f1b+003b+0f!003b+0f!003b+0f!003b+0f!003b+0f!003b+"
+}

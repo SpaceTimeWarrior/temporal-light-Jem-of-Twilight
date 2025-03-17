@@ -1,0 +1,72 @@
+{
+  "_resourceType": "actor",
+  "id": "1b95bd56-a871-4e5e-a012-bf84e9ffc08f",
+  "_index": 4,
+  "symbol": "actor_58",
+  "prefabId": "",
+  "name": "",
+  "x": 20,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "7c064c0c-8303-4a4b-a8d9-c94dc2b3c867"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nSadly no switch\non bottom"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "bbfd0418-44bb-4d0b-a7e3-baac049644bd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "the stench harmed\nyour nose",
+          "(you are\ndigging through\ntrash after all)"
+        ],
+        "avatarId": ""
+      },
+      "id": "0787ce1b-f76b-4502-88f8-84c658153b82"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "39994c64-96d5-4c49-87e6-e057f2466fed"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "07f3cd1c-5969-47cd-b2aa-60b4c7b8ec6b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

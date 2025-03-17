@@ -1,0 +1,101 @@
+{
+  "_resourceType": "trigger",
+  "id": "6e755ec9-dd9e-4a27-83bf-7fe1a34619e6",
+  "_index": 4,
+  "symbol": "trigger_370",
+  "prefabId": "",
+  "name": "",
+  "x": 56,
+  "y": 8,
+  "width": 6,
+  "height": 14,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 7,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "92933da1-ffbe-407a-8a16-13cec86f115b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: Wait this \nis not sand..."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "3ef46bf7-a2e3-425e-8142-d7960fef49a1"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "1559b0b2-1636-48a2-820a-f9670f3cf861"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+            },
+            "id": "d800529b-cd85-43f8-9a5f-7099f9a4302c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: this is \nmonster remains\n... ...",
+                "jem's thoughts:\nwalk slowly I\ndon't want to",
+                "cary any of it\nwith me... it is\nrude to move",
+                "monster remains.\nif any monster's\nspirit is here I",
+                "am sorry I \nstepped on you"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "7b1954be-77bd-46aa-85a8-015ecf42570d"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": true,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "77c19042-4088-460e-b3e8-bfbf12b4c963"
+          }
+        ]
+      },
+      "id": "39e54b3d-50fc-4524-a74a-303eace71881"
+    }
+  ],
+  "leaveScript": []
+}

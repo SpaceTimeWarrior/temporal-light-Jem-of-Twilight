@@ -1,0 +1,219 @@
+{
+  "_resourceType": "scene",
+  "id": "c427b1cc-8d4b-4d32-b96b-934b24f886c1",
+  "_index": 18,
+  "type": "TOPDOWN",
+  "name": "mini/RPG intro",
+  "symbol": "scene_19",
+  "x": 3734.993809633227,
+  "y": 1385.8655462184875,
+  "width": 135,
+  "height": 18,
+  "backgroundId": "074aab26-d7b4-4867-9ed1-2d5ea3b50226",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f"
+  ],
+  "autoFadeSpeed": 1,
+  "parallax": [
+    {
+      "height": 6,
+      "speed": 1
+    },
+    {
+      "height": 6,
+      "speed": 2
+    },
+    {
+      "height": 0,
+      "speed": 0
+    }
+  ],
+  "playerSpriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "8f820cd1-cc14-4e72-9cac-d91ce28fea22"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "519868a6-fe9d-4026-b2b8-5ec13a2bf391"
+          }
+        ]
+      },
+      "id": "146287f1-15d9-45f2-88fa-c76e80621816"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "duration": 0.1,
+        "frames": 4,
+        "__scriptTabs": "end",
+        "units": "frames",
+        "timer": 1
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "6fc5fe3b-26dd-49cb-a34c-00add0c8f590"
+          }
+        ]
+      },
+      "id": "3fd5c7e0-7653-4f44-892e-5b39cdee20ca"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select",
+          "start",
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "a",
+                "left",
+                "up",
+                "down",
+                "right",
+                "select",
+                "start"
+              ]
+            },
+            "id": "01f44c7a-bfa9-4dac-9d05-0ef6d072cae5"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "18f3a00c-dd13-460d-8aec-3ac8b3c0185a"
+            },
+            "id": "6c4135ee-6ea7-40e2-8327-8cfc49f7ed24"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "new game",
+              "falseText": "quit",
+              "__collapse": false
+            },
+            "id": "c4613043-c30d-4ea6-9e9c-222e7082d8f9"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "93ffb694-3943-4022-80a4-896772b086bb",
+                    "x": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2",
+                    "__collapse": false
+                  },
+                  "id": "315db694-897a-48ac-88c6-be5a819ac51f"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "8111587c-93d5-49e4-bf0e-10a1210dc0f0",
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "28852ffa-57d8-4509-919b-10807a90b495"
+                }
+              ]
+            },
+            "id": "1dc67259-d9d3-433e-a259-bd9308510e12"
+          }
+        ]
+      },
+      "id": "859cbdc3-e78c-4408-a356-38946b434abc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0097e+"
+}

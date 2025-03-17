@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "ee7dc562-150e-4811-b868-f34fe811137d",
+  "_index": 10,
+  "symbol": "trigger_261",
+  "prefabId": "",
+  "name": "",
+  "x": 2,
+  "y": 47,
+  "width": 7,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Locked...I\ndon't see a\nhandle to open"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "000bfa51-2026-483c-a8bb-508d50379c72"
+    }
+  ],
+  "leaveScript": []
+}

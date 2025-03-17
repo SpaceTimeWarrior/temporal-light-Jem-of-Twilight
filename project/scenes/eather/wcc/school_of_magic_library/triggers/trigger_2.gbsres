@@ -1,0 +1,202 @@
+{
+  "_resourceType": "trigger",
+  "id": "80e1bd6b-658d-40f4-b549-e6bd4a5e06af",
+  "_index": 1,
+  "symbol": "trigger_131",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 29,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "History of Eather\ndo you want to read"
+        ],
+        "avatarId": ""
+      },
+      "id": "f7df2652-a877-47d2-9c99-fe9b22c0f8c3"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Yes",
+        "falseText": "No"
+      },
+      "id": "c7604425-301f-45e3-bbaf-43ae38d32285"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "In the year 1890 \nteraforming of the\nplanet that was",
+                "once called mars \nbegan. This is the\nlast inner planet",
+                "to get a successful\nteraformation. The\npeople of Earth",
+                "started colonies.\non 1900. The only\ndownside the",
+                "colonies where\npractically \nenslaved.",
+                "In the year 2010 \nmars teraformation\nis complete. It",
+                "was renamed to \neather the next \nyear.Iis unclear",
+                "exactly why.",
+                "do you want to\nkeep reading."
+              ],
+              "avatarId": ""
+            },
+            "id": "879bdf36-9462-44e1-8ee3-4bff1e6a3954"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "yes",
+              "falseText": "no"
+            },
+            "id": "747a6fa8-26db-490c-96c1-1c66b966ee0a"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "On april 1st 2018\na interplanetary \nwar ensews. The",
+                      "exact details are\nunknown but what is\nthat Eather is the",
+                      "one that did the\nfirst shot. This \nis due to a ",
+                      "multitude of causes\never since the \nteraformation began",
+                      "eatherians where\ntreated similar\nto livestock",
+                      "due to high number\nof monsters and\nfew humans.",
+                      "Eather won the war\nin one year. But\nwasn't content",
+                      "this lead to the\ncreation of \nhyperion class",
+                      "weapons. these are\nweapons that could\ndestroy a planet.",
+                      "do you want to\nkeep reading."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "4ffb5aa8-1487-4630-9ada-b8f88d2ab0ed"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "L0",
+                    "trueText": "yes",
+                    "falseText": "no"
+                  },
+                  "id": "e33d5173-31c7-4d5a-a4c8-e0afaa67c984"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "L0",
+                    "__collapseElse": false,
+                    "condition": {
+                      "type": "variable",
+                      "value": "L0"
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "The first big test\nfire was on Earth.\nthough it only"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "6198c602-f190-4988-9e41-d113b3b54c2d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "glanced off the \natmosphere. While \nit did not destroy",
+                            "the planet. the\nperson whom fired\nit did not know",
+                            "what he had done.\nAnd commited \nsuicide soon after",
+                            "it is not known\nexactly how many\ndied that day",
+                            "but it is estimated\nto be 4 billion\nhumans and 2",
+                            "million monsters. \nSurvivors lived on\nLuna until 3000 AD",
+                            "in which earth \nbecame habitable\nagain.(monsters",
+                            "where banned from\nbreeding on Earth.\nDuring this time",
+                            "Eather has been\nin a civil war\nbetween magic and",
+                            "technology."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "970697f1-7fd7-4235-9aab-1d13f3be1c97"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "you put the book \nback on the shelf"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e22cb1ae-38c0-434b-84cf-5d6b23d14cdc"
+                      }
+                    ]
+                  },
+                  "id": "24d5f25f-3182-42dc-b938-2d6460ec9bf5"
+                }
+              ],
+              "false": []
+            },
+            "id": "51b9b51a-b79b-4fdb-b504-13ed2a6bdc19"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "you put the book \nback on the shelf"
+              ],
+              "avatarId": ""
+            },
+            "id": "e63e0482-d2c3-4a31-bfa7-2bffbab31ff7"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "you put the book \nback on the shelf"
+              ],
+              "avatarId": ""
+            },
+            "id": "d63fc9ad-7dc8-4a17-8d33-495822de8f03"
+          }
+        ]
+      },
+      "id": "9192c59e-06bf-4b3d-99d7-9c8e349d4ebf"
+    }
+  ],
+  "leaveScript": []
+}

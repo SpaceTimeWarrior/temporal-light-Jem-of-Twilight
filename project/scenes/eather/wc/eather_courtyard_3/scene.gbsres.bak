@@ -1,0 +1,94 @@
+{
+  "_resourceType": "scene",
+  "id": "d4f25e7c-7af6-4106-9e69-093fc9eebab0",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "eather/wc/eather courtyard 3",
+  "symbol": "scene_0",
+  "x": 515.9451210171568,
+  "y": 1894.8088847044494,
+  "width": 94,
+  "height": 72,
+  "backgroundId": "7e2531c5-0c31-4e7a-93a6-31a4279eaf98",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "dmg"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 9
+        }
+      },
+      "id": "6dfdc71a-cab9-4e80-b3e5-7f9c228976fd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "a7722eda-9cff-4323-acfd-25cb9c70d919"
+          }
+        ],
+        "false": []
+      },
+      "id": "d92d6878-c8da-4333-ad61-427de80e130a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "3e00f2eb-eb25-461f-bb38-b4344f757ec7"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "3d4a4064-afce-4a9b-9b60-62b6a8f3636f"
+      },
+      "id": "d97bd164-1387-4783-aedc-f34d4dd83b4d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1f+00c+0f34+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f!005d+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f2+005c+0f43+009+0f13+"
+}

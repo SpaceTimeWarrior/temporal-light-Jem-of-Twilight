@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "6b8ea08b-5cd2-423c-897c-e44866eecf9f",
+  "_index": 6,
+  "symbol": "trigger_257",
+  "prefabId": "",
+  "name": "",
+  "x": 38,
+  "y": 37,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:the door is\nlocked the door\nseems offly",
+          "thick. I don't\nthink I could\nforce it open"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "20efb0f4-e027-4aa8-8f7c-a9b31a720d0f"
+    }
+  ],
+  "leaveScript": []
+}

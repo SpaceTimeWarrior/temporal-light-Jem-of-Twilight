@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "4d9021aa-151e-463a-b52b-4cb7f2a9f42e",
+  "_index": 1,
+  "symbol": "actor_534",
+  "prefabId": "",
+  "name": "",
+  "x": 12,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "flare's throne"
+        ],
+        "avatarId": ""
+      },
+      "id": "d123ea90-8855-42bf-a7f7-a76a54ac6d4c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

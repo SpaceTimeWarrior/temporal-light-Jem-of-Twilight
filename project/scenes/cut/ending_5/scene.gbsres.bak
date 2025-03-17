@@ -1,0 +1,120 @@
+{
+  "_resourceType": "scene",
+  "id": "2601004a-4211-40d0-9de8-658e77b716e8",
+  "_index": 104,
+  "type": "TOPDOWN",
+  "name": "cut/ending 5",
+  "symbol": "scene_105",
+  "x": 2726.6666666666665,
+  "y": 2321.2000325520835,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "And Jem left \nEather. to make\nFlare a good",
+          "breakfast.\nafter placing it\non the table"
+        ],
+        "avatarId": ""
+      },
+      "id": "e6e0d47b-d529-4750-abfc-c51b295ec7e3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Flare I made\nbreakfast come\nand get it."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "80e57e61-489c-4b38-ab18-2b0974e56f6f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare: scrambled\neggs and toast I\nlike it."
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "c8948062-d4a0-40ac-b925-561b77e8c934"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare: this \ntastes good \nwhat is the",
+          "recipe"
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "84f7ed84-626d-42e5-9706-65f59061f633"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: phoenix egg\nand a regular\npiece of toast",
+          "then scramble\nthem and cook\nthem",
+          "also you won't\nhave to worry\nabout cedric",
+          "ever again."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "7a6f0d50-37d5-4c2a-a58d-004ddfa2ec57"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare: would you\nmind telling me\nwhere you got",
+          "the egg to...\nwait wou mean \nthis is...",
+          "I never took you\nto be that kind \nof person."
+        ],
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+      },
+      "id": "1ae0b9eb-776b-4924-b917-48f8a5144a03"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem was oficially \nbanished the next \nday. Her parents",
+          "found out the two\nof them created\nthe largest",
+          "criminal \norganization.",
+          "The End"
+        ],
+        "avatarId": ""
+      },
+      "id": "9be74410-7bd3-48cc-a376-c4cef579e301"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "9b66aac7-62e1-47f9-b03b-d7fdb907f57a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,58 @@
+{
+  "_resourceType": "actor",
+  "id": "57a10307-7c4c-4b6c-80d5-9c9082664481",
+  "_index": 3,
+  "symbol": "actor_426",
+  "prefabId": "",
+  "name": "HP10",
+  "x": 0,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "variable",
+          "value": "38"
+        }
+      },
+      "id": "85069cf5-3d91-4e88-af8e-777fa7e8672f"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "L1",
+        "expression": "$38$/10"
+      },
+      "id": "1b85ae60-0dee-48fa-a06a-ce4fb1d0e1e9"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "470cb7ab-7e03-4e03-aa08-51aa3e4b1414"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

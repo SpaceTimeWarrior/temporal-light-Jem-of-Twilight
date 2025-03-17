@@ -1,0 +1,200 @@
+{
+  "_resourceType": "trigger",
+  "id": "149bfb74-2756-467b-a37a-a55e1794a121",
+  "_index": 1,
+  "symbol": "trigger_151",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 20,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 3,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:I shouldn't try his\npatience."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "e402351d-0167-4b66-8975-66568573d6ec"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapse": false
+            },
+            "id": "e81997df-4b09-4aef-8bae-fc5e68fe40e1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "today's lecture is\non rocketry and\nRemote AI systems"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "68ee4444-86e8-4726-a712-790b54fa22f0"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+              "$variable[V0]$": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "07cd1771-2660-46a6-8ddb-a0fcac0257f9"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "2d4b251d-0241-40eb-98e1-e396b236772c",
+              "__collapse": false
+            },
+            "id": "e50a3216-8efc-46ca-8685-825a958306b2"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "And that concludes\ntoday's lecture.\nJem....Jem wake up",
+                "(I know you \nalready know this\ninformation)"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "7f23b8f4-3ff6-4e3a-82ae-845275780767"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "2d4b251d-0241-40eb-98e1-e396b236772c",
+              "__collapse": false
+            },
+            "id": "61002e4c-4640-4dfe-b941-1fbe7e617b29"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "56b614f3-4aa6-476d-ad19-77a085dcbefc",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0,
+              "__collapse": false
+            },
+            "id": "a9737fac-ae8f-419f-b3f6-472bffd2b877"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "2d4b251d-0241-40eb-98e1-e396b236772c",
+              "__collapse": false
+            },
+            "id": "b91cd20f-9d62-4d28-814b-6428d7a9b718"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "WAKE UP"
+              ],
+              "avatarId": "",
+              "__collapse": false
+            },
+            "id": "678f0eec-5794-4c20-b672-8c2dbc04bfbd"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1",
+              "__collapse": false
+            },
+            "id": "4b9ca956-84ca-4216-8078-2d2343b8405a"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202",
+              "__collapse": false
+            },
+            "id": "9348f51f-5dd9-492c-89f0-a301b63be556"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "sorry that won't\nhappen again."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+              "__collapse": false
+            },
+            "id": "dac20bd6-5196-475f-b0e3-75270ccd25ff"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "23",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": true,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false,
+              "__collapse": false
+            },
+            "id": "62d21fed-4597-4e69-986f-4edc1781b744"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "07fcacf6-ef06-40dd-a785-b4e6ead4e8d1",
+              "__collapse": false
+            },
+            "id": "74c53faa-7532-47d4-b906-08b287e097cd"
+          }
+        ]
+      },
+      "id": "a3628003-b8e4-417b-b946-7e393741435f"
+    }
+  ],
+  "leaveScript": []
+}

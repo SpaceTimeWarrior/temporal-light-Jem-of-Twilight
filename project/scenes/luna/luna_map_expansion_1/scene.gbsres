@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "58aea7c5-a26d-47ec-b789-fae4b2cdc515",
+  "_index": 139,
+  "type": "TOPDOWN",
+  "name": "luna/luna map expansion 1",
+  "symbol": "scene_143",
+  "x": 5832.325827205883,
+  "y": 4003.0732777486,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "4e311b9b-ce51-43a7-9916-54a08f702dca",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "start",
+                "left",
+                "up",
+                "down",
+                "right",
+                "select",
+                "a"
+              ]
+            },
+            "id": "7169de98-0ae3-444c-a6f1-c3caaea73e2c"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "75ea3e9a-a2e2-42fc-b7e7-7b61e672fc76"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "d20838ee-22d3-4afa-9c11-5bbf0ce1d586"
+          }
+        ]
+      },
+      "id": "6d943d22-0bca-47d4-82cd-fe57e0acb3da"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

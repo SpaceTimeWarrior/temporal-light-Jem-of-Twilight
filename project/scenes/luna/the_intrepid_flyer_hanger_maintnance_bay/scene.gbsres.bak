@@ -1,0 +1,285 @@
+{
+  "_resourceType": "scene",
+  "id": "8e99ca2c-64b0-48de-8ead-a1c973ac2caa",
+  "_index": 143,
+  "type": "TOPDOWN",
+  "name": "luna/the intrepid flyer hanger maintnance bay",
+  "symbol": "scene_147",
+  "x": 4879.935319527118,
+  "y": 3107.6105169064153,
+  "width": 40,
+  "height": 60,
+  "backgroundId": "556f9fb3-3e21-4a23-955f-c6e5f383aa06",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f",
+    "277cb477-cfe7-4191-9a18-139c3aa9c3bb",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0"
+  ],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": false,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "26939857-ce04-45e4-b882-92fb7b1267b9"
+    },
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select",
+          "start",
+          "a"
+        ]
+      },
+      "id": "f5cd5ce1-4621-4377-afbc-7e367fc30be6"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "46",
+        "flag": 5,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 19
+              },
+              "moveType": "vertical",
+              "useCollisions": false
+            },
+            "id": "01b2f4e3-2c51-4173-bb24-b7f00d397064"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 21
+              },
+              "y": {
+                "type": "number",
+                "value": 30
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "id": "0e415fe1-9e25-454c-a2a4-06bb951802bc"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "8f4afd7b-a3f7-49a8-bd64-6f60ecb59749"
+          },
+          {
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 26
+              },
+              "speed": 0.5
+            },
+            "id": "a6af2e2f-b6c3-4abf-9113-8d6a11ee2de4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:Crystal get \nback on the ship\nyour father is",
+                "worried about \nyou"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "c77f827b-7f2f-4372-8e14-f351abe707bf"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "eadc8ba3-ccce-4afb-a82a-116ee0c68043"
+            },
+            "id": "7a29cd68-f73f-40e3-b5c4-7dea29ab07d0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "crystal:\nI don't wan to.\nI want to show ",
+                "the magic daddy \ntauht me.\njem:please don't"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "506b5746-585c-492f-b4ac-b51db8e4d864"
+          },
+          {
+            "command": "EVENT_LAUNCH_PROJECTILE",
+            "args": {
+              "spriteSheetId": "a89863c8-1b3c-49ca-96d5-b97394907de6",
+              "spriteStateId": "",
+              "actorId": "d68f9401-cd64-408a-a807-9243e2cdc51c",
+              "x": 0,
+              "y": 0,
+              "otherActorId": "$self$",
+              "direction": "up",
+              "angle": 0,
+              "angleVariable": "L0",
+              "directionType": "direction",
+              "initialOffset": 0,
+              "speed": 2,
+              "animSpeed": 15,
+              "lifeTime": 1,
+              "loopAnim": true,
+              "destroyOnHit": true,
+              "collisionGroup": "3",
+              "collisionMask": [
+                "1",
+                "player"
+              ]
+            },
+            "id": "8cc040e2-4e94-4f22-a7fa-29e658764306"
+          }
+        ]
+      },
+      "id": "f6f60ee0-6602-4ce2-afb2-ced771ece4f7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "516ecc77-c9b1-400c-ae64-ce461454495e"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "a68a4c24-250a-46f6-be70-70aabef2a660",
+        "persist": false
+      },
+      "id": "c2288932-d9a7-4e82-9406-f6c516a3d50f"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.5,
+        "frames": 30,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "9e483955-2db0-41db-812a-91dbc7764069"
+    },
+    {
+      "command": "EVENT_CAMERA_LOCK",
+      "args": {
+        "speed": 0,
+        "axis": [
+          "x",
+          "y"
+        ]
+      },
+      "id": "f546023f-39d6-4822-99ad-25c0a910b20a"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "caa7c21c-c3c8-43cb-a2bd-394081a1d847"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 21
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "d4a550be-eb0d-4d3d-a5a1-7236d5a2ad9e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "3e35640b-a7ab-4f0d-b4bf-2f00d542ad00"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "cc581070-5a9d-4c4a-9de9-ab24be0d53f0",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "ec3036eb-a0b2-43bd-b336-7f9418fd1696"
+    }
+  ],
+  "collisions": "0f16c+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f!002+0f!0017+0f8+005+0f4+0017+0f8+005+0f4+0017+0f8+005+0f4+0017+0f8+005+0f4+0017+0f8+005+0f4+0017+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f54+"
+}

@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "7e15d4a0-cfa6-40bb-8722-c0d2bd8843af",
+  "_index": 133,
+  "type": "TOPDOWN",
+  "name": "menu/quick warp 01 eather",
+  "symbol": "scene_134",
+  "x": 3748,
+  "y": 4025.007505063658,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c454e7-556c-412a-be69-68ae4fe7db55",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "",
+    "",
+    "",
+    "dmg",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

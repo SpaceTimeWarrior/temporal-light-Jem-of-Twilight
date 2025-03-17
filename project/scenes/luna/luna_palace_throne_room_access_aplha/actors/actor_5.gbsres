@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "31f93fe3-d998-47a9-869e-b908f51d1b6d",
+  "_index": 6,
+  "symbol": "actor_513",
+  "prefabId": "",
+  "name": "",
+  "x": 22,
+  "y": 4,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Bed Rooms >\nArmory <\nThrone Room ^"
+        ],
+        "avatarId": ""
+      },
+      "id": "9bf2de37-8c6b-419e-9943-cf9534ef0054"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

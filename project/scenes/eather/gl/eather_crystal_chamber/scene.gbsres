@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "27709781-dde3-4b21-9458-768abbf7702e",
+  "_index": 129,
+  "type": "TOPDOWN",
+  "name": "eather/gl/Eather Crystal chamber",
+  "symbol": "scene_130",
+  "x": 675.7999822443182,
+  "y": 5414.515151515152,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "8b81b959-8cae-4311-a65a-317ac78a6543"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

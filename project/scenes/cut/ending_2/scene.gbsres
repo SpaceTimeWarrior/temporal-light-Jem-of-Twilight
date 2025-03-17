@@ -1,0 +1,56 @@
+{
+  "_resourceType": "scene",
+  "id": "88b817e1-5c80-49b2-a8a5-674b1408e78d",
+  "_index": 98,
+  "type": "TOPDOWN",
+  "name": "cut/ending 2",
+  "symbol": "scene_99",
+  "x": 2504,
+  "y": 2320,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "And so Jem and \nFlare was intended\nto get married",
+          "but one big \nproblem emerged \npart of the ",
+          "ceremony was\nplanned to take\nplace on Earth ",
+          "but Flare is still\nBanished. Jem \ndecided to at",
+          "least try to break\nthe banishment.\n(the marrage is ",
+          "still on Luna but\npart is on Earth)"
+        ],
+        "avatarId": ""
+      },
+      "id": "66bc968e-f03a-44d6-8cd9-da1cb1efafbe"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "e924c34b-75f8-42ee-bc5f-90b7cf574416",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 35
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "32c6b921-77bd-4b37-8f75-2b80aefdcfd5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

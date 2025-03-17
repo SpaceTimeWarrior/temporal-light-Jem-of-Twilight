@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "8b3a0e35-1916-46c5-843f-f35fbd6edf47",
+  "_index": 3,
+  "symbol": "trigger_137",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 37,
+  "width": 9,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A shuttle able to\ntravel on land\nand limited ",
+          "space travel"
+        ],
+        "avatarId": ""
+      },
+      "id": "815e04ff-40b0-4e27-a158-bb31e6a205b9"
+    }
+  ],
+  "leaveScript": []
+}

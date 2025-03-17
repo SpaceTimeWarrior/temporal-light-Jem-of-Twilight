@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "fdf55883-f840-409b-9f17-a85085200635",
+  "_index": 1,
+  "symbol": "trigger_107",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 5,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:\nBrier's bathtub"
+        ],
+        "avatarId": ""
+      },
+      "id": "90a03561-8f28-412f-bbc4-6fed889fbbdc"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,99 @@
+{
+  "_resourceType": "actor",
+  "id": "d07c797c-742c-424e-9d18-30430b392675",
+  "_index": 1,
+  "symbol": "actor_111",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "0a70ded5-cfe7-4d97-83e1-1fc6bfebcc86"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Wolf royal guard:\n... ... ... ...is\neverything alright"
+        ],
+        "avatarId": ""
+      },
+      "id": "26bcb9d5-6c56-4d9d-855e-e33434333a0c"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+      },
+      "id": "d55600f5-699f-4a80-a87a-fc721397899e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "their internal \nvoice: did I say \nsomething to",
+          "anger her"
+        ],
+        "avatarId": ""
+      },
+      "id": "71126cea-e5de-4c56-be05-80431c7b1c65"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: No it isn't\nyou it is my \nparents"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "ced2bc48-fd6e-49e2-ab4b-cb6e140f7720"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+      },
+      "id": "085b6e7a-7190-4c88-a4ba-ffe949dbbac3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "6e1fda6c-7ba5-43d3-9e1f-22ef2b831aff"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3f015142-c55e-4163-89e2-aee14e457bd0"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,153 @@
+{
+  "_resourceType": "scene",
+  "id": "c0c9c490-95e7-48c0-82bb-08841b07bed1",
+  "_index": 43,
+  "type": "TOPDOWN",
+  "name": "cut/intro cutscene 1",
+  "symbol": "scene_44",
+  "x": 3032,
+  "y": 848,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "fd0f9900-5651-4ccd-9d27-659df634efa0",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "16231584-cfbd-4d69-b7b0-5b85bc70c7c2",
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "b32fb57c-5e47-41df-a499-f9cdc57d287c"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "a6c591a4-aced-4203-b805-e6b756074596"
+          }
+        ]
+      },
+      "id": "2368976d-dc6e-450e-9562-bc9aa98cf024"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "dc7a8105-7786-49ce-ad42-aa9d59436abe"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "33e23cf8-141e-4ceb-b0b1-6503830f32d8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pearlite: You\nare comming of\nage. To take the",
+          "crown. But you \nhave rejected \nevery possible",
+          "person that is\nallowable."
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "df3d1c36-f8c4-4e7d-a6d2-d75e8bf0b15d"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "f277063f-6285-47ce-85f8-730f06800204"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet: Which is\nwhy we moved\nyour room. Into",
+          "the courtyard.\nYou must find a\nhusband by the",
+          "end of the year\nor you are cut\noff",
+          "the building was\ndesigned by our\nbest AI."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9",
+        "__collapse": false
+      },
+      "id": "f44b3b2e-b98f-4cb1-83ac-350d4fc109d1"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "8477b233-24d6-4dde-aad2-4d88d3341629"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 15
+      },
+      "id": "c867ef17-92d3-46ff-87c7-12a792b31c1b"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+      },
+      "id": "60f2ca89-63f6-41b4-ae8d-d7d57c0f602b"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "3f89d40d-7b8e-4cdc-9930-af9a680cd728",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "f53bda03-4bf4-4959-b804-08dce7bc4778"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

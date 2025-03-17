@@ -1,0 +1,51 @@
+{
+  "_resourceType": "scene",
+  "id": "44c720e8-08ea-47b1-bf9b-cfadf781f945",
+  "_index": 118,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace light's room",
+  "symbol": "scene_119",
+  "x": 4740.309299501048,
+  "y": 4964.553669905459,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "939151ad-a9d1-4dc5-acb5-f9eaa2bc7465",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "4a5a6f2e-10f5-4342-8e30-eac8cb0fa350"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f",
+    "277cb477-cfe7-4191-9a18-139c3aa9c3bb",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "99e6719f-83cb-4cae-8894-6a8cd132962a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 121
+        }
+      },
+      "id": "d8158798-4f32-40ce-929a-406df09a3ca0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f90+004+0f4+004+0f8+004+0f!002+0f!004+0f8+004+0f!002+0f!004+0f8+004+0f!002+0f!004+0f8+004+0f!002+0f!004+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0fc+004+0f10+004+0f8+"
+}

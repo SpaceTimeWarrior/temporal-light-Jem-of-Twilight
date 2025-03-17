@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "f2eb6e0b-cfcc-4739-8158-285aecedfe49",
+  "_index": 2,
+  "symbol": "trigger_111",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 11,
+  "width": 1,
+  "height": 7,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A segment of rug \nis placed on a \nramp"
+        ],
+        "avatarId": ""
+      },
+      "id": "ee869e4b-b25e-4939-8e48-9ec6d00da741"
+    }
+  ],
+  "leaveScript": []
+}

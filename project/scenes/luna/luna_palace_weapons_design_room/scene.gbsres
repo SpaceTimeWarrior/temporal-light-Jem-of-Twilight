@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "723971bf-ab9b-4c69-b252-d814b06aee89",
+  "_index": 115,
+  "type": "TOPDOWN",
+  "name": "luna/luna palace weapons design room",
+  "symbol": "scene_116",
+  "x": 4189.938151041666,
+  "y": 4755.742745535715,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "6b4c490d-582d-4b84-b675-a49bf4fbb007",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "f8591661-1a74-413f-bc80-7d60c83ef6dc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 117
+        }
+      },
+      "id": "33336c13-7b59-4808-8841-3bdbe68962d5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f144+001d+0f!002+0f8+001d+0f!002+0f8+001d+0f!002+0f8+001d+0f!002+0f8+006+0f22+006+0f22+006+0f22+006+0f22+006+0f22+006+0f6+006+0f6+006+0f8+0022+0f6+0022+0f6+0022+0f6+0022+0f6+009+0f4+008+0f4+009+0f6+008+0f!00!0f2+00!0f!006+0f!00!0f2+00!0f!008+0f8+007+0f4+008+0f4+007+0fa+006+0f!00!0f2+00!0f!006+0f!00!0f2+00!0f!006+0fa+007+0f4+008+0f4+007+0fa+006+0f!00!0f2+00!0f!006+0f!00!0f2+00!0f!006+0fa+007+0f4+008+0f4+007+0fa+006+0f6+006+0f6+006+0f6+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f8+006+0f6+006+0f6+006+0fa+006+0f6+006+0f6+006+0f56+"
+}

@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "b7c6fbe0-7489-4dfd-9f09-d4244f868718",
+  "_index": 123,
+  "type": "TOPDOWN",
+  "name": "eather/gl/Eather genetics lab Hyper top secret access",
+  "symbol": "scene_124",
+  "x": 695.1999918619792,
+  "y": 5779.800130208335,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "ce747185-15ff-46e7-8cb6-d479d6ffcee1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

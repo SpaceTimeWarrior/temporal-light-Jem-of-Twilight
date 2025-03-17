@@ -1,0 +1,35 @@
+{
+  "_resourceType": "actor",
+  "id": "778560a6-2379-4afb-b0a9-e20956aee90f",
+  "_index": 7,
+  "symbol": "actor_750",
+  "prefabId": "",
+  "name": "",
+  "x": 20,
+  "y": 38,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "17e38083-996a-4816-8ad1-740c5665179c",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a21ae5c0-068d-426e-974b-50f1ab9940dd"
+    }
+  ],
+  "hit2Script": [],
+  "hit3Script": []
+}

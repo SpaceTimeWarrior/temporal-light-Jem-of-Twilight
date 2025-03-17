@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "f1155a6d-83ac-4a4f-9637-5c9798e128ef",
+  "_index": 9,
+  "symbol": "trigger_260",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 34,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Locked that is a\nhuge padlock"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "b0e7fa27-cea6-4443-b365-a4f735bede47"
+    }
+  ],
+  "leaveScript": []
+}

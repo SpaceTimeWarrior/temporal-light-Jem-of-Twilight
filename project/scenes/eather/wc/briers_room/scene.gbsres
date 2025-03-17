@@ -1,0 +1,105 @@
+{
+  "_resourceType": "scene",
+  "id": "e04881e7-e760-4033-b81e-c34a5e692651",
+  "_index": 35,
+  "type": "TOPDOWN",
+  "name": "eather/wc/brier's room",
+  "symbol": "scene_36",
+  "x": 873.8095238095235,
+  "y": 2664.20950753348,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "99e9e3ee-211c-4a78-98d0-364cdd66b185",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "default-bg-2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "28c29141-fd24-48ed-9de0-088236945000"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "42e93d52-5aaf-49ca-af3e-325c73ff65fb"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "84245bde-12fe-4e2b-aec4-a066e79986ac"
+          }
+        ]
+      },
+      "id": "d18ec1e2-1095-4d99-ac2d-23a68391ad4f"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "2691cda4-68d9-4a81-9cda-1c7d65bf7da9"
+    }
+  ],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "7509f617-7e0d-4267-9f95-078d4373e9a1"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "b9afd66f-29e0-4eb3-8770-51f503d19f05"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": ""
+      },
+      "id": "6bca0bac-787a-44a1-9f38-a1fd51ab19df"
+    }
+  ],
+  "collisions": "0035+0fc+001c+0f!005+0f6+001c+0f!005+0f6+001c+0f!005+0f6+001c+0f!00a+0f!001c+0f!00a+0f!001c+0f!00a+0f!001c+0f!00a+0f!0014+0f9+00a+0f!0014+0f!0012+0f!0014+0f!0012+0f7+00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!0018+0f!00e+0f!00d+0f7+004+0f!00e+0f!007+0f7+00!0f5+004+0f!00e+0f!007+0f!007+0f!008+0f!00e+0f!007+0f!007+0f!008+0f!00e+0f!007+0f!007+0f!008+0f!00e+0f!007+0f!007+0f!008+0f!00e+0f9+007+0fa+00171+"
+}

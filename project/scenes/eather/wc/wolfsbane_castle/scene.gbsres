@@ -1,0 +1,111 @@
+{
+  "_resourceType": "scene",
+  "id": "6087c65a-5f9c-4626-ae3c-fe472c95a886",
+  "_index": 135,
+  "type": "TOPDOWN",
+  "name": "eather/wc/wolfsbane castle",
+  "symbol": "scene_136",
+  "x": 726.738378401898,
+  "y": 201.62801158595164,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "badb4928-dba1-41f6-b434-81312f1f4f81",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "dmg"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+              "palette1": "e9762a21-0f64-4322-820e-c8c0c53403bd",
+              "palette2": "4d1d016c-bd07-4528-88be-dc03888a370c",
+              "palette3": "611e0240-d5c2-46a7-95df-b34891f6e6be",
+              "palette4": "f2514180-91e4-4a0e-b67a-7ab13107f508",
+              "palette5": "c4963196-0462-41ac-82e6-c7418a5657a3",
+              "palette6": "e2032ea2-d047-4230-871c-2bdf642b982a",
+              "palette7": "611e0240-d5c2-46a7-95df-b34891f6e6be"
+            },
+            "id": "b4c2f054-2ca7-4d15-99a4-cf7376b257d4"
+          }
+        ],
+        "false": []
+      },
+      "id": "db47e6f9-2a4c-46fc-875e-dd108049fe28"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start",
+                "left",
+                "up",
+                "down",
+                "select",
+                "a"
+              ]
+            },
+            "id": "0fc896c8-b677-4a75-927e-e68164571cad"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "77e05914-8cec-4c03-8fd6-dd6e42f52ca1"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "e5364687-6d11-44a6-aae6-2017f5591d3d"
+          }
+        ]
+      },
+      "id": "4515d4ce-0b6a-457d-92f3-2f1cbdba5800"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

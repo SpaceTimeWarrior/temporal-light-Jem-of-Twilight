@@ -1,0 +1,59 @@
+{
+  "_resourceType": "scene",
+  "id": "2148f85e-07e5-4204-9d0e-1637905fa21d",
+  "_index": 101,
+  "type": "TOPDOWN",
+  "name": "cut/ending 3",
+  "symbol": "scene_102",
+  "x": 1272,
+  "y": 2488,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem tried to steal\nEmber's egg. After\nthe first murder",
+          "at the school the \npolice was \ninformed and after",
+          "the second a \nguard was \ndispatched to all",
+          "possible places \nJem could go. Jem \nultimately ditched",
+          "the plan of \nsteeling the egg\nafter seeing half",
+          "of the solar \ncouncil's guards\nprotecting Ember's",
+          "child. Jem lived\na life of complete\nisolation. Ember's",
+          "child executed Jem\n8 years later. Jem\ndid not resist, as",
+          "she felt guilty \nfor killing her\nfriend.",
+          "the end."
+        ],
+        "avatarId": ""
+      },
+      "id": "36f30e3d-4a86-44ed-a317-f20bd9d396f9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "1a8f3125-2847-409b-a32f-333be591d836",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "90197d17-f68b-43fe-894e-6e4eddb591ee"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

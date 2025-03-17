@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "237c180a-f2d8-4121-98af-e9c2d73c27df",
+  "_index": 124,
+  "type": "TOPDOWN",
+  "name": "eather/gl/Eather Crystal chamber acess",
+  "symbol": "scene_125",
+  "x": 488.5333251953125,
+  "y": 5621.996208639707,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "6ad6e89f-f664-4584-be0d-05c37740447b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

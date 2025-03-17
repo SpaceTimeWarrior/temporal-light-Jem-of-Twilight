@@ -1,0 +1,81 @@
+{
+  "_resourceType": "scene",
+  "id": "7c098d0a-9158-4f44-8d29-86b8556c1543",
+  "_index": 59,
+  "type": "TOPDOWN",
+  "name": "luna/lunar overworld 0",
+  "symbol": "scene_60",
+  "x": 4532.337124693628,
+  "y": 2655.739990918243,
+  "width": 40,
+  "height": 40,
+  "backgroundId": "6ecc89bd-766f-4256-a70b-6887dc1d7914",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 12
+              }
+            },
+            "id": "80f160f6-9856-4b00-a958-7a2b96eac7c3"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "03bd82a2-736a-4d9f-bae0-4a0071097f99"
+          }
+        ]
+      },
+      "id": "f6b9f9d0-4afd-46a7-ad14-94e3c56153d3"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "73d63e80-7927-4065-ac51-64af19feecb5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 103
+        }
+      },
+      "id": "0d5f1cdf-bc21-4694-a9b4-5fc1fa11a3ce"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f141+001e+0fa+001e+0f9+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f8+0020+0f9+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0f1a+00a+0f1f+008+0f20+008+0f20+008+0f20+008+0f20+008+0f216+"
+}

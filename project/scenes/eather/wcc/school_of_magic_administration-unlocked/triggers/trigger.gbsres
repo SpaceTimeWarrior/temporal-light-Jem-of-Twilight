@@ -1,0 +1,76 @@
+{
+  "_resourceType": "trigger",
+  "id": "806e2917-3f7e-4e69-b57b-ed6723c40606",
+  "_index": 0,
+  "symbol": "trigger_71",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 4,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "37",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "just as a reminder\nthis is after\nactive hours",
+                "so don't be \nsupprised if there\nisn't any students"
+              ],
+              "avatarId": ""
+            },
+            "id": "e87c193e-2543-4e20-87fb-4634a4d5212e"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "1487799e-69c1-4bff-accf-d89196c89f48",
+              "x": {
+                "type": "number",
+                "value": 51
+              },
+              "y": {
+                "type": "number",
+                "value": 56
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e4252495-e74e-4ed5-9f25-9509810e3799"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "1487799e-69c1-4bff-accf-d89196c89f48",
+              "x": {
+                "type": "number",
+                "value": 51
+              },
+              "y": {
+                "type": "number",
+                "value": 56
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "34fdb3fb-e400-44ee-ae30-159f3ca25fb4"
+          }
+        ]
+      },
+      "id": "42c3b663-52e5-4c1a-a7ae-8d7812fe1336"
+    }
+  ],
+  "leaveScript": []
+}

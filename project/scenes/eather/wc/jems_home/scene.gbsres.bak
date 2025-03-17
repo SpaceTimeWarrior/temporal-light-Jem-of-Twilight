@@ -1,0 +1,397 @@
+{
+  "_resourceType": "scene",
+  "id": "e2f36ac4-e1e9-49f1-aff6-e1277d9f8da5",
+  "_index": 8,
+  "type": "TOPDOWN",
+  "name": "eather/wc/jem's home",
+  "symbol": "scene_10",
+  "x": 196.32206164603576,
+  "y": 528.9355742296914,
+  "width": 36,
+  "height": 39,
+  "backgroundId": "71763f94-ec9d-4176-951c-0c2a0c944f4e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "c5728bc1-4d32-4811-b582-5008ec63788e"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "441424b7-df6d-42fa-8378-efa1ca89f2dc"
+      },
+      "id": "d9f5bd75-81e3-4dfe-ba06-df5cbff073d4"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "df786118-136b-4e31-9ef4-7f05ae257d2b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "28",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e3893cd5-ef28-4c0b-8620-b001a39f7db3"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "24540569-7c6f-4b61-b09c-960994d028a8"
+      },
+      "id": "abae6950-2cf7-414e-b13d-b1a28f0dc153"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "22",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "22"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 255
+            },
+            "id": "ca713e41-cbd4-48d0-9b7a-711398634f8e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: just as I \nfeared. the Ai \nmade it look",
+                "like an dance\nfloor.",
+                "the tiles are \ncemented to the \nfloor. f@#$%.",
+                "I should give \nthem a piece of\nmy mind."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "527b22eb-40b4-4fe0-a7ed-d42756a6800f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "22",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "ba004418-95b4-4906-bbe1-db577f800c4e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "move with ^*<> \nbuttons\ntoggle run with #",
+                "and open game menu\nwith start"
+              ],
+              "avatarId": ""
+            },
+            "id": "c04a8f07-0f00-4cf0-af1d-56cfc2475d4d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+            "args": {
+              "actorId": "$self$",
+              "speed": 15
+            },
+            "id": "293e482e-5da8-4188-8ab2-67d4af48d06f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 12,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [],
+              "false": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "23",
+                    "flag": 11,
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "23",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": false,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": true,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "c28bd714-d373-4cb7-aae6-a9fee7eac1c1"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                        },
+                        "id": "758e5a2c-698d-4691-bd26-574b9b83486f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: I guess\nI am going to\ncontact him"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                          "__collapse": false
+                        },
+                        "id": "6c13722c-5dd0-4c66-a0a8-547b2d187f19"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "fb27835c-0f9d-49ba-afaa-a8fbbaf66a7c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "ring...ring...\nFlare:hello"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "a22e3e27-1dbd-409f-b0c7-83199d226aa3"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "0e6c847a-7e45-4649-b45d-2b11a9e7f207"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: hi can you \ncome over here.\nI need to tell",
+                            "you something\nimportant"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "a1a96223-23ff-4a2f-a170-993c0791fa70"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "68f85344-8115-475f-b48d-31535d45e988"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare:why can't\nyou say it"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "00b68893-23a1-424a-9817-f4039aa339fd"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "d1dfe510-35aa-4620-9725-c82699604a86"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: I told my \nfather and he \nwas livid.",
+                            "he said if you\naren't able to\ncome by the end",
+                            "of the week he\nis going to kill\nboth of us."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "3ef16d51-e504-41e0-b6c3-54c8cd76af8b"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "variable": "32",
+                          "operator": "==",
+                          "comparator": "0",
+                          "__collapseElse": false,
+                          "condition": {
+                            "type": "eq",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "32"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          }
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "e53c35a1-cc01-4161-9c27-ae6fba0e4578"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare:kitty calm\ndown this sounds\nlike a trap. but",
+                                  "I will come.the\nworst case is \nthat I kidnap",
+                                  "you again.but I \nshould not push\nit. "
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "d6a0dabe-bd87-418d-9203-49a26b86b30c"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_PALETTE_SET_UI",
+                              "args": {
+                                "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                              },
+                              "id": "38ba5882-6d3a-421c-91cc-19605c33f4e2"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Flare:Jem calm\ndown this sounds\nlike a trap. but",
+                                  "I will come.the\nworst case is \nthat I kidnap",
+                                  "you again.but I \nshould not push\nit. "
+                                ],
+                                "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                              },
+                              "id": "5c627609-c6e1-4c06-8583-f055dea159c6"
+                            }
+                          ]
+                        },
+                        "id": "e07a90fd-01e5-4fd5-a44c-4e31127df56a"
+                      },
+                      {
+                        "command": "EVENT_CALL_CUSTOM_EVENT",
+                        "args": {
+                          "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                          "$variable[V0]$": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "9c7a9f8d-52b1-4065-a58e-07fb2152c7dc"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare:come to the\nthrone room. your\nparents invited",
+                            "me in."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "a46d43a2-c5e2-4567-85b1-bbb3747ad041"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "16",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "d523770c-7cfc-4077-86b5-8efdf69a87b9"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c4f222cf-5af5-4aec-96f7-62bb6ba4fb17"
+                }
+              ]
+            },
+            "id": "74d8b15b-ad78-4c26-9c03-f27582db5057"
+          }
+        ]
+      },
+      "id": "bb186dfc-9b8a-4081-bda7-1b0c6b2005d5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00150+0f3+002+0f3+002+0fd+00d+0f!002+0f2+003+0f2+00c+0f!004+0fa+002+0f2+003+0f2+00c+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f!001e+0f!004+0f9+0010+0f6+00d+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f!0010+0f!0012+0f8+006+0f4+00103+"
+}

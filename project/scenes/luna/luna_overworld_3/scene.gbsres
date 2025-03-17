@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "ed0dff4d-aef7-4d3b-b15c-c42043ad8462",
+  "_index": 66,
+  "type": "TOPDOWN",
+  "name": "luna/luna overworld 3",
+  "symbol": "scene_67",
+  "x": 4530.110600490194,
+  "y": 2997.3098958333335,
+  "width": 40,
+  "height": 60,
+  "backgroundId": "2b28b425-0d23-44af-b2a9-6e63300fddb1",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "d0583099-70d7-482d-bb42-46849eb0afc9"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 105
+        }
+      },
+      "id": "b39bcf15-79f8-48d4-a46b-5b06114db0ce"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f12+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f20+008+0f10+005+0fa+00a+0ff+005+0fa+00a+0ff+005+0fa+00a+0ff+005+0fa+00a+0ff+005+0fa+00a+0ff+005+0f3+004+0f3+00a+0f3+006+0f6+005+0f3+004+0f3+00a+0f3+006+0f6+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f4+0024+0f39a+"
+}

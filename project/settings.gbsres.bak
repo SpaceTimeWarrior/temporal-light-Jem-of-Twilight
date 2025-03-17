@@ -1,0 +1,97 @@
+{
+  "_resourceType": "settings",
+  "startSceneId": "d1fa35ba-e3f0-4ff6-8620-9d44f846ea75",
+  "startX": 0,
+  "startY": 0,
+  "startMoveSpeed": 1,
+  "startAnimSpeed": 15,
+  "startDirection": "left",
+  "showCollisionExtraTiles": false,
+  "sgbEnabled": true,
+  "customHead": "",
+  "defaultBackgroundPaletteIds": [
+    "default-bg-1",
+    "default-bg-2",
+    "default-bg-3",
+    "default-bg-4",
+    "default-bg-5",
+    "default-bg-6",
+    "dmg",
+    "default-bg-4"
+  ],
+  "defaultSpritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite",
+    "default-sprite"
+  ],
+  "defaultSpritePaletteId": "default-sprite",
+  "defaultUIPaletteId": "default-ui",
+  "playerPaletteId": "",
+  "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
+  "defaultCharacterEncoding": "",
+  "defaultPlayerSprites": {
+    "TOPDOWN": "daa7fc4e-2389-4cfc-b776-381314bd657e",
+    "PLATFORM": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+    "ADVENTURE": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
+    "SHMUP": "8dc92890-eb24-4bfa-bb00-a916d6a959f7",
+    "POINTNCLICK": "eadc190c-b18b-4bfb-bebd-f1a258aba580",
+    "LOGO": "5185f121-2209-4d56-9735-68befd151d77"
+  },
+  "musicDriver": "huge",
+  "cartType": "mbc5",
+  "batterylessEnabled": false,
+  "customColorsWhite": "E8F8E0",
+  "customColorsLight": "B0F088",
+  "customColorsDark": "509878",
+  "customColorsBlack": "202850",
+  "customControlsUp": [
+    "ArrowUp",
+    "w",
+    "8"
+  ],
+  "customControlsDown": [
+    "ArrowDown",
+    "s",
+    "4"
+  ],
+  "customControlsLeft": [
+    "ArrowLeft",
+    "a",
+    "6"
+  ],
+  "customControlsRight": [
+    "ArrowRight",
+    "d",
+    "2"
+  ],
+  "customControlsA": [
+    "Alt",
+    "z",
+    "j"
+  ],
+  "customControlsB": [
+    "Control",
+    "k",
+    "x"
+  ],
+  "customControlsStart": [
+    "Enter",
+    "q",
+    "i"
+  ],
+  "customControlsSelect": [
+    "Shift",
+    "e",
+    "l"
+  ],
+  "colorMode": "mixed",
+  "generateDebugFilesEnabled": false,
+  "compilerPreset": 3000,
+  "scriptEventPresets": {},
+  "scriptEventDefaultPresets": {}
+}

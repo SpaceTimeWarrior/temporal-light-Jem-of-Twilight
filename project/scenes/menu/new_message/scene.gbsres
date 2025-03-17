@@ -1,0 +1,55 @@
+{
+  "_resourceType": "scene",
+  "id": "ccfc8632-106a-43de-9be7-fa97a8175139",
+  "_index": 54,
+  "type": "POINTNCLICK",
+  "name": "menu/new message",
+  "symbol": "scene_55",
+  "x": 1918.0000000000002,
+  "y": 34.81904774620423,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "c183d414-83aa-4389-8a59-44488df78c36",
+  "tilesetId": "",
+  "paletteIds": [
+    "",
+    "",
+    "aa2379be-b18d-4964-b202-b8316dd758cc"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "I don't know who\nto send to. Or\nwhat necessarily",
+          "what to send."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "6377f01b-ee78-481d-bb84-b52c04b3701d"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "95e15a1b-c4a7-4937-a765-bf20ad37b25c",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "1fe316e9-2214-49de-8503-32f8cff92f43"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

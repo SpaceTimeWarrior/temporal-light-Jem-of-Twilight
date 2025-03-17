@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "32165755-e72c-466f-a9eb-9346f70f421d",
+  "_index": 4,
+  "symbol": "actor_550",
+  "prefabId": "",
+  "name": "",
+  "x": 5,
+  "y": 8,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "an empty \nnightstand"
+        ],
+        "avatarId": ""
+      },
+      "id": "e3ddd138-4060-43fb-ace3-58162d08cfd1"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

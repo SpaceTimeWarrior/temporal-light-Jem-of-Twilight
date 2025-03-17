@@ -1,0 +1,77 @@
+{
+  "_resourceType": "scene",
+  "id": "1a582083-6082-4e27-ae3e-bb17c2462b80",
+  "_index": 138,
+  "type": "TOPDOWN",
+  "name": "luna/luna map first visit",
+  "symbol": "scene_142",
+  "x": 5657.199776785715,
+  "y": 4000.45703125,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "ec38af96-0fb8-4d0b-a6ed-2754a39592b6",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035",
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "start",
+                "left",
+                "up",
+                "down",
+                "right",
+                "select",
+                "a"
+              ]
+            },
+            "id": "ffa77fbc-0f2a-4966-a19b-c05b9250f1f7"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "e26605fb-7c42-48f7-91c3-478f236be2de"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "68ea9f60-718e-4ef0-bf87-fa0c618ed110"
+          }
+        ]
+      },
+      "id": "d0233d45-cc37-46b6-9853-40bcd91c8976"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,43 @@
+{
+  "_resourceType": "scene",
+  "id": "9e7e375b-dd6d-46c1-9e3f-01a03168234e",
+  "_index": 85,
+  "type": "TOPDOWN",
+  "name": "luna/forge's house",
+  "symbol": "scene_86",
+  "x": 4708.666666666666,
+  "y": 3514.4000651041665,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "239f2110-58ed-4a15-b245-7a9f1ab3c27f",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "19f002a7-d70f-4c57-8f6f-e37f539aa51a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 107
+        }
+      },
+      "id": "378911a4-5eff-4a9a-a003-71af3247faea"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f66+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f8+008+0fc+008+0f6+"
+}

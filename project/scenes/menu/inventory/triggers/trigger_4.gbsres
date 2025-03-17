@@ -1,0 +1,136 @@
+{
+  "_resourceType": "trigger",
+  "id": "6f148946-b7ce-4ffa-b0b8-3945efc016e3",
+  "_index": 3,
+  "symbol": "trigger_3",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 11,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "10",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "10"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "override": false,
+              "__scriptTabs": "press",
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a",
+                      "left",
+                      "up",
+                      "down",
+                      "right",
+                      "select",
+                      "start"
+                    ]
+                  },
+                  "id": "bd0a8226-ba9c-4225-8418-908120e79445"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_AT_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "item 6"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "39e1735b-10dc-446f-9d22-189ae88e560d"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_AT_POSITION",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 11
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "item 6"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "be06fd28-cab1-454d-98d0-d09dfabed9ea"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "6b44ddd1-3829-4da2-8003-a28e8a738f23"
+                      }
+                    ]
+                  },
+                  "id": "cd906c63-4b7c-4588-bff0-3bbc3f0a787f"
+                }
+              ]
+            },
+            "id": "40cae8e1-2780-4377-8cba-c843379cba1d"
+          }
+        ],
+        "false": []
+      },
+      "id": "306c1c10-6382-443a-a971-3e37e66f8968"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,38 @@
+{
+  "_resourceType": "scene",
+  "id": "ac6e637e-207f-4e19-8e93-e1b0fdd13a43",
+  "_index": 107,
+  "type": "TOPDOWN",
+  "name": "eather/wc/Eather throne room 2",
+  "symbol": "scene_108",
+  "x": 553.5,
+  "y": 7436.10001148897,
+  "width": 27,
+  "height": 53,
+  "backgroundId": "709e221f-1449-4de0-8d11-fba004afb969",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "23cfc940-449c-43b4-8df7-b511b17aa28e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00597+"
+}

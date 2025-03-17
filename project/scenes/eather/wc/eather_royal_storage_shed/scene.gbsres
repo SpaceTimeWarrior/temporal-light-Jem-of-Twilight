@@ -1,0 +1,55 @@
+{
+  "_resourceType": "scene",
+  "id": "dc626697-9819-4058-95eb-b1c0993357b2",
+  "_index": 15,
+  "type": "TOPDOWN",
+  "name": "eather/wc/eather royal storage shed",
+  "symbol": "scene_16",
+  "x": 1516.1497326203203,
+  "y": 1061.2480215097403,
+  "width": 24,
+  "height": 24,
+  "backgroundId": "e5d8ee0f-130b-4f71-b9a5-ef9006ff0c21",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-ui",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0",
+    "202586c2-2bb5-42e9-9455-867b56a33f03",
+    "c60488b7-32ee-4cae-a3a0-1c6237910fa2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 8
+        }
+      },
+      "id": "21aeb14a-b53a-43d5-a756-63eb06e411e1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "539a25f2-e61a-4a15-aef2-9478fb157cb5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0079+0f16+002+0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!002+0f!0014+0f!002+0f7+00a+0f5+008+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f!00a+0f!00c+0f3+004+0f5+001d+"
+}

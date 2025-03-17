@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "1d3a3da9-e9b3-40ab-b67b-c55d3d482ed1",
+  "_index": 74,
+  "type": "TOPDOWN",
+  "name": "luna/hanger upstairs",
+  "symbol": "scene_75",
+  "x": 6423.466796874998,
+  "y": 2407.6615595456915,
+  "width": 46,
+  "height": 44,
+  "backgroundId": "e5937328-3ae5-4a2d-ba77-b3a047deba76",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 104
+        }
+      },
+      "id": "aa82737a-bff3-410d-a161-68d17a4a32d8"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "3e144761-22e9-46e0-b26e-1147b7280ca6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00242+0f14+001a+0f!0012+0f!001a+0f!0012+0f!001a+0f!0012+0f!0016+0f5+0012+0f!0016+0f!0016+0f!0016+0f!0016+0f!0016+0f!0016+0f!0016+0f!0016+0f!0016+0f9+006+0f9+001e+0f!006+0f!0026+0f!006+0f!0026+0f!006+0f!0026+0f2+004+0f2+0028+0f4+00318+"
+}

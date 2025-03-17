@@ -1,0 +1,61 @@
+{
+  "_resourceType": "trigger",
+  "id": "68bf7bde-d1ac-4b94-bccb-822abcc4eefe",
+  "_index": 4,
+  "symbol": "trigger_61",
+  "prefabId": "",
+  "name": "",
+  "x": 59,
+  "y": 32,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "33",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "33"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The store is closed"
+              ],
+              "avatarId": ""
+            },
+            "id": "1256597d-8e05-4344-b231-fea47b99d84e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e66e8851-ca4d-4e03-927f-b6cbb7433af8",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "bdd9f2ae-ffb9-4d1e-9eda-0a36d9e13c7f"
+          }
+        ]
+      },
+      "id": "9c13ff98-3347-483a-95f5-681126888d2a"
+    }
+  ],
+  "leaveScript": []
+}

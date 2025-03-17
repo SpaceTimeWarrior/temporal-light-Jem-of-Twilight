@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "206b44b0-077c-463a-8ddd-835e1512946f",
+  "_index": 3,
+  "symbol": "actor_446",
+  "prefabId": "",
+  "name": "",
+  "x": 16,
+  "y": 17,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Multiple \nfeathers of \ndifferent colors",
+          "must of been \nCedric's bed.",
+          "It is too \ndangerous to\nsleep here"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "bdeed061-331b-4756-b8bf-39e17e405e9d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "180b8823-2412-4cc0-8e98-ddc3d180e9b9",
+  "_index": 3,
+  "symbol": "trigger_22",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 35,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "It is a bathtub\nI rarely use it\nfor its intended",
+          "purpose. Mostly\nwashing engine\nparts"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "e93fc8af-0e02-4a47-bdac-81310ff5ee43"
+    }
+  ],
+  "leaveScript": []
+}

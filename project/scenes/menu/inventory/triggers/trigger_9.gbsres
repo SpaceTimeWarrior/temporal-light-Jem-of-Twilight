@@ -1,0 +1,140 @@
+{
+  "_resourceType": "trigger",
+  "id": "1e523f31-0739-465b-bd3c-06b5bf333ad6",
+  "_index": 8,
+  "symbol": "trigger_8",
+  "prefabId": "",
+  "name": "",
+  "x": 4,
+  "y": 8,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "3",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "3"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "a"
+              ],
+              "override": false,
+              "__scriptTabs": "press",
+              "__collapse": false,
+              "__comment": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a",
+                      "left",
+                      "up",
+                      "down",
+                      "right",
+                      "select",
+                      "start"
+                    ],
+                    "__collapse": false
+                  },
+                  "id": "9480dd61-b58c-45dd-aeea-ace9bc0f7d2a"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_AT_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "__collapseElse": false,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "item 2"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "a4a8b69a-f0c1-487a-848e-6657e4bf1010"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_ACTOR_AT_POSITION",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "number",
+                            "value": 4
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "__collapseElse": true,
+                          "units": "tiles"
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "item 2"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "ecfb6db0-c4ff-4761-8db8-61a18723bd5d"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "2e783dea-bd7f-40ef-87ff-5c8ef088365d"
+                      }
+                    ]
+                  },
+                  "id": "94fc17ee-5136-4cec-a96a-6e82ee244a7e"
+                }
+              ]
+            },
+            "id": "eb828378-3b00-4677-a86a-d07b356f62e5"
+          }
+        ],
+        "false": []
+      },
+      "id": "47508496-3549-4b34-be33-cf7d9cfbf0f9"
+    }
+  ],
+  "leaveScript": []
+}

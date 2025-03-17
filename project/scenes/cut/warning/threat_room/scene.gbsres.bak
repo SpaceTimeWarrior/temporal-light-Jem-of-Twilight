@@ -1,0 +1,379 @@
+{
+  "_resourceType": "scene",
+  "id": "25e7c707-4f0c-4f83-a5ab-f9922afc8716",
+  "_index": 81,
+  "type": "TOPDOWN",
+  "name": "cut/warning/threat room",
+  "symbol": "scene_82",
+  "x": 3120,
+  "y": 1904,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "fd0f9900-5651-4ccd-9d27-659df634efa0",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
+  "autoFadeSpeed": 1,
+  "playerSpriteSheetId": "16231584-cfbd-4d69-b7b0-5b85bc70c7c2",
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "31a64200-061c-44e8-b062-ddedb7c76a95"
+      },
+      "id": "71701158-82dc-45df-b5f3-6ea0552c82af"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "14876c77-4482-459e-a537-e0c9c7aad9d1",
+        "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+      },
+      "id": "b922e335-c8f0-4661-b769-8ac03aaf7eed"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "1fc49579-1f1a-4c5a-9481-31349862575a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet:IS IT TRUE\nYOU HAVE FALLEN\nIN LOVE WITH A",
+          "CRIMINAL."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "3a041304-f123-4609-a3ec-b2a381679f0f"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "b2c167c7-1bf5-40f4-bca3-4b38ce1eac2f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite: Garnet\nplease calm down\neven if she did",
+          "you stated only \nroyal birth. It\nis not like a ",
+          "monster can't \nchange"
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "464b3a0f-9909-4196-b266-933f294504f6"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "cacbeb2e-6cd1-4e07-bdba-4859b5969f60"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet: HE ISN'T\nA MONSTER. THAT\nGUY IS A HUMAN."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "2c3bf61a-5f45-40f9-98c5-0e6d25c53e37"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "171b498e-a39d-45be-b536-f6f14cb7edea"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite: Well \nyou did say you\nwanted powerfull",
+          "grandchildren.\nand they are \nquite powerful."
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "fe04c0a6-a8ad-4e00-aec1-0a77b6829211"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "8a1ed204-5e37-43ee-9b0b-605195bf13a1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garner:WHAT ARE\nYOU TALKING \nABOUT",
+          "HUMANS CAN'T USE\nMAGIC"
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "34d69aa9-23fd-4763-90c5-21847b89db7e"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "162f22ed-d03d-48a6-bf5f-261c402a03e9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite: But\nthey can store\nmagic. I would",
+          "love to \nexperiment on\none to test a",
+          "hypothesis"
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "1b95021c-677a-4c3a-830e-a47e2ae78254"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "afdd6117-da34-4b29-9249-92f260caca38"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet:Why would\nstoring magic be\nimportant"
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "969c2f57-4a4b-4a54-a474-9c794292c6fe"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "0ee28a8b-11c9-45be-8410-c599acc49f73"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite:the \namount of\nmagic that can",
+          "be stored \ndirectly\ndetermines the",
+          "magic power of\nmonsters.",
+          "the only thing\nthat sepperates\nus in magic",
+          "power is we have\na organ in our\nbodies that",
+          "converts magic\nenergy. some of\nthe weakest ",
+          "humans have\nenough storage\nthat if a ",
+          "monster had the\nsame power they\nwill be more than",
+          "double our most\npowerful mages.\nand he comes ",
+          "from The most\npowerful humans\nboth politically",
+          "and magically\nwith a magic",
+          "tool to convert\nmagic power."
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "aaed1da8-4027-43a9-852c-546ae26e1d1f"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+      },
+      "id": "eda54528-b14b-4090-b612-2064e64091c6"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "10c3a677-a448-4350-a006-53cb13a4e9c9"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "6051ffd1-ae58-4b1f-bcdb-86acb35ab917"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: I am just \ngoing to..."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "ae85e0b7-0d6d-4f56-9b18-f017ddca089d"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "debe2ff3-5ef1-4ac9-a0fd-4e0a7f6652a1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet:DON'T YOU\nDARE WALK AWAY."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "df684a0b-2b19-4f2e-914f-039c1328b4ca"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "bbb61f1d-3598-4a31-b088-49fd9299923e"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "9552982f-1c9f-4289-9fc6-89660175bf8f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite:Well we\nshould give him\na chance and if",
+          "he is not up to\nsnuff I will \nkill him myself"
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "547859eb-7617-4e38-862a-de489aa7fc20"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+      },
+      "id": "b81ea779-a553-493b-806f-4d52a384c8b1"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "fe691618-f34e-4f1a-a5ea-b0d5ce979980"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem's thoughts:\nIs mom on my side\nor dad's I can't",
+          "tell"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "ea5288d9-2005-47a1-915a-1892e4185a6b"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "41fd2976-7336-4f96-aefc-74fdd6359f06"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet:You have\none week to call\nhim here and",
+          "convince me. or\nboth of you are\ndead."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "30533f42-e1c1-4b4d-86f0-c0af9a7ee0cc"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "dmg"
+      },
+      "id": "748bfaf4-7f66-4934-931f-077ac0353546"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Perilite:Isn't \nthat a bit too \nextreme.",
+          "I understand the\nguy but your own\ndaughter."
+        ],
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+      },
+      "id": "724bcc87-e8b5-4c9e-b8d8-ceccc7fc8ca6"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-sprite"
+      },
+      "id": "d295ac1e-e5b8-45bc-8d79-9fe6732dd87c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garnet:This will\ntest if she is\nserious about",
+          "her love."
+        ],
+        "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+      },
+      "id": "fd312974-aecd-4c87-8e76-a3e99cf4b95f"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "12846ad9-325a-40d3-880a-0856e1fd0fe7",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 16
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "9d7e168c-52fa-4173-b1bf-ed3fbb7c5153"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

@@ -1,0 +1,37 @@
+{
+  "_resourceType": "scene",
+  "id": "67ac688f-5acc-4573-8bfb-dc1d7fb2e953",
+  "_index": 150,
+  "type": "TOPDOWN",
+  "name": "earth/cm/Distortion mountain base",
+  "symbol": "scene_154",
+  "x": 1568.8999938964844,
+  "y": 5484.2998046875,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "e235bb7e-efcf-4bef-8567-97d2d24e9023",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "13e13af3-8a8c-4df6-ad8e-86be952e5c6a"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "ee706e42-baa9-492b-8d5b-5fce018c537a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f57e+008+0f32+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f30+00c+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f18+0024+0f1a+0022+0f414+"
+}

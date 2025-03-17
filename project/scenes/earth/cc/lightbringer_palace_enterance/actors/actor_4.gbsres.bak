@@ -1,0 +1,1871 @@
+{
+  "_resourceType": "actor",
+  "id": "6f200228-43d5-44f0-ada5-df77f097be48",
+  "_index": 5,
+  "symbol": "actor_497",
+  "prefabId": "",
+  "name": "",
+  "x": 17,
+  "y": 18,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "486ceae3-58ca-4953-8ca4-aa57d227a106",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": true,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 0,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "496645f2-c39a-4a70-887d-8708fad3f00c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 0,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "34",
+                    "value": {
+                      "type": "number",
+                      "value": 90
+                    }
+                  },
+                  "id": "0d57740c-1582-4b9d-bb62-2f81f78c2b90"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "412fb6f3-b6fb-4a26-8cf5-1e6f99807953"
+                }
+              ]
+            },
+            "id": "10e0354a-cdee-496e-ba72-9cb2a1a73581"
+          }
+        ]
+      },
+      "id": "9c620800-1c41-4072-999e-a1f91bbee975"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "52",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "ca0b0f6d-2096-427a-891d-9f9bd943262c"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "44",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "44"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "41",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "variable",
+                "value": "41"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "41",
+                    "value": {
+                      "type": "false"
+                    }
+                  },
+                  "id": "7e97e693-7a34-4d7e-84e6-124671bee24d"
+                },
+                {
+                  "command": "EVENT_SET_TIMER_SCRIPT",
+                  "args": {
+                    "timer": 2,
+                    "duration": 0.1,
+                    "frames": 30,
+                    "__scriptTabs": "end"
+                  },
+                  "children": {
+                    "script": [
+                      {
+                        "command": "EVENT_ACTOR_GET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "vectorX": "28",
+                          "vectorY": "29"
+                        },
+                        "id": "41a9a73d-6940-4df2-9815-20eb033542ad"
+                      },
+                      {
+                        "command": "EVENT_SWITCH",
+                        "args": {
+                          "variable": "52",
+                          "choices": 3,
+                          "__collapseCase0": true,
+                          "value0": 1,
+                          "__collapseCase1": true,
+                          "value1": 15,
+                          "__collapseCase2": true,
+                          "value2": 60,
+                          "__collapseCase3": false,
+                          "value3": 4,
+                          "__collapseCase4": false,
+                          "value4": 5,
+                          "__collapseCase5": false,
+                          "value5": 6,
+                          "__collapseCase6": false,
+                          "value6": 7,
+                          "__collapseCase7": false,
+                          "value7": 8,
+                          "__collapseCase8": false,
+                          "value8": 9,
+                          "__collapseCase9": false,
+                          "value9": 10,
+                          "__collapseCase10": false,
+                          "value10": 11,
+                          "__collapseCase11": false,
+                          "value11": 12,
+                          "__collapseCase12": false,
+                          "value12": 13,
+                          "__collapseCase13": false,
+                          "value13": 14,
+                          "__collapseCase14": false,
+                          "value14": 15,
+                          "__collapseCase15": false,
+                          "value15": 16,
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true0": [],
+                          "true1": [
+                            {
+                              "command": "EVENT_LAUNCH_PROJECTILE",
+                              "args": {
+                                "spriteSheetId": "e7176261-0c53-4c7f-b8f6-11fb77c8b020",
+                                "spriteStateId": "",
+                                "actorId": "$self$",
+                                "x": 0,
+                                "y": 0,
+                                "otherActorId": "$self$",
+                                "direction": "right",
+                                "angle": 0,
+                                "angleVariable": "L0",
+                                "directionType": "actor",
+                                "initialOffset": 16,
+                                "speed": 2,
+                                "animSpeed": 15,
+                                "lifeTime": 0.1,
+                                "loopAnim": true,
+                                "destroyOnHit": true,
+                                "collisionGroup": "2",
+                                "collisionMask": [
+                                  "player"
+                                ]
+                              },
+                              "id": "581e0b2d-867b-4687-b613-cc0947e60be5"
+                            },
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "9611abd5-7920-4d3b-8fbb-d392d917f075",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                              },
+                              "id": "2eb2bca3-6fc0-4859-a2d4-59dee114528c"
+                            }
+                          ],
+                          "true2": [
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "52",
+                                "value": {
+                                  "type": "number",
+                                  "value": 0
+                                }
+                              },
+                              "id": "e271eb5d-27bc-4bc1-9aa8-27a23dca2d23"
+                            }
+                          ],
+                          "true3": [],
+                          "true4": [],
+                          "true5": [],
+                          "true6": [],
+                          "true7": [],
+                          "true8": [],
+                          "true9": [],
+                          "true10": [],
+                          "true11": [],
+                          "true12": [],
+                          "true13": [],
+                          "true14": [],
+                          "true15": [],
+                          "false": [
+                            {
+                              "command": "EVENT_INC_VALUE",
+                              "args": {
+                                "variable": "52"
+                              },
+                              "id": "6b9b3e52-37ad-44ed-8d9b-99d5db74b9ec"
+                            }
+                          ]
+                        },
+                        "id": "87879ac1-36cc-4591-a8d9-8113d8c7f89d"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_MOVE_TO",
+                        "args": {
+                          "actorId": "$self$",
+                          "x": {
+                            "type": "variable",
+                            "value": "28"
+                          },
+                          "y": {
+                            "type": "variable",
+                            "value": "29"
+                          },
+                          "moveType": "horizontal",
+                          "useCollisions": true
+                        },
+                        "id": "71599b6b-9149-4ea5-99a1-a3197aa733a7"
+                      }
+                    ]
+                  },
+                  "id": "5fac92dc-9222-436b-be37-dddcc36e0a16"
+                }
+              ],
+              "false": []
+            },
+            "id": "899b0e38-9821-4181-980c-91a5bddf4b25"
+          }
+        ],
+        "false": []
+      },
+      "id": "73fed405-97bc-4787-9a3c-dd630f5a6947"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "17cbd01c-9fce-44c2-9cf5-ac502f8261cb"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 3,
+        "units": "frames",
+        "__collapse": true,
+        "__comment": true
+      },
+      "id": "d69e0bdd-63b3-49fa-a66f-8455d65964f0"
+    }
+  ],
+  "hit1Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "34"
+      },
+      "id": "050f7ed3-5649-42bd-952a-fab015e6681a"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "61423bb4-a5fd-4541-8420-e4b19e486f19",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "72e8c02c-df69-42ee-88ef-c01e051c583d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "34",
+        "operator": "<=",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "44",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "8f662f8a-2bed-4940-935a-25079924d77e"
+          },
+          {
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 2
+            },
+            "id": "0872ee1f-cba2-4dd6-9308-ddcea0d905b7"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "kill him",
+              "falseText": "ko him"
+            },
+            "id": "3d1a6d67-a67c-4246-abf5-9aa696506f37"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteSheetId": "1998db44-e7d3-4a3d-9f89-2ddc61e6bf69"
+                  },
+                  "id": "232c4ccc-03ab-412b-a645-81d62a3052c1"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "46",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "045ac3a2-0c05-40e7-94ba-657facaa1fb9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "you grab the \nfeather. this can\nbe used to revive",
+                      "him or you"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ec0c3749-f8d3-46e2-98c9-34133589a708"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "46ca09a3-b635-466e-ba93-f0996d54d4bc"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "19db4029-4da3-478e-b156-8b4cd8f483e3"
+                  },
+                  "id": "d14693d9-9687-4000-befa-877fcfcd84ac"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "05d09892-12c3-4de3-a0fc-645d1146561c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "97b58cf2-811c-4bf7-8f53-1c91c5b92816"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "ff27079f-e66b-4d86-a366-145ff27340ba"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                  },
+                  "id": "e871d316-094f-4896-9b89-f259cdd6ce6f"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                  },
+                  "id": "87882572-77d3-46cd-b5a3-10e7bfad42df"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "3134457f-55a1-4dc2-b3e4-a77187c80e6e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:did you kill\nhim? well if you\ndid thank you.",
+                      "why did you come\nhere."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "28397f43-b0d5-4101-8ed0-fcd98d62ab10"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "b2fe5ad9-015c-46a9-aa6d-ca5d1849604a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I come to\nask you to end\nyour son's",
+                      "banishment."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "b108e374-b003-4e92-b422-c1b93952033e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "fba41d4b-d3c9-4249-aeb9-836fb03f4f07"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:normally I \nwould say the\nsolar council ",
+                      "has that right \nbut you killed \nthe biggest",
+                      "resistance to undo\nbanishments so I\nwill do it. is \n",
+                      "this for the \nhomeworld tie \npart of the ",
+                      "ceremony?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "9baa209b-d9e8-4ac1-874a-4ae21d730d5b"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "52ccd6a7-8661-4716-91a5-9815649c29ed"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:yes that is \ntradition after \nall."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "328d15e3-9602-48fd-93e6-c5a076b96643"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "c166b5ff-dd49-48d7-93c8-927168e49c44"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well at \nleast he got \nsomeone would",
+                      "of prefered that\nyou where human,\nbut humanity ",
+                      "never recovered \nover the years.\nso I feel like",
+                      "he should be \ngrateful to have\nsomeone like you"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "87d63b6a-bf88-4671-9d10-ad72be49414c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "cb18caca-a9ab-4c2c-847c-7ea38df554ba"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:thank you I\nthink."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "5980c1e1-9576-4473-b946-17b4e05f1fd2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem's thoughts:I\ndon't know if \nthat was an ",
+                      "insult or a \ncomplement"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "1135c045-b0d9-4f1b-a451-c7171106f8a1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "02a1be8c-7315-4128-8c42-eead1b4b31bd"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 19
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "54cfc5ee-ef2f-4363-9302-0b004d2bbee8"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3"
+                  },
+                  "id": "8cffcdf2-ff13-4f1f-ad20-9cdeda47c0a8"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "edb9629d-507c-4105-9a06-729f1cce5148"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "7f35676b-e7aa-4ff8-9749-26e35ec430c0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "d9db5cf4-4bdb-4b06-95ee-72461545dd3c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "b3ddf33b-1605-412d-aef3-61e62feeaf7d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: He did."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "28ac8f2e-2d2e-4d38-af23-87b73c9e551a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "2fa79db7-3827-4b0d-908e-97e0630870f0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well I will\nmake sure he is\npunished.what is",
+                      "the reason why\nyou are here?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "4687d9a8-cb66-4248-88d3-c1ba19e1d84e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "378bbec2-48b7-443d-9e7b-05bf339f1d71"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I have come\nto get cumulo's\nbanishment",
+                      "removed."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "125074ab-5d62-4401-a2c4-4177f663cac9"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "8a191fd9-1483-41a3-a4c6-a1d52ef0605d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???: the solar \ncouncil won't \nallow me to do",
+                      "that but I can\nweaken its \neffectiveness.",
+                      "go back and tell\nflare to call me\nis this for the ",
+                      "homeworld tie \npart of the \nceremony?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "87c548f5-ae97-4252-bf5c-d76e7837db4a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "02fb2391-f1ef-48c2-b2da-7a29c27d5d85"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:yes that is \ntradition after \nall."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "1b3e3a4f-7d57-41e7-9b62-4e65b0d1eb38"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "0a644966-e884-4e3a-ae1b-837c50b79242"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well at \nleast he got \nsomeone, would",
+                      "of prefered that\nyou where human,\nbut humanity ",
+                      "never recovered \nover the years.\nso I feel like",
+                      "he should be \ngrateful to have\nsomeone like you"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "1697f9a7-c583-48a8-a052-5a72e22f8f90"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "ad84d1da-b22e-4c69-bc16-a002285a9ae6"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:thank you I\nthink."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "e359f257-9071-4a71-bafc-2b696a09be74"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem's thoughts:I\ndon't know if \nthat was an ",
+                      "insult or a \ncomplement"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "f26b98f3-6f53-40ec-8e96-ed9776a35d44"
+                }
+              ]
+            },
+            "id": "0a79974d-35ad-44ce-ab8a-6e87ca3bb082"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c8944a13-b7b3-420b-b788-7321477d65fd",
+              "x": {
+                "type": "number",
+                "value": 32
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "719e8b86-a49f-40fb-a0d4-67209904e0ea"
+          }
+        ],
+        "false": []
+      },
+      "id": "3886bebe-5cd1-4651-a107-2ef9f615eb54"
+    }
+  ],
+  "hit2Script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "45",
+        "operator": ">=",
+        "comparator": 1,
+        "__collapseElse": false,
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "45"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_DEC_VALUE",
+            "args": {
+              "variable": "34",
+              "__collapse": false
+            },
+            "id": "9cf52de8-4fba-41c9-b3ce-2cf2c483ba32"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "61423bb4-a5fd-4541-8420-e4b19e486f19",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 200,
+              "duration": 0.5,
+              "wait": true,
+              "effect": 0
+            },
+            "id": "38008899-e451-47e5-8673-9093d7118554"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "34"
+            },
+            "id": "7b95e533-b327-4e85-81ae-b43e2cdd2e49"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "5f9fba00-4922-46f2-9ac1-b7cdd46d70ee"
+            },
+            "id": "f5321e9d-d21c-4614-83d4-ec6b11f8bac6"
+          }
+        ]
+      },
+      "id": "db5f4f15-064f-43e2-9820-ce1d4981f8be"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "34",
+        "operator": "<=",
+        "comparator": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "44",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "25918a0e-1d6f-4eba-a033-6251f70acf46"
+          },
+          {
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 2
+            },
+            "id": "b3dbb9f8-369b-4264-9813-7c77c1a4b276"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "kill him",
+              "falseText": "ko him"
+            },
+            "id": "a4a3a7d5-0fa9-47c1-9c54-7493920e2f64"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteSheetId": "1998db44-e7d3-4a3d-9f89-2ddc61e6bf69"
+                  },
+                  "id": "b540055a-354f-4e3a-94de-37b43d18734f"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "46",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "61787662-6a01-498c-84b4-4b4def99212d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "you grab the \nfeather. this can\nbe used to revive",
+                      "him or you"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ef8f1938-a2fc-461c-8ebf-15a42cc4ad2a"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "b40b9a64-b403-44e4-829a-7f1d7956e54f"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "19db4029-4da3-478e-b156-8b4cd8f483e3"
+                  },
+                  "id": "7e4cdabc-ec48-4335-9813-79778febcc34"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "409e7bd9-f4b0-4707-80a1-7e62ef44c031"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "0ada945c-bd7a-4616-82b9-72dc97e90f32"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "3f580c75-6c78-4ca3-b8b4-effcae436fc5"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                  },
+                  "id": "c7141eed-8199-4d1f-bee4-d5d3e6226af9"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                  },
+                  "id": "746560ae-1ddc-4ce7-a856-d699cdac3a89"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "f56a9654-5185-456d-9e14-fe2de10b5bc0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:did you kill\nhim? well if you\ndid thank you.",
+                      "why did you come\nhere."
+                    ],
+                    "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                  },
+                  "id": "d52fa9a9-bc30-4567-a654-945c0828f71d"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "b46ca4f1-a637-4a6f-b99e-812cac84257e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I come to\nask you to end\nyour son's",
+                      "banishment."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "efe466d0-0386-4e54-9453-a7bd7dc316a6"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "1f8f1546-8338-47e9-87ba-524e9b36aec8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:normally I \nwould say the\nsolar council has",
+                      "that right but you\nkilled the biggest\nresistance to undo",
+                      "banishments so I\nwill do it"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5603b04b-7acf-426b-8468-cbcbed4b13ec"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "0d986ef0-bb9a-4d4d-ae90-9db8d4cc9c22"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 19
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "0dc3da37-60ba-4f8a-ae25-b4e34a26ec72"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "df38864f-47ad-445d-a552-47ed2f463526"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "19db4029-4da3-478e-b156-8b4cd8f483e3"
+                  },
+                  "id": "6b37b39d-d204-437b-8844-ee3c73ab3fdc"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "73859413-7051-4d80-84dd-7b8ebb7e981b"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "93d2020f-1728-4fc2-b806-41cd1a9c5174"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+                    "__collapse": false
+                  },
+                  "id": "81cdd148-9538-4572-82b1-769f283a6576"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "8d602304-5454-45b9-8055-04c3f1244134"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: He did."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "b27c0298-f806-4a3b-96b9-9eff87420852"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "1d664848-28fa-4cdd-9a86-54752f81a981"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well I will\nmake sure he is\npunished.what is",
+                      "the reason why\nyou are here?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "875d694c-39f2-4aaf-85be-789be9ca879c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "8145a9f9-3b87-40b3-8820-5661f24ba321"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I have come\nto get cumulo's\nbanishment",
+                      "removed."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "b011234a-2905-4367-97dc-0e282935669e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "2dc4fd55-323f-452e-8626-c537efc52289"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???: the solar \ncouncil won't \nallow me to do",
+                      "that but I can\nweaken its \neffectiveness.",
+                      "go back and tell\nflare to call me"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "3e47f7b6-32d7-44f9-8ed7-e6c56d27b6a0"
+                }
+              ]
+            },
+            "id": "db421d5d-04ce-48db-b6aa-9eeaa3ae9a87"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c8944a13-b7b3-420b-b788-7321477d65fd",
+              "x": {
+                "type": "number",
+                "value": 32
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "55d29298-9567-4f0c-8fc6-ede2018265fc"
+          }
+        ],
+        "false": []
+      },
+      "id": "4f2b8411-3cd8-46a9-9113-812d3c214796"
+    }
+  ],
+  "hit3Script": [
+    {
+      "command": "EVENT_DEC_VALUE",
+      "args": {
+        "variable": "34"
+      },
+      "id": "9ab7c33c-6968-4f3e-8003-1cc5121e73b1"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "61423bb4-a5fd-4541-8420-e4b19e486f19",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": true,
+        "effect": 0
+      },
+      "id": "1c371301-c5c3-438c-8c89-91471624efa0"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "34",
+        "operator": "<=",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "34"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "44",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "11b02aaa-d0e7-4e7a-bf66-383712216626"
+          },
+          {
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 2
+            },
+            "id": "de465157-cee4-44d2-a8cc-e28160ffa0a9"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "kill him",
+              "falseText": "ko him"
+            },
+            "id": "d1c486d4-7811-4d2e-ad4b-de12ae679400"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteSheetId": "1998db44-e7d3-4a3d-9f89-2ddc61e6bf69"
+                  },
+                  "id": "4c36cb1e-f75f-4fc9-85ea-d1bd70c4a9f2"
+                },
+                {
+                  "command": "EVENT_ADD_FLAGS",
+                  "args": {
+                    "variable": "46",
+                    "flag1": true,
+                    "flag2": false,
+                    "flag3": false,
+                    "flag4": false,
+                    "flag5": false,
+                    "flag6": false,
+                    "flag7": false,
+                    "flag8": false,
+                    "flag9": false,
+                    "flag10": false,
+                    "flag11": false,
+                    "flag12": false,
+                    "flag13": false,
+                    "flag14": false,
+                    "flag15": false,
+                    "flag16": false
+                  },
+                  "id": "6bccfe68-5a23-4dc5-a2a5-26986ef43b17"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "you grab the \nfeather. this can\nbe used to revive",
+                      "him or you"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "7d321e7a-84a1-48de-8428-60efd1538f42"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "fe2e125f-efe6-4086-96fe-1a0cf97aaa01"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "19db4029-4da3-478e-b156-8b4cd8f483e3"
+                  },
+                  "id": "236b6085-32cd-49ba-9a5c-884478c44a13"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "8241c2a4-c667-44dc-82e0-435fe0d3a24a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "16d9b897-13cb-4636-91dc-3e79dd7c05ee"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "801e42db-8315-4287-aff2-57146516bd7c"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                  },
+                  "id": "f9b0c97f-d1ad-47a1-8a83-6ee5b1abd468"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                  },
+                  "id": "e4d76215-ce65-4454-98cf-b774f61cf0ed"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "af4f1a2a-02a6-46cb-b9aa-210ee3a453bd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:did you kill\nhim? well if you\ndid thank you.",
+                      "why did you come\nhere."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "476d3a3a-db39-44ea-9d07-6778d353d6da"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "defcb772-ec80-4885-a624-819398934092"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I come to\nask you to end\nyour son's",
+                      "banishment."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "f2b810b8-42ae-4248-969d-4116f3046e6a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "a32d3a39-7682-4ffd-a4f9-a7c3008c45d3"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:normally I \nwould say the\nsolar council ",
+                      "has that right \nbut you killed \nthe biggest",
+                      "resistance to undo\nbanishments so I\nwill do it. is \n",
+                      "this for the \nhomeworld tie \npart of the ",
+                      "ceremony?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "63cc6891-ba5a-41d9-8a21-93f95061281f"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "9e2acd6c-e18f-46e4-896a-675eca7757a0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:yes that is \ntradition after \nall."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "79ed2229-215b-4073-84cd-2136f55a6f0a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "6ea74ccc-da86-44e6-9968-eea23b77859a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well at \nleast he got \nsomeone would",
+                      "of prefered that\nyou where human,\nbut humanity ",
+                      "never recovered \nover the years.\nso I feel like",
+                      "he should be \ngrateful to have\nsomeone like you"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "4a66a996-1976-4ef6-bc01-e4d48109094c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "1bf6e9b5-8659-4b34-8a8a-3d98266e8d64"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:thank you I\nthink."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "d8c20d7e-f425-42ed-b05f-67fb1a778a6f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem's thoughts:I\ndon't know if \nthat was an ",
+                      "insult or a \ncomplement"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "9049653a-5237-4be3-b5cd-366934483220"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "e2d6e8da-8133-45db-b702-c13817f1ef2a"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 19
+                    },
+                    "moveType": "horizontal",
+                    "useCollisions": false
+                  },
+                  "id": "dde3f976-5b67-41c5-b1fe-648b9bb85254"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3"
+                  },
+                  "id": "61aff65b-3f3e-48b9-9475-c6800db6e370"
+                },
+                {
+                  "command": "EVENT_CAMERA_MOVE_TO",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "speed": 1
+                  },
+                  "id": "ec6a49c1-d107-43a1-aac8-e04b5efe22ee"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "2d4a7272-8a44-4312-8220-9332e5068de3"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:wich one of \nyou caused the\nexplosion of pink",
+                      "acid."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "b20c0861-7652-4067-946c-a3815df55607"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "a5525430-1f36-4ab4-83c3-74d9a1324a1b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: He did."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "fffd5671-f14c-4306-992a-9642d66ed28a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "de02efbd-c7bc-463c-b810-976d44c3e9e4"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well I will\nmake sure he is\npunished.what is",
+                      "the reason why\nyou are here?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "819badb5-58b0-4b14-94e8-a6a858adf85e"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "e4a073a7-ff05-48cb-bf0f-c80eb4b52402"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I have come\nto get cumulo's\nbanishment",
+                      "removed."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "c50e7d5c-4366-4913-8d65-b410577bcd9c"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "2c910abe-4087-47d0-a2dc-48987a95df9d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???: the solar \ncouncil won't \nallow me to do",
+                      "that but I can\nweaken its \neffectiveness.",
+                      "go back and tell\nflare to call me\nis this for the ",
+                      "homeworld tie \npart of the \nceremony?"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "d1c404d3-41d3-4993-a458-885c10aaa06b"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "6c5ca8c2-4f0e-44c7-ad1d-c3bf321de943"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:yes that is \ntradition after \nall."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "cfc58cc0-1be4-4f2c-a025-f22df9a33a91"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "8d3516a4-5aa9-4293-b3b5-49db1cd9803d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "???:well at \nleast he got \nsomeone would",
+                      "of prefered that\nyou where human,\nbut humanity ",
+                      "never recovered \nover the years.\nso I feel like",
+                      "he should be \ngrateful to have\nsomeone like you"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "c4d8e7a8-56a2-45ff-b154-27d30fb4f98d"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "f3cba15d-fe45-4170-a5a2-3c9e9b174d94"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:thank you I\nthink."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "342a37df-49ce-4075-88c3-fde500eae086"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem's thoughts:I\ndon't know if \nthat was an ",
+                      "insult or a \ncomplement"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "7ef610fe-996f-448b-81c1-4283f3ec3e30"
+                }
+              ]
+            },
+            "id": "62f3bafb-c8c4-435a-aef0-bd3233407853"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c8944a13-b7b3-420b-b788-7321477d65fd",
+              "x": {
+                "type": "number",
+                "value": 32
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "f81a923d-3d14-4e05-87d0-2140fbf5d86e"
+          }
+        ],
+        "false": []
+      },
+      "id": "5a26cf5e-bff3-4fd3-bf68-fc0ba1a0678b"
+    }
+  ]
+}

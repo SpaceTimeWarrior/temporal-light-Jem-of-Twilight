@@ -1,0 +1,38 @@
+{
+  "_resourceType": "actor",
+  "id": "2644a033-7c8f-4fca-9367-9824d69c54fe",
+  "_index": 3,
+  "symbol": "actor_549",
+  "prefabId": "",
+  "name": "",
+  "x": 8,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flare's bed\n..."
+        ],
+        "avatarId": ""
+      },
+      "id": "5d9682ce-3df9-40e3-8d46-5db679ebf9e5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

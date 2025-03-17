@@ -1,0 +1,43 @@
+{
+  "_resourceType": "trigger",
+  "id": "0788fcb9-7c71-4cb7-918e-e546f5f266d2",
+  "_index": 0,
+  "symbol": "trigger_449",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 18,
+  "width": 2,
+  "height": 18,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "24106ea2-1105-437f-9186-0803ec3e0c2b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "this area is under\n   construction"
+        ],
+        "avatarId": ""
+      },
+      "id": "38595937-c72e-4e56-905f-832eb0199729"
+    }
+  ],
+  "leaveScript": []
+}

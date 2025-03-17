@@ -1,0 +1,35 @@
+{
+  "_resourceType": "scene",
+  "id": "e03badf0-b4a5-410a-be5a-cb97967b1f73",
+  "_index": 182,
+  "type": "TOPDOWN",
+  "name": "cut/Chapter 3 ending 1",
+  "symbol": "scene_186",
+  "x": 5001.39990234375,
+  "y": 3649,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "8375967a-6178-4141-8bc6-b946f9e86d93",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem killed crystal\nsoon after she \nrealized what she",
+          "did\ndrowning in greef\nshe killed herself",
+          "the next day\n\ngame end"
+        ],
+        "avatarId": ""
+      },
+      "id": "2e2718a4-69b5-4f4e-b3c1-9261dd3eb82a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": ""
+}

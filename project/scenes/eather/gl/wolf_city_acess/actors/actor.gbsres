@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "2c9487df-5427-4d5e-a37f-273455ee6212",
+  "_index": 0,
+  "symbol": "actor_871",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 14,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2414bfa6-9173-44ab-be54-7027da4961ca",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "this is a airlock\ngate there must\nbe a terminal",
+          "nearby"
+        ],
+        "avatarId": ""
+      },
+      "id": "0be99d12-5329-4035-acef-8302daaa5e77"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

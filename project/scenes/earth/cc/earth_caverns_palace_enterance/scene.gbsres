@@ -1,0 +1,83 @@
+{
+  "_resourceType": "scene",
+  "id": "f25b743a-ee59-4d61-8b56-617b62581183",
+  "_index": 148,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Earth caverns palace enterance",
+  "symbol": "scene_152",
+  "x": 392.3000030517578,
+  "y": 4289.449951171875,
+  "width": 40,
+  "height": 60,
+  "backgroundId": "b555fd08-5a14-469f-81ea-b2fe0bd9fc77",
+  "tilesetId": "",
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "4d1d016c-bd07-4528-88be-dc03888a370c",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be",
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "c4963196-0462-41ac-82e6-c7418a5657a3",
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "a3a50bae-65f5-4406-9547-ea63acaf6a6f"
+    },
+    {
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "music event group"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 13
+              }
+            },
+            "id": "fe6a2a23-6522-432d-bf61-cca29fd19fd8"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "b0aa2b23-71a7-4d11-97f3-ab76946ccef3"
+          }
+        ]
+      },
+      "id": "5a2b40c8-2027-4d1c-94e8-d8351a341197"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+      },
+      "id": "a7569dd1-4174-4ba5-abe5-edd5c1cfc6c6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fb2+006+0f15+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0f5+0023+0f5+0023+0f5+0023+0f5+0023+0f5+0023+0f5+0023+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0fa+001e+0f12+0016+0f12+0016+0f14+0012+0f16+0012+0f18+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f9+"
+}

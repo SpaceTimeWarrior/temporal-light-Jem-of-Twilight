@@ -1,0 +1,96 @@
+{
+  "_resourceType": "trigger",
+  "id": "bc675feb-f163-46ab-845f-46bd38a7dbb1",
+  "_index": 1,
+  "symbol": "trigger_105",
+  "prefabId": "",
+  "name": "",
+  "x": 21,
+  "y": 55,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 36
+        },
+        "y": {
+          "type": "number",
+          "value": 55
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "53a49eae-a78e-4958-a8d6-03693eb3e316"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "ca96d456-ef7f-4572-b358-fe7688736753"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 255
+      },
+      "id": "45c85648-2784-4140-a095-d1aa0d3ea8e8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Throne room <\nStorage shed >\nPalace walls ^or*",
+          "There is a newly \npainted segment\nJem's house ^"
+        ],
+        "avatarId": ""
+      },
+      "id": "1a262723-ec7a-4a38-876d-d6aca3cd4f52"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 15
+      },
+      "id": "28de9833-2fb5-46c2-aa23-49052dba1671"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.1,
+        "frames": 30
+      },
+      "id": "9b185a59-ece1-4011-aa6b-be84519ccaf3"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 38
+        },
+        "y": {
+          "type": "number",
+          "value": 55
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "12f57dbc-681b-428e-ac41-49dbda4841de"
+    }
+  ],
+  "leaveScript": []
+}
