@@ -1,0 +1,96 @@
+{
+  "_resourceType": "actor",
+  "id": "b1b1d9d9-165e-4373-a74e-0b8d3b1b7df9",
+  "_index": 1,
+  "symbol": "actor_407",
+  "prefabId": "",
+  "name": "HP10",
+  "x": 2,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "variable",
+          "value": "6"
+        }
+      },
+      "id": "b8b41793-d0c9-42e5-9bfb-bb1b8ac4a62e"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "L1",
+        "expression": "$06$/10"
+      },
+      "id": "38340b44-2b2a-4235-98f3-8d8549cf81e7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "9d8d4485-adbc-4cd9-8fe4-563eaa8aed1a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "50",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "50"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "c58aa829-7b35-4489-9172-f48abad3f201"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "534997b6-e294-44c5-91f5-85adec850b1a"
+          }
+        ]
+      },
+      "id": "756f5e6f-65d3-43c2-84e3-4db67cae26df"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

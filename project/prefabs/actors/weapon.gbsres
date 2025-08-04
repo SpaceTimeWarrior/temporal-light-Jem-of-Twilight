@@ -22,6 +22,13 @@
       },
       "id": "a4b73e75-3692-42c0-b16f-0722e6531faa",
       "children": {}
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c24d341a-abf9-461c-aa10-eb19a7fa040b"
     }
   ],
   "updateScript": [

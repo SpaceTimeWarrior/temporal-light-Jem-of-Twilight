@@ -30,6 +30,17 @@
       "id": "91217eb5-6765-4157-8a08-d9c223b1cfaf"
     },
     {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "none",
+        "pitch": 4,
+        "frequency": 300,
+        "duration": 0.05,
+        "effect": 0
+      },
+      "id": "670abcd1-0846-4b26-a261-70988ab988e5"
+    },
+    {
       "command": "EVENT_TEXT",
       "args": {
         "text": [

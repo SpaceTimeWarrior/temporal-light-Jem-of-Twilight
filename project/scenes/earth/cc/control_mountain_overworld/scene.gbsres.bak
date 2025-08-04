@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "988c6a19-110d-4a30-87d1-80c7e3ba0578",
+  "_index": 145,
+  "type": "TOPDOWN",
+  "name": "earth/cc/control mountain overworld",
+  "symbol": "scene_149",
+  "x": 739.9636452414773,
+  "y": 4067.1090198863635,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

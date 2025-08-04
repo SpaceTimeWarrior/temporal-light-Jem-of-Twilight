@@ -19,7 +19,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Jem turned herself\nand confessed for\nher crimes. She got",
+          "Jem turned herself\nand confessed for\nher crimes.She got",
           "a lighter sentence\nbut she felt it\nwasn't long enough",
           "10 years later",
           "She was forcibly\nescorted out of \nthe prison. She",
@@ -103,8 +103,8 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Peryil: that \nwould help a lot.\nall phoenixes ",
-          "can communicate \nwith the feather\nI understand",
+          "Peryil: that \nwould help a lot",
+          "all phoenixes \ncan communicate \nwith the feather\nI understand",
           "that isn't a \ncommon with most\nmonsters."
         ],
         "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
@@ -122,8 +122,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "Jem: or humans. I\nactually dated \none before they",
-          "went extinct."
+          "Jem: or humans. I\nactually dated \none before they\nwent extinct."
         ],
         "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
       },

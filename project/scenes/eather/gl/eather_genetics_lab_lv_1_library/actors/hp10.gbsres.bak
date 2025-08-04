@@ -1,0 +1,96 @@
+{
+  "_resourceType": "actor",
+  "id": "b9bbc7b6-d856-4cb7-a822-70b85d370d6f",
+  "_index": 1,
+  "symbol": "actor_896",
+  "prefabId": "",
+  "name": "HP10",
+  "x": 2,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "variable",
+          "value": "6"
+        }
+      },
+      "id": "7b3d0789-c3bc-4997-bb8a-e68e86361ab9"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "L1",
+        "expression": "$06$/10"
+      },
+      "id": "34b8b257-af22-4604-8f3e-7ec175285824"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "9f93ffe4-2c95-4c3a-99eb-e29a69a766c2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "50",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "50"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "player"
+            },
+            "id": "e4b116c5-4cb5-4bcf-af74-32b1983840e1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "player"
+            },
+            "id": "c2d536a9-1b8a-4afe-8879-6a65c99d1257"
+          }
+        ]
+      },
+      "id": "1a0edd43-0296-4c07-9cb5-0fa946591788"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

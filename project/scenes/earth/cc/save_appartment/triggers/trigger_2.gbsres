@@ -1,0 +1,82 @@
+{
+  "_resourceType": "trigger",
+  "id": "0deeb2cb-275e-46a4-87da-b644ad1e90cd",
+  "name": "",
+  "prefabId": "",
+  "x": 12,
+  "y": 5,
+  "symbol": "trigger_487",
+  "prefabScriptOverrides": {},
+  "width": 6,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "    Abandoned \napartment library\ntake what you want"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "74365b1e-2d45-498f-8f3a-adb573883aa1"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem:lets see.all\nthe books are \nfor beginners",
+                "I might take one\nfor crystal.once\nshe is ready"
+              ],
+              "__section": "text",
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "c78f4ba0-66d7-4c48-a77f-c6eeaddcd401"
+          }
+        ]
+      },
+      "id": "0b71cb1d-7b91-4a77-a60b-479fd3d556f3"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

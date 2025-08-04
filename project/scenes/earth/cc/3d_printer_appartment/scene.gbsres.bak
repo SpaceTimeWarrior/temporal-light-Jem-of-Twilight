@@ -1,0 +1,28 @@
+{
+  "_resourceType": "scene",
+  "id": "8bce6ad0-982d-4c1e-bbe4-8ca61f4412a8",
+  "_index": 192,
+  "name": "earth/cc/3d printer appartment",
+  "backgroundId": "0d219479-858e-4787-a5c6-296c8dd28d6e",
+  "tilesetId": "",
+  "width": 20,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    null,
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "collisions": "0055+0fb+005+0f4+002+0f!003+0f2+002+0f4+002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0f7+006+0f5+008+0f!006+0f!005+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_193",
+  "x": 3192,
+  "y": 7504,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

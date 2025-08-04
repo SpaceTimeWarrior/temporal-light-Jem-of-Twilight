@@ -1,0 +1,159 @@
+{
+  "_resourceType": "actor",
+  "id": "2a6ce0fb-7cf9-4d91-8aea-fbc600edecaf",
+  "_index": 3,
+  "symbol": "actor_830",
+  "prefabId": "",
+  "name": "",
+  "x": 0,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e7176261-0c53-4c7f-b8f6-11fb77c8b020",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_SET_STATE",
+      "args": {
+        "actorId": "$self$",
+        "spriteStateId": "UI"
+      },
+      "id": "bafeaba6-7e19-4281-8c74-2a01cc0131ff"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "17",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "17"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77"
+            },
+            "id": "2617acb7-bba6-4eb5-8bda-82a186d64df4"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "17",
+              "operator": "==",
+              "comparator": 1,
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "17"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_SET_SPRITE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteSheetId": "e7176261-0c53-4c7f-b8f6-11fb77c8b020"
+                  },
+                  "id": "b1a807f8-9a92-474e-a744-726dc02dd7ad"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_STATE",
+                  "args": {
+                    "actorId": "$self$",
+                    "spriteStateId": "UI"
+                  },
+                  "id": "89dff4f5-6db3-4ba9-ac78-8230e1691ea2"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "variable": "17",
+                    "operator": "==",
+                    "comparator": 2,
+                    "__collapseElse": false,
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "17"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_SET_SPRITE",
+                        "args": {
+                          "actorId": "$self$",
+                          "spriteSheetId": "a89863c8-1b3c-49ca-96d5-b97394907de6"
+                        },
+                        "id": "15610e24-26be-4b93-a841-d0b166899947"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_ACTOR_SET_SPRITE",
+                        "args": {
+                          "actorId": "$self$",
+                          "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6"
+                        },
+                        "id": "8ab8a54d-7214-4efb-ad77-e5ab65c971e3"
+                      }
+                    ]
+                  },
+                  "id": "c266e0a2-329e-4342-bed2-ea18fa2d4fbe"
+                }
+              ]
+            },
+            "id": "695464a6-c5ab-4c92-b792-d3a1091fdc62"
+          }
+        ]
+      },
+      "id": "43ac4e6a-6995-4e40-a6a3-9d91cd79690d"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

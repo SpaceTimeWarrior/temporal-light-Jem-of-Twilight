@@ -1,0 +1,42 @@
+{
+  "_resourceType": "scene",
+  "id": "01b1c2a6-e45f-47ba-a4a5-8fd699b5a824",
+  "_index": 198,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Earth cavern 09",
+  "symbol": "scene_199",
+  "x": 3336,
+  "y": 6664,
+  "width": 120,
+  "height": 80,
+  "backgroundId": "2ef3cdff-1170-4484-b321-b9860044433f",
+  "tilesetId": "",
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "4d1d016c-bd07-4528-88be-dc03888a370c",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be",
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "c4963196-0462-41ac-82e6-c7418a5657a3",
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "822d2100-cf6a-4f03-a19a-ad310d8aa6aa"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f9f2+006+0f1c+006+0f1e+006+0f2c+006+0f1c+006+0f1e+006+0f2c+006+0f1c+006+0f1e+006+0f2c+006+0f1c+006+0f1e+006+0f17+0026+0f2+002c+0f2+0014+0fe+0026+0f2+002c+0f2+0014+0fd+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0fc+006c+0f13+001d+0f5b+001d+0f5b+001d+0f5b+001d+0f5b+001d+0f5b+001d+0f50+"
+}

@@ -1,0 +1,171 @@
+{
+  "_resourceType": "actor",
+  "id": "eb543957-68a1-4b2d-a40b-2c0626ecb586",
+  "_index": 0,
+  "symbol": "actor_732",
+  "prefabId": "",
+  "name": "HP SYM",
+  "x": 0,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "d93a9223-6cd6-43c7-b040-0dd88951ddb8",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "21",
+        "operator": "==",
+        "comparator": 1,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "21"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "6",
+              "value": {
+                "type": "number",
+                "value": 99
+              },
+              "__comment": true
+            },
+            "id": "c5e092fb-d2fc-4be7-9bd9-b3bd59455e07"
+          }
+        ],
+        "false": []
+      },
+      "id": "c7b54165-4588-4229-8029-c62f5c9e4b4a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "6",
+        "operator": "<=",
+        "comparator": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "lte",
+          "valueA": {
+            "type": "variable",
+            "value": "6"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "7",
+              "__collapseElse": true,
+              "__collapse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "7"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "1488211d-aebe-448c-90b9-ee47cefe0adb",
+                    "x": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 0
+                    },
+                    "direction": "",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "fd6b7468-bd3f-42a1-a101-d8d7c17059d5"
+                }
+              ],
+              "false": []
+            },
+            "id": "ec11c5d6-f617-4023-975e-fa2ed8f0a4c8"
+          }
+        ],
+        "false": []
+      },
+      "id": "9ed524ea-5c07-4c35-9fc5-054d5aa02cf3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "50",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "50"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "bae290ef-f540-42ad-a755-05733e6c8d2c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "3745935a-21b5-41a5-af02-68cd2e3fccd7"
+          }
+        ]
+      },
+      "id": "cfd48fb2-282a-4b5c-a7c1-2abf61a3e55c"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

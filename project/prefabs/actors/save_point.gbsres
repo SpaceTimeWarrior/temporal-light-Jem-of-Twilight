@@ -1,0 +1,60 @@
+{
+  "_resourceType": "actorPrefab",
+  "id": "c2ed3cdb-9991-4733-87ac-d8b6d7cc1a40",
+  "_index": 4,
+  "name": "Save point",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "57924d3c-86ad-41ab-aa43-644f3fd1c430",
+  "paletteId": "",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "242c7fb8-e99c-4eb0-8ee2-0bfd53627491",
+      "children": {}
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "5fdca302-7bb4-438e-9ca9-bedda7034948",
+      "children": {}
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "6ff8e78e-8f6c-4279-a089-0198152a183a",
+      "children": {}
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "0f86c7d5-dd4c-4dae-9a01-a984c776f373"
+      },
+      "id": "6046b461-f9a3-447a-9399-944711f7b85a",
+      "children": {}
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

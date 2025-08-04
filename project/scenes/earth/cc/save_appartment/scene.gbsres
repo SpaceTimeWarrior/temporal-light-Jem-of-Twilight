@@ -1,0 +1,36 @@
+{
+  "_resourceType": "scene",
+  "id": "d7423926-d913-4ba8-9342-2c4cf1fb5d94",
+  "_index": 191,
+  "type": "TOPDOWN",
+  "name": "earth/cc/save appartment",
+  "symbol": "scene_192",
+  "x": 2952,
+  "y": 7496,
+  "width": 20,
+  "height": 20,
+  "backgroundId": "17ae1069-6d34-4878-9067-8c7ef260e3c0",
+  "tilesetId": "",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "ac569003-5107-4640-881e-ea542a903c2a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f66+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+006+0fe+006+0f6+"
+}

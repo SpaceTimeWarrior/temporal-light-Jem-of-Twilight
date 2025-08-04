@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "643f2316-320c-4eb8-987e-f1435480850d",
+  "_index": 201,
+  "name": "earth/cc/control city interior 01",
+  "backgroundId": "e19dd862-f8b9-4d1c-a94d-db05368a7a98",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f72+002+0f6+002+0f3+00b+0f4+002+0f3+00b+0f4+002+0f3+00b+0f4+003+0f2+00b+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0fa+006+0fe+006+0f6+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_202",
+  "x": 4040,
+  "y": 6496,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

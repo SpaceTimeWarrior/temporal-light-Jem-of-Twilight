@@ -24,11 +24,38 @@
   "playerSpriteSheetId": "16231584-cfbd-4d69-b7b0-5b85bc70c7c2",
   "script": [
     {
-      "command": "EVENT_MUSIC_PLAY",
+      "command": "EVENT_GROUP",
       "args": {
-        "musicId": "31a64200-061c-44e8-b062-ddedb7c76a95"
+        "__collapse": false,
+        "__label": "music event group"
       },
-      "id": "71701158-82dc-45df-b5f3-6ea0552c82af"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "cbda0dc6-4099-4a71-bc8f-55ecaee15b9d"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "3b7723d5-40bf-4732-816e-076c900c0615"
+          }
+        ]
+      },
+      "id": "be8cfb80-50ef-4d7d-b1c2-e5595abf3d17"
     },
     {
       "command": "EVENT_ACTOR_EMOTE",

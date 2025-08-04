@@ -1,0 +1,111 @@
+{
+  "_resourceType": "trigger",
+  "id": "5623e1d1-858e-43cc-a8a7-278aa3a94a7a",
+  "name": "",
+  "prefabId": "",
+  "x": 111,
+  "y": 26,
+  "symbol": "trigger_478",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 46,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "right"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "547f650b-b630-41c1-9690-f9cb6b00c32b"
+                },
+                {
+                  "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "pitch": 4,
+                    "frequency": 390,
+                    "duration": 0.03,
+                    "effect": 0,
+                    "__comment": true
+                  },
+                  "id": "f74be737-3943-4f1d-a352-8ca3d449e740"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: this looks\nlike it once was\na door.",
+                      "large copper \nplates. hmm.",
+                      "could this of \nbeen a old \nspaceport?"
+                    ],
+                    "__section": "text",
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "2bb6e09c-a68d-4b9b-8054-847b9bafc263"
+                }
+              ],
+              "false": []
+            },
+            "id": "e3b5de44-6de2-41f4-9b00-95ff0462dc74"
+          }
+        ]
+      },
+      "id": "59aad02a-3b37-477f-aff0-7372077f9d32"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "4af0f15d-7c22-43a6-89ed-911397bd88f1"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "a3a88815-f22b-4a37-afa1-03b93c050139"
+    }
+  ],
+  "_index": 1
+}

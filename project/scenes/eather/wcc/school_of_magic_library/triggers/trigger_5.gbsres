@@ -17,11 +17,60 @@
         "text": [
           "Comic books line\nthe shelves.",
           "They are written\nin a language\nthat is long since",
-          "dead. I believe it\nis called Japanese"
+          "dead. I believe it\nis called Japanese\nbut I don't know",
+          "do you still want\nto read it"
         ],
         "avatarId": ""
       },
       "id": "322ca782-a8c4-49f6-bd83-944127505bde"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "read the unknown",
+        "option2": "don't read",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "a3778800-3258-4bed-ae68-7d0960a07288"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!secret of magic\n    chapter 1\nmagic is in all ",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!sorts of things\nthere are two\ntypes of magic",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!manipulation and\ncreation.\nmanipulation is to",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!use or manipulate\na element whereas\ncreation changes",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!a element\ninto another"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "cb289ba8-ec68-48bf-87ba-f7df08f5826c"
     }
   ],
   "leaveScript": []

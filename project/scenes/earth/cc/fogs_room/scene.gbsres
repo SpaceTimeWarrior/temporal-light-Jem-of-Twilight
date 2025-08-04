@@ -1,0 +1,27 @@
+{
+  "_resourceType": "scene",
+  "id": "dfedb539-c1ba-47b8-9783-07bdee86e862",
+  "_index": 190,
+  "name": "earth/cc/fog's room",
+  "backgroundId": "5144aee4-496f-4cc6-827f-3a9baa7e021f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5",
+    "default-bg-4",
+    "default-bg-2",
+    "default-bg-5"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "0055+0f2+008+0f2+004+0f8+002+0f8+002+0f!004+0f6+006+0f!002+0f!004+0f3+002+0f!005+0f2+002+0f!00f+0f!003+0f!00f+0f!003+0f3+00d+0f!003+0f!00!0f!00d+0f2+00!0f2+00!0f!00e+0f!00!0f4+00e+0f!00!0f2+0010+0f!00!0f2+0010+0f!002+0f!0010+0f!002+0f!0010+0f!002+0fb+006+0f!00c+0f!006+0f!00!",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_191",
+  "x": 2616,
+  "y": 7504,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

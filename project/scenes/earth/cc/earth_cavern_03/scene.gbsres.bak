@@ -5,8 +5,8 @@
   "type": "TOPDOWN",
   "name": "earth/cc/Earth cavern 03",
   "symbol": "scene_173",
-  "x": 1360,
-  "y": 4104,
+  "x": 2544,
+  "y": 6984,
   "width": 40,
   "height": 40,
   "backgroundId": "78b65bdb-d42f-4ead-8cac-45235454e082",
@@ -27,7 +27,15 @@
     "bde394b9-4d41-4a96-98a8-4993fdad98e0"
   ],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "a26a37db-f9ad-4538-9f91-25714ea4e32d"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

@@ -19,7 +19,15 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "script": [],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "33a7cd16-0129-437c-ba94-5ff8560a5f47"
+    }
+  ],
   "updateScript": [
     {
       "command": "EVENT_IF",
