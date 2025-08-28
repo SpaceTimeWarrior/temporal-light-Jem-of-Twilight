@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
  <tileset firstgid="1" source="Temporal Light/temporal_light_tileset.tsx"/>
+ <tileset firstgid="4097" source="Temporal Light/temporal_light_tileset2.tsx"/>
  <layer id="1" name="Tile Layer 1" width="10" height="10">
   <data encoding="csv">
 147,147,147,147,147,147,147,147,147,147,
@@ -45,10 +46,10 @@
  </layer>
  <layer id="4" name="Tile Layer 4" width="10" height="10">
   <data encoding="csv">
-0,0,0,0,0,208,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,
+0,0,0,4106,4107,208,0,0,0,0,
+0,0,0,4170,4171,0,0,0,0,0,
+0,0,0,4234,4235,0,0,0,0,0,
+0,0,0,4298,4299,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,

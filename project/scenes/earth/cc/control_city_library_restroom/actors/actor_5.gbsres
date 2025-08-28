@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "ff420fd4-7984-42fe-905a-b967e539cf3d",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "aac0f085-d37b-4dc4-9403-363a5acbb7fa",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1090",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: a toilet"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2f235ee2-f805-4333-8e6a-f925199df201"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 4,
+  "y": 3,
+  "_index": 4
+}

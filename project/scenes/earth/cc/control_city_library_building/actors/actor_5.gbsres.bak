@@ -1,0 +1,314 @@
+{
+  "_resourceType": "actor",
+  "id": "4b70042e-90dc-41e9-93c6-b33c17b7e251",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057b022a-206f-498e-8f88-3e08817fabc8",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1072",
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-1"
+      },
+      "id": "481fd05c-39ba-4c21-bf60-726836434fb7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "???:how may I \nhelp you"
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "664b22bf-5e2e-4783-b9f5-48a337de162d"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "4b46600e-c9c8-4f70-8f8c-9541e2bc2df4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem:I am here to\nfind blair's \nmagic book"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "13cb7de7-4492-41e3-a112-882a3cdcd1c8"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "default-bg-1"
+      },
+      "id": "1a13d56b-6645-4618-86a3-ef636d9d60c4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "???:you might\nwant to check\nfloor 3.",
+          "but it is \nrestricted to\nplanetary leader",
+          "rank or higher \nin the solar\ncouncil."
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5197f867-e241-4fa5-ab09-835b4804201a"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "768627de-7a2e-44b4-b230-af56b8b170b2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem:well I am\nthe queen of \nluna and next",
+          "in line for the\nEatherian throne"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "db78aeb0-90c5-412a-bf05-699bcd739fc2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "???:I will check\nif that is \nenough...",
+          "can you tell me\nyour full name\ninclude your ",
+          "maiden name \nbefore your last\nname"
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ce0abfe7-60be-4bd5-b532-213ff9c65d02"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem:Jem fracture\nwolfsbane\nlightbringer"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "a3411c29-dc92-4b8c-8758-71ab1d727232"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "???: you are not\nin the system..."
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "22e12acb-9210-429e-87bd-ff55fe79d9bc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: one moment\n(dials thunder \nlightbringer)"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "58f688da-ee2d-4d7a-ae2d-8a8a1fff4a9d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "???: you don't\nneed to I just\nfound a email",
+          "from the solar \ncouncil that \nthey added your",
+          "clearance \nearlier today \nthey just forgot",
+          "to put it into \nthe search \ndatabase"
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "700c02e7-eabc-4f38-a01c-136bc2fbc68c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem stopped \ndialing."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9bbb8731-0eae-4853-955c-d915399eb991"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 6,
+  "y": 31,
+  "_index": 4
+}

@@ -36,8 +36,32 @@
       "id": "a26a37db-f9ad-4538-9f91-25714ea4e32d"
     }
   ],
-  "playerHit1Script": [],
-  "playerHit2Script": [],
-  "playerHit3Script": [],
+  "playerHit1Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "459da36d-7bd5-418b-9b8f-843728ef9b41"
+    }
+  ],
+  "playerHit2Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "69f413d8-63d3-4c80-9c9c-6f320b3aa7aa"
+    }
+  ],
+  "playerHit3Script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "be5c3d4c-567f-4b11-8fee-9bae8fc5a08f"
+      },
+      "id": "02519320-707a-4be7-8460-39d0f72bd5a7"
+    }
+  ],
   "collisions": "0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+00c+0f8+0012+0f16+0012+0fe+006+0f2+0012+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f2+0026+0f10+008+0f20+008+0f12+00c+0f2+008+0f2+001c+0f2+008+0f2+0010+"
 }

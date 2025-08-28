@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "d2494b7f-8b39-4994-9622-9baab34a1b07",
+  "_index": 203,
+  "name": "earth/cc/washing machine room",
+  "backgroundId": "13d64ae3-13af-4c08-8165-4ad2137b2822",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0f2a+004+0f10+004+0f10+004+0f!00b+0f4+0010+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f8+00c+0f7+006+0f4+003+0f7+006+0f4+003+0f7+006+0f4+003+0f7+006+0f4+003+0f7+006+0f4+003+0f2a+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_204",
+  "x": 3064,
+  "y": 6512,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

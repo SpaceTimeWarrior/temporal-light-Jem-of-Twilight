@@ -1,0 +1,173 @@
+{
+  "_resourceType": "scene",
+  "id": "5b94a8f7-6d3d-410b-9541-2c78dd2c0411",
+  "_index": 168,
+  "type": "TOPDOWN",
+  "name": "earth/cc/Control city hospital",
+  "symbol": "scene_172",
+  "x": 60,
+  "y": 3921.5,
+  "width": 41,
+  "height": 40,
+  "backgroundId": "891a9774-852b-42f7-9ea2-dec069ab4da9",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535",
+    "277cb477-cfe7-4191-9a18-139c3aa9c3bb",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 2,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "3d672f5c-c1db-499b-a017-7a7a66969d03",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "efaf3f21-5602-4dc1-a87a-f02a5ca1adf2"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "3d672f5c-c1db-499b-a017-7a7a66969d03",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "moveType": "horizontal",
+              "useCollisions": true
+            },
+            "id": "e98b2d7d-a6b1-4dfd-8cba-e6ccaaec3903"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "crystal:momy \nmomy u ar ok.\nI did n't mean ",
+                "to hrt u."
+              ],
+              "avatarId": "b467b52f-2c83-43ab-bc9a-085bc2a98641"
+            },
+            "id": "5c63bbea-d3f6-40b9-8fa2-358d7ffe428d"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "5cf2338e-aa05-4e31-8b74-c3670da6ee07",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 7
+              },
+              "moveType": "vertical",
+              "useCollisions": true
+            },
+            "id": "ba033c4d-4c84-4763-a96b-1fec4ffa0aa3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem:it is \nalright. how \nlong was I",
+                "unconsious."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "3a10162d-57d5-4be3-bfa1-afedbcd2867d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "flare: about 2 \nmonths. we need\nto talk about",
+                "her. while you \nwhere unconsious\nyour mother did",
+                "a magic test on\ncrystal."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "102c4957-d719-4757-a558-fa64fc8e70fb"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: can we also\nhave a meeting \nwith both of our",
+                "parents. I have\na felling I am\nprobibly not",
+                "going to like \nthis."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "8c021949-83ad-455d-817a-181c1cff1f0f"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "51",
+              "flag1": false,
+              "flag2": false,
+              "flag3": true,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": false,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "9e4a9db2-eb61-487b-aa4b-027ba6c8f1c9"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "3fa6bbf7-1a91-4b16-beab-14320da1aed8",
+              "x": {
+                "type": "number",
+                "value": 20
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "ddf131ab-c0c5-4e96-a356-f5527c9e75f4"
+          }
+        ]
+      },
+      "id": "e2ed5af4-6e20-4fdc-aac3-8faab9db048b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f12+004+0f25+004+0f25+004+0f25+004+0f25+004+0f25+004+0f1f+0010+0f19+0010+0ff+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0f!006+0f5+001d+0fc+0024+0f5+0024+0f11+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f1f+00a+0f21+006+0f23+006+0f13+"
+}

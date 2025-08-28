@@ -23,6 +23,43 @@
     {
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
+        "variable": "46",
+        "flag": 5,
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "b1e077a6-26a0-4c28-99d8-7633b415def8"
+            },
+            "id": "ee0efc29-0c09-4ada-b725-d984a3b18cc6"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "1958b35f-17d2-4c28-8dc9-5c212baa52bf",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            },
+            "id": "2c13fc82-a256-487e-bfef-899dbb990834"
+          }
+        ],
+        "false": []
+      },
+      "id": "bff51392-08ea-47e3-862d-484bff0da972"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
         "variable": "51",
         "flag": 2,
         "__collapseElse": false

@@ -1,0 +1,79 @@
+{
+  "_resourceType": "actor",
+  "id": "cd541eaa-8c7e-4351-b050-f49f9fe6ce3c",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5277064f-816d-493c-bbbe-1b5c4d5d3789",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1063",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "books on magical\nchemistry line\nthe shelves"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "71ec00e9-7a66-4921-9c3a-ed3dc98a5b6f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem:this I feel\ncrystal is old\nenough to teach",
+          "maybe next time\nI will check the\nbook out"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "c9b14749-2375-4d96-afc1-915eeeb4b794"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 10,
+  "y": 9,
+  "_index": 1
+}

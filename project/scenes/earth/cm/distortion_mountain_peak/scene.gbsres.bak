@@ -1,0 +1,180 @@
+{
+  "_resourceType": "scene",
+  "id": "ed1ea92d-258a-45da-b13e-3d2ad7499b79",
+  "_index": 159,
+  "type": "TOPDOWN",
+  "name": "earth/cm/Distortion mountain peak",
+  "symbol": "scene_163",
+  "x": 2462.5999755859375,
+  "y": 3885.800048828125,
+  "width": 20,
+  "height": 40,
+  "backgroundId": "1e9cf166-6288-4dde-b645-c7c0ede2fbca",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-bg-5",
+    "",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "",
+    "default-ui",
+    "",
+    "",
+    "default-ui",
+    "default-bg-2"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 7,
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "",
+              "palette1": "",
+              "palette2": "",
+              "palette3": "",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            },
+            "id": "119bb68f-30e8-4b9b-a476-0d3cf9f0ca4a"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem:am I dead?"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "2a559398-2663-40d8-be52-525c3d3104ce"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+            },
+            "id": "4cddc2f5-3338-49b8-a783-37b473ea1fe7"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "0c74e62b-adc2-4de5-b3ee-745a5828d1c2",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "cd5a5828-2784-4161-9b7f-b96ba0c9fc1e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "????:no but you\nare dying. fret\nnot this is not",
+                "your time yet."
+              ],
+              "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+            },
+            "id": "ef678fbf-9a41-403d-8419-7228490a2cbe"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: if this \nisn't heaven \nthan is this a",
+                "dream? and who\nare you?"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "6f5df935-1a51-466d-ae95-1843c22e50b0"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+            },
+            "id": "3ab01c7d-f061-4e0d-b078-c05affec1245"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "????2:we are \nyour ancestors\nand this is both",
+                "a dream but also\nreality. that\nimpact was",
+                "severe enough\nto seperate your\nsoul from your",
+                "body. we have a\nmessage for you.\nyou are to build",
+                "a ship cappable\nof exeding the\nspead of light.",
+                "the fate of the\nuniverse depends\non this"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "80f0bcea-6a7e-4848-b25c-1ed2297593d5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "jem: and what if\nI decline can \nyou at least ",
+                "tell me your \nnames. and if\nthis is reality",
+                "where are we."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "fa5a97d2-5ac5-4112-8f32-1198133357bd"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "sune: my name is\nsune foxend and\nthe other one is",
+                "my wife blair.\nwe are on your \nmother's side.",
+                "and we are on \nthe top of \ndistortion",
+                "mountain. we \nwill stay here\nfor a few days",
+                "when you wake up\nyou may be in\nsevere pain. you",
+                "did get hit by a\nnuclear \nexplosion after",
+                "all."
+              ],
+              "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
+            },
+            "id": "b83248e5-c137-41e1-8e83-7eff05168e55"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "c60fdb7d-70a4-489e-9520-87596a8d3ea9",
+              "x": {
+                "type": "number",
+                "value": 12
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e7330214-0163-4230-8f3e-ffc4bfc31a39"
+          }
+        ]
+      },
+      "id": "70022574-a922-4436-9841-716d0b07f6f5"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f52+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f4+0010+0f6+00c+0f8+00c+0f9+00a+0fa+00a+0fa+00a+0f9+00c+0f8+00c+0f8+00c+0f9+00a+0fa+00a+0fa+00a+0f9+00c+0f8+00c+0f8+00c+0f9+00a+0fa+00a+0fa+00a+0f9+00c+0f8+00c+0f8+00c+0f8+00c+0f4+"
+}

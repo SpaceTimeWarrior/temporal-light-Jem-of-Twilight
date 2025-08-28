@@ -1,6 +1,6 @@
 {
   "_resourceType": "actor",
-  "id": "7bde7c06-404b-47f7-ba20-221ef8306d50",
+  "id": "a4cab519-b6de-4db2-b06d-aab69b8eef16",
   "name": "",
   "frame": 0,
   "animate": false,
@@ -14,21 +14,23 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_999",
+  "symbol": "actor_1001",
   "script": [
     {
       "command": "EVENT_PALETTE_SET_UI",
       "args": {
         "palette": ""
       },
-      "id": "f293c184-3272-462a-b132-56ef96737853"
+      "id": "32b83538-b0ca-4ca6-8a46-72cf5df5e5f1"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "jem:this is a \noffly large\nbattery...",
-          "why didn't they\nuse a generator"
+          "jem reading:\nexternal door\ncontrols",
+          "sadly it looks \nlike it is \nbroken",
+          "I probably could\nfix it but I\ndon't know what",
+          "is on the other \nside of the door"
         ],
         "__section": "text",
         "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
@@ -47,7 +49,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "5be5feeb-c879-4362-825d-b5b8d83ff69c"
+      "id": "d654aba4-7e6b-465e-9b4b-a09fd30cbe07"
     }
   ],
   "startScript": [],
@@ -55,7 +57,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 6,
-  "y": 7,
+  "x": 14,
+  "y": 5,
   "_index": 0
 }

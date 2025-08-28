@@ -26,7 +26,15 @@
     "bde394b9-4d41-4a96-98a8-4993fdad98e0"
   ],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "4b8c2da4-d3d0-4bc0-b3f3-a027e6668603"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

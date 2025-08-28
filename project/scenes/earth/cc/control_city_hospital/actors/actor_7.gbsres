@@ -19,7 +19,44 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "script": [],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "46",
+        "flag": 5,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_SET_SPRITE",
+            "args": {
+              "actorId": "$self$",
+              "spriteSheetId": "b1e077a6-26a0-4c28-99d8-7633b415def8"
+            },
+            "id": "0332673a-a1d0-4a95-b613-d58d6a6e2e52"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "1958b35f-17d2-4c28-8dc9-5c212baa52bf",
+              "palette5": "keep",
+              "palette6": "keep",
+              "palette7": "keep"
+            },
+            "id": "c7f429a9-f66c-4ae3-9024-e0a8d6e78a18"
+          }
+        ],
+        "false": []
+      },
+      "id": "10b55494-c62c-4dac-89c3-5b9d3c3b0e8e"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

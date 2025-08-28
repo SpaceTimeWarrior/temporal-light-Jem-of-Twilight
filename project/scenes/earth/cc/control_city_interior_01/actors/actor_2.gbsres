@@ -1,10 +1,10 @@
 {
   "_resourceType": "actor",
-  "id": "a4cab519-b6de-4db2-b06d-aab69b8eef16",
+  "id": "90360de5-a7ad-4510-bdc0-b5eccd5a5eff",
   "name": "",
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "spriteSheetId": "5e62e215-4c65-4a55-aab6-cedab8fc520a",
   "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -14,23 +14,21 @@
   "persistent": false,
   "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "symbol": "actor_1001",
+  "symbol": "actor_1000",
   "script": [
     {
       "command": "EVENT_PALETTE_SET_UI",
       "args": {
         "palette": ""
       },
-      "id": "32b83538-b0ca-4ca6-8a46-72cf5df5e5f1"
+      "id": "af5be66f-47d6-4396-be42-6a43ecd9a2b8"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "jem reading:\nexternal door\ncontrols",
-          "sadly it looks \nlike it is \nbroken",
-          "I probably could\nfix it but I\ndon't know what",
-          "is on the other \nside of the door"
+          "jem:this is a \noffly large\nbattery...",
+          "why didn't they\nuse a generator"
         ],
         "__section": "text",
         "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
@@ -49,7 +47,7 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "d654aba4-7e6b-465e-9b4b-a09fd30cbe07"
+      "id": "f5dad2e3-1193-4a0f-85dd-74d46a59a066"
     }
   ],
   "startScript": [],
@@ -57,7 +55,7 @@
   "hit1Script": [],
   "hit2Script": [],
   "hit3Script": [],
-  "x": 14,
-  "y": 5,
+  "x": 6,
+  "y": 8,
   "_index": 1
 }

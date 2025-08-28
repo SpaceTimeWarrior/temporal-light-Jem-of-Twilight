@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "429f4597-7cf8-4b9c-9ab7-2d11e80b6c98",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057b022a-206f-498e-8f88-3e08817fabc8",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1086",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem: that is the\nmens restroom I\nshouldn't enter",
+          "that is just \nasking for \ntrouble"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3f5d815e-2165-4374-a0f7-2de39a1087d7"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 16,
+  "y": 23,
+  "_index": 0
+}

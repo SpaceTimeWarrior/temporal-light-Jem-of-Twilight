@@ -1,0 +1,56 @@
+{
+  "_resourceType": "actor",
+  "id": "7b612653-de16-4b5a-8a1d-28e358590843",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "057b022a-206f-498e-8f88-3e08817fabc8",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1060",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "dear jem we \nanticipated you \ncoming after",
+          "getting hurt we \nhave imported your\ncredentials into",
+          "the security \nsystem. interact\nand it will ",
+          "deactivate until\nyou leave\n-solar council"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "f8348219-0e9e-4fee-8ca6-2aeccf535b5f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 19,
+  "_index": 1
+}

@@ -1,0 +1,123 @@
+{
+  "_resourceType": "actor",
+  "id": "2bbd6f2b-7102-490b-a246-dd35f8166070",
+  "name": "Save point",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "aac0f085-d37b-4dc4-9403-363a5acbb7fa",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "_index": 2,
+  "symbol": "actor_1038",
+  "x": 55,
+  "y": 21,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "a3e73d0d-f4c0-44f0-8822-3da88720a8bb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Its a bed\ndo you want to\nsleep and save"
+        ],
+        "avatarId": ""
+      },
+      "id": "7f9315e0-cd56-4293-82ca-715398548273"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "0",
+        "trueText": "sleep and save",
+        "falseText": "don't sleep"
+      },
+      "id": "bd76ca2e-97ec-452f-ad82-0676bd940c1d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "6",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "133f95dd-2a48-4988-910e-66e67e8da738"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "8aa6b017-a4e9-4bf4-9772-9c100d3a2b50"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "0",
+        "__collapseElse": true,
+        "condition": {
+          "type": "variable",
+          "value": "0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "37",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "30884789-1b49-4c54-b1ec-32ec43d5c553",
+                    "$variable[V0]$": {
+                      "type": "variable",
+                      "value": "33"
+                    }
+                  },
+                  "id": "9db491bd-8af5-4843-88bd-44498cb8b6c0"
+                }
+              ],
+              "false": []
+            },
+            "id": "453dfa80-f4c6-4746-a944-8c17cd5678a2"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "0f86c7d5-dd4c-4dae-9a01-a984c776f373"
+            },
+            "id": "76e73fc5-7750-40e5-b140-24391f0dd310"
+          }
+        ],
+        "false": []
+      },
+      "id": "8b234dc5-c7aa-41d7-b5dd-ce79559c4d2c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

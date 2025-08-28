@@ -1,0 +1,22 @@
+{
+  "_resourceType": "scene",
+  "id": "a1f7f0ce-f468-433f-bca4-5624c1191883",
+  "_index": 196,
+  "name": "earth/cc/root's house",
+  "backgroundId": "94195043-06f2-429b-bf2c-16fe0bdc86c2",
+  "tilesetId": "",
+  "width": 40,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0fb8+006+0f22+006+0f22+006+0f10+004+0fe+006+0fc+00a+0f!002+0f!00e+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fc+001c+0fe+002+0f26+002+0f26+002+0f26+002+0f22+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_197",
+  "x": 2864,
+  "y": 7144,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

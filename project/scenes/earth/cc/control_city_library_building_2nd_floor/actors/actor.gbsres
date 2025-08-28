@@ -1,0 +1,82 @@
+{
+  "_resourceType": "actor",
+  "id": "fe42c56c-9d26-4a3e-a908-9f05feeb26a7",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5277064f-816d-493c-bbbe-1b5c4d5d3789",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1062",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "books on magic for\nkids line the \nshelves"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "3b578bf2-2feb-43a1-bc11-b61cd3f78d97"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jem:could this \nbe how flare\ntaught crystal?",
+          "I still am \nconflicted on \nteaching kids",
+          "magic. on one\nhand it is \nnatural for kids",
+          "to learn it. but\non the other it\nis giving a kid",
+          "a loaded gun\nwithout\nsupervision"
+        ],
+        "__section": "text",
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "26e16617-db0e-4aa8-9748-5466bbf83995"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 4,
+  "y": 9,
+  "_index": 0
+}

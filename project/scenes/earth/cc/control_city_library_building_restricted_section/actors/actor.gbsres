@@ -1,0 +1,111 @@
+{
+  "_resourceType": "actor",
+  "id": "ac2add77-1a85-4f1b-9211-6b70695bb879",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ca8f822f-89c7-4eca-828c-ace1511f6a59",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1059",
+  "script": [
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        },
+        "tilesetId": "ca879b23-1f2f-4df3-a277-a609fedb2b4a",
+        "tileIndex": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "60351afa-166d-47aa-a54b-a10695181b2e"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 19
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        },
+        "tilesetId": "ca879b23-1f2f-4df3-a277-a609fedb2b4a",
+        "tileIndex": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "a729b7b9-d14a-4d7d-a419-0c3c3bd83dc3"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 18
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        },
+        "tilesetId": "ca879b23-1f2f-4df3-a277-a609fedb2b4a",
+        "tileIndex": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "cdc8f3e4-f422-4295-bbb0-80745c0d2b77"
+    },
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 19
+        },
+        "y": {
+          "type": "number",
+          "value": 19
+        },
+        "tilesetId": "ca879b23-1f2f-4df3-a277-a609fedb2b4a",
+        "tileIndex": {
+          "type": "number",
+          "value": 7
+        }
+      },
+      "id": "39fe5115-9d61-47e2-aa1b-b01a1f6214f4"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "55ee15eb-e97e-4dd7-8367-881ca34944d5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 20,
+  "y": 19,
+  "_index": 0
+}

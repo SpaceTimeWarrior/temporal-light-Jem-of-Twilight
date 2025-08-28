@@ -98,28 +98,67 @@
             "id": "3a10162d-57d5-4be3-bfa1-afedbcd2867d"
           },
           {
-            "command": "EVENT_TEXT",
+            "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
-              "text": [
-                "flare: about 2 \nmonths. we need\nto talk about",
-                "her. while you \nwhere unconsious\nyour mother did",
-                "a magic test on\ncrystal."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+              "variable": "46",
+              "flag": 5,
+              "__collapseElse": false
             },
-            "id": "102c4957-d719-4757-a558-fa64fc8e70fb"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem: can we also\nhave a meeting \nwith both of our",
-                "parents. I have\na felling I am\nprobibly not",
-                "going to like \nthis."
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "bright: about 2 \nmonths. we need\nto talk about",
+                      "her. while you \nwhere unconsious\nyour mother did",
+                      "a magic test on\ncrystal."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "eefc8747-aac7-4b56-9646-8e7bf6729bd8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: can we also\nhave a meeting \nwith both mine",
+                      "and flare's \nparents. I have\na felling I am",
+                      "probibly not\ngoing to like \nthis."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "8c021949-83ad-455d-817a-181c1cff1f0f"
+                }
               ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "flare: about 2 \nmonths. we need\nto talk about",
+                      "her. while you \nwhere unconsious\nyour mother did",
+                      "a magic test on\ncrystal."
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "102c4957-d719-4757-a558-fa64fc8e70fb"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem: can we also\nhave a meeting \nwith both of our",
+                      "parents. I have\na felling I am\nprobibly not",
+                      "going to like \nthis."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "beb4e5da-5e19-4806-9d40-b50c6a69cc0c"
+                }
+              ]
             },
-            "id": "8c021949-83ad-455d-817a-181c1cff1f0f"
+            "id": "b8d94bb2-a6be-41b2-ab25-f9c73a596bf8"
           },
           {
             "command": "EVENT_ADD_FLAGS",

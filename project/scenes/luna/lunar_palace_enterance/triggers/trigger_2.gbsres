@@ -115,7 +115,7 @@
                   "command": "EVENT_IF_FLAGS_COMPARE",
                   "args": {
                     "variable": "46",
-                    "flag": 0,
+                    "flag": 5,
                     "__collapseElse": false
                   },
                   "children": {
@@ -133,7 +133,8 @@
                             "value": 31
                           },
                           "direction": "",
-                          "fadeSpeed": "2"
+                          "fadeSpeed": "2",
+                          "__collapse": true
                         },
                         "id": "a4ca27fa-7d44-4a16-916a-c74984e61c0b"
                       }

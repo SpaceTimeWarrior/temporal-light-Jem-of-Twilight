@@ -19,7 +19,711 @@
         "__collapseElse": false
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "51",
+              "flag": 9,
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_FLAGS_COMPARE",
+                  "args": {
+                    "variable": "51",
+                    "flag": 10,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [],
+                    "false": [
+                      {
+                        "command": "EVENT_IF_FLAGS_COMPARE",
+                        "args": {
+                          "variable": "46",
+                          "flag": 5,
+                          "__collapseElse": false,
+                          "__collapse": false
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_GROUP",
+                              "args": {
+                                "__collapse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem: got the \nbook now what"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "eb8ce4a7-0eb8-4085-a4cd-eeb25871b7e9"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "blair: now you\nneed to call \nyour friend and",
+                                        "your child here\nyou will need \nboth."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "9fc7e598-7859-4bcd-a8ee-396c63eecd59"
+                                  },
+                                  {
+                                    "command": "EVENT_ACTOR_EMOTE",
+                                    "args": {
+                                      "actorId": "$self$",
+                                      "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                                    },
+                                    "id": "1b8a1baf-170b-4d7f-863e-7b6dbde9999b"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem:I understand\ncrystal but why\nbright..."
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "bbd2c3ef-9ba3-4116-bbd3-152965efba42"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "blair: it is to\nsyphon your \nchild's magic",
+                                        "and place into\nanother living\nbeing.the reason",
+                                        "why your friend\nneeds to be here\nis he is for",
+                                        "excess and \nprevent \novercharging you",
+                                        "it is also gives\na failsafe if\none of you dies",
+                                        "crystal gets \nsome magic back\nbut not all"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "bc3cd3cd-ce01-415f-84ab-d231e47b2a84"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem:...ok I \nthink I get it",
+                                        "give me a few\nminutes"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "d0874def-d402-4f5a-83cd-14c6a45b0818"
+                                  },
+                                  {
+                                    "command": "EVENT_OVERLAY_SHOW",
+                                    "args": {
+                                      "color": "black",
+                                      "x": 0,
+                                      "y": 0
+                                    },
+                                    "id": "37129fab-30dd-444c-9f93-1b707b7128e2"
+                                  },
+                                  {
+                                    "command": "EVENT_WAIT",
+                                    "args": {
+                                      "time": 0.5,
+                                      "frames": 30
+                                    },
+                                    "id": "f246ded7-91ed-47e8-bbba-9706af6ff447"
+                                  },
+                                  {
+                                    "command": "EVENT_OVERLAY_HIDE",
+                                    "args": {},
+                                    "id": "20e76110-cb6a-4d80-b854-80e8a111cfc2"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem called bright\nand crystal"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30,
+                                      "__collapse": false
+                                    },
+                                    "id": "05a5207f-3636-4b44-8f59-ef8ac88478c6"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "blair:I will \nshow you how to\nopen the shrine"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "7ec05e1f-f8fd-4f24-b819-d7a12114acb3"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "jem:if crystal \nis going near \nthere we would",
+                                        "need to clean up\nthe monster \nremains",
+                                        "I am careful but\nbright and\ncrystal may not \nbe"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "94878c35-ccd2-4696-9769-9009d23c4b23"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "blair: that \nsounds fair\nsune could you",
+                                        "do it"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "56e5d432-f317-48e5-9e21-3e55ce33f01f"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "sune: I am one\nstep ahead of\nyou I asked",
+                                        "some of the \nother ghosts to\nmove their",
+                                        "remains for a \nfew hours"
+                                      ],
+                                      "__section": "text",
+                                      "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9",
+                                      "minHeight": 4,
+                                      "maxHeight": 7,
+                                      "textX": 1,
+                                      "textY": 1,
+                                      "textHeight": 5,
+                                      "position": "bottom",
+                                      "clearPrevious": true,
+                                      "showFrame": "true",
+                                      "speedIn": -1,
+                                      "speedOut": -1,
+                                      "closeWhen": "key",
+                                      "closeButton": "a",
+                                      "closeDelayTime": 0.5,
+                                      "closeDelayFrames": 30
+                                    },
+                                    "id": "32781b2d-910b-4fd8-94e3-cf976c4f9c1a"
+                                  }
+                                ]
+                              },
+                              "id": "272d4a14-484e-4505-b587-d81b971e12bc"
+                            }
+                          ],
+                          "false": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem: got the \nbook now what"
+                                ],
+                                "__section": "text",
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "a83c3373-0de4-43e6-8a4c-5789cd9e356b"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "blair: now you\nneed to call \nyour husband and",
+                                  "your child here\nyou will need \nboth."
+                                ],
+                                "__section": "text",
+                                "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "1438d276-0a1f-4e1c-b434-3b52be73017d"
+                            },
+                            {
+                              "command": "EVENT_ACTOR_EMOTE",
+                              "args": {
+                                "actorId": "$self$",
+                                "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                              },
+                              "id": "c35bada2-129f-4178-aa69-7bf7a6f674f1"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem:I understand\ncrystal but why\nflare..."
+                                ],
+                                "__section": "text",
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "42bac8a7-1a31-4782-8488-5edd0d7f812a"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "blair: it is to\nsyphon your \nchild's magic",
+                                  "and place into\nanother living\nbeing.the reason",
+                                  "why your friend\nneeds to be here\nis he is for",
+                                  "excess and \nprevent \novercharging you",
+                                  "it is also gives\na failsafe if\none of you dies",
+                                  "crystal gets \nsome magic back\nbut not all"
+                                ],
+                                "__section": "text",
+                                "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "a11b0d04-ad08-4c47-a094-2ab978f926a0"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem:...ok I \nthink I get it",
+                                  "give me a few\nminutes"
+                                ],
+                                "__section": "text",
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "f2164489-eac4-4df6-b8c7-a514e57fbc77"
+                            },
+                            {
+                              "command": "EVENT_OVERLAY_SHOW",
+                              "args": {
+                                "color": "black",
+                                "x": 0,
+                                "y": 0
+                              },
+                              "id": "b8cb8672-f2a4-4cca-b217-281ea7acd82a"
+                            },
+                            {
+                              "command": "EVENT_WAIT",
+                              "args": {
+                                "time": 0.5,
+                                "frames": 30
+                              },
+                              "id": "78fd4be2-b127-4dfe-9445-2200c6b1a302"
+                            },
+                            {
+                              "command": "EVENT_OVERLAY_HIDE",
+                              "args": {},
+                              "id": "69111cae-8004-4c39-9ca3-0b0439d844e4"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem called flare\nand crystal"
+                                ],
+                                "__section": "text",
+                                "avatarId": "",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30,
+                                "__collapse": false
+                              },
+                              "id": "7b29ccc7-f485-4ec7-822e-871e15360a28"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "blair:I will \nshow you how to\nopen the shrine"
+                                ],
+                                "__section": "text",
+                                "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "e710bcf1-b5a8-4db9-983d-d6b1fe45ee01"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "jem:if crystal \nis going near \nthere we would",
+                                  "need to clean up\nthe monster \nremains",
+                                  "I am careful but\nmy husband and\nchild may not be"
+                                ],
+                                "__section": "text",
+                                "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "d1d19c8c-76e9-41bb-a28a-58179fba6429"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "blair: that \nsounds fair\nsune could you",
+                                  "do it"
+                                ],
+                                "__section": "text",
+                                "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "a194fb2e-96ff-4051-bec9-95e3cb469b7f"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "sune: I am one\nstep ahead of\nyou I asked",
+                                  "some of the \nother ghosts to\nmove their",
+                                  "remains for a \nfew hours"
+                                ],
+                                "__section": "text",
+                                "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "63b36f3f-11db-41ed-8802-1fe79e7c8f79"
+                            }
+                          ]
+                        },
+                        "id": "039da78b-a313-4179-9fed-1265f8d3c822"
+                      },
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "416396b6-b709-42f1-87ec-ac1378eeaef9",
+                          "x": {
+                            "type": "number",
+                            "value": 9
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 33
+                          },
+                          "direction": "up",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "f010254b-623a-44a1-8ec8-baa063a85653"
+                      }
+                    ]
+                  },
+                  "id": "96992082-2906-4cf9-bc60-77a540fafe4d"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "blair: go find\nmy diary.I think\nit is in the",
+                      "mountain west of\nhere.probably in\na restricted",
+                      "section of a \nlibrary"
+                    ],
+                    "__section": "text",
+                    "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "82cd2abe-eccf-4de1-971d-3066612daeac"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 20
+                    },
+                    "moveType": "diagonal",
+                    "useCollisions": false
+                  },
+                  "id": "23d1de44-9999-4be8-a935-85493d0be34d"
+                }
+              ]
+            },
+            "id": "0690d80e-e6ea-462c-9f25-803758d37754"
+          }
+        ],
         "false": [
           {
             "command": "EVENT_ACTOR_EMOTE",
@@ -139,7 +843,8 @@
               "text": [
                 "blair: this is \ndue to a \nprophecy in",
                 "which \nmultiversial \ntravel is ",
-                "required."
+                "required.I can't\ntell you much\nas even I don't",
+                "know how to do \nthat"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
@@ -161,7 +866,8 @@
               "text": [
                 "sune: while \nthere are ways\nto get to other",
                 "universes via \nspells but not\nall universes",
-                "support heavy\namounts of magic"
+                "support heavy\namounts of magic",
+                "meaning you \ncould trap \nyourself"
               ],
               "avatarId": "6300e3a1-a026-49fa-9f9d-75c2e198bfb9"
             },
@@ -289,11 +995,78 @@
                 "deep inside the \nmountain west of\nhere. once you",
                 "find it bring \nyour child as\nwell as your",
                 "husband. this is\nto give him.some\naccess to the",
-                "spell"
+                "spell... it is\nmy diary"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
             "id": "07ab979c-8568-4da4-aeca-aec8f19b0d08"
+          },
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "46",
+              "flag": 0,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "jem:well my \nchild killed my\nhusband. does it",
+                      "need to be a\nblood relative\nor just human"
+                    ],
+                    "__section": "text",
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "7c180ab2-226a-4cc5-be50-49f9bd4996ea"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "blair:while a\nblood relative\nis preferred it",
+                      "can be anyone\nthe child trusts\nand can store",
+                      "a large amount\nof magic power"
+                    ],
+                    "__section": "text",
+                    "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "eb1d939e-fc85-4fea-b87c-f9beabcdb5c9"
+                }
+              ],
+              "false": []
+            },
+            "id": "10a5fd62-4053-43ef-a4ec-9cb3fb349463"
           },
           {
             "command": "EVENT_ADD_FLAGS",
@@ -317,6 +1090,23 @@
               "flag16": false
             },
             "id": "d16ab5a6-680c-499d-9f04-34f6e7867f44"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 20
+              },
+              "moveType": "diagonal",
+              "useCollisions": false
+            },
+            "id": "dd477694-3c91-4663-b4fd-3e003ca0d697"
           }
         ]
       },

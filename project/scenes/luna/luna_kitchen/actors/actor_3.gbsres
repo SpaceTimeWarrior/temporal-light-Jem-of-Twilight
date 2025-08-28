@@ -27,7 +27,29 @@
       "id": "4d7b8abc-d8e6-43a2-99ee-10a821463b97"
     }
   ],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "46",
+        "flag": 5,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1bf3a61c-251d-4775-8bd1-634118a10634"
+          }
+        ],
+        "false": []
+      },
+      "id": "a2b75c26-14be-4979-ae37-05fa86f7ed79"
+    }
+  ],
   "updateScript": [
     {
       "command": "EVENT_IF_FLAGS_COMPARE",

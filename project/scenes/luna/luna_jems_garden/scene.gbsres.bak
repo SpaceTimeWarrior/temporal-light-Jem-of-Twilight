@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "60c4f671-8fb7-4ee0-ac62-6113b0b05e99",
+  "_index": 73,
+  "type": "TOPDOWN",
+  "name": "luna/luna jem's garden",
+  "symbol": "scene_74",
+  "x": 5273.523809523808,
+  "y": 1509.7333272298179,
+  "width": 86,
+  "height": 40,
+  "backgroundId": "a01df5fa-4a7f-49a2-8f03-b2f4114e220e",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "156a343b-56d0-4733-ad97-1e9ca0b42749"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 128
+        }
+      },
+      "id": "43343e9e-ba16-4eaf-98ae-5b13b457e6a7"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f15c+0034+0f22+0034+0f22+0034+0f22+0034+0f22+0034+0f22+0034+0f22+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0052+0f4+0034+0f22+0034+0f22+0034+0f22+0034+0f22+0034+0f22+0034+0f324+"
+}

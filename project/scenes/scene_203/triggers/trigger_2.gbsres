@@ -1,0 +1,42 @@
+{
+  "_resourceType": "trigger",
+  "id": "21ed17d9-88c6-491e-8d04-877313e15010",
+  "name": "",
+  "prefabId": "",
+  "x": 77,
+  "y": 33,
+  "symbol": "trigger_492",
+  "prefabScriptOverrides": {},
+  "width": 1,
+  "height": 4,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "you would continue\nbut a giant rock",
+          "is blocking the \nstairs"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0a55da71-8ca9-4ce6-bca5-ff798e4edcc9"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

@@ -1,0 +1,340 @@
+{
+  "_resourceType": "scene",
+  "id": "416396b6-b709-42f1-87ec-ac1378eeaef9",
+  "_index": 205,
+  "name": "earth/cm/distortion mountain shrine",
+  "backgroundId": "0000d64c-881a-4d41-821a-eadec016debe",
+  "tilesetId": "",
+  "width": 20,
+  "height": 36,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    null,
+    null,
+    null,
+    null,
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535",
+    "default-bg-2",
+    "90eafb53-1bf7-4fb9-9caf-512159ebb8c0"
+  ],
+  "collisions": "0f6+008+0fc+008+0fa+00c+0f8+00c+0f6+0010+0f4+006+0f4+006+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+006+0f4+006+0f4+0010+0f4+0010+0f4+0010+0f6+00c+0f8+00c+0fa+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fe+004+0f10+004+0f8+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_206",
+  "x": 3368,
+  "y": 4880,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "f7e60502-f84c-483f-8776-9d961f778757"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:stand next\nto the corner on\nmy side"
+        ],
+        "__section": "text",
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "57c65783-9985-410b-831f-94742f6ccca4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "moveType": "diagonal",
+        "useCollisions": true
+      },
+      "id": "7dd7e7e0-c546-440b-a33e-f53ad834484a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "down"
+        }
+      },
+      "id": "bac36a89-79cf-47ce-ac77-465051eb9b9d"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "3cf78554-c769-4b70-873f-37d841f36b7d",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "e9d3c94a-8321-4822-b4a8-66ca6b461431"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "e269f204-6f58-4316-ab88-70e8362f30d8",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "19d82ba8-48df-4315-9865-54fd5aba98c2"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:everyone\nface crystal"
+        ],
+        "__section": "text",
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "0d678cb8-cae1-4aa8-a18f-d1704e4989ba"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "a3cdbe84-b55b-42cc-a174-87404edfee5b",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "b083d5fd-b32d-4df4-9ef5-d6aaafb25db6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "blair:!F:4082dfa9-2504-4646-9742-e26b370ef665!power,life\nenergy. move the\nenergy from this",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!child into these\ntwo"
+        ],
+        "__section": "text",
+        "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "416b4cf4-74ad-4af9-b621-684d3405dc95"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 3
+      },
+      "id": "1e6543ea-04cd-4223-9dd7-d7a01eca5c38"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "7660b0a3-d61b-4124-a346-26dd7154764a"
+    },
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "46",
+        "flag": 5,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "4e275ded-8de3-46cd-ac05-7ca34a332b77",
+              "palette7": "keep"
+            },
+            "id": "ccf1f708-e531-4863-b2c4-ffe3e386d637"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair:this \nshould restrict\ncrystal's power",
+                "to that of a \nnormal kitsune\nfor her age",
+                "so long as her\nfur is purple.it\nwill fade in",
+                "color should one\nof you die",
+                "this is also \nonly intended\nwhile she is",
+                "young. as she \nages. her magic\nmight burn ",
+                "through the \nrestricting\npower"
+              ],
+              "__section": "text",
+              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "f9b9174f-e2ce-4844-8934-44f99d0230a6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_SPRITE",
+            "args": {
+              "palette0": "keep",
+              "palette1": "keep",
+              "palette2": "keep",
+              "palette3": "keep",
+              "palette4": "keep",
+              "palette5": "keep",
+              "palette6": "4a5a6f2e-10f5-4342-8e30-eac8cb0fa350",
+              "palette7": "keep"
+            },
+            "id": "32f36d2b-6a8f-46e6-ac75-58699c5d7ba3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "blair:this \nshould restrict\ncrystal's power",
+                "to that of a \nnormal kitsune\nfor her age",
+                "so long as her\nfur is pink. it\nwill fade in",
+                "color should one\nof you die",
+                "this is also \nonly intended\nwhile she is",
+                "young. as she \nages. her magic\nmight burn ",
+                "through the \nrestricting\npower"
+              ],
+              "__section": "text",
+              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "53419993-fd32-431e-9049-a28f7dd73199"
+          }
+        ]
+      },
+      "id": "69c07434-b2a3-4cae-b9b2-33c83b798961"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 1
+      },
+      "id": "195dc3be-683a-473c-854a-0d7d36075025"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "26",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "ea7d5a11-fd45-476d-a825-a1ab20bcfc4d"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "60c4f671-8fb7-4ee0-ac62-6113b0b05e99",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "f3684e24-1c5d-4795-af8c-5bd92cce020b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}
