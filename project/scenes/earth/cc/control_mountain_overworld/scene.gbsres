@@ -5,18 +5,73 @@
   "type": "TOPDOWN",
   "name": "earth/cc/control mountain overworld",
   "symbol": "scene_149",
-  "x": 752,
-  "y": 4592,
+  "x": 984,
+  "y": 400,
   "width": 20,
   "height": 18,
-  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "backgroundId": "f5d0fb85-484f-484b-b991-50c13d748347",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start",
+                "left",
+                "up",
+                "down",
+                "select",
+                "a"
+              ]
+            },
+            "id": "398d6497-337d-4ca2-93f5-fb192c952d6f"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "73203354-5c29-4023-a37c-ad784791544a"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "c0a9130c-6f5d-40a6-9c13-d1653741099b"
+          }
+        ]
+      },
+      "id": "ce31bd92-41cc-4df1-8b3a-be2392f0a369"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "00168+"
+  "collisions": "00168+",
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035"
 }

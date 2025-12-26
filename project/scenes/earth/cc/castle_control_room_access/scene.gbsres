@@ -14,7 +14,19 @@
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 208
+        }
+      },
+      "id": "d05b2f4a-bf83-4a67-b851-8f2918f73b29"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

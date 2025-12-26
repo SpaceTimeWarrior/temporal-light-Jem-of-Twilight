@@ -5,8 +5,8 @@
   "type": "TOPDOWN",
   "name": "earth/cc/Lightbringer palace airlock",
   "symbol": "scene_150",
-  "x": 341.53182705965907,
-  "y": 3781.122869318182,
+  "x": 336,
+  "y": 3776,
   "width": 40,
   "height": 60,
   "backgroundId": "b4850e5f-371c-49d4-a1b5-ff46cec15ce7",
@@ -21,6 +21,17 @@
         "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
       },
       "id": "6839374f-82ae-4eb2-953e-d6c0f089f391"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 204
+        }
+      },
+      "id": "93e7af70-d9c2-4f74-8445-ba5a3581e3d5"
     }
   ],
   "playerHit1Script": [],

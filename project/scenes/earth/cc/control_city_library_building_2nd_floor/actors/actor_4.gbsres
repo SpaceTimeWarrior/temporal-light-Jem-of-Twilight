@@ -15,7 +15,122 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_1065",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The science of\nmonster biology do\nyou want to read"
+        ],
+        "avatarId": ""
+      },
+      "id": "a22f8e1a-0c38-4d0a-9c00-5ae625545726"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "yes",
+        "falseText": "no"
+      },
+      "id": "36cffca2-5fd8-4aec-bbe7-26209f80cb6a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Monsters have very\nlittle blood and \nsuch that magic",
+                "energy takes its\nplace. thus when\nthey die. Most  of",
+                "their body parts \nturn to dust. so\nlong as the monster",
+                "is alive at the\ntime of maiming,\nbodyparts won't ",
+                "disintegrate.\nother than that\nmonsters are",
+                "similar to their\ncomponent families\nthe magic energy",
+                "also gives them \nthe ability to use\nmagic.",
+                "so long as they \nare compatible\nmonsters can",
+                "create hybrid races\nthe wolfcat is an\nexample of this",
+                "they are a\ncombination of \nhomo-canus and",
+                "homo-felidae. or\nfor plain english\nany humanoid ",
+                "canine and \nhumanoid feline\ncombination.",
+                "do you want to keep\nreading."
+              ],
+              "avatarId": ""
+            },
+            "id": "bd035b94-5bfb-4ea4-bb32-84188488eddd"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "yes",
+              "falseText": "no"
+            },
+            "id": "ebf699f4-bd67-4007-8e33-4fc85cf6ddcf"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "All monsters \noriginate from the\nspecies ",
+                      "Homo-Magica\nthis offshoot of ",
+                      "humanity had 2 odd\ntraits the ability",
+                      "to cast magic and \nbe fertile with any\nliving being. with",
+                      "exceptions such as\npigs, chickens, and\ncows",
+                      "any of \nHomo-Magica's\noffspring are",
+                      "considered monsters\nunless it is with\nanother human.",
+                      "Monsters are \ntechnically human \nbut are not",
+                      "considered as such.\nHomo-Magica went\nextinct in the ",
+                      "interplanetary war.\nI don't need to \ncontinue."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5cf115b4-ba0a-4038-9cac-fc8db338a9c0"
+                }
+              ],
+              "false": []
+            },
+            "id": "9c2d61ae-2964-4d0b-b1fe-d937a615341b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Don't need to read\nit if I am one."
+              ],
+              "avatarId": ""
+            },
+            "id": "3f921f2f-eaaf-429e-9792-631c01503351"
+          }
+        ]
+      },
+      "id": "e375b7ed-e0e4-488e-97e3-6385240a6f29"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

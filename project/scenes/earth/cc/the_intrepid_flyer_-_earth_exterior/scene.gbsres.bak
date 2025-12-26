@@ -1,0 +1,35 @@
+{
+  "_resourceType": "scene",
+  "id": "e924c34b-75f8-42ee-bc5f-90b7cf574416",
+  "_index": 76,
+  "type": "TOPDOWN",
+  "name": "earth/cc/the intrepid flyer - Earth exterior",
+  "symbol": "scene_77",
+  "x": 676.0761835007443,
+  "y": 3213.447730654761,
+  "width": 48,
+  "height": 48,
+  "backgroundId": "c21c6f48-d16f-43d7-869d-8d7eb433e03e",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "35b0d339-3f9a-48f9-8064-b23615cc284e"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "ce8a9c02-1fff-48df-a64e-e14e28788557"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0064d+0f8+0028+0f!006+0f!00b+0f1e+006+0f!002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!002f+0f!00b+0f25+00fb+"
+}

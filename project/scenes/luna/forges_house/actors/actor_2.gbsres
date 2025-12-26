@@ -1,0 +1,98 @@
+{
+  "_resourceType": "actor",
+  "id": "87b8895b-6f89-4844-be1a-3d30e0ffcea5",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9ced86d5-36df-40dd-a65b-998a829e8b32",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_449",
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+      },
+      "id": "a7c92582-54b4-4153-ba36-767c4e633103"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "forge: hi jem\nsorry I wasn't\nmuch help",
+          "with your \ndaughter"
+        ],
+        "__section": "text",
+        "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "1a814d63-2e2b-400c-adfe-82121264d01a"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_UI",
+      "args": {
+        "palette": ""
+      },
+      "id": "ccf257dd-477e-4ac9-9bd1-d5fd92b36bd4"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 10,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+            },
+            "id": "e52a5e46-ef21-40fa-a678-288ecbb0137c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a93acb9a-48a7-4975-a53f-14c4b2d022f3"
+          }
+        ]
+      },
+      "id": "1b09028e-5445-46be-9414-b4390a58930a"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 12,
+  "y": 11,
+  "_index": 4
+}

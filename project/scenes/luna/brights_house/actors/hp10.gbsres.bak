@@ -1,0 +1,96 @@
+{
+  "_resourceType": "actor",
+  "id": "d20e2eb4-e4f9-410c-adea-785126c40040",
+  "name": "HP10",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6",
+  "prefabId": "30bfc88a-c79f-4c25-bdae-771ed8506670",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 255,
+  "paletteId": "",
+  "isPinned": true,
+  "persistent": true,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "_index": 3,
+  "symbol": "actor_950",
+  "x": 2,
+  "y": 1,
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L1",
+        "value": {
+          "type": "variable",
+          "value": "6"
+        }
+      },
+      "id": "bf9940e3-b54d-4bc8-abc6-5caeee5ecc62"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH_EVALUATE",
+      "args": {
+        "variable": "L1",
+        "expression": "$06$/10"
+      },
+      "id": "8d6e5295-3e53-4992-9e9a-d5c3f009631b"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_FRAME",
+      "args": {
+        "actorId": "$self$",
+        "frame": {
+          "type": "variable",
+          "value": "L1"
+        }
+      },
+      "id": "6a9cbbac-ad64-49f6-b570-805245ae69eb"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "50",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "50"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "63ad79f7-9777-49f9-9083-0f46f050a63f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_COLLISIONS_ENABLE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "42db0a1a-eb50-4ac3-b624-6b45b7cc235f"
+          }
+        ]
+      },
+      "id": "81cd6462-77a5-434c-a04b-84c1a0487b25"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

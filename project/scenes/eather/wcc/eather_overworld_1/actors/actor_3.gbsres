@@ -49,7 +49,7 @@
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
         "variable": "63",
-        "flag": 0,
+        "flag": 1,
         "__collapseElse": true
       },
       "children": {

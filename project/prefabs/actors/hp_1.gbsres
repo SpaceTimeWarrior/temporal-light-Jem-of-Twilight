@@ -40,7 +40,8 @@
             "type": "number",
             "value": 1
           }
-        }
+        },
+        "__collapse": true
       },
       "children": {
         "true": [
@@ -396,17 +397,17 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "ne",
+          "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "L4"
+            "value": "68"
           },
           "valueB": {
             "type": "number",
-            "value": 0
+            "value": 5
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -446,7 +447,7 @@
           {
             "command": "EVENT_SET_VALUE",
             "args": {
-              "variable": "L4",
+              "variable": "68",
               "value": {
                 "type": "number",
                 "value": 0

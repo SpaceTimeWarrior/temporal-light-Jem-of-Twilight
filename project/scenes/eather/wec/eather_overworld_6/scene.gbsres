@@ -5,11 +5,11 @@
   "type": "TOPDOWN",
   "name": "eather/wec/Eather Overworld 6",
   "symbol": "scene_133",
-  "x": 7968,
-  "y": 1808,
-  "width": 20,
-  "height": 18,
-  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "x": 7824,
+  "y": 1728,
+  "width": 52,
+  "height": 72,
+  "backgroundId": "f2c39960-a581-4402-9cc7-8fdfdf2253fa",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
@@ -37,5 +37,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "00168+"
+  "collisions": "0f6+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0028+0fc+0010+0f!00e+0f!008+0fc+0010+0f10+008+0f13e+"
 }

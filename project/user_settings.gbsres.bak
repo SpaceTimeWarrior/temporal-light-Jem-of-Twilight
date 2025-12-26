@@ -1,12 +1,12 @@
 {
   "_resourceType": "settings",
-  "worldScrollX": 3150.39990234375,
-  "worldScrollY": 6228.7998046875,
-  "zoom": 150,
+  "worldScrollX": 17374.400390625,
+  "worldScrollY": 1982.4000244140625,
+  "zoom": 233.33331298828125,
   "navigatorSplitSizes": [
-    302,
+    283,
+    49,
     205,
-    30,
     205
   ],
   "showNavigator": true,
@@ -20,13 +20,16 @@
   ],
   "debuggerEnabled": true,
   "debuggerScriptType": "editor",
-  "debuggerVariablesFilter": "all",
+  "debuggerVariablesFilter": "watched",
   "debuggerCollapsedPanes": [
     "state"
   ],
   "debuggerPauseOnScriptChanged": false,
   "debuggerPauseOnWatchedVariableChanged": false,
   "debuggerBreakpoints": [],
-  "debuggerWatchedVariables": [],
+  "debuggerWatchedVariables": [
+    "6",
+    "67"
+  ],
   "openBuildLogOnWarnings": true
 }

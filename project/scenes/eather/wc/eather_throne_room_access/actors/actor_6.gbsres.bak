@@ -1,0 +1,63 @@
+{
+  "_resourceType": "actor",
+  "id": "b6af9232-8157-4259-b6ae-ba0e2851da0f",
+  "_index": 7,
+  "symbol": "actor_107",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 6,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "8aeb5561-7d50-498e-9e8e-149c88689da1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Robot Guard:\nIdentity Princess \nJem Wolfsbane ",
+          "Audiance\nautomatically\ngranted"
+        ],
+        "avatarId": ""
+      },
+      "id": "bfaf85df-8de0-4837-a5dc-7ff12695cc2a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "a74d110f-db73-41ce-a094-c9f679cc23e3"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c8a86a08-90fc-48a4-8332-9386716f7313"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

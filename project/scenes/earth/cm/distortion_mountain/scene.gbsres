@@ -5,18 +5,73 @@
   "type": "TOPDOWN",
   "name": "earth/cm/distortion mountain",
   "symbol": "scene_185",
-  "x": 1745.5999755859375,
-  "y": 4739.2998046875,
+  "x": 784,
+  "y": 400,
   "width": 20,
   "height": 18,
-  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "backgroundId": "1a483651-dbca-445a-bc67-a32f2b92813a",
   "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "b",
+          "start",
+          "a",
+          "left",
+          "up",
+          "down",
+          "right",
+          "select"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REMOVE_INPUT_SCRIPT",
+            "args": {
+              "input": [
+                "b",
+                "right",
+                "start",
+                "left",
+                "up",
+                "down",
+                "select",
+                "a"
+              ]
+            },
+            "id": "009ad42c-37f5-4933-8af4-ea143b063f55"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "af2f6fcb-e041-443b-9138-d3513dc7a465"
+          },
+          {
+            "command": "EVENT_SCENE_POP_STATE",
+            "args": {
+              "fadeSpeed": "2"
+            },
+            "id": "4530988e-47a7-405d-b007-a0b6b4c680ed"
+          }
+        ]
+      },
+      "id": "a7eebe04-d295-42a0-816e-547937fc8edc"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": ""
+  "collisions": "",
+  "playerSpriteSheetId": "7755972e-a14b-4e90-9cab-f3c6d9dad035"
 }

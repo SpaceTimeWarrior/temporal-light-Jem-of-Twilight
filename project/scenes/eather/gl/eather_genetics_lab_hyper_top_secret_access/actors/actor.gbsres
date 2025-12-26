@@ -1,0 +1,113 @@
+{
+  "_resourceType": "actor",
+  "id": "5b665df7-2ef4-4db0-98df-21ef3cd60c85",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "ca8f822f-89c7-4eca-828c-ace1511f6a59",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_40",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "your adventure is\nnearing its end",
+          "once you enter you\ncannot leave"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "a2ca814d-d81d-4985-8670-ddd1e3aac41f"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "Lets end this",
+        "option2": "I need to prepare",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "0bec4876-2d43-4183-a47c-ca89e7a93a73"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "237c180a-f2d8-4121-98af-e9c2d73c27df",
+              "x": {
+                "type": "number",
+                "value": 20
+              },
+              "y": {
+                "type": "number",
+                "value": 71
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "2fb78cd1-e15a-473f-9210-e6e7153411f9"
+          }
+        ]
+      },
+      "id": "3aa13adc-f1da-4ee3-9ebb-e5af3aa6ef55"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 10,
+  "y": 4,
+  "_index": 0
+}

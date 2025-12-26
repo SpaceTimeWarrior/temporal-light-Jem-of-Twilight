@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "cc932343-2b76-4f44-869e-064443db379c",
+  "_index": 0,
+  "symbol": "actor_790",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Trial 1 Test of\n  intelegence",
+          "metal bricks moves\nuntil it collides \nwith something"
+        ],
+        "avatarId": ""
+      },
+      "id": "27580910-bdd8-4ef0-be9c-be89481ae01b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

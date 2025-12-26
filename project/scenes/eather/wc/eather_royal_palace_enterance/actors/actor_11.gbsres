@@ -1,23 +1,23 @@
 {
   "_resourceType": "actor",
-  "id": "8137b05e-8bc6-46e7-bb0b-27467fe8bf90",
-  "_index": 12,
-  "symbol": "actor_138",
-  "prefabId": "",
+  "id": "5882532d-e1b6-41e8-a46c-d1a6f4c5f983",
   "name": "",
-  "x": 24,
-  "y": 9,
   "frame": 0,
   "animate": false,
   "spriteSheetId": "6ccbb461-2b3f-41d6-9570-00d07e7132af",
-  "paletteId": "",
+  "prefabId": "",
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
+  "paletteId": "",
   "isPinned": false,
   "persistent": false,
   "collisionGroup": "2",
   "prefabScriptOverrides": {},
+  "_index": 12,
+  "symbol": "actor_140",
+  "x": 28,
+  "y": 9,
   "script": [
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
@@ -25,17 +25,17 @@
         "actorId": "player",
         "speed": 255
       },
-      "id": "6a6159f2-70cd-4c25-a7e0-536780d68088"
+      "id": "2a01c58e-f78e-423b-a80a-61f3cd0b226a"
     },
     {
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "area unavailable \nin gb/gbc"
+          "area unavailable \nin chapter 1+2"
         ],
         "avatarId": ""
       },
-      "id": "51e7a6b1-f07c-46b6-8e16-6adb7e6311ea"
+      "id": "21bedf3b-b9e7-411f-830b-ef73185e6742"
     },
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
@@ -43,10 +43,32 @@
         "actorId": "player",
         "speed": 15
       },
-      "id": "674dbc86-2f09-4913-a5ff-1148e26ea047"
+      "id": "ab38058d-d844-4fed-94be-87d4f2351309"
     }
   ],
-  "startScript": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 5,
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a105debc-1af4-4d91-ab04-54559ed63dfe"
+          }
+        ],
+        "false": []
+      },
+      "id": "96075502-7ac3-479c-888b-c00818f142f8"
+    }
+  ],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [
@@ -55,7 +77,7 @@
       "args": {
         "actorId": "$self$"
       },
-      "id": "1e5b656f-95fe-4e23-bac7-2c41ea20255c"
+      "id": "2f56419b-b084-4c2c-af0a-036619158a2e"
     }
   ],
   "hit3Script": []

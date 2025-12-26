@@ -85,9 +85,9 @@
                     "text": [
                       "????2:we are \nyour ancestors\nand this is both",
                       "a dream but also\nreality. that\nimpact was",
-                      "severe enough\nto seperate your\nsoul from your",
+                      "severe enough\nto separate your\nsoul from your",
                       "body. we have a\nmessage for you.\nyou are to build",
-                      "a ship cappable\nof exeding the\nspead of light.",
+                      "a ship capable\nof exceeding the\nspeed of light.",
                       "the fate of the\nuniverse depends\non this"
                     ],
                     "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
@@ -200,11 +200,11 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "????2:we are \nyour ancestors\nand this is both",
+                      "????2:we are \nyour ancestors,\nand this is both",
                       "a dream but also\nreality. that\nimpact was",
-                      "severe enough\nto seperate your\nsoul from your",
+                      "severe enough\nto separate your\nsoul from your",
                       "body. we have a\nmessage for you.\nyou are to build",
-                      "a ship cappable\nof exeding the\nspead of light.",
+                      "a ship capable\nof exceeding the\nspeed of light.",
                       "the fate of the\nuniverse depends\non this"
                     ],
                     "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
@@ -263,6 +263,17 @@
         ]
       },
       "id": "70022574-a922-4436-9841-716d0b07f6f5"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 225
+        }
+      },
+      "id": "10646b2b-2bbd-460b-94cc-7b2a75435e47"
     }
   ],
   "playerHit1Script": [],

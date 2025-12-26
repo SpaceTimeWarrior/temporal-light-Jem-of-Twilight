@@ -24,14 +24,40 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "number",
+          "value": 212
+        }
+      },
+      "id": "ce0cd37b-4da7-4eaa-b17d-f18b0a9eccc2"
+    },
+    {
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
         "variable": "51",
-        "flag": 2,
+        "flag": 0,
         "__collapseElse": false
       },
       "children": {
-        "true": [],
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "5cf2338e-aa05-4e31-8b74-c3670da6ee07"
+            },
+            "id": "452c48c1-8b59-4f86-8cd3-04475674813e"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "3d672f5c-c1db-499b-a017-7a7a66969d03"
+            },
+            "id": "b3c8c385-c852-42d3-bcb9-fbb488bf5363"
+          }
+        ],
         "false": [
           {
             "command": "EVENT_ACTOR_EMOTE",
@@ -65,7 +91,8 @@
                 "crystal:momy \nmomy u ar ok.\nI did n't mean ",
                 "to hrt u."
               ],
-              "avatarId": "b467b52f-2c83-43ab-bc9a-085bc2a98641"
+              "avatarId": "b467b52f-2c83-43ab-bc9a-085bc2a98641",
+              "__collapse": false
             },
             "id": "5c63bbea-d3f6-40b9-8fa2-358d7ffe428d"
           },
@@ -91,7 +118,7 @@
             "args": {
               "text": [
                 "jem:it is \nalright. how \nlong was I",
-                "unconsious."
+                "unconscious."
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
@@ -102,7 +129,8 @@
             "args": {
               "variable": "46",
               "flag": 5,
-              "__collapseElse": false
+              "__collapseElse": false,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -111,8 +139,8 @@
                   "args": {
                     "text": [
                       "bright: about 2 \nmonths. we need\nto talk about",
-                      "her. while you \nwhere unconsious\nyour mother did",
-                      "a magic test on\ncrystal."
+                      "her. while you \nwhere \nunconscious your",
+                      "mother did a \nmagic test on\ncrystal."
                     ],
                     "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
                   },
@@ -124,7 +152,7 @@
                     "text": [
                       "jem: can we also\nhave a meeting \nwith both mine",
                       "and flare's \nparents. I have\na felling I am",
-                      "probibly not\ngoing to like \nthis."
+                      "not going to \nlike this"
                     ],
                     "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
                   },
@@ -137,8 +165,8 @@
                   "args": {
                     "text": [
                       "flare: about 2 \nmonths. we need\nto talk about",
-                      "her. while you \nwhere unconsious\nyour mother did",
-                      "a magic test on\ncrystal."
+                      "her. while you \nwhere \nunconscious",
+                      "your mother did\na magic test on\ncrystal."
                     ],
                     "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
                   },
@@ -149,7 +177,7 @@
                   "args": {
                     "text": [
                       "jem: can we also\nhave a meeting \nwith both of our",
-                      "parents. I have\na felling I am\nprobibly not",
+                      "parents. I have\na felling I am\nprobably not",
                       "going to like \nthis."
                     ],
                     "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
@@ -195,7 +223,7 @@
                 "type": "number",
                 "value": 8
               },
-              "direction": "",
+              "direction": "up",
               "fadeSpeed": "2"
             },
             "id": "ddf131ab-c0c5-4e96-a356-f5527c9e75f4"

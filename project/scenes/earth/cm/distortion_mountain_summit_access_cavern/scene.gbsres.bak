@@ -5,8 +5,8 @@
   "type": "TOPDOWN",
   "name": "earth/cm/distortion mountain summit access cavern",
   "symbol": "scene_184",
-  "x": 2328.199951171875,
-  "y": 5551.60009765625,
+  "x": 2320,
+  "y": 5528,
   "width": 80,
   "height": 20,
   "backgroundId": "f8e08014-0014-4932-973e-470293f54ab6",
@@ -34,6 +34,41 @@
         "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
       },
       "id": "2bf8808b-de34-4c40-997c-5d57bce89096"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 2,
+        "duration": 1,
+        "frames": 30,
+        "__scriptTabs": "end"
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "62"
+            },
+            "id": "0fe327a6-4f99-4657-91f5-112d664ddb0b"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "62",
+              "operation": "mod",
+              "other": "val",
+              "vectorY": "L0",
+              "value": 60,
+              "minValue": "0",
+              "maxValue": "32767",
+              "clamp": false
+            },
+            "id": "c1178048-7c79-487e-bfdd-b928a3fcf54c"
+          }
+        ]
+      },
+      "id": "98b45923-8162-4c63-8e5a-c60a2297053e"
     }
   ],
   "playerHit1Script": [

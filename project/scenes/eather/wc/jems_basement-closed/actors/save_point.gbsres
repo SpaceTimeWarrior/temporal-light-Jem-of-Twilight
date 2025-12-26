@@ -1,15 +1,15 @@
 {
   "_resourceType": "actor",
-  "id": "1ae5c7f1-2fe2-48b0-a897-77e6d3a01bc2",
-  "_index": 12,
-  "symbol": "actor_40",
+  "id": "151de5cc-4096-4b76-8092-d9dfa4ca95d7",
+  "_index": 10,
+  "symbol": "actor_31",
   "prefabId": "",
   "name": "Save point",
   "x": 44,
-  "y": 27,
+  "y": 29,
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "spriteSheetId": "5e62e215-4c65-4a55-aab6-cedab8fc520a",
   "paletteId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -25,7 +25,7 @@
         "actorId": "player",
         "speed": 255
       },
-      "id": "1eae8f07-8cb4-4b88-ad04-218af0c5eefd"
+      "id": "2afe613e-b6c8-4855-8fb9-7f09de8659d4"
     },
     {
       "command": "EVENT_TEXT",
@@ -35,7 +35,7 @@
         ],
         "avatarId": ""
       },
-      "id": "20ab954f-7ce8-4635-9779-a47e4578c44d"
+      "id": "dc466840-a1c4-491b-a9aa-59c0d5fa4594"
     },
     {
       "command": "EVENT_CHOICE",
@@ -44,7 +44,7 @@
         "trueText": "sleep and save",
         "falseText": "don't sleep"
       },
-      "id": "e28288ed-7864-4860-acba-1527f33ae8f9"
+      "id": "5eb68d61-31fd-4a72-8e11-552f1c89bfe3"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -55,7 +55,7 @@
           "value": 20
         }
       },
-      "id": "fa406827-3130-4841-b265-9ebfb0ac0251"
+      "id": "60c818c4-df64-454b-bb60-8ede03735ba5"
     },
     {
       "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
@@ -63,7 +63,7 @@
         "actorId": "player",
         "speed": 15
       },
-      "id": "a1d33d47-3e55-4c56-b245-a7a82a5091e8"
+      "id": "c9dd0e2a-9b36-4cbe-b1c1-577009bba4cc"
     },
     {
       "command": "EVENT_IF",
@@ -95,24 +95,24 @@
                       "value": "33"
                     }
                   },
-                  "id": "5f26351c-8569-4bde-b3d6-ea022a97a2a9"
+                  "id": "29202426-44d8-4f0d-b727-5359a660bb2d"
                 }
               ],
               "false": []
             },
-            "id": "b9b8a5d4-035d-4b26-8a86-de92bfa4aeab"
+            "id": "f68b50b4-92c1-4f58-afc1-34348098c371"
           },
           {
             "command": "EVENT_CALL_CUSTOM_EVENT",
             "args": {
               "customEventId": "0f86c7d5-dd4c-4dae-9a01-a984c776f373"
             },
-            "id": "f968b98d-cc54-4273-be58-e4bf8b6e7ec6"
+            "id": "5648353c-fe39-41a1-b9c4-1366936b1112"
           }
         ],
         "false": []
       },
-      "id": "ce41dedd-c6b7-44d3-8769-d592367c8cf9"
+      "id": "4fd40646-0c20-43db-bb6f-941c8024e950"
     }
   ],
   "startScript": [],

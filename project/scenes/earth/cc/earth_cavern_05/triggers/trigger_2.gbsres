@@ -9,7 +9,41 @@
   "prefabScriptOverrides": {},
   "width": 14,
   "height": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_ACTOR_GET_POSITION",
+      "args": {
+        "actorId": "$self$",
+        "vectorX": "28",
+        "vectorY": "L0"
+      },
+      "id": "79d885b3-678c-49f4-b6ca-e989b3a9347c"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "58d3e5cf-c925-4a07-8fc1-d78bc2e9c801",
+        "x": {
+          "type": "add",
+          "valueA": {
+            "type": "variable",
+            "value": "28"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 17
+          }
+        },
+        "y": {
+          "type": "number",
+          "value": 3
+        },
+        "direction": "",
+        "fadeSpeed": "2"
+      },
+      "id": "8fbc2982-0d4e-4f53-b4bd-61a8479b95cd"
+    }
+  ],
   "leaveScript": [],
   "_index": 1
 }

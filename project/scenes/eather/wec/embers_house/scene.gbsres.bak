@@ -1,0 +1,34 @@
+{
+  "_resourceType": "scene",
+  "id": "2e492b37-e691-44f3-ae2b-6c63dca9f054",
+  "_index": 160,
+  "type": "TOPDOWN",
+  "name": "eather/wec/Ember's house",
+  "symbol": "scene_164",
+  "x": 7480,
+  "y": 872,
+  "width": 40,
+  "height": 36,
+  "backgroundId": "abf946cc-fa39-4227-bb4e-33c22253bab8",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 32
+        }
+      },
+      "id": "7f4155f8-7a18-4c45-804b-a1eba6ab686d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "005+0f!008+0f!001e+0f!008+0f!001e+0f!008+0f!0019+0f6+008+0ff+0027+0f!0027+0fb+0027+0f!0027+0f!00!0f14+0012+0f!00!0f14+0012+0f18+004+0f2+00c+0f16+004+0f2+00c+0f16+004+0f2+00c+0f16+004+0f2+00c+0f16+004+0f2+00c+0f16+004+0f2+00c+0f16+004+0f2+00a+0f18+004+0f2+00a+0f18+004+0f2+00a+0f18+004+0f2+00a+0f18+004+0f2+00a+0f6+00e+0f4+004+0f2+00a+0f6+0016+0f2+00a+0f6+0016+0f2+00a+0f6+0022+0f6+0022+0f6+0022+0f6+0022+0f6+0016+0f12+0016+0ffe+"
+}

@@ -59,7 +59,7 @@
         "variable": "6",
         "operator": "<=",
         "comparator": "0",
-        "__collapseElse": true,
+        "__collapseElse": false,
         "condition": {
           "type": "lte",
           "valueA": {
@@ -78,7 +78,7 @@
             "command": "EVENT_IF",
             "args": {
               "variable": "7",
-              "__collapseElse": true,
+              "__collapseElse": false,
               "__collapse": false,
               "condition": {
                 "type": "eq",

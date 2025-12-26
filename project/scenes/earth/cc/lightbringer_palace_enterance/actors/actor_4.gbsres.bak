@@ -43,7 +43,8 @@
             "args": {
               "variable": "37",
               "flag": 0,
-              "__collapseElse": false
+              "__collapseElse": false,
+              "__collapse": true
             },
             "children": {
               "true": [
@@ -494,7 +495,7 @@
                 {
                   "command": "EVENT_ACTOR_EMOTE",
                   "args": {
-                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "actorId": "player",
                     "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
                   },
                   "id": "e871d316-094f-4896-9b89-f259cdd6ce6f"
@@ -502,7 +503,7 @@
                 {
                   "command": "EVENT_ACTOR_EMOTE",
                   "args": {
-                    "actorId": "121fb22b-b1a4-4df0-ac5a-de230bc608c3",
+                    "actorId": "player",
                     "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
                   },
                   "id": "87882572-77d3-46cd-b5a3-10e7bfad42df"
@@ -556,7 +557,7 @@
                     "text": [
                       "???:normally I \nwould say the\nsolar council ",
                       "has that right \nbut you killed \nthe biggest",
-                      "resistance to undo\nbanishments so I\nwill do it. is \n",
+                      "resistance to undo\nbanishments so I\nwill do it. is ",
                       "this for the \nhomeworld tie \npart of the ",
                       "ceremony?"
                     ],

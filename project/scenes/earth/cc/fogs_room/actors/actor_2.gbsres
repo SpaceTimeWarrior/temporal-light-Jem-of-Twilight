@@ -15,8 +15,7 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_1025",
-  "script": [],
-  "startScript": [
+  "script": [
     {
       "command": "EVENT_TEXT",
       "args": {
@@ -41,9 +40,10 @@
         "closeDelayTime": 0.5,
         "closeDelayFrames": 30
       },
-      "id": "009c6c88-f908-49f8-a697-cf336abe1489"
+      "id": "55338a58-1018-41a3-a117-89bd48cedd33"
     }
   ],
+  "startScript": [],
   "updateScript": [],
   "hit1Script": [],
   "hit2Script": [],

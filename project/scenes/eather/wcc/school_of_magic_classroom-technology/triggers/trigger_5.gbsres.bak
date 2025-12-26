@@ -1,0 +1,27 @@
+{
+  "_resourceType": "trigger",
+  "id": "325337c0-7a42-491c-8f0c-eb1d944b865a",
+  "_index": 4,
+  "symbol": "trigger_154",
+  "prefabId": "",
+  "name": "",
+  "x": 24,
+  "y": 11,
+  "width": 10,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A classroom set of\nbooks that talk\nabout the many uses",
+          "of rocket fuel"
+        ],
+        "avatarId": ""
+      },
+      "id": "61c6a79a-254d-45c5-86d4-94fbb4e0fbb5"
+    }
+  ],
+  "leaveScript": []
+}

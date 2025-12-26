@@ -1,0 +1,649 @@
+{
+  "_resourceType": "trigger",
+  "id": "5a8c96d7-e7c5-4b0f-bc82-e56c989c8036",
+  "_index": 3,
+  "symbol": "trigger_164",
+  "prefabId": "",
+  "name": "",
+  "x": 26,
+  "y": 11,
+  "width": 6,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 7,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "b74a2c4d-744d-4942-955c-3d805222cc2e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "???:Thank you\nfor releasing\nme",
+                "my assistant\nwent crazy and\nstarted to lock",
+                "randomly people\nup. and ..."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "21a8dc6c-fd72-4551-a241-15d78b15ba0e"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "d67d5915-0de7-4e1c-bf75-3efae560ae42"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: What is your\nname."
+              ],
+              "avatarId": ""
+            },
+            "id": "ce8565a7-c644-48b8-9a26-5158ae9e255b"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "b8806404-b421-4099-82c5-7c3646050fb5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare:My name is\ncumulo but many \ncall me Flare.",
+                "As I was saying.\nmy assistant \nstarted to lock",
+                "people up. Then\ndrain them of \ntheir assets."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "5b13120f-894c-4f98-b6e2-65fe1abf60bd"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "ec930207-2a88-4f33-8ac6-239e6b6cc00d"
+          },
+          {
+            "command": "EVENT_LOOP_WHILE",
+            "args": {
+              "expression": "$L0$ !=0",
+              "__collapse": false,
+              "condition": {
+                "type": "expression",
+                "value": "$L0$ !=0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "6680a721-7b75-4674-9935-6d51b8126bdc"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "L0",
+                    "items": 4,
+                    "option1": "who is your asst.",
+                    "option2": "Why me",
+                    "option3": "are you royalty",
+                    "option4": "no more questions",
+                    "option5": "",
+                    "option6": "",
+                    "option7": "",
+                    "option8": "",
+                    "cancelOnB": true,
+                    "layout": "dialogue",
+                    "cancelOnLastOption": true
+                  },
+                  "id": "6b335354-1e05-4338-afa5-ebf6f0c0ff28"
+                },
+                {
+                  "command": "EVENT_SWITCH",
+                  "args": {
+                    "variable": "L0",
+                    "choices": 3,
+                    "__collapseCase0": false,
+                    "value0": 1,
+                    "__collapseCase1": false,
+                    "value1": 2,
+                    "__collapseCase2": false,
+                    "value2": 3,
+                    "__collapseCase3": false,
+                    "value3": 4,
+                    "__collapseCase4": false,
+                    "value4": 5,
+                    "__collapseCase5": false,
+                    "value5": 6,
+                    "__collapseCase6": false,
+                    "value6": 7,
+                    "__collapseCase7": false,
+                    "value7": 8,
+                    "__collapseCase8": false,
+                    "value8": 9,
+                    "__collapseCase9": false,
+                    "value9": 10,
+                    "__collapseCase10": false,
+                    "value10": 11,
+                    "__collapseCase11": false,
+                    "value11": 12,
+                    "__collapseCase12": false,
+                    "value12": 13,
+                    "__collapseCase13": false,
+                    "value13": 14,
+                    "__collapseCase14": false,
+                    "value14": 15,
+                    "__collapseCase15": false,
+                    "value15": 16,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true0": [
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                        },
+                        "id": "7153398f-75e9-4eda-9b80-83a6807c8f15"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "84ef1864-429b-4214-896f-5ce3b11b3e90"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: who was \nyour assistant?"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "5c3b7782-ebb4-4e1a-83b6-8d5029961fe1"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "629e5863-5c08-402e-8f50-7d3c7d437313"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare: My \nassistant is \ncalled Bright ",
+                            "Signet. and he\nhelped me \nmaintain this",
+                            "place. For at\nleast 10 years"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "607e6694-355e-451d-a34e-dcd369f6b019"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "29afa454-367d-4e71-b102-afda2e5ab845"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem:that begs \nthe question \nwhere are we"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "2fcb5055-6c0d-4032-a870-fcad47eb35a3"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "69ecc15a-ae49-49ba-83b7-082c82078035"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "In the lunar\npalace dungeon"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "dab76501-41d0-43fb-b0ba-c9e11af6ee23"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                        },
+                        "id": "eaf4446e-b215-4eca-9a19-d8240d2b6d7e"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "87ae9ce8-e308-4e03-b17c-0ef3108b9437"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: you mean we\nare on Earth's\nmoon."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "7b5427d3-1e6f-4b42-b083-378a813a490b"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "23",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": true,
+                          "flag10": false,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false,
+                          "__collapse": false
+                        },
+                        "id": "fafceb80-9d84-4c5a-aa3c-9a7249da6654"
+                      }
+                    ],
+                    "true1": [
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                        },
+                        "id": "b08952c6-fed2-4816-89d8-6ad314fa468b"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "777eb02a-96dd-47cf-9e0d-0b6ec04e2f1b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "why me and not\nsomeone else."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "60d80396-3565-4261-ad0f-02b943a5b22f"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "5d594655-dc4b-440d-8462-b867c7aa7686"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare: to be \nhonest I have no\nidea.",
+                            "the only common\nthread is they\nwhere all women",
+                            "of power. and\naround the age\nof 21."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "3503b655-0936-42dd-bd3a-6bc7d38205f1"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "23",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": true,
+                          "flag11": false,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "f1cccb49-4028-48cd-8570-2dabbd1efa94"
+                      }
+                    ],
+                    "true2": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "67b394bb-2ef1-4846-8e27-07d326e8b553"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: I am not \ntrying to sound\ninsensitive but",
+                            "are you royalty?"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "9b4aee50-04e5-4948-8aaa-15222f6d7d9d"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "3a6bdee8-ac8a-4e37-bf27-f140eb77d9f6"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare:I was born\nin the\nLightbringer",
+                            "palace on earth.\nand yes I was\nborn in the",
+                            "royal family."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "112fa105-0717-4eee-bae9-b6cf32814842"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                        },
+                        "id": "402ac1dc-6028-49e5-870f-fd3b6381590d"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "4e1364d0-7d4b-4dc8-a549-19d906c822e5"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem:was you sound\nlike you no \nlonger?"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "9ffca11c-4418-4adb-b4a2-4458f8d6e91c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "2a65084b-bf89-41a7-9871-b2b6ebd528dc"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare: a corrupt\nmember of the \nsolar council",
+                            "framed me for a\ncrime and forced\nmy father to ",
+                            "banish me.both \nme and my \nassistant took",
+                            "over this place."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "333ccf14-a594-4d5b-bdda-acb6516a64a5"
+                      },
+                      {
+                        "command": "EVENT_ADD_FLAGS",
+                        "args": {
+                          "variable": "23",
+                          "flag1": false,
+                          "flag2": false,
+                          "flag3": false,
+                          "flag4": false,
+                          "flag5": false,
+                          "flag6": false,
+                          "flag7": false,
+                          "flag8": false,
+                          "flag9": false,
+                          "flag10": false,
+                          "flag11": true,
+                          "flag12": false,
+                          "flag13": false,
+                          "flag14": false,
+                          "flag15": false,
+                          "flag16": false
+                        },
+                        "id": "d5ffb7c5-8fe2-4258-b0a6-7ace9e7caa8f"
+                      }
+                    ],
+                    "true3": [],
+                    "true4": [],
+                    "true5": [],
+                    "true6": [],
+                    "true7": [],
+                    "true8": [],
+                    "true9": [],
+                    "true10": [],
+                    "true11": [],
+                    "true12": [],
+                    "true13": [],
+                    "true14": [],
+                    "true15": [],
+                    "false": []
+                  },
+                  "id": "dde9b80f-4fd6-4874-bb05-8687c88650db"
+                }
+              ]
+            },
+            "id": "86f8aa49-df0a-4d01-94df-779cc3febce8"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "94c8f3a6-d677-4886-aa83-9d3950075316"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare: I \nintroduced myself\nbut you havent"
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "4b4f3e50-0f81-43e2-ab14-7a16b10e9c57"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": ""
+            },
+            "id": "c464b0ae-7968-4dda-82fc-f402c594f043"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "32",
+              "trueText": "say real name",
+              "falseText": "use a fake name"
+            },
+            "id": "c9151951-d820-454b-97eb-7fcbce199db3"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "32",
+              "__collapseElse": false,
+              "__collapse": false,
+              "condition": {
+                "type": "variable",
+                "value": "32"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "f4e775d0-3185-4fd0-a76b-c792e2935e87"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: my name is \nJem Wolfsbane",
+                      "princess of \nEather"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "e7d805e1-768c-44a3-91d8-d02f21a5aee0"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "96a5b1d0-f88e-4d66-8477-0adc52280402"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: my name is\nkitty clawface",
+                      "princess of \neather"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "6b9f45de-9de2-4b60-b815-bc67feb3dea5"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                  },
+                  "id": "24dea323-08c1-4542-8376-aa7e5eea0839"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Flare: I can\ntell that is a\nfake name but I",
+                      "respect your\nchoice not to\nsay it"
+                    ],
+                    "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                  },
+                  "id": "55169a9a-255a-4365-ba20-383841b4bc46"
+                }
+              ]
+            },
+            "id": "c374bcbc-eac5-465f-ad15-dd0908933e46"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+            },
+            "id": "d4705959-51b8-45c0-b13d-f99ea52efb3e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Flare:\nanyways we need\nto escape.",
+                "there is a launch\npad for \nspaceships",
+                "upstairs and\ncontinue straght.\nI will follow in",
+                "case of attack."
+              ],
+              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+            },
+            "id": "837cbabf-244a-4a0f-91ca-d0a3fc931601"
+          },
+          {
+            "command": "EVENT_ADD_FLAGS",
+            "args": {
+              "variable": "23",
+              "flag1": false,
+              "flag2": false,
+              "flag3": false,
+              "flag4": false,
+              "flag5": false,
+              "flag6": false,
+              "flag7": false,
+              "flag8": true,
+              "flag9": false,
+              "flag10": false,
+              "flag11": false,
+              "flag12": false,
+              "flag13": false,
+              "flag14": false,
+              "flag15": false,
+              "flag16": false
+            },
+            "id": "726c10aa-709c-40ee-bbd1-2df35e119904"
+          }
+        ]
+      },
+      "id": "9b8bc064-47c3-495e-a3f1-b9351aae086d"
+    }
+  ],
+  "leaveScript": []
+}

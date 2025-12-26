@@ -27,7 +27,19 @@
     "bde394b9-4d41-4a96-98a8-4993fdad98e0"
   ],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 224
+        }
+      },
+      "id": "3c4e1a0e-5a87-4cab-a0cd-33f2f2ede0bd"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

@@ -5,13 +5,19 @@
   "type": "TOPDOWN",
   "name": "eather/gl/Eather genetics lab Hyper top secret access",
   "symbol": "scene_124",
-  "x": 695.1999918619792,
-  "y": 5779.800130208335,
+  "x": 632,
+  "y": 5688,
   "width": 20,
-  "height": 18,
-  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "height": 36,
+  "backgroundId": "3806baeb-cf5d-435c-9eea-b026b022113f",
   "tilesetId": "",
-  "paletteIds": [],
+  "paletteIds": [
+    "4e275ded-8de3-46cd-ac05-7ca34a332b77",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [
@@ -26,5 +32,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "00168+"
+  "collisions": "0f44+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0fe+006+0f6+"
 }

@@ -1,0 +1,27 @@
+{
+  "_resourceType": "scene",
+  "id": "b80b7aee-7296-47dc-98c9-6e3e40cb4a2e",
+  "_index": 163,
+  "type": "TOPDOWN",
+  "name": "eather/wec/Eather train station 2",
+  "symbol": "scene_167",
+  "x": 7168,
+  "y": 2328,
+  "width": 40,
+  "height": 72,
+  "backgroundId": "ead1dd32-cca1-434d-b8fa-b8e5325c85c0",
+  "tilesetId": "",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fe+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f18+0010+0f18+0010+0f1a+005+0f2+007+0f1a+005+0f2+007+0f18+007+0f2+007+0f18+007+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f18+007+0f2+007+0f18+007+0f2+007+0f1a+005+0f2+007+0f1a+00e+0f18+0010+0f18+0010+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f18+0010+0f18+0010+0f1a+00e+0f1a+00e+0f18+007+0f2+007+0f18+007+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f18+007+0f2+007+0f18+007+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f18+007+0f2+007+0f18+0010+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f1a+00e+0f18+007+0f2+007+0f18+007+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+005+0f2+007+0f1a+00e+0fc+"
+}

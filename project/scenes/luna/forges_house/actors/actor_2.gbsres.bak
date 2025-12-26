@@ -1,0 +1,80 @@
+{
+  "_resourceType": "actor",
+  "id": "87b8895b-6f89-4844-be1a-3d30e0ffcea5",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9ced86d5-36df-40dd-a65b-998a829e8b32",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_449",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "51",
+        "flag": 10,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_UI",
+            "args": {
+              "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+            },
+            "id": "e52a5e46-ef21-40fa-a678-288ecbb0137c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": "",
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "41bd047b-1a1e-4f42-9204-c092944ee4f1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "a93acb9a-48a7-4975-a53f-14c4b2d022f3"
+          }
+        ]
+      },
+      "id": "1b09028e-5445-46be-9414-b4390a58930a"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 12,
+  "y": 11,
+  "_index": 4
+}

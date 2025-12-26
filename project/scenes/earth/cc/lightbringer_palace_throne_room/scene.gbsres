@@ -29,6 +29,17 @@
       "id": "9b0c6669-fdc4-496b-be23-cde79c22dab9"
     },
     {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 203
+        }
+      },
+      "id": "f42d0c5a-2dab-4ca0-a919-81060c502449"
+    },
+    {
       "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
         "variable": "51",
@@ -52,7 +63,7 @@
                   "command": "EVENT_SET_FLAGS",
                   "args": {
                     "variable": "51",
-                    "flag1": false,
+                    "flag1": true,
                     "flag2": false,
                     "flag3": false,
                     "flag4": false,
@@ -67,7 +78,8 @@
                     "flag13": false,
                     "flag14": false,
                     "flag15": false,
-                    "flag16": false
+                    "flag16": false,
+                    "__collapse": true
                   },
                   "id": "50f978a2-fd3f-4ba9-86e4-3ce7632ad5a8"
                 },
@@ -91,7 +103,8 @@
                       "value": 50
                     },
                     "moveType": "vertical",
-                    "useCollisions": false
+                    "useCollisions": false,
+                    "__collapse": true
                   },
                   "id": "08db9a53-ff2f-41c0-bfa1-5fe83f10599e"
                 },
@@ -102,7 +115,8 @@
                     "direction": {
                       "type": "direction",
                       "value": "left"
-                    }
+                    },
+                    "__collapse": true
                   },
                   "id": "f28e0455-73f8-413a-8838-6016273bc4ec"
                 },
@@ -113,14 +127,16 @@
                     "direction": {
                       "type": "direction",
                       "value": "right"
-                    }
+                    },
+                    "__collapse": true
                   },
                   "id": "54320aed-adb9-4917-84a8-dfb1a9e91081"
                 },
                 {
                   "command": "EVENT_PALETTE_SET_UI",
                   "args": {
-                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                    "palette": "4d367670-0b09-4db7-952f-9c740dae7427",
+                    "__collapse": true
                   },
                   "id": "abad8b4a-f1cc-45ee-b73e-cfb30ef9996d"
                 },
@@ -144,7 +160,8 @@
                 {
                   "command": "EVENT_PALETTE_SET_UI",
                   "args": {
-                    "palette": ""
+                    "palette": "",
+                    "__collapse": true
                   },
                   "id": "57fe557d-55d0-4c1a-a30e-6c022a92d462"
                 },

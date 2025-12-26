@@ -24,7 +24,7 @@
     {
       "command": "EVENT_GROUP",
       "args": {
-        "__collapse": false,
+        "__collapse": true,
         "__label": "music event group"
       },
       "children": {
@@ -83,561 +83,1160 @@
       "children": {
         "true": [
           {
-            "command": "EVENT_PALETTE_SET_UI",
+            "command": "EVENT_IF_FLAGS_COMPARE",
             "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+              "variable": "46",
+              "flag": 5,
+              "__collapseElse": false
             },
-            "id": "c892df83-f2b2-427b-bbdb-3a4cedbe8c0c"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare: I put\ncrystal in bed\nso we can talk",
-                "with our parents"
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "afe193e0-af78-410f-90d3-830eed3c96ac"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright: I put\ncrystal in bed\nso we can talk",
+                            "with your's and \nflare's parents"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "b08e80ae-bd6a-49b4-8e37-00862f708efc"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "4574575f-5fd9-4496-bcd9-855f75c8c8b2"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem: before I do\ndid my parents \nhurt you. I know",
+                            "my father is a\nbit rough. he \nmeans well but",
+                            "he does care."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "c9f3d24b-9352-468f-8c2a-815dcaeeb2f2"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "f6bd97e1-99ed-4ba2-8c4c-7e3ab4f2a49b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare:at first \nhe did but your \nmother pulled",
+                            "him off me.I \ndidn't know your\nmom is a mind ",
+                            "mage... now that\nI think about it\ndid your mom use",
+                            "mental magic \nwhen flare first\nmet her on your",
+                            "father."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "9cb62c54-5e1f-441b-87ed-00790e7a0dda"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "a42dff06-9071-4bda-bafa-a41a42fa3fc8"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem: Supposedly\nmom started a\ninvestigation on",
+                            "cedric. \napparently the\nperson that was",
+                            "killed was her \nsister. I never\nknew her that",
+                            "well. I think if\nshe did use that\ntype of magic on",
+                            "dad basically \ntold him to stop\nshe may of read ",
+                            "flare's mind.\nlooking at",
+                            "around that\nperiod of time"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "12ccce9d-d2f2-4275-93fb-54572300191c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "382776de-1cdf-47b7-b17a-c5589a3a372e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright:do you \nhave that \nability?"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "0f449d6e-c151-495b-aef2-616415acb7c4"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "f5a5ed28-f783-4f4e-b6e7-f1eb412d91c2"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:yes,but \nevery time I use\nit..I hate using",
+                            "it. it is like\nsticking your \nhand up someone's",
+                            "rear and control\nthem like a sock\npuppet. but",
+                            "replace hands\nwith heads. some\nlike that but I",
+                            "really don't.\nlets get this\nover with."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "b38a08e4-da19-4f70-8dd7-23418d790072"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "ring...ring...\nring...ring...\nring...ring..."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "16a1874f-a3ce-4588-b8f2-0ed93217d2c8"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "14d8803b-8136-4361-b053-b715b570d389"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "???:hello \nthunder isn't\nhere right now."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "373a8df3-d5e3-4ccb-befb-f37bb2918ab4"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright:hi \nflare's mom.\njem is finally",
+                            "awake and is \nalso here."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "f8e3f668-aaa8-433d-a13d-1c972a53c2c6"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:I don't \nthink we ever\nmet. I am Rain",
+                            "Lightbringer.\nsorry I missed\nyour wedding.",
+                            "I was busy \nbalancing the\nbudget for the",
+                            "year."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "e35a84fc-109c-497d-a26a-9555fab75b90"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "b9c62362-eaab-4ef5-a9eb-278a297a5d0a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:nice to \nfinally meet you\n..."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "d151a801-c269-4c29-97ea-1b24c50f3352"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "37fb259f-1044-456c-bebc-6f85551707f9"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:my only\nissue with you\nis you are a",
+                            "filthy monster.\nthat can't even\n...",
+                            "and YOU KILLED\nMY SON"
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "1bbe8736-3d21-4cdc-b754-47811cc47691"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright:she \ndidn't her \ndaughter did.",
+                            "and she warned\nflare not to\neven attempt ",
+                            "what killed him.\nas crystal lost\ncontrol of her",
+                            "magic and killed\nflare.",
+                            "but please give\njem a chance."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "e42983a3-ae02-4576-92ad-8933c0bb0421"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:fine. I am \nsorry I rarely\ninteract with",
+                            "monsters that \nhaven't tried to\ntake advantage ",
+                            "of me or my \nfamily."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "4ba5a652-b748-4c8e-9d4c-8ea61903f285"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright:jem your \nparents just \nconnected. rain",
+                            "please be on \nyour best \nbehavior",
+                            "I don't want to\ntarnish flare's\nlegacy"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "52cdcd46-a30c-4374-98a3-ceb35881a87c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "22325c72-99ac-4b1f-a432-6f7275aad417"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: hello\nboth me and \ngarnet are here.",
+                            "what is the\noccasion?"
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "a01a4f2b-6b33-4dd0-a86a-071216d2c741"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "39797a98-c6dc-4d62-b20b-176a2d1ccb9d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:I am finally\nback.bright \ntells me you ",
+                            "measured\ncrystal's magic \npower... ",
+                            "why all\nthe secrecy to\nonly family."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "46f1c7e1-66e0-49ac-aff5-03c50135a789"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "7cdbefe2-409b-4392-8f15-6a25737d5bde"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: sadly\nI wish I could\nsay the",
+                            "measurement was\nsmall.your child\nhas a magic ",
+                            "level of 32 and\nif she grows in\nmagic similar to",
+                            "most monsters,it\nis expected to..\n.it is expected",
+                            "to be of level\n64."
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "70e1c2f0-a93a-4dba-8853-f8a5e2a9bb96"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_SPRITE",
+                        "args": {
+                          "palette0": "keep",
+                          "palette1": "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
+                          "palette2": "keep",
+                          "palette3": "keep",
+                          "palette4": "keep",
+                          "palette5": "keep",
+                          "palette6": "keep",
+                          "palette7": "keep"
+                        },
+                        "id": "37129075-6df2-4e64-b4e6-a86826317a8d"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                        },
+                        "id": "22908a1b-ae03-4ee7-b247-952caca4db2f"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "acac4fbb-e7bb-412a-bae9-34e2ff63dbe0"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_SPRITE",
+                        "args": {
+                          "palette0": "keep",
+                          "palette1": "",
+                          "palette2": "keep",
+                          "palette3": "keep",
+                          "palette4": "keep",
+                          "palette5": "keep",
+                          "palette6": "keep",
+                          "palette7": "keep"
+                        },
+                        "id": "6f44d4f2-cf8d-49f1-bef8-532de86b44a7"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "1958b35f-17d2-4c28-8dc9-5c212baa52bf"
+                        },
+                        "id": "8632e25d-c988-4fff-bf34-ddb01b5977fa"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:no one told\nme I had a\ngranddaughter.",
+                            "until today.\nI would of loved\nher."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "8e82f303-07ba-4bbf-bcf6-b4a11657943e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright: flare \ntold thunder \nthat,",
+                            "I think\nthe reason why\nhe kept it a ",
+                            "secret is she \nlooks a lot like\njem.",
+                            "but apparently \nshe has flare's \neyes...",
+                            "I still don't \nget it. her eyes\nare orange not",
+                            "blue."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405",
+                          "__collapse": false
+                        },
+                        "id": "47c108cc-77e8-4b10-b005-b6811787b3a3"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "2a532745-9e94-43ea-a4fa-ac341bbad628"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: most\nfemale monsters\nin both canine",
+                            "and feline sides\nhave a yellow/\norange tint in",
+                            "their eyes until\naround age 50-90\nit is entirely",
+                            "based on \nestrogen levels\npost puberty.",
+                            "orange is \ncommonly mapped\nto blue eyes.",
+                            "also the rarity\nof eye colors \nare flipped from",
+                            "humans. most \nmales after they\nare married wear",
+                            "colored contacts\nuntil their \nwife's eyes ",
+                            "change."
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "a1b78ede-6553-4d4e-bd0b-4e906a3cc531"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "df7d1ea8-5f03-4fec-96fb-1f91847cea39"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: I think \nthose contacts\nlook freaky."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "147d1776-2c6c-4ab9-b01e-bb617706c605"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "4705dbae-c81d-4868-b2cc-5388fef41a27"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: something \nwe agree on.what\nis a magic level",
+                            "why is having \none of 32 bad"
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "2d74ef1b-35b4-4f14-b462-fdfdcc690823"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "3f47fc17-8f7e-4377-8c64-28cafd434e6a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:you know why\nflare is dead.\ncrystal",
+                            "used a magic \nspell. your son \ntaught her and",
+                            "under normal \ncircumstances is\nat most rope burn",
+                            "but her magic is\nbasically a nuke"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "5e0d8b6a-5481-4f75-a558-cec5e77f5515"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "2082f254-b13a-4c87-86f4-b64f79d014f4"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:so that is \nwhat happened I\nthought it was a",
+                            "ship crash."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "fb3cda8a-88d7-4cd3-bf81-a1b84b80b509"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright: that was\nthe excuse given\nto the media.",
+                            "a monster with \nthis much power\nif the solar ",
+                            "council found\nout...they could\nturn her into a",
+                            "weapon."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "c84170d8-07ea-4466-a8bf-548f0b6107ab"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: thunder \njust messaged me\nto tell you jem",
+                            "to meet him in\nour throne room\nafter this.could",
+                            "you bring your \nchild I would\nlike to meet her"
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "f738aede-9e16-4037-9e01-2ad8c790564f"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "bright: sorry I \njust put her to\nsleep. maybe",
+                            "next week."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "7d32adea-cc15-4810-9294-9cec0de0aab2"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: that is a \nshame.well I \nguess maybe next",
+                            "week. well I \nwill get going.\nbye."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "cf8763f6-3448-4dcc-aef8-c4a3531840e1"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "a1fb912b-8b25-41f5-8983-1061739c2798"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Pearlite:same \nhere, but when\nyou have a ",
+                            "chance come to \nour throne room\nwe have to talk.",
+                            "(NOT accesable\nin demo)"
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "0a6ddeca-2bbf-48e7-b6b4-5fb1d1a0079c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "c5205901-0c05-4960-adf0-f36bdeeef7a7"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "(from here on you \ncould either finish\nchapter 3 or well",
+                            "chapter 4 is not \navailable in this \ndemo)"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "1805db8c-6e4b-4917-8669-c6c4ed817fd0"
+                      }
+                    ]
+                  },
+                  "id": "4fb53504-078f-4579-a25a-122e11ae258e"
+                }
               ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+              "false": [
+                {
+                  "command": "EVENT_GROUP",
+                  "args": {
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "c892df83-f2b2-427b-bbdb-3a4cedbe8c0c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare: I put\ncrystal in bed\nso we can talk",
+                            "with our parents"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "57bf8dcb-91d8-451f-8c31-e721345fb0e8"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "73e516df-9413-42ac-9786-eae07f571cbc"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem: before I do\ndid my parents \nhurt you. I know",
+                            "my father is a\nbit rough. he \nmeans well but",
+                            "he does care."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "3b18b496-d04b-4d7b-8058-beed1e9cd9ff"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "8b57b893-61d1-4c8d-a0ce-1d3f23cb5da1"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare:at first \nhe did but your \nmother pulled",
+                            "him off me.I \ndidn't know your\nmom is a mind ",
+                            "mage... now that\nI think about it\ndid your mom use",
+                            "mental magic \nwhen I first met\nher on your",
+                            "father."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "06fa4e1d-ccc3-42c8-b8f0-55bb4980f077"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "d5fe0920-7bd0-4e22-b4c7-71cb032d7abf"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:Supposedly \nmom started a\ninvestigation on",
+                            "cedric. \napparently the\nperson that was",
+                            "killed was her \nsister. I never\nknew her that",
+                            "well. I think if\nshe did use that\ntype of magic on",
+                            "dad basicly told\nhim to stop. she\nmay of read your",
+                            "mind.looking at\naround that\nperiod of time"
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "25e51ada-6869-4934-935c-782dfa0a278f"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "71fd2fd6-b14c-4e9e-99f6-0f627c05ce62"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare:do you \nhave that \nability?"
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "ffca5412-1d2b-451f-886f-4e5b5392ccbe"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "6ce5efd6-99a0-4817-9d01-7602c138a9b6"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:yes,but \nevery time I use\nit..I hate using",
+                            "it. it is like\nsticking your \nhand up someone's",
+                            "rear and control\nthem like a sock\npuppet. but",
+                            "replace hands\nwith heads. some\nlike that but I",
+                            "really don't.\nlets get this\nover with."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "4d81e287-d8ab-4cb5-9fd8-78d28964ee7b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "ring...ring...\nring...ring...\nring...ring..."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "6020fed1-ee56-4e94-aee7-b0d3bec7187e"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "3714a1b1-388e-438a-87dd-0b0cfb7da24b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "???:hello \nthunder isn't\nhere right now."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "857bab3a-9bea-4ef2-afce-8583cebc9cc5"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare:hi mom.\njem is finally\nawake. jem is",
+                            "also here."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "0d60c7de-f70f-4bef-a06b-e85bdb6c7020"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:I don't \nthink we ever\nmet. I am Rain",
+                            "Lightbringer.\nsorry I missed\nyour wedding.",
+                            "I was busy \nbalancing the\nbudget for the",
+                            "year."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "d7ef06e6-8ab2-48c9-a87f-c6209ed12f6f"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "08bd9767-37f8-47a5-8e29-701612392580"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:nice to \nfinally meet you\n..."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "61ad3e4b-c9f6-4cb3-bdcd-40d929925e18"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "085f478c-0063-47c1-936a-0a546651a0f7"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:my only\nissue with you\nis you are a",
+                            "filthy monster.\nthat can't even\n..."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "2284cb1f-5516-47fb-9a6d-15b6bc4ffc1a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare:mom if you\nhave a problem \nwith who I fall",
+                            "in love with you\nattack me. also\nshe does take",
+                            "showers. not all\nmonsters are \ncruel.you should",
+                            "give them a \nchance."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "07391cd7-6bfd-4419-bf09-98e53774d922"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:fine. I am \nsorry I rarely\ninteract with",
+                            "monsters that \nhaven't tried to\ntake advantage ",
+                            "of me or my \nfamily."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "b7756e0e-f5ac-41f8-b4f6-e5c34c6f7a98"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Flare: jem your \nparents just \nconnected mom be",
+                            "on your best \nbehavior please.\nI don't want to",
+                            "start a war."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "43b828e5-d8c6-4df1-bc15-39717a37acf5"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "ced809b4-bfec-4f95-aa4e-63baa07ac859"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: hello\nboth me and \ngarnet are here.",
+                            "what is the\noccasion?"
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "27ad82ce-d6d7-4fbb-ab7f-7a064f64a700"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "63ca0422-dcaf-401d-b94e-6c09682260d0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:I am finally\nback.flare tells\nme you measured",
+                            "crystal's magic \npower... why all\nthe secrecy to",
+                            "only family."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "62ca38a8-4851-46f8-9517-f764316c5c7c"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "91a3d905-1728-46c5-9048-7c7941cf0c38"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: sadly\nI wish I could\nsay the",
+                            "measurement was\nsmall.your child\nhas a magic ",
+                            "level of 32 and\nif she grows in\nmagic similar to",
+                            "most monsters,it\nis expected to..\n.it is expected",
+                            "to be of level\n64."
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "04061624-3b0f-4862-b328-50112bdd2836"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_SPRITE",
+                        "args": {
+                          "palette0": "keep",
+                          "palette1": "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
+                          "palette2": "keep",
+                          "palette3": "keep",
+                          "palette4": "keep",
+                          "palette5": "keep",
+                          "palette6": "keep",
+                          "palette7": "keep"
+                        },
+                        "id": "13668ef7-ab04-4ab0-b011-7d964e56ade4"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EMOTE",
+                        "args": {
+                          "actorId": "$self$",
+                          "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                        },
+                        "id": "fc610a71-eb0a-4cd4-a33f-b8b8dbaf62bd"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "c9734d8b-c19a-46e5-8942-89997c8f6563"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_SPRITE",
+                        "args": {
+                          "palette0": "keep",
+                          "palette1": "",
+                          "palette2": "keep",
+                          "palette3": "keep",
+                          "palette4": "keep",
+                          "palette5": "keep",
+                          "palette6": "keep",
+                          "palette7": "keep"
+                        },
+                        "id": "d5f40468-8447-4369-85b0-4429d103bbc9"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "7697be74-d207-4392-bbe7-f5e7fb10772d"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:neither of \nyou told me I \nhad a",
+                            "granddaughter.I\nwould of loved \nher."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "0e8fd492-ab50-4f71-b51d-90025fafbe68"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare: I told \ndad that,I think\nthe reason why",
+                            "he kept it a \nsecret is she \nlooks a lot like",
+                            "jem. but \napparently she \nhas my eyes...",
+                            "I still don't \nget it. her eyes\nare orange not",
+                            "blue."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "afca6729-2692-4313-8104-b701f27a1152"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "91e154e5-97c9-4938-9811-b02cf5f210cc"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "pearlite: most\nfemale monsters\nin both canine",
+                            "and feline sides\nhave a yellow/\norange tint in",
+                            "their eyes until\naround age 50-90\nit is entirely",
+                            "based on \nestrogen levels\npost puberty.",
+                            "orange is \ncommonly mapped\nto blue eyes.",
+                            "also the rarity\nof eye colors \nare flipped from",
+                            "humans. most \nmales after they\nare married wear",
+                            "colored contacts\nuntil their \nwife's eyes ",
+                            "change."
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "34633043-7916-4b0f-a314-e3a6b439428f"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "4530373e-0acc-4d21-bb6b-1fdec879a384"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Jem: I think \nthose contacts\nlook freaky."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "f695d04a-85bb-45c4-b38d-3f182a24c415"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "56054e2b-9043-4073-82f3-2a966fd985ff"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: something \nwe agree on.what\nis a magic level",
+                            "why is having \none of 32 bad"
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "72410e06-0ad0-4d2c-bd99-3e1be9b783eb"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "8699c8ab-ea12-4540-9dae-c2ea81f0211e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "jem:you know why\nI was in the \nhospital.crystal",
+                            "used a magic \nspell. your son \ntaught her and",
+                            "under normal \ncircumstances is\nat most rope burn",
+                            "but her magic is\nbasicly a nuke."
+                          ],
+                          "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                        },
+                        "id": "c59051fd-bdac-4a4a-b939-b295ffa28372"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
+                        },
+                        "id": "abf1d860-f764-4d9d-8c0b-d74dd6fb2e8b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain:so that is \nwhat happened I\nthaught it was a",
+                            "ship crash."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "392b1c7a-7a1a-459d-b6fd-9ca77916f622"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare: that was\nthe excuse given\nto the media.",
+                            "a monster with \nthis much power\nif the solar ",
+                            "council found\nout...they could\nturn her into a",
+                            "weapon."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "9c8ccd20-7399-44a0-a72a-32e5f077a4e1"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: thunder \njust messaged me\nto tell you jem",
+                            "to meet him in\nour throne room\nafter this.could",
+                            "you bring your \nchild I would\nlike to meet her"
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "a222d166-5d07-4225-b759-59f27c71f4df"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "flare:sorry I \njust put her to\nsleep. maybe",
+                            "next week."
+                          ],
+                          "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
+                        },
+                        "id": "c490ad71-0a57-47f9-babb-5d8795c497c1"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "rain: that is a \nshame.well I \nguess maybe next",
+                            "week. well I \nwill get going.\nbye."
+                          ],
+                          "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
+                        },
+                        "id": "7f2a45af-d3f4-4808-941f-3ac6321c9a33"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": "dmg"
+                        },
+                        "id": "d56d41d6-dd22-44cb-94d6-6bf17260c4a9"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Pearlite:same \nhere, but when\nyou have a ",
+                            "chance come to \nour throne room\nwe have to talk.",
+                            "(NOT accesable\nin demo)"
+                          ],
+                          "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
+                        },
+                        "id": "2256801d-bf11-4557-a4f0-d43261c10b8b"
+                      },
+                      {
+                        "command": "EVENT_PALETTE_SET_UI",
+                        "args": {
+                          "palette": ""
+                        },
+                        "id": "848db295-ebcb-4187-be0f-1dd172898cea"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "(from here on you \ncould either finish\nchapter 3 or well",
+                            "chapter 4 is not \navailable in this \ndemo)"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "537e782b-8ec8-4111-9bfe-13a993dc0a04"
+                      }
+                    ]
+                  },
+                  "id": "ef14b3d0-1eba-4207-a74b-2426f56362d5"
+                }
+              ]
             },
-            "id": "57bf8dcb-91d8-451f-8c31-e721345fb0e8"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "73e516df-9413-42ac-9786-eae07f571cbc"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem: before I do\ndid my parents \nhurt you. I know",
-                "my father is a\nbit rough. he \nmeans well but",
-                "he does care."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "3b18b496-d04b-4d7b-8058-beed1e9cd9ff"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "8b57b893-61d1-4c8d-a0ce-1d3f23cb5da1"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare:at first \nhe did but your \nmother pulled",
-                "him off me.I \ndidn't know your\nmom is a mind ",
-                "mage... now that\nI think about it\ndid your mom use",
-                "mental magic \nwhen I first met\nher on your",
-                "father."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "06fa4e1d-ccc3-42c8-b8f0-55bb4980f077"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "d5fe0920-7bd0-4e22-b4c7-71cb032d7abf"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem:supposidly \nmom started a\ninvestigation on",
-                "cedric. \napparently the\nperson that was",
-                "killed was her \nsister. I never\nknew her that",
-                "well. I think if\nshe did use that\ntype of magic on",
-                "dad basicly told\nhim to stop. she\nmay of read your",
-                "mind.looking at\naround that\nperiod of time"
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "25e51ada-6869-4934-935c-782dfa0a278f"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "71fd2fd6-b14c-4e9e-99f6-0f627c05ce62"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare:do you \nhave that \nability?"
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "ffca5412-1d2b-451f-886f-4e5b5392ccbe"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "6ce5efd6-99a0-4817-9d01-7602c138a9b6"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem:yes,but \nevery time I use\nit..I hate using",
-                "it. it is like\nsticking your \nhand up someone's",
-                "rear and control\nthem like a sock\npuppet. but",
-                "replace hands\nwith heads. some\nlike that but I",
-                "really don't.\nlets get this\nover with."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "4d81e287-d8ab-4cb5-9fd8-78d28964ee7b"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "ring...ring...\nring...ring...\nring...ring..."
-              ],
-              "avatarId": ""
-            },
-            "id": "6020fed1-ee56-4e94-aee7-b0d3bec7187e"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "3714a1b1-388e-438a-87dd-0b0cfb7da24b"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "???:hello \nthunder isn't\nhere right now."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "857bab3a-9bea-4ef2-afce-8583cebc9cc5"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare:hi mom.\njem is finally\nawake. jem is",
-                "also here."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "0d60c7de-f70f-4bef-a06b-e85bdb6c7020"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain:I don't \nthink we ever\nmet. I am Rain",
-                "Lightbringer.\nsorry I missed\nyour wedding.",
-                "I was busy \nbalancing the\nbudget for the",
-                "year."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "d7ef06e6-8ab2-48c9-a87f-c6209ed12f6f"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "08bd9767-37f8-47a5-8e29-701612392580"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem:nice to \nfinally meet you\n..."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "61ad3e4b-c9f6-4cb3-bdcd-40d929925e18"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "085f478c-0063-47c1-936a-0a546651a0f7"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain:my only\nissue with you\nis you are a",
-                "filthy monster.\nthat can't even\n..."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "2284cb1f-5516-47fb-9a6d-15b6bc4ffc1a"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Flare:mom if you\nhave a problem \nwith who I fall",
-                "in love with you\nattack me. also\nshe does take",
-                "showers. not all\nmonsters are \ncruel.you should",
-                "give them a \nchance."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "07391cd7-6bfd-4419-bf09-98e53774d922"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain:fine. I am \nsorry I rarely\ninteract with",
-                "monsters that \nhaven't tried to\ntake advantage ",
-                "of me or my \nfamily."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "b7756e0e-f5ac-41f8-b4f6-e5c34c6f7a98"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Flare: your \nparents just \nconnected mom be",
-                "on your best \nbehavior please.\nI don't want to",
-                "start a war."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "43b828e5-d8c6-4df1-bc15-39717a37acf5"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "dmg"
-            },
-            "id": "ced809b4-bfec-4f95-aa4e-63baa07ac859"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "pearlite: hello\nboth me and \ngarnet are here.",
-                "what is the\noccasion?"
-              ],
-              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
-            },
-            "id": "27ad82ce-d6d7-4fbb-ab7f-7a064f64a700"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "63ca0422-dcaf-401d-b94e-6c09682260d0"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem:I am finally\nback.flare tells\nme you measured",
-                "crystal's magic \npower... why all\nthe secrecy to",
-                "only family."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "62ca38a8-4851-46f8-9517-f764316c5c7c"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "dmg"
-            },
-            "id": "91a3d905-1728-46c5-9048-7c7941cf0c38"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "pearlite: sadly\nI wish I could\nsay the",
-                "measurement was\nsmall.your child\nhas a magic ",
-                "level of 32 and\nif she grows in\nmagic similar to",
-                "most monsters,it\nis expected to..\n.it is expected",
-                "to be of level\n64."
-              ],
-              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
-            },
-            "id": "04061624-3b0f-4862-b328-50112bdd2836"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_SPRITE",
-            "args": {
-              "palette0": "keep",
-              "palette1": "6ed39e6f-bcd7-4200-b3f1-caf6b8d95ef7",
-              "palette2": "keep",
-              "palette3": "keep",
-              "palette4": "keep",
-              "palette5": "keep",
-              "palette6": "keep",
-              "palette7": "keep"
-            },
-            "id": "13668ef7-ab04-4ab0-b011-7d964e56ade4"
-          },
-          {
-            "command": "EVENT_ACTOR_EMOTE",
-            "args": {
-              "actorId": "$self$",
-              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
-            },
-            "id": "fc610a71-eb0a-4cd4-a33f-b8b8dbaf62bd"
-          },
-          {
-            "command": "EVENT_WAIT",
-            "args": {
-              "time": 0.2,
-              "frames": 30
-            },
-            "id": "c9734d8b-c19a-46e5-8942-89997c8f6563"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_SPRITE",
-            "args": {
-              "palette0": "keep",
-              "palette1": "",
-              "palette2": "keep",
-              "palette3": "keep",
-              "palette4": "keep",
-              "palette5": "keep",
-              "palette6": "keep",
-              "palette7": "keep"
-            },
-            "id": "d5f40468-8447-4369-85b0-4429d103bbc9"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "7697be74-d207-4392-bbe7-f5e7fb10772d"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain:neither of \nyou told me I \nhad a",
-                "granddaughter.I\nwould of loved \nher."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "0e8fd492-ab50-4f71-b51d-90025fafbe68"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare: I told \ndad that,I think\nthe reason why",
-                "he kept it a \nsecret is she \nlooks a lot like",
-                "jem. but \napparently she \nhas my eyes...",
-                "I still don't \nget it. her eyes\nare orange not",
-                "blue."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "afca6729-2692-4313-8104-b701f27a1152"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "dmg"
-            },
-            "id": "91e154e5-97c9-4938-9811-b02cf5f210cc"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "pearlite: most\nfemale monsters\nin both canine",
-                "and feline sides\nhave a yellow/\norange tint in",
-                "their eyes until\naround age 50-90\nit is entirely",
-                "based on \nestrogen levels\npost puberty.",
-                "orange is \ncommonly mapped\nto blue eyes.",
-                "also the rarity\nof eye colors \nare flipped from",
-                "humans. most \nmales after they\nare married wear",
-                "colored contacts\nuntil their \nwife's eyes ",
-                "change."
-              ],
-              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
-            },
-            "id": "34633043-7916-4b0f-a314-e3a6b439428f"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "4530373e-0acc-4d21-bb6b-1fdec879a384"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Jem: I think \nthose contacts\nlook freaky."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "f695d04a-85bb-45c4-b38d-3f182a24c415"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "56054e2b-9043-4073-82f3-2a966fd985ff"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain: something \nwe agree on.what\nis a magic level",
-                "why is having \none of 32 bad"
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "72410e06-0ad0-4d2c-bd99-3e1be9b783eb"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "8699c8ab-ea12-4540-9dae-c2ea81f0211e"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "jem:you know why\nI was in the \nhospital.crystal",
-                "used a magic \nspell. your son \ntaught her and",
-                "under normal \ncircumstances is\nat most rope burn",
-                "but her magic is\nbasicly a nuke."
-              ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
-            },
-            "id": "c59051fd-bdac-4a4a-b939-b295ffa28372"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
-            },
-            "id": "abf1d860-f764-4d9d-8c0b-d74dd6fb2e8b"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain:so that is \nwhat happened I\nthaught it was a",
-                "ship crash."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "392b1c7a-7a1a-459d-b6fd-9ca77916f622"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare: that was\nthe excuse given\nto the media.",
-                "a monster with \nthis much power\nif the solar ",
-                "council found\nout...they could\nturn her into a",
-                "weapon."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "9c8ccd20-7399-44a0-a72a-32e5f077a4e1"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain: thunder \njust messaged me\nto tell you jem",
-                "to meet him in\nour throne room\nafter this.could",
-                "you bring your \nchild I would\nlike to meet her"
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "a222d166-5d07-4225-b759-59f27c71f4df"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "flare:sorry I \njust put her to\nsleep. maybe",
-                "next week."
-              ],
-              "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
-            },
-            "id": "c490ad71-0a57-47f9-babb-5d8795c497c1"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "rain: that is a \nshame.well I \nguess maybe next",
-                "week. well I \nwill get going.\nbye."
-              ],
-              "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
-            },
-            "id": "7f2a45af-d3f4-4808-941f-3ac6321c9a33"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": "dmg"
-            },
-            "id": "d56d41d6-dd22-44cb-94d6-6bf17260c4a9"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Pearlite:same \nhere, but when\nyou have a ",
-                "chance come to \nour throne room\nwe have to talk.",
-                "(NOT accesable\nin demo)"
-              ],
-              "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
-            },
-            "id": "2256801d-bf11-4557-a4f0-d43261c10b8b"
-          },
-          {
-            "command": "EVENT_PALETTE_SET_UI",
-            "args": {
-              "palette": ""
-            },
-            "id": "848db295-ebcb-4187-be0f-1dd172898cea"
-          },
-          {
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "(from here on you \ncould either finish\nchapter 3 or well",
-                "chapter 4 is not \navailable in this \ndemo)"
-              ],
-              "avatarId": ""
-            },
-            "id": "537e782b-8ec8-4111-9bfe-13a993dc0a04"
+            "id": "99f43e21-e2cf-4849-a70c-6bf5a278a77b"
           }
         ],
         "false": []

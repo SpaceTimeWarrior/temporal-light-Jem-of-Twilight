@@ -1,0 +1,55 @@
+{
+  "_resourceType": "actor",
+  "id": "9b084c0b-f789-4dd2-ab30-e1f7c9fc412f",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5e62e215-4c65-4a55-aab6-cedab8fc520a",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_838",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "train to solar \ncouncil courthouse",
+          "ID check\nName:Jem \nLightbringer",
+          "your fare is free\nsince you are \nroyalty"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8d9f5460-a9c8-433f-b69a-0e0a39014c6e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 24,
+  "y": 8,
+  "_index": 2
+}

@@ -15,7 +15,69 @@
   "collisionGroup": "",
   "prefabScriptOverrides": {},
   "symbol": "actor_1067",
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Comic books line\nthe shelves.",
+          "They are written\nin a language\nthat is long since",
+          "dead. I believe it\nis called Japanese\nbut I don't know",
+          "do you still want\nto read it"
+        ],
+        "avatarId": ""
+      },
+      "id": "30b34316-2d15-4504-acd8-07f17b46488c"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "read the unknown",
+        "option2": "don't read",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
+      },
+      "id": "62e1fd5c-bcb2-4d66-a102-b7677642e774"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!secret of magic\n    chapter 1\nmagic is in all ",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!sorts of things\nthere are two\ntypes of magic",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!manipulation and\ncreation.\nmanipulation is to",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!use or manipulate\na element whereas\ncreation changes",
+          "!F:4082dfa9-2504-4646-9742-e26b370ef665!a element\ninto another"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "628438be-b6da-4270-bd4d-a443c6b702a3"
+    }
+  ],
   "startScript": [],
   "updateScript": [],
   "hit1Script": [],

@@ -1,0 +1,24 @@
+{
+  "_resourceType": "scene",
+  "id": "98182976-c520-478f-8e4c-c407a0fd9692",
+  "_index": 165,
+  "type": "TOPDOWN",
+  "name": "eather/sc/courthouse-courtroom",
+  "symbol": "scene_169",
+  "x": 7064,
+  "y": 1704,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
+  "tilesetId": "",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -124,7 +124,8 @@
             "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
             "args": {
               "actorId": "$self$",
-              "speed": 255
+              "speed": 255,
+              "__collapse": true
             },
             "id": "ca713e41-cbd4-48d0-9b7a-711398634f8e"
           },
@@ -137,7 +138,8 @@
                 "the tiles are \ncemented to the \nfloor. f@#$%.",
                 "I should give \nthem a piece of\nmy mind."
               ],
-              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+              "__collapse": true
             },
             "id": "527b22eb-40b4-4fe0-a7ed-d42756a6800f"
           },
@@ -159,7 +161,8 @@
                 "move with ^*<> \nbuttons\ntoggle run with #",
                 "and open game menu\nwith start"
               ],
-              "avatarId": ""
+              "avatarId": "",
+              "__collapse": true
             },
             "id": "c04a8f07-0f00-4cf0-af1d-56cfc2475d4d"
           },
@@ -167,7 +170,8 @@
             "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
             "args": {
               "actorId": "$self$",
-              "speed": 15
+              "speed": 15,
+              "__collapse": true
             },
             "id": "293e482e-5da8-4188-8ab2-67d4af48d06f"
           }

@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "f010c88b-8bb7-4e34-a5aa-facdbcf6c41c",
+  "_index": 0,
+  "symbol": "actor_813",
+  "prefabId": "",
+  "name": "",
+  "x": 6,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Trial 3: Trial by\n      fire",
+          " limited acces to\n magic is allowed",
+          "if you take damage\nyou will be reset\nto this sign"
+        ],
+        "avatarId": ""
+      },
+      "id": "ee7ebfdf-dcf4-4280-a376-c80bca1878dd"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

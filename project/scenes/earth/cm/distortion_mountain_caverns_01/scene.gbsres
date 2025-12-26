@@ -35,6 +35,17 @@
         "speed": 1
       },
       "id": "fe11821c-b05e-4bfe-8e11-9cc30d93afb0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 217
+        }
+      },
+      "id": "3c10a682-5f8c-4083-b602-f4a65e9f5f9d"
     }
   ],
   "playerHit1Script": [],

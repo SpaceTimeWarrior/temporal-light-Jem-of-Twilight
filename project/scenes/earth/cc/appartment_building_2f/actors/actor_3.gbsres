@@ -1,0 +1,109 @@
+{
+  "_resourceType": "actor",
+  "id": "e68eccbc-1613-4c25-b3d2-dd62f2383243",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "aac0f085-d37b-4dc4-9403-363a5acbb7fa",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_1045",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "books on \nmagiscript"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "cdd2f151-fccc-4ad6-a7a4-a8084efc75d7"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "read",
+        "falseText": "don't"
+      },
+      "id": "cf911363-d50b-4771-a633-a0b974b9cbac"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "magiscript is a \nform of coded \nenglish created",
+                "during the first\nhuman-monster war\nthis is a single",
+                "case language.\nbelow is a table\nof common symbols",
+                "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!a !F:4082dfa9-2504-4646-9742-e26b370ef665!a    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!b !F:4082dfa9-2504-4646-9742-e26b370ef665!b   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!c !F:4082dfa9-2504-4646-9742-e26b370ef665!c\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!d !F:4082dfa9-2504-4646-9742-e26b370ef665!d    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!e !F:4082dfa9-2504-4646-9742-e26b370ef665!e   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!f !F:4082dfa9-2504-4646-9742-e26b370ef665!f\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!g !F:4082dfa9-2504-4646-9742-e26b370ef665!g    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!h !F:4082dfa9-2504-4646-9742-e26b370ef665!h   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!i !F:4082dfa9-2504-4646-9742-e26b370ef665!i",
+                "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!j !F:4082dfa9-2504-4646-9742-e26b370ef665!j    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!k !F:4082dfa9-2504-4646-9742-e26b370ef665!k   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!l !F:4082dfa9-2504-4646-9742-e26b370ef665!l\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!m !F:4082dfa9-2504-4646-9742-e26b370ef665!m    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!n !F:4082dfa9-2504-4646-9742-e26b370ef665!n   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!o !F:4082dfa9-2504-4646-9742-e26b370ef665!o\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!p !F:4082dfa9-2504-4646-9742-e26b370ef665!p    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!q !F:4082dfa9-2504-4646-9742-e26b370ef665!q   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!r !F:4082dfa9-2504-4646-9742-e26b370ef665!r",
+                "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!s !F:4082dfa9-2504-4646-9742-e26b370ef665!s    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!t !F:4082dfa9-2504-4646-9742-e26b370ef665!t   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!u !F:4082dfa9-2504-4646-9742-e26b370ef665!u\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!v !F:4082dfa9-2504-4646-9742-e26b370ef665!v    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!w !F:4082dfa9-2504-4646-9742-e26b370ef665!x   !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!y !F:4082dfa9-2504-4646-9742-e26b370ef665!y\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!z !F:4082dfa9-2504-4646-9742-e26b370ef665!z !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!numbers: !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!0 !F:4082dfa9-2504-4646-9742-e26b370ef665!0",
+                "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!1 !F:4082dfa9-2504-4646-9742-e26b370ef665!1    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!2 !F:4082dfa9-2504-4646-9742-e26b370ef665!2    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!3 !F:4082dfa9-2504-4646-9742-e26b370ef665!3 \n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!4 !F:4082dfa9-2504-4646-9742-e26b370ef665!4    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!5 !F:4082dfa9-2504-4646-9742-e26b370ef665!5    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!6 !F:4082dfa9-2504-4646-9742-e26b370ef665!6\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!7 !F:4082dfa9-2504-4646-9742-e26b370ef665!7    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!8 !F:4082dfa9-2504-4646-9742-e26b370ef665!8    !F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!9 !F:4082dfa9-2504-4646-9742-e26b370ef665!9"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2e787f22-3123-4bae-b580-08d7981cedde"
+          }
+        ],
+        "false": []
+      },
+      "id": "60004a87-cf56-41bf-92cd-527c95847569"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 60,
+  "y": 11,
+  "_index": 8
+}

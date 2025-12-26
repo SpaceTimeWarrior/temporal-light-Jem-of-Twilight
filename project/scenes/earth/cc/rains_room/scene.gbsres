@@ -5,16 +5,34 @@
   "type": "TOPDOWN",
   "name": "earth/cc/Rain's room",
   "symbol": "scene_176",
-  "x": 1352.2000122070312,
-  "y": 3425.2001953125,
+  "x": 1352,
+  "y": 3344,
   "width": 20,
   "height": 18,
   "backgroundId": "f979f3ea-b5ae-4271-879a-121f621513f5",
   "tilesetId": "",
   "paletteIds": [],
-  "spritePaletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 207
+        }
+      },
+      "id": "063156e6-efb5-48fc-be8d-7886967852a7"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

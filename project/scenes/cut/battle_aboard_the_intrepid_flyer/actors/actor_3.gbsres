@@ -34,7 +34,7 @@
         "variable": "35",
         "operator": "!=",
         "comparator": "0",
-        "__collapseElse": true,
+        "__collapseElse": false,
         "condition": {
           "type": "ne",
           "valueA": {

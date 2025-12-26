@@ -1,0 +1,57 @@
+{
+  "_resourceType": "trigger",
+  "id": "0870970c-9d6c-4f0a-aa67-c6c64e6fdca7",
+  "name": "",
+  "prefabId": "",
+  "x": 22,
+  "y": 68,
+  "symbol": "trigger_513",
+  "prefabScriptOverrides": {},
+  "width": 3,
+  "height": 3,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": false,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "looks like part\nof a Receipt some \nhas been smudged",
+                "Name:root b---hop-\nprice:6500nule"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "3e10db23-fb0b-429c-81ab-c3af78cc923c"
+          }
+        ]
+      },
+      "id": "321bda6d-bac3-4f32-9412-94411c8f056e"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

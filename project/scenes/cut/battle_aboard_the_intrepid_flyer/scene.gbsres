@@ -57,6 +57,28 @@
         "true": [],
         "false": [
           {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+            },
+            "id": "1bffca1a-702e-4034-80a1-7d0ee56b1d98"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1",
+              "x": {
+                "type": "number",
+                "value": 20
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "dca3e04b-3cc2-4370-810c-40bb89759bd4"
+          },
+          {
             "command": "EVENT_PALETTE_SET_UI",
             "args": {
               "palette": "4d367670-0b09-4db7-952f-9c740dae7427"
@@ -67,7 +89,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Flare:Is it ok\nif I pilot this"
+                "Flare: Is it ok\nif I pilot this"
               ],
               "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
             },
@@ -84,11 +106,18 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "jem:yes"
+                "Jem: yes"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
             "id": "14e4e31c-eef3-4aa5-8d83-ff9aecd72f45"
+          },
+          {
+            "command": "EVENT_ACTOR_STOP_UPDATE",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+            },
+            "id": "ae506cf7-5e20-45e1-bdf8-bfaeecf1ec2a"
           },
           {
             "command": "EVENT_ACTOR_MOVE_TO",
@@ -108,12 +137,19 @@
             "id": "9045ae5c-b5a9-425a-b805-b647cdc714ba"
           },
           {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+            },
+            "id": "2c01909d-6dc0-4e3c-80f0-60df9c2ad5e2"
+          },
+          {
             "command": "EVENT_ACTOR_MOVE_TO",
             "args": {
-              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1",
               "x": {
                 "type": "number",
-                "value": 32
+                "value": 33
               },
               "y": {
                 "type": "number",
@@ -128,14 +164,14 @@
             "command": "EVENT_ACTOR_SET_SPRITE",
             "args": {
               "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c",
-              "spriteSheetId": "46d001e2-75f4-4bfc-b3a1-426edcc97aa6"
+              "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77"
             },
             "id": "a8eaa127-9178-4b31-b64d-01756313b211"
           },
           {
             "command": "EVENT_ACTOR_SET_DIRECTION",
             "args": {
-              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1",
               "direction": {
                 "type": "direction",
                 "value": "down"
@@ -156,13 +192,6 @@
               "palette7": "keep"
             },
             "id": "89f1609a-0269-4260-abca-91d13903088a"
-          },
-          {
-            "command": "EVENT_ACTOR_STOP_UPDATE",
-            "args": {
-              "actorId": "0d70dd2e-c417-4921-9715-82e535c9050c"
-            },
-            "id": "4f0cc30c-6ec9-4b74-b985-569268e0370b"
           },
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
@@ -220,38 +249,18 @@
             "id": "5b990f2b-a8ba-4d5e-acaf-5549ecc02d1a"
           },
           {
-            "command": "EVENT_ACTOR_HIDE",
-            "args": {
-              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c",
-              "__collapse": false
-            },
-            "id": "fdf7de50-ade5-4606-a3d3-c5acdd32e4d1"
-          },
-          {
-            "command": "EVENT_ACTOR_STOP_UPDATE",
-            "args": {
-              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c"
-            },
-            "id": "6f29b627-7669-405f-9f53-b9de75ad9740"
-          },
-          {
-            "command": "EVENT_ACTOR_DEACTIVATE",
-            "args": {
-              "actorId": "ccdf2044-1738-4b3d-9dc9-884d4d7f068c"
-            },
-            "id": "846d94fc-7090-447e-81c2-f4e5c1d18562"
-          },
-          {
             "command": "EVENT_ACTOR_ACTIVATE",
             "args": {
-              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1",
+              "__comment": true
             },
             "id": "002709b4-7193-4fce-b2dc-d4f11ad0a72f"
           },
           {
             "command": "EVENT_ACTOR_SHOW",
             "args": {
-              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1"
+              "actorId": "3c5d8048-a541-4697-b516-50ea67f916b1",
+              "__comment": true
             },
             "id": "99af3737-34ef-4a5f-aa9b-6139f7392d3b"
           },
@@ -349,5 +358,5 @@
       "id": "3e5059cc-9809-4432-9a0a-e49d80246cb7"
     }
   ],
-  "collisions": "00141+0f8+0032+0f!006+0f!0030+0f3+006+0f5+002c+0f!00c+0f!002c+0f!00c+0f!002c+0f!009+0f2+00!0f!002c+0f!008+0f!002+0f2+002c+0f!008+0f!002+0f2+002c+0f!009+0f2+00!0f3+002a+0f!00e+0f!002a+0f!00e+0f3+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00b+0f6+0028+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f6+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00e+0f2+0029+0f!00e+0f!002a+0f!009+0f2+00!0f3+002a+0f!008+0f5+002c+0f!008+0f5+002c+0f!009+0f2+00!0f!002c+0f!00c+0f!002c+0f!00c+0f!002c+0f3+006+0f4+002f+0f!006+0f!0032+0f8+00461+"
+  "collisions": "00141+0f8+0032+0f!006+0f!0030+0f3+006+0f5+002c+0f!00c+0f!002c+0f!00c+0f!002c+0f!009+0f2+00!0f!002c+0f!008+0f!002+0f2+002c+0f!008+0f!002+0f2+002c+0f!009+0f2+00!0f3+002a+0f!00e+0f!002a+0f!00e+0f3+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00b+0f6+0028+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f!002d+0f!00b+0f6+0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!0010+0f!0028+0f!00e+0f2+0029+0f!00e+0f!002a+0f!009+0f2+00!0f3+002a+0f!008+0f5+002c+0f!008+0f5+002c+0f!009+0f2+00!0f!002c+0f!00c+0f!002c+0f!00c+0f!002c+0f3+006+0f4+002f+0f!006+0f!0032+0f8+003dd+0f!0083+"
 }

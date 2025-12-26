@@ -38,19 +38,6 @@
       "id": "ee649e54-3323-41be-bf4b-2b8bf693cda6"
     },
     {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Demo End...now \nstarting a first \nlook of chapter 3",
-          "saving from here \non is not \nreccomended as",
-          "everything past \nthis point is \nsubject to change."
-        ],
-        "avatarId": "",
-        "__section": "text"
-      },
-      "id": "602163f4-cd9c-411d-9374-dcf151505d21"
-    },
-    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "30",

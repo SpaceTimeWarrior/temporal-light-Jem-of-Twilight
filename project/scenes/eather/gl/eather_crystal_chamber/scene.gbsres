@@ -5,13 +5,15 @@
   "type": "TOPDOWN",
   "name": "eather/gl/Eather Crystal chamber",
   "symbol": "scene_130",
-  "x": 675.7999822443182,
-  "y": 5414.515151515152,
+  "x": 848,
+  "y": 4888,
   "width": 20,
   "height": 18,
   "backgroundId": "7afbe882-6aef-4900-8ec1-cd6d7ccf4681",
   "tilesetId": "",
-  "paletteIds": [],
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [

@@ -25,7 +25,8 @@
             "args": {
               "variable": "51",
               "flag": 9,
-              "__collapseElse": false
+              "__collapseElse": false,
+              "__collapse": false
             },
             "children": {
               "true": [
@@ -52,7 +53,7 @@
                             {
                               "command": "EVENT_GROUP",
                               "args": {
-                                "__collapse": true
+                                "__collapse": false
                               },
                               "children": {
                                 "true": [
@@ -808,7 +809,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "you could hear \nfaint wispering \nbut you can't",
+                "you could hear \nfaint whispering \nbut you can't",
                 "tell what is being\nsaid"
               ],
               "avatarId": ""
@@ -928,13 +929,13 @@
               "text": [
                 "blair: if I am\nnot mistaken\nsune gave you a",
                 "time crystal\nessence. having\none",
-                "theoretically\nmitigates the \nnegitive effects",
+                "theoretically\nmitigates the \nnegative effects",
                 "of other \nuniverses.",
                 "you asked why \nyou this \nuniverse's time",
                 "crystal stated \nyou are part of\nthe prophecy.",
-                "you are to setup\nthe resitance \nagainst a dark",
+                "you are to setup\nthe resistance\nagainst a dark",
                 "being that has \nreawakened. a \nbeing that if it",
-                "isn't stoped \nwill destroy the\nmultiverse which",
+                "isn't stopped \nwill destroy the\nmultiverse which",
                 "includes this \none. I am not \ncertain but ",
                 "cedric \nburnfeather may\nbe foolishly",
                 "trying to stop\nthe prophecy"
@@ -960,8 +961,8 @@
             "args": {
               "text": [
                 "sune: for the \nprophecy what \nwould happen if",
-                "the main \nprotagnist where\nto dissapear",
-                "before the \nclimax of a\nvideo game.and",
+                "the main \nprotagonist \nwhere to \ndisappear",
+                "before the \nclimax of a\nvideo game. and",
                 "as for the \nlanguage it is a\nlong dead",
                 "language of \njapanese. if you\ncould get a",
                 "digital storage \ndevice or a \nempty book I can",
@@ -978,8 +979,8 @@
                 "jem: is there \nany way to help\ncontrol my",
                 "daughter's power\nI know monsters\nused to be much",
                 "more powerful in\nthe past and \nmight know ",
-                "better ways of \nteaching magic\ncontol",
-                "jem wispering:\nI prefer not to \ndie doing it"
+                "better ways of \nteaching magic\ncontrol",
+                "jem whispering:\nI prefer not to \ndie doing it"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
@@ -990,7 +991,7 @@
             "args": {
               "text": [
                 "blair: I know of\nways to help\ncontrol magic.",
-                "but the book of\nspells I had has\ndissapeared.",
+                "but the book of\nspells I had has\ndisappeared.",
                 "the last place I\nseen it was in\ncontrol city",
                 "deep inside the \nmountain west of\nhere. once you",
                 "find it bring \nyour child as\nwell as your",
@@ -1032,7 +1033,8 @@
                     "closeWhen": "key",
                     "closeButton": "a",
                     "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
+                    "closeDelayFrames": 30,
+                    "__collapse": false
                   },
                   "id": "7c180ab2-226a-4cc5-be50-49f9bd4996ea"
                 },
@@ -1059,7 +1061,8 @@
                     "closeWhen": "key",
                     "closeButton": "a",
                     "closeDelayTime": 0.5,
-                    "closeDelayFrames": 30
+                    "closeDelayFrames": 30,
+                    "__collapse": false
                   },
                   "id": "eb1d939e-fc85-4fea-b87c-f9beabcdb5c9"
                 }

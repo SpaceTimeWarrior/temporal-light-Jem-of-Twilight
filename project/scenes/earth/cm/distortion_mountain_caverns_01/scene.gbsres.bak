@@ -1,0 +1,44 @@
+{
+  "_resourceType": "scene",
+  "id": "1feb39ed-5ac5-4cf7-a040-77fad8750f3d",
+  "_index": 151,
+  "type": "TOPDOWN",
+  "name": "earth/cm/Distortion mountain caverns 01",
+  "symbol": "scene_155",
+  "x": 1612.7999877929688,
+  "y": 5282.39990234375,
+  "width": 80,
+  "height": 20,
+  "backgroundId": "90fd260b-f5ac-4a21-8da3-c621f2b5f166",
+  "tilesetId": "",
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "4d1d016c-bd07-4528-88be-dc03888a370c",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be",
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "c4963196-0462-41ac-82e6-c7418a5657a3",
+    "e2032ea2-d047-4230-871c-2bdf642b982a",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "$self$",
+        "speed": 1
+      },
+      "id": "fe11821c-b05e-4bfe-8e11-9cc30d93afb0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f42+00a+0f46+00a+0f6+005+0f!00d+0f2+009+0f4+0028+0f6+005+0f2+0018+0f2+0029+0f6+005+0f2+0043+0f6+006+0f!0043+0f6+006+0f!0043+0f6+004a+0f6+004a+0f6+004a+0f6+004a+0f6+004a+0f6+004a+0f6+004a+0f6+004a+0f6+0013+0f2+0035+0f6+0013+0f2+0014+0f2+001f+0f6+0013+0f4+0011+0f4+001e+0f8+008+0f48+008+0f44+"
+}

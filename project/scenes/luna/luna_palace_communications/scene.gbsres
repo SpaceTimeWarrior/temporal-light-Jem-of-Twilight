@@ -167,11 +167,11 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "jem:supposidly \nmom started a\ninvestigation on",
+                            "jem: Supposedly\nmom started a\ninvestigation on",
                             "cedric. \napparently the\nperson that was",
                             "killed was her \nsister. I never\nknew her that",
                             "well. I think if\nshe did use that\ntype of magic on",
-                            "dad basicly told\nhim to stop. she\nmay of read ",
+                            "dad basically \ntold him to stop\nshe may of read ",
                             "flare's mind.\nlooking at",
                             "around that\nperiod of time"
                           ],
@@ -207,7 +207,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "jem:yes,but \nevery time I use\nit..I hate using",
+                            "jem:yes, but \nevery time I use\nit..I hate using",
                             "it. it is like\nsticking your \nhand up someone's",
                             "rear and control\nthem like a sock\npuppet. but",
                             "replace hands\nwith heads. some\nlike that but I",
@@ -334,7 +334,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "bright: your \nparents just \nconnected.rain",
+                            "bright:jem your \nparents just \nconnected. rain",
                             "please be on \nyour best \nbehavior",
                             "I don't want to\ntarnish flare's\nlegacy"
                           ],
@@ -456,7 +456,7 @@
                         "args": {
                           "text": [
                             "rain:no one told\nme I had a\ngranddaughter.",
-                            "until today.\nI would of loved \nher."
+                            "until today.\nI would of loved\nher."
                           ],
                           "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
                         },
@@ -551,8 +551,8 @@
                           "text": [
                             "jem:you know why\nflare is dead.\ncrystal",
                             "used a magic \nspell. your son \ntaught her and",
-                            "under normal \ncircumstances is\nat most rope burn",
-                            "but her magic is\nbasicly a nuke."
+                            "under normal \ncircumstances is\nat most rope ",
+                            "burn but her \nmagic is \nbasically a nuke"
                           ],
                           "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
                         },
@@ -569,7 +569,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "rain:so that is \nwhat happened I\nthaught it was a",
+                            "rain:so that is \nwhat happened I\nthought it was a",
                             "ship crash."
                           ],
                           "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
@@ -605,7 +605,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "flare:sorry I \njust put her to\nsleep. maybe",
+                            "bright: sorry I \njust put her to\nsleep. maybe",
                             "next week."
                           ],
                           "avatarId": "968ca5fb-698a-47d6-bef8-5aa576122405"
@@ -636,7 +636,7 @@
                           "text": [
                             "Pearlite:same \nhere, but when\nyou have a ",
                             "chance come to \nour throne room\nwe have to talk.",
-                            "(NOT accesable\nin demo)"
+                            "(NOT access able\nin demo)"
                           ],
                           "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
                         },
@@ -656,7 +656,8 @@
                             "(from here on you \ncould either finish\nchapter 3 or well",
                             "chapter 4 is not \navailable in this \ndemo)"
                           ],
-                          "avatarId": ""
+                          "avatarId": "",
+                          "__section": "text"
                         },
                         "id": "1805db8c-6e4b-4917-8669-c6c4ed817fd0"
                       }
@@ -669,7 +670,7 @@
                 {
                   "command": "EVENT_GROUP",
                   "args": {
-                    "__collapse": true
+                    "__collapse": false
                   },
                   "children": {
                     "true": [
@@ -742,12 +743,12 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "jem:supposidly \nmom started a\ninvestigation on",
+                            "jem: Supposedly \nmom started a\ninvestigation on",
                             "cedric. \napparently the\nperson that was",
                             "killed was her \nsister. I never\nknew her that",
                             "well. I think if\nshe did use that\ntype of magic on",
-                            "dad basicly told\nhim to stop. she\nmay of read your",
-                            "mind.looking at\naround that\nperiod of time"
+                            "dad basically told\nhim to stop. she\nmay of read your",
+                            "mind. looking at\naround that\nperiod of time"
                           ],
                           "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
                         },
@@ -906,7 +907,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "Flare: your \nparents just \nconnected mom be",
+                            "Flare: jem your \nparents just \nconnected mom be",
                             "on your best \nbehavior please.\nI don't want to",
                             "start a war."
                           ],
@@ -1028,7 +1029,7 @@
                         "args": {
                           "text": [
                             "rain:neither of \nyou told me I \nhad a",
-                            "granddaughter.I\nwould of loved \nher."
+                            "granddaughter. I\nwould of loved \nher."
                           ],
                           "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
                         },
@@ -1122,7 +1123,7 @@
                             "jem:you know why\nI was in the \nhospital.crystal",
                             "used a magic \nspell. your son \ntaught her and",
                             "under normal \ncircumstances is\nat most rope burn",
-                            "but her magic is\nbasicly a nuke."
+                            "but her magic is\nbasically a \nnuke."
                           ],
                           "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
                         },
@@ -1139,7 +1140,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "rain:so that is \nwhat happened I\nthaught it was a",
+                            "rain:so that is \nwhat happened I\nthought it was a",
                             "ship crash."
                           ],
                           "avatarId": "0456b336-070c-4435-9b05-a85e599025c9"
@@ -1206,7 +1207,7 @@
                           "text": [
                             "Pearlite:same \nhere, but when\nyou have a ",
                             "chance come to \nour throne room\nwe have to talk.",
-                            "(NOT accesable\nin demo)"
+                            "(NOT access able\nin demo)"
                           ],
                           "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912"
                         },

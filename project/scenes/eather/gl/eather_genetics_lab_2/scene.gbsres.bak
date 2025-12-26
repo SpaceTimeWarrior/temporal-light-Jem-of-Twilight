@@ -1,0 +1,42 @@
+{
+  "_resourceType": "scene",
+  "id": "ced99c6d-8d4d-4850-8691-b07a7f899aaa",
+  "_index": 120,
+  "type": "TOPDOWN",
+  "name": "eather/gl/eather genetics lab 2",
+  "symbol": "scene_121",
+  "x": 495.9000040690104,
+  "y": 6417.466796874999,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "bef833f6-322a-4927-a920-e30d359a55d2",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [
+    "6edf6d2c-4c6c-4775-b858-2c466d267f04",
+    "e9762a21-0f64-4322-820e-c8c0c53403bd",
+    "4d1d016c-bd07-4528-88be-dc03888a370c",
+    "611e0240-d5c2-46a7-95df-b34891f6e6be",
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "c4963196-0462-41ac-82e6-c7418a5657a3",
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [
+    "f2514180-91e4-4a0e-b67a-7ab13107f508",
+    "",
+    "bde394b9-4d41-4a96-98a8-4993fdad98e0"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "3d545ede-f54e-40f6-adba-25722ee8d708"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f418+002+0f38+006+0f1e+00!0f5+002+0f10+006+0f12+002+0fe+006+0fe+006+0f10+006+0fc+006+0fe+006+0f10+006+0fc+006+0fe+006+0f10+006+0fc+006+0fe+006+0f10+006+0fc+006+0f9+0010+0fb+006+0fb+008+0f7+0013+0f9+006+0fb+008+0f7+0013+0f6+00c+0f6+00c+0f5+0015+0f2+00f+0f5+0039+0f3+0039+0f3+0039+0f3+0039+0f3+0039+0f3+0039+0f3+00b+0f6+0015+0f2+00f+0f7+008+0f7+0013+0f6+00c+0f17+0013+0f6+00c+0f18+0010+0f2c+0010+0f2e+00c+0f30+00c+0f30+00c+0f30+00c+0f2e+0010+0f2c+0010+0f2b+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2a+0012+0f2b+0010+0f31+006+0f36+006+0f36+006+0f36+006+0f1c+"
+}

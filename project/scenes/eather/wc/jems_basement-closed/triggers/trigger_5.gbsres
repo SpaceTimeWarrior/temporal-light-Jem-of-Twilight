@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "42cc8529-0799-4680-a322-a1208c444839",
+  "name": "",
+  "prefabId": "",
+  "_index": 4,
+  "symbol": "trigger_505",
+  "x": 28,
+  "y": 23,
+  "width": 20,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "random comic books\nline the shelves."
+        ],
+        "avatarId": ""
+      },
+      "id": "9b637226-65a4-49f3-9254-6d066782b67f"
+    }
+  ],
+  "leaveScript": []
+}

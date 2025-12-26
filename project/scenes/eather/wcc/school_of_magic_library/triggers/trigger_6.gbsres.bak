@@ -1,0 +1,118 @@
+{
+  "_resourceType": "trigger",
+  "id": "93c3894c-2e34-426b-9061-7c09692977ca",
+  "_index": 5,
+  "symbol": "trigger_135",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 9,
+  "width": 18,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Random books line\nthe shelves, Looks\nlike Ember has a ",
+          "long day ahead",
+          "you spot one that\ncalled \"Chocolate\nPoison or Not\"",
+          "Do you want to\nread"
+        ],
+        "avatarId": ""
+      },
+      "id": "fd3ec034-d7f4-4276-a453-07dc60368431"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "yes",
+        "falseText": "no"
+      },
+      "id": "97a6f989-c801-454e-b972-e4df1b733126"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "For humans \nchocolate is not\npoisonous but for",
+                "monsters it is\nquestionable. \nGenerally the ",
+                "Homo-magica in \ntheir bloodline\ndampens the effects",
+                "to the \npoint it is\nsimilar to alcahol",
+                "before you feed \nanything to \nmonsters or",
+                "animals research \nif it is safe to\ndo so",
+                "monsters and \nanimals are not \nthe same. So don't",
+                "think that just \nbecause a monster\nwould be safe on",
+                "animals may not\ndo you want to\ncontinue reading."
+              ],
+              "avatarId": ""
+            },
+            "id": "3c7f7423-8b7a-4bc9-9999-150d2cbd0e8d"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "yes",
+              "falseText": "no"
+            },
+            "id": "7e335c38-e94e-4cb0-9017-9dca0a88d2c3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Below is a list of\ntoxicity and \ncommon races.",
+                "Low to none: \nvampires,dwarfs,\nsaytr,skeleton",
+                "medium to high:\nhumanoids:canine,\nfeline,volpine",
+                "alpine,rabbit,\nphoenix,deer,\nhedgehog",
+                "fae creatures\n\ntoxic:",
+                "harpy,dragon\nbear,parrot\nand most animals."
+              ],
+              "avatarId": ""
+            },
+            "id": "23214673-c458-4ab6-8b33-1c479d916999"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You swiftly put it\nback on the shelf\nwhere you got it."
+              ],
+              "avatarId": ""
+            },
+            "id": "ce8546db-0f23-4408-a80e-41a2a52ec62b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You swiftly put it\nback on the shelf\nwhere you got it."
+              ],
+              "avatarId": ""
+            },
+            "id": "6d868e2f-2f3e-4c0e-aa08-c03f3398db93"
+          }
+        ]
+      },
+      "id": "6b33aa69-22b2-4101-a5b8-7513b8bf3f3c"
+    }
+  ],
+  "leaveScript": []
+}

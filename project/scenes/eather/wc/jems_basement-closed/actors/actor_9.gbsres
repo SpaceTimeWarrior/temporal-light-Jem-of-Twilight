@@ -1,35 +1,54 @@
 {
   "_resourceType": "actor",
-  "id": "5572725a-2cd9-4a18-9f7c-f1b03fd53323",
-  "_index": 10,
-  "symbol": "actor_188",
+  "id": "76e83a9a-2f07-4e37-98a7-484c58b65423",
+  "_index": 11,
+  "symbol": "actor_30",
   "prefabId": "",
   "name": "",
-  "x": 21,
-  "y": 6,
+  "x": 34,
+  "y": 5,
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "17e38083-996a-4816-8ad1-740c5665179c",
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
   "paletteId": "",
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
   "isPinned": false,
   "persistent": false,
-  "collisionGroup": "1",
+  "collisionGroup": "",
   "prefabScriptOverrides": {},
-  "script": [],
-  "startScript": [],
-  "updateScript": [],
-  "hit1Script": [
+  "script": [
     {
-      "command": "EVENT_ACTOR_DEACTIVATE",
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
       "args": {
-        "actorId": "$self$"
+        "actorId": "player",
+        "speed": 255
       },
-      "id": "ba538358-7d13-4e9d-a54a-65f53dacde07"
+      "id": "fde4af85-62d0-43ca-a340-7db5566f1187"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Its a toilet\ndon't feel like\nusing it"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "3ffe1ad7-1b96-4340-b292-61dd6dfa9060"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "f9af45cd-3b7e-4967-93df-f44972d19403"
     }
   ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
   "hit2Script": [],
   "hit3Script": []
 }

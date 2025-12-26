@@ -19,11 +19,38 @@
   "autoFadeSpeed": 1,
   "script": [
     {
-      "command": "EVENT_MUSIC_PLAY",
+      "command": "EVENT_GROUP",
       "args": {
-        "musicId": "441424b7-df6d-42fa-8378-efa1ca89f2dc"
+        "__collapse": false,
+        "__label": "music event group"
       },
-      "id": "4326f716-ea7a-4509-8b96-62c37733e1f0"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 10
+              }
+            },
+            "id": "7e8fcfa0-5649-4e5b-81d8-9bb758654b46"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "1ae5814d-1860-49c3-91f5-645c7a764649"
+          }
+        ]
+      },
+      "id": "452109ed-9bdb-4e97-bafe-876cce9067b1"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",
@@ -204,7 +231,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Jem: yes why are\nyou so negitive\non this?"
+                "Jem: yes why are\nyou so negative\non this?"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },
@@ -240,7 +267,7 @@
             "args": {
               "text": [
                 "Jem: was someone\ntrying to \ntorture you",
-                "beacuse most \ndon't even use\nelectricity"
+                "because most \ndon't even use\nelectricity"
               ],
               "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
             },

@@ -16,27 +16,11 @@
   "autoFadeSpeed": 1,
   "script": [
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_CALL_CUSTOM_EVENT",
       "args": {
-        "text": "",
-        "__section": "text",
-        "avatarId": "",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
       },
-      "id": "871c5796-2a81-4913-bfa0-b7c028c6c402"
+      "id": "4f7d1271-0a19-4e01-86bd-ac1975e33110"
     }
   ],
   "playerHit1Script": [],

@@ -12,9 +12,27 @@
   "backgroundId": "00d94fe1-c758-45d7-82f8-b6c446237fae",
   "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
   "paletteIds": [],
-  "spritePaletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535"
+  ],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 209
+        }
+      },
+      "id": "df2e79b5-bb32-4c18-95d9-38c1bcc3a9ed"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

@@ -172,7 +172,8 @@
                                       "text": [
                                         "Jem: Who are you\nyou are not a \nLightbringer"
                                       ],
-                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                                      "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e",
+                                      "__collapse": false
                                     },
                                     "id": "72bae696-7d9c-4dbb-b066-16b2267c4de5"
                                   },
@@ -183,7 +184,8 @@
                                         "you are under\na petrification\nspell so you",
                                         "can't move other\nthan talk"
                                       ],
-                                      "avatarId": ""
+                                      "avatarId": "",
+                                      "__collapse": false
                                     },
                                     "id": "bd4fde5b-a1d4-4561-a476-2287e7fd6c88"
                                   },
@@ -195,7 +197,8 @@
                                         "council member.I\nam cleared to\ncome here",
                                         "so who are you?"
                                       ],
-                                      "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8"
+                                      "avatarId": "c7c0844e-fc9e-48f4-8c61-80e867cc8da8",
+                                      "__collapse": false
                                     },
                                     "id": "cf8b7111-a3eb-4241-af12-1e8dd426122b"
                                   },
@@ -213,7 +216,8 @@
                                       "option7": "",
                                       "option8": "",
                                       "cancelOnB": false,
-                                      "layout": "dialogue"
+                                      "layout": "dialogue",
+                                      "__collapse": false
                                     },
                                     "id": "00e35ab7-6f86-4a92-92b8-63a6964b611d"
                                   },
@@ -234,7 +238,8 @@
                                           "type": "number",
                                           "value": 1
                                         }
-                                      }
+                                      },
+                                      "__collapse": false
                                     },
                                     "children": {
                                       "true": [
@@ -524,7 +529,7 @@
                                               {
                                                 "command": "EVENT_SWITCH_SCENE",
                                                 "args": {
-                                                  "sceneId": "bffe77b0-c024-4a31-b2f8-c9282a8bf820",
+                                                  "sceneId": "7afa113c-50ed-486b-b87d-1f16151d199c",
                                                   "x": {
                                                     "type": "number",
                                                     "value": 0

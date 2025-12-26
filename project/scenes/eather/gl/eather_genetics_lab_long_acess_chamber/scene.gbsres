@@ -33,6 +33,11 @@
         "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
       },
       "id": "b77855b5-13a8-426f-b48e-9c38f5707ed6"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "5fd82e20-1451-45d2-bd90-6468b450472f"
     }
   ],
   "playerHit1Script": [],

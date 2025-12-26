@@ -1,0 +1,130 @@
+{
+  "_resourceType": "trigger",
+  "id": "b6e7a4af-58ff-416e-9d97-bd920cc419fc",
+  "_index": 3,
+  "symbol": "trigger_133",
+  "prefabId": "",
+  "name": "",
+  "x": 15,
+  "y": 19,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The science of\nmonster biology do\nyou want to read"
+        ],
+        "avatarId": ""
+      },
+      "id": "608ed4db-f918-4db4-96c7-9457369da7c1"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "yes",
+        "falseText": "no"
+      },
+      "id": "085b350e-4820-43aa-8746-0a07b587d760"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Monsters have very\nlittle blood and \nsuch that magic",
+                "energy takes its\nplace. thus when\nthey die. Most  of",
+                "their body parts \nturn to dust. so\nlong as the monster",
+                "is alive at the\ntime of maimeing,\nbodyparts won't ",
+                "disintegrate.\nother than that\nmonsters are",
+                "similar to their\ncomponent families\nthe magic energy",
+                "also gives them \nthe ability to use\nmagic.",
+                "so long as they \nare compatable\nmonsters can",
+                "create hybrid races\nthe wolfcat is an\nexample of this",
+                "they are a\ncombination of \nhomo-canus and",
+                "homo-felidae. or\nfor plain english\nany humanoid ",
+                "canine and \nhumanoid feline\ncombination.",
+                "do you want to keep\nreading."
+              ],
+              "avatarId": ""
+            },
+            "id": "fc8e0a7e-ee98-4b50-adb5-99c4a1094084"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "yes",
+              "falseText": "no"
+            },
+            "id": "812e27bc-7217-4131-a38b-f3d9176b6cea"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "variable": "L0",
+              "__collapseElse": true,
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "All monsters \noriginate from the\nspecies ",
+                      "Homo-Magica\nthis offshoot of ",
+                      "humanity had 2 odd\ntraits the ability",
+                      "to cast magic and \nbe fertile with any\nliving being. with",
+                      "exceptions such as\npigs, chickens, and\ncows",
+                      "any of \nHomo-Magica's\noffspring are",
+                      "considered monsters\nunless it is with\nanother human.",
+                      "Monsters are \ntechnically human \nbut are not",
+                      "considered as such.\nHomo-Magica went\nextinct in the ",
+                      "interplanetary war.\nI don't need to \ncontinue."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5d154c85-906f-42ce-befc-168c4f650f6c"
+                }
+              ],
+              "false": []
+            },
+            "id": "6c22a8b7-2ded-48d8-b0bb-c2cea5ed4a84"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Don't need to read\nit if I am one."
+              ],
+              "avatarId": ""
+            },
+            "id": "14576df0-2056-4eb4-9d83-9a4ef7216a88"
+          }
+        ]
+      },
+      "id": "38422b3a-b7bd-4d85-9678-a20f56d3c5ba"
+    }
+  ],
+  "leaveScript": []
+}

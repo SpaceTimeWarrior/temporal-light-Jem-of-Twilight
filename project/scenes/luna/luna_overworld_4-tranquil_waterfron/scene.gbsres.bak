@@ -1,0 +1,41 @@
+{
+  "_resourceType": "scene",
+  "id": "717af33b-4c9c-4a1c-afe0-219d2eec9207",
+  "_index": 69,
+  "type": "TOPDOWN",
+  "name": "luna/luna overworld 4-tranquil waterfron",
+  "symbol": "scene_70",
+  "x": 5618.964575674017,
+  "y": 3446.8828480611014,
+  "width": 80,
+  "height": 60,
+  "backgroundId": "2e8e58fe-4ecf-4756-91e2-77f0dc14123f",
+  "tilesetId": "",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "170de2de-a787-4fb6-ba83-928429d26009"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 125
+        }
+      },
+      "id": "0a290e3d-b8aa-4dbe-82cf-314e2611f98f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1a+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00c+0f44+00e+0f42+00e+0f42+00e+0f42+00e+0f42+00e+0f42+00e+0f42+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f1a+0036+0f18+0038+0f18+002a+0f26+002a+0f26+002a+0f26+002a+0f26+002a+0f22+002e+0f22+002e+0f22+002e+0f22+002e+0f22+002e+0f22+002e+0f1a+008+0ff+001f+0f1a+008+0f!00e+0f!001e+0f1a+008+0f!00f+0f!001d+0f1a+005+0f3+0011+0f!001c+0f1a+004+0f!0015+0f!001b+0f1a+003+0f!0017+0f9+0012+0fe+00e+0f!0021+0f!0011+0fe+00d+0f!0023+0f9+008+0f1b+002d+0f16+"
+}

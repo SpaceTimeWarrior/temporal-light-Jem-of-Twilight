@@ -25,6 +25,17 @@
       },
       "id": "8f986052-1853-4198-bab3-6b3e8d8f4c7b",
       "children": {}
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "68",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "6ba588da-c6e8-4206-87a5-9d662fdfcc92"
     }
   ],
   "updateScript": [
@@ -85,12 +96,12 @@
           {
             "command": "EVENT_SET_VALUE",
             "args": {
-              "variable": "L4",
+              "variable": "68",
               "value": {
                 "type": "number",
                 "value": 5
               },
-              "__collapse": true
+              "__collapse": false
             },
             "id": "f2f870e8-cb4e-4b2b-a294-ce2f5b410092",
             "children": {}

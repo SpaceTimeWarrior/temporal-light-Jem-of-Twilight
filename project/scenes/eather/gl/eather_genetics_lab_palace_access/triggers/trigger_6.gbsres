@@ -12,14 +12,51 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "command": "EVENT_SET_VALUE",
+      "command": "EVENT_IF_FLAGS_COMPARE",
       "args": {
-        "variable": "48",
-        "value": {
-          "type": "true"
-        }
+        "variable": "63",
+        "flag": 0,
+        "__collapseElse": false
       },
-      "id": "ca054f7a-b8ba-42eb-b31e-817245490e60"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_GROUP",
+            "args": {
+              "__collapse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "48",
+                    "value": {
+                      "type": "true"
+                    },
+                    "__collapse": true
+                  },
+                  "id": "ca054f7a-b8ba-42eb-b31e-817245490e60"
+                }
+              ]
+            },
+            "id": "ebf0b5a8-549c-40bf-929f-ba2cc2232afb"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "48",
+              "value": {
+                "type": "false"
+              }
+            },
+            "id": "6c854fa5-1aa2-4785-b781-973be5ffc11d"
+          }
+        ]
+      },
+      "id": "22919e19-0e82-407b-bb72-013a221c47ed"
     },
     {
       "command": "EVENT_IF",
@@ -36,7 +73,7 @@
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
             "args": {
-              "actorId": "d3b2d4ff-d951-4f9e-9a30-2600ea6de9a1"
+              "actorId": "9f8ea970-79ef-44e4-9784-d22d3b5eb8eb"
             },
             "id": "eb95b2da-8048-49ba-ba53-224d5d96c05e"
           }
@@ -45,7 +82,7 @@
           {
             "command": "EVENT_ACTOR_DEACTIVATE",
             "args": {
-              "actorId": "507d4d82-5d28-46e7-91b9-8b085e55ee0e"
+              "actorId": "bf41f917-a0ea-4097-9497-9a3ea40ff188"
             },
             "id": "0a31aa1c-b77c-4d4a-84c8-6e6f9eecdf92"
           }

@@ -5,7 +5,7 @@
   "type": "TOPDOWN",
   "name": "earth/cc/flare's room",
   "symbol": "scene_177",
-  "x": 1328,
+  "x": 1352,
   "y": 3536,
   "width": 20,
   "height": 19,
@@ -14,7 +14,19 @@
   "paletteIds": [],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 206
+        }
+      },
+      "id": "7b4e6140-3191-4941-81b4-2db150b2cf81"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

@@ -1,0 +1,37 @@
+{
+  "_resourceType": "scene",
+  "id": "83c74b5e-9116-4ab5-bc64-fc53cc58d25f",
+  "_index": 121,
+  "type": "TOPDOWN",
+  "name": "eather/wc/Eather bedrooms",
+  "symbol": "scene_122",
+  "x": 80,
+  "y": 6831.633463541666,
+  "width": 60,
+  "height": 60,
+  "backgroundId": "a0feb7e7-7d28-40e1-a338-e37019440c9e",
+  "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    null,
+    null,
+    null,
+    null,
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "f51ee92e-d312-48c3-a85f-d4a292789321"
+      },
+      "id": "998e4dcc-ac44-43cb-9870-00241b7982f6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f2d4+00b+0f4+00!0f6+002+0fe+008+0fe+0010+08!004+0f!002+0fe+008+0fe+0018+0fe+008+0fe+00b+0f!002+0f!009+0fe+008+0fe+0018+0fe+008+0fe+0015+0f14+005+0fe+0015+0f7+006+0f7+005+0fe+0015+0f7+006+0f7+005+0fe+0015+0f5+00a+0f5+005+0fe+002e+0fe+00!0f2+002b+0f12+002a+0fe+00!0f2+0015+0f4+006+0f1a+00!0f2+0015+0f4+006+0f1a+00!0f2+0015+0f4+006+0f1a+00!0f2+0015+0f4+006+0f1a+00!0f2+0015+0f4+006+0f1a+0018+0f4+006+0f1e+004+0f14+006+0f1e+004+0f14+006+0f34+00a+0f32+00a+0f32+00a+0f32+00a+0f32+00a+0f32+00a+0f18+0011+08!0f5+00!0f2+00a+0f18+0011+08!0f5+00!0f2+00a+0f18+009+0f!007+08!004+0f!00!0f2+00a+0f18+009+0f!002+0f!00b+0f2+00a+0f18+0018+0f4+006+0f1a+0018+0f4+006+0f1a+0018+0f4+006+0f1a+0018+0f4+006+0f1a+0018+0f4+006+0f1a+0015+0f7+006+0f1a+0015+0f5+0018+0fa+0015+0f5+0018+0fa+0015+0f5+001e+0f4+0038+0f4+0038+0f4+0038+0f4+0018+0f2+0018+0fa+0018+0f2+0018+0ff6+"
+}

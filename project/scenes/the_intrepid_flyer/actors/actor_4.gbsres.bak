@@ -1,0 +1,374 @@
+{
+  "_resourceType": "actor",
+  "id": "a619103d-5f69-4b8f-ace5-cf87114fd960",
+  "_index": 6,
+  "symbol": "actor_392",
+  "prefabId": "",
+  "name": "",
+  "x": 32,
+  "y": 27,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "70f2ad84-d64a-421e-84aa-3d6ea26a8c5c",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF_FLAGS_COMPARE",
+      "args": {
+        "variable": "23",
+        "flag": 12,
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "451be939-7a0a-4657-8bac-044858c99c73"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF_FLAGS_COMPARE",
+            "args": {
+              "variable": "23",
+              "flag": 11,
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "354db435-4564-4ca1-a1d0-02c2c5119626"
+                  },
+                  "id": "3adf0a15-454e-4fb4-8b79-4faf967a2b9f"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "6f0fc731-b28e-4e71-b408-50fa53341387"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember: why do\nyou want to know\nabout him"
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "a2acd791-436a-4578-8fa4-34447ee48cfb"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "97fb51c8-b272-4b7a-b24b-44341fb7eb94"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:I may of \nfallen in love\nwith him."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "e9f55db1-664a-4157-af80-b75a08e64bce"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+                  },
+                  "id": "4cb34379-5e99-4788-a29f-38e8d3573d96"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "a60065c3-61a2-4545-9bb1-12aed0d086a4"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember: that is \nwhat I was afraid\nof.",
+                      "he is currently a \nmob boss started\nfrom a murder",
+                      "case my husband \ninvestigated. he\nis bad news",
+                      "and you should\nnot involve\nyourself with him",
+                      "But even though\nI don't agree\nI still respect",
+                      "your decision...\nwait a second\nfrom what I was",
+                      "told he should\nbe in his late\n80's."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "1e92475e-9b00-41fb-bdca-44b571f45745"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+                  },
+                  "id": "3031f35d-1613-4e4f-babc-4e8d90006026"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "5582fe73-3b42-47ac-9248-945345caf3ba"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: he does'nt\nlook a day over\n30. I was told ",
+                      "that one person\ninvestigating \nwas corrupt",
+                      "and likely lied\nabout his age. "
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "b06d72fb-ea5a-420a-914e-edd1704786d1"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "1e08b544-59c1-446f-9946-1993b27797ec"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember:I will go\nask my husband.I\ndoubt I will get",
+                      "much... if what\nyou say is true\nwe may of started",
+                      "an innocent to a\nlife of crime."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "4ccbe6e2-dfe0-449d-9704-0b620d72d048"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "59f53d62-63f2-4737-b03f-95ce56d4ee75"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: Regardless\nI did sense some\ngood in him"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "5656c625-15ae-4943-a238-e6073f89ff4a"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "dd76ac39-b236-4b23-8322-c53872c03471"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember: I do have\nto ask where did\nyou go for ",
+                      "2 weeks. did you\ndo something...\ninnapropriate."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "e50f641e-a288-4a97-a43a-48fe3277f128"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "c295bccc-9b26-4560-82cf-8f5041672aae"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: not to my\nknowledge...",
+                      "flare's second\nin command went\ncrazy and  ",
+                      "locked him up and\nkidnapped me. I\nmade sure he ",
+                      "won't do it again\non his own accord\ncome back same",
+                      "time tomorrow"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "98a9566a-f56f-45ce-a592-99a157f61e2f"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "1e4a222a-b948-4f24-a752-9020e9392963"
+                },
+                {
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {
+                    "customEventId": "37dfa877-2cd9-400a-bc33-73eb38153833",
+                    "$variable[V0]$": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "7314b65f-04ca-4572-b4e4-1cc284dccfdf"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+                  },
+                  "id": "9ac7e94c-8bb0-4fa8-9962-9070e85a377a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember:my husband\ndoubled down on\nwhat he told ma",
+                      "when he first\ntold me 12 years\nago.but it seems",
+                      "like he was\nhiding something",
+                      "cumulo's \npunishment was \nvery odd normally",
+                      "it would be \nprison for 20% of\naverage life for",
+                      "their race but \nit was permanent\nbanishment",
+                      "have you told\nyour father\nabout any of this"
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "e0938f2a-7d86-4aa0-a6b8-2c8be38c8ad6"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "87a2ffb7-b4a5-430d-a803-c83e0b67eebe"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem:only that I\nmay of found\nsomeone that",
+                      "matches his \nrequirements\nwhich was whoever",
+                      "I fall in love\nwith must be of\nroyal birth."
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "e269b4f4-9100-414b-b92f-0e042161fbb6"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+                  },
+                  "id": "188a6135-756c-4ef5-ba27-a9bfc29edba0"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "$self$",
+                    "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+                  },
+                  "id": "7178da8a-546e-464f-9559-c294d0fa4c5e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Ember: oh... ...\n... ... .... ...\nI am going to",
+                      "have to tell \nyour father.I am\nsorry."
+                    ],
+                    "avatarId": "a9c9efc3-dd6d-48f9-b8cf-b31a40daa917"
+                  },
+                  "id": "6537c742-2881-4738-9077-398ad7afed9d"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_UI",
+                  "args": {
+                    "palette": ""
+                  },
+                  "id": "560f1df6-7a2d-4abd-a515-13537ab49ecf"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+                  },
+                  "id": "1736cfff-f88b-4c6b-a868-8f007ffeaed9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jem: I \nunderstand"
+                    ],
+                    "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+                  },
+                  "id": "593b0931-843b-46c0-8c51-79aeb9a09bc9"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "31a64200-061c-44e8-b062-ddedb7c76a95"
+                  },
+                  "id": "13238a41-e9c8-4329-be63-90449f852baf"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "25e7c707-4f0c-4f83-a5ab-f9922afc8716",
+                    "x": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "086ebfe6-1ed1-4c4d-ad52-75b5d59fb349"
+                }
+              ],
+              "false": []
+            },
+            "id": "972e1544-5c0d-47c1-9081-3ab243494059"
+          }
+        ]
+      },
+      "id": "66f0bbd3-3214-4ba8-9062-1107b79146be"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

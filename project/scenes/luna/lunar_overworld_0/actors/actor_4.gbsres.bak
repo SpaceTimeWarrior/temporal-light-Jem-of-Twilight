@@ -1,0 +1,39 @@
+{
+  "_resourceType": "actor",
+  "id": "c69b2971-f63e-4df6-beb6-708534ff70ec",
+  "_index": 5,
+  "symbol": "actor_504",
+  "prefabId": "",
+  "name": "",
+  "x": 14,
+  "y": 19,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Lunar palace<\nSpaceprot>",
+          "Sea of tranquility\nacess*(overgrown)"
+        ],
+        "avatarId": ""
+      },
+      "id": "db79d805-56aa-4222-8420-78c50e5a8163"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

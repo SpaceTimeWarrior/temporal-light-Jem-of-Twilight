@@ -16,11 +16,38 @@
   "autoFadeSpeed": 1,
   "script": [
     {
-      "command": "EVENT_MUSIC_PLAY",
+      "command": "EVENT_GROUP",
       "args": {
-        "musicId": "ae3f61af-8ae4-4e4b-8e34-f9744fccfa54"
+        "__collapse": false,
+        "__label": "music event group"
       },
-      "id": "13e13af3-8a8c-4df6-ad8e-86be952e5c6a"
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "66",
+              "value": {
+                "type": "number",
+                "value": 13
+              }
+            },
+            "id": "dd5dfb6b-d350-4664-b1de-55c1cf7c7db5"
+          },
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "080afb89-b806-4257-bd9d-e6eab0c2fc30",
+              "$variable[V0]$": {
+                "type": "variable",
+                "value": "66"
+              }
+            },
+            "id": "06cf8735-afbc-49c8-bd03-24cf18643985"
+          }
+        ]
+      },
+      "id": "28d509f7-b31d-4311-a760-bb6774d769c3"
     },
     {
       "command": "EVENT_CALL_CUSTOM_EVENT",

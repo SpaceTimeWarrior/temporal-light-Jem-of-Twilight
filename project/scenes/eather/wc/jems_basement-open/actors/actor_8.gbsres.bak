@@ -1,0 +1,54 @@
+{
+  "_resourceType": "actor",
+  "id": "ded1aa6a-8c7a-451b-b78e-dee374bfc23a",
+  "_index": 11,
+  "symbol": "actor_44",
+  "prefabId": "",
+  "name": "",
+  "x": 34,
+  "y": 3,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "4b8d3f8f-66c4-481d-85af-953a831f8c02"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:Its a toilet\ndon't feel like\nusing it"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "a24d1ef8-b986-41d6-b1ee-86c7267454af"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "5bd55a0d-67ec-4da1-b322-aafe5f7da87b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

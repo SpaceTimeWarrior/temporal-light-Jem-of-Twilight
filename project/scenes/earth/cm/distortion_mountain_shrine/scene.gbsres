@@ -2,28 +2,38 @@
   "_resourceType": "scene",
   "id": "416396b6-b709-42f1-87ec-ac1378eeaef9",
   "_index": 205,
+  "type": "TOPDOWN",
   "name": "earth/cm/distortion mountain shrine",
-  "backgroundId": "0000d64c-881a-4d41-821a-eadec016debe",
-  "tilesetId": "",
+  "symbol": "scene_206",
+  "x": 3200,
+  "y": 4576,
   "width": 20,
   "height": 36,
-  "type": "TOPDOWN",
+  "backgroundId": "0000d64c-881a-4d41-821a-eadec016debe",
+  "tilesetId": "",
   "paletteIds": [],
   "spritePaletteIds": [
-    null,
-    null,
-    null,
-    null,
+    "",
+    "",
+    "",
+    "",
     "6d06d8ec-17cb-4d09-a4b2-b95c60d6e535",
     "default-bg-2",
     "90eafb53-1bf7-4fb9-9caf-512159ebb8c0"
   ],
-  "collisions": "0f6+008+0fc+008+0fa+00c+0f8+00c+0f6+0010+0f4+006+0f4+006+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+006+0f4+006+0f4+0010+0f4+0010+0f4+0010+0f6+00c+0f8+00c+0fa+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fe+004+0f10+004+0f8+",
   "autoFadeSpeed": 1,
-  "symbol": "scene_206",
-  "x": 3368,
-  "y": 4880,
   "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "49",
+        "value": {
+          "type": "number",
+          "value": 226
+        }
+      },
+      "id": "efd52041-5c2b-4ab3-88ed-f52fa00100c1"
+    },
     {
       "command": "EVENT_ACTOR_MOVE_TO",
       "args": {
@@ -45,7 +55,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "blair:stand next\nto the corner on\nmy side"
+          "blair: stand next\nto the corner on\nmy side"
         ],
         "__section": "text",
         "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
@@ -120,7 +130,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "blair:everyone\nface crystal"
+          "blair: everyone\nface crystal"
         ],
         "__section": "text",
         "avatarId": "50351711-ea34-408d-babe-fe4c34ad8912",
@@ -217,6 +227,21 @@
             "id": "ccf1f708-e531-4863-b2c4-ffe3e386d637"
           },
           {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "79e2f6b4-2a94-4fc1-b3df-f7d0403688f3"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": 1
+            },
+            "id": "db77ef9b-fa3f-439e-bb2f-20b3c3aad6ce"
+          },
+          {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
@@ -264,6 +289,21 @@
             "id": "32f36d2b-6a8f-46e6-ac75-58699c5d7ba3"
           },
           {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "7749327a-18aa-479e-af23-b7d84665eb18"
+          },
+          {
+            "command": "EVENT_FADE_IN",
+            "args": {
+              "speed": 1
+            },
+            "id": "195dc3be-683a-473c-854a-0d7d36075025"
+          },
+          {
             "command": "EVENT_TEXT",
             "args": {
               "text": [
@@ -299,13 +339,6 @@
       "id": "69c07434-b2a3-4cae-b9b2-33c83b798961"
     },
     {
-      "command": "EVENT_FADE_IN",
-      "args": {
-        "speed": 1
-      },
-      "id": "195dc3be-683a-473c-854a-0d7d36075025"
-    },
-    {
       "command": "EVENT_SET_VALUE",
       "args": {
         "variable": "26",
@@ -336,5 +369,6 @@
   ],
   "playerHit1Script": [],
   "playerHit2Script": [],
-  "playerHit3Script": []
+  "playerHit3Script": [],
+  "collisions": "0f6+008+0fc+008+0fa+00c+0f8+00c+0f6+0010+0f4+006+0f4+006+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+005+0f!004+0f!005+0f4+006+0f4+006+0f4+0010+0f4+0010+0f4+0010+0f6+00c+0f8+00c+0fa+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fc+008+0fe+004+0f10+004+0f8+"
 }

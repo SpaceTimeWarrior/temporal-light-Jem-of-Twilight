@@ -1,0 +1,94 @@
+{
+  "_resourceType": "actor",
+  "id": "59d7fa2d-e68c-43b0-9c29-047dc2ea82f5",
+  "_index": 4,
+  "symbol": "actor_114",
+  "prefabId": "",
+  "name": "",
+  "x": 18,
+  "y": 16,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "f62877c4-b85c-45ab-9a64-8520de381930"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: For a wolf \nyou look wierd."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "79a0ab49-f739-4880-b052-1861d770a0c0"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+      },
+      "id": "e32f8591-8c80-4a18-8eec-46beff5cc334"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Bunny guard's \nthoughts: crap how\ndid you find this",
+          "out"
+        ],
+        "avatarId": ""
+      },
+      "id": "ed12b96d-a11a-4027-9f9e-4b2a4dc4db06"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem: I didn't \nknow for certain\nyou just ",
+          "confirmed it.you\ndon't have to \nworry about me",
+          "my parents and \nsister on the \nother hand.",
+          "you got to watch\nyourself"
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "c9ade757-8ab0-4f74-b82e-fd1c619b4fc4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "e6a7a1e4-3f79-4232-b854-26df251e453b"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "1dbc2bdb-3e1d-4d54-bb1d-661faff7539c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,29 @@
+{
+  "_resourceType": "scene",
+  "id": "305f9ba8-b4cf-4476-924c-9ddabd2edee0",
+  "_index": 161,
+  "type": "TOPDOWN",
+  "name": "eather/sc/courthouse entrance",
+  "symbol": "scene_165",
+  "x": 7168,
+  "y": 2016,
+  "width": 40,
+  "height": 36,
+  "backgroundId": "8dedee29-e4b0-460a-8813-52ba1d4cc8ae",
+  "tilesetId": "",
+  "paletteIds": [
+    "86ee138b-e240-42c9-a7c2-1b4be94dfbe5",
+    null,
+    null,
+    "e2032ea2-d047-4230-871c-2bdf642b982a"
+  ],
+  "spritePaletteIds": [
+    "db514dbd-a3b6-4c10-8208-9f12bb7e821f"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fb2+006+0f22+007+0f21+0016+0f11+0017+0f10+0018+0ff+0019+0fe+00c+0f1c+00c+0f1c+00c+0f1c+00c+0f1c+00c+0f1c+00c+0f1c+00c+0f1c+00c+0f1a+0010+0f18+0010+0f16+0014+0f14+0014+0f12+0018+0f10+0018+0fe+001c+0fc+001c+0fa+0020+0f8+0020+0f6+0024+0f4+0024+0f4+0024+0f4+0024+0f4+00a+04!00a+08!00e+0f4+00a+0fc+00e+0f52+"
+}

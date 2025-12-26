@@ -12,7 +12,14 @@
   "backgroundId": "a0feb7e7-7d28-40e1-a338-e37019440c9e",
   "tilesetId": "5a913523-a879-415d-a590-a878661b8131",
   "paletteIds": [],
-  "spritePaletteIds": [],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "7d52f02e-4d6b-4e73-92fc-6ee95e259104",
+    "58dbb041-8cdc-4b9c-bb50-efb7d518ce65"
+  ],
   "autoFadeSpeed": 1,
   "script": [
     {

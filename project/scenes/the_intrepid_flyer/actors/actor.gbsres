@@ -6,10 +6,10 @@
   "prefabId": "",
   "name": "",
   "x": 18,
-  "y": 21,
+  "y": 23,
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "spriteSheetId": "5e62e215-4c65-4a55-aab6-cedab8fc520a",
   "paletteId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -30,57 +30,23 @@
       "id": "0c520e59-01c7-42a2-9a2c-04d4900b2fac"
     },
     {
-      "command": "EVENT_IF_FLAGS_COMPARE",
+      "command": "EVENT_MENU",
       "args": {
-        "variable": "51",
-        "flag": 2,
-        "__collapseElse": false
+        "variable": "L0",
+        "items": 5,
+        "option1": "Eather",
+        "option2": "home",
+        "option3": "luna",
+        "option4": "Earth",
+        "option5": "quit",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "dialogue",
+        "cancelOnLastOption": true
       },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_MENU",
-            "args": {
-              "variable": "L0",
-              "items": 5,
-              "option1": "Eather",
-              "option2": "home",
-              "option3": "luna",
-              "option4": "Earth",
-              "option5": "quit",
-              "option6": "",
-              "option7": "",
-              "option8": "",
-              "cancelOnB": true,
-              "layout": "dialogue",
-              "cancelOnLastOption": true
-            },
-            "id": "5d8297f8-5c09-45ba-bbbd-4bc6031d0432"
-          }
-        ],
-        "false": [
-          {
-            "command": "EVENT_MENU",
-            "args": {
-              "variable": "L0",
-              "items": 4,
-              "option1": "Eather",
-              "option2": "home",
-              "option3": "luna",
-              "option4": "quit",
-              "option5": "",
-              "option6": "",
-              "option7": "",
-              "option8": "",
-              "cancelOnB": true,
-              "layout": "dialogue",
-              "cancelOnLastOption": true
-            },
-            "id": "14313e06-365d-4eb6-b378-8f05d196a37b"
-          }
-        ]
-      },
-      "id": "56d30052-db5b-4d97-b5b3-92ab6f5f4e45"
+      "id": "5d8297f8-5c09-45ba-bbbd-4bc6031d0432"
     },
     {
       "command": "EVENT_IF",

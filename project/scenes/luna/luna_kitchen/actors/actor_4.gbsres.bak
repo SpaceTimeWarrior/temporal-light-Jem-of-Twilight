@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "5601136b-03b8-4b88-9854-326d5505af8d",
+  "_index": 5,
+  "symbol": "actor_452",
+  "prefabId": "",
+  "name": "",
+  "x": 16,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jem:A stovetop\nand oven combo\nwierd the upper",
+          "limit on the oven\nis 10000°F..this\ncould be useful",
+          "in not just \ncooking."
+        ],
+        "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+      },
+      "id": "d4615373-7249-4c86-9b40-adc88cf7553f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

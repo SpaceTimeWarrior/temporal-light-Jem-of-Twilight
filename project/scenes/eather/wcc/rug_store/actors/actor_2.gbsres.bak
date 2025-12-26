@@ -1,0 +1,199 @@
+{
+  "_resourceType": "actor",
+  "id": "cdd31168-7b42-4d89-9897-72cfd653b46b",
+  "_index": 1,
+  "symbol": "actor_205",
+  "prefabId": "",
+  "name": "",
+  "x": 2,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5185f121-2209-4d56-9735-68befd151d77",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 255
+      },
+      "id": "cf6f8e2a-3567-4a54-a2c0-51c731dd8749"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "14",
+        "operator": "==",
+        "comparator": "0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "14"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: I would like\nto buy a few \nrugs"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "c99a1407-b335-417b-a13e-806758c08f8a"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bunny owner: fine\nbut I need an \naddress."
+              ],
+              "avatarId": ""
+            },
+            "id": "6fec941e-e7ee-422f-bb19-417d5b22dba5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem:in the palace \nacross the \nstreet",
+                "in the courtyard\n...\nwhen you arive",
+                "give the rugs to\nthe robot \nwarrior",
+                "here is the \npayment.\nI do have to ask",
+                "why don't you \nhave rugs on the\nfloor."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "ffac8d30-db37-423e-8a25-a01368338bb5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bunny owner:Garnet\nWolfsbane put a\nlaw requiring the",
+                "flooring be \nredesigned by an \nAI. thankfully I",
+                "was able to\nconvince it to put\nwood flooring in"
+              ],
+              "avatarId": ""
+            },
+            "id": "7d3dc341-ca7a-45b1-8778-522c6b4ac9b2"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: really"
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "b91cb74d-39d6-495e-8354-806feab2c1eb"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bunny owner: no I \nhacked it..."
+              ],
+              "avatarId": ""
+            },
+            "id": "f9d27112-3257-40c3-bc92-a2afc299b6be"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "3c769dca-51f3-426c-942f-71c4d3af6202"
+            },
+            "id": "fbfd1c7a-c5a7-4db6-9cba-f63bbb3710a4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bunny owner: wait \nwho is your father"
+              ],
+              "avatarId": ""
+            },
+            "id": "1f5a354e-25f8-4cc5-b4a9-bc522c96b789"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "84e07a95-81dc-494c-bc83-32f58bc9976b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jem: sadly you \ntalked about him\n... to be honest",
+                "I dislike him \ntoo. so your \nsecret is safe",
+                "with me."
+              ],
+              "avatarId": "5d1a25ac-6d4f-40b5-9065-c9e137ae5c0e"
+            },
+            "id": "933a0955-d37a-41e2-b82f-e8b51e9da79b"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "14",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "3aed16b0-cd82-49b5-b6c0-475431a9a007"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Bunny owner:\nwelcome back sadly\nI am out of ",
+                "useable stock. \nthose are just\nfor show and",
+                "I am not allowed \nto sell them. your\nrugs are already",
+                "at your home"
+              ],
+              "avatarId": ""
+            },
+            "id": "26778cad-6fef-4f0f-8fd1-0cf36dd5f8ae"
+          }
+        ]
+      },
+      "id": "56f1b66a-940f-4743-a2ee-f4b062a363fc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_ANIMATION_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 15
+      },
+      "id": "23e01ad9-cd81-4742-9e70-e89f258730ce"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

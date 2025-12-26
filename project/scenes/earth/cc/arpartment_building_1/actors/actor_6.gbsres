@@ -20,7 +20,7 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "looks like \nappartment\napplications"
+          "looks like \napartment\napplications"
         ],
         "__section": "text",
         "avatarId": "",
@@ -49,5 +49,5 @@
   "hit3Script": [],
   "x": 35,
   "y": 27,
-  "_index": 7
+  "_index": 6
 }

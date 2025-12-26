@@ -24,14 +24,14 @@
       "args": {
         "sceneId": "58d3e5cf-c925-4a07-8fc1-d78bc2e9c801",
         "x": {
-          "type": "add",
+          "type": "sub",
           "valueA": {
-            "type": "number",
-            "value": 1
-          },
-          "valueB": {
             "type": "variable",
             "value": "28"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 17
           }
         },
         "y": {
